@@ -28,7 +28,6 @@ More may be added in the future.
 * How could adding in a entity tagger as a feature boost the intent classification?
 * Are there any additional features that could be added beyond TFIDF?
 
-
 ### Entity extraction (Named Entity Recognition)
 This notebook uses conditional random fields (CRFs) for entity extraction.
 
@@ -42,4 +41,10 @@ This notebook uses conditional random fields (CRFs) for entity extraction.
 * Are there any other performance hacks?
 
 
+# TODO
 And there is more to come, whenever we find time. ;)
+
+* Add report discussion of the results in the CSVs
+* Compare results to
+  * Snips
+  * BERT
