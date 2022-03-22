@@ -1,0 +1,408 @@
+,scenario,intent,status,answer_annotation,suggested_entities,question,review,remove
+3,audio,volume_mute,nan,quiet,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+4,audio,volume_mute,IRR_XL,stop,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+5,audio,volume_mute,nan,pause for [time : ten seconds],player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+101,audio,volume_down,nan,set the volume [change_amount : to low],player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+134,audio,volume_other,nan,change the volume,player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+165,audio,volume_up,nan,turn up the volume,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+166,audio,volume_up,nan,volume up,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+167,audio,volume_mute,nan,mute volume,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+231,audio,volume_up,nan,i can't hear you,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+232,audio,volume_down,nan,you're too loud,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+233,audio,volume_up,nan,i can barely hear you,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+288,audio,volume_mute,nan,please be quiet for [time : another hour],player_setting,How would you ask your PDA not to speak for some time?,False,False
+289,audio,volume_mute,nan,mute,player_setting,How would you ask your PDA not to speak for some time?,False,False
+290,audio,volume_mute,nan,do not speak [date : today],player_setting,How would you ask your PDA not to speak for some time?,False,False
+306,audio,volume_down,nan,quieter,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+307,audio,volume_down,nan,softer,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+308,audio,volume_mute,nan,silent,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+436,audio,volume_up,nan,raise volume,player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+455,audio,volume_up,nan,can you speak a little louder,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+456,audio,volume_up,nan,i am unable to hear you can you speak little loud,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+457,audio,volume_up,nan,please speak loud,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+503,audio,volume_mute,nan,silence please,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+504,audio,volume_mute,nan,speakers off,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+505,audio,volume_mute,nan,quiet please,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+516,audio,volume_mute,nan,can you mute when i am not home,player_setting,How would you ask your PDA not to speak for some time?,False,False
+517,audio,volume_mute,MOD,mute yourself when i am in a [event_name : meeting],player_setting,How would you ask your PDA not to speak for some time?,False,False
+518,audio,volume_mute,nan,mute for the [time : next hour] please,player_setting,How would you ask your PDA not to speak for some time?,False,False
+554,audio,volume_up,nan,please increase the volume of the music [song_name : hips don't lie],player_setting,Write what you would tell your PDA in the following scenario: You want to know what music is currently playing.,True,False
+581,audio,volume_up,nan,increase volume,player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+607,audio,volume_up,nan,turn up sound,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+608,audio,volume_down,nan,Turn down volume,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+609,audio,volume_up,nan,volume louder please,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+616,audio,volume_mute,nan,set mute for [time : twenty minutes],player_setting,How would you ask your PDA not to speak for some time?,False,False
+617,audio,volume_up,nan,unmute after,player_setting,How would you ask your PDA not to speak for some time?,True,False
+618,audio,volume_up,nan,bring back talking after,player_setting,How would you ask your PDA not to speak for some time?,True,False
+713,audio,volume_down,nan,lower the volume,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+714,audio,volume_down,nan,it is too loud decrease the volume,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+715,audio,volume_up,nan,i can't hear just increase the volume,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+768,audio,volume_down,nan,could you please lower your volume,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+769,audio,volume_up,nan,could you please yell the answer out to me,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+770,audio,volume_down,nan,could you please lower the tone,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+784,audio,volume_up,nan,please decrease the volume of this song,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+785,audio,volume_up,nan,increase the volume so that i can hear it in other room,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+786,audio,volume_down,nan,decrease the volume [change_amount : to ten percent],player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+787,audio,volume_mute,nan,don't talk until i ask you to,player_setting,How would you ask your PDA not to speak for some time?,False,False
+788,audio,volume_mute,nan,mute yourself until i say otherwise,player_setting,How would you ask your PDA not to speak for some time?,False,False
+789,audio,volume_mute,nan,don't speak for a while,player_setting,How would you ask your PDA not to speak for some time?,False,False
+845,audio,volume_mute,nan,mute sound on speakers please,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+846,audio,volume_mute,nan,mute the speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,True,False
+847,audio,volume_down,nan,lower all volume on speakers please,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+861,audio,volume_up,nan,increase the volume,player_setting,Write what you would tell your PDA in the following scenario: You want to know what music is currently playing.,False,False
+983,audio,volume_other,nan,change the volume of the speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+1003,audio,volume_mute,nan,will you please mute my speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+1004,audio,volume_mute,nan,sound off,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+1030,audio,volume_up,nan,please turn the music up,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+1031,audio,volume_down,nan,it's really loud can you please turn the music down,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+1032,audio,volume_up,MOD,increase the volume [change_amount : to max] please,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+1105,audio,volume_down,nan,lower the speak volume,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+1106,audio,volume_other,nan,change the audio settings,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+1107,audio,volume_down,nan,turn off the bass from the audio,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,True,False
+1122,audio,volume_other,nan,show volume settings,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+1123,audio,volume_other,nan,where is volume setting,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+1124,audio,volume_other,nan,need to see volume settings,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+1142,audio,volume_up,nan,i can't hear you speak up,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+1143,audio,volume_down,nan,your volume is too high please repeat that lower,player_setting,How would you ask your PDA to speaker louder or quieter?,True,False
+1144,audio,volume_up,nan,i couldn't hear you repeat that louder,player_setting,How would you ask your PDA to speaker louder or quieter?,True,False
+1148,audio,volume_mute,nan,please stop for a bit,player_setting,How would you ask your PDA not to speak for some time?,False,False
+1149,audio,volume_mute,nan,please pause yourself,player_setting,How would you ask your PDA not to speak for some time?,False,False
+1150,audio,volume_mute,nan,get yourself muted,player_setting,How would you ask your PDA not to speak for some time?,False,False
+1243,audio,volume_other,nan,adjust sound,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+1244,audio,volume_other,nan,give a pleasant sound,player_setting,How would you ask your PDA to speaker louder or quieter?,False,True
+1245,audio,volume_other,nan,comfortably adjust sound,player_setting,How would you ask your PDA to speaker louder or quieter?,False,True
+1296,audio,volume_up,nan,can you turn up the volume on itunes,player_setting,How would you ask your PDA to change some specific settings of your music player?,True,False
+1388,audio,volume_up,nan,louder,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+1389,audio,volume_up,IRR_XL,slow,player_setting,How would you ask your PDA to speaker louder or quieter?,False,True
+1390,audio,volume_up,IRR_XL,fast,player_setting,How would you ask your PDA to speaker louder or quieter?,False,True
+1416,audio,volume_up,nan,please increase volume,player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+1417,audio,volume_mute,nan,Please pause the song,player_setting,How would you ask your PDA to change some specific settings of your music player?,True,False
+1452,audio,volume_down,nan,please slow down volume of speaker,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,True
+1453,audio,volume_down,nan,i want to slow down my speaker,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,True
+1454,audio,volume_up,IRR,main apne speaker ka volume kam karna chahta hu,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,True
+1467,audio,volume_up,nan,just increase the volume a little,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+1468,audio,volume_up,nan,move the volume up a little,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+1469,audio,volume_down,nan,make the volume lower,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+1479,audio,volume_up,nan,could you speak up,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+1480,audio,volume_up,nan,can you turn up your volume,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+1481,audio,volume_up,nan,could you speak louder,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+1488,audio,volume_up,nan,turn up volume of music,player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+1540,audio,volume_up,nan,please turn up the volume,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+1541,audio,volume_down,nan,please turn down the volume,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+1542,audio,volume_other,nan,volume control please,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+1552,audio,volume_mute,nan,shut up,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,True,False
+1553,audio,volume_mute,nan,silence,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+1554,audio,volume_mute,nan,be quiet,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+1585,audio,volume_mute,nan,mute speakers,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+1586,audio,volume_up,nan,raise the volume [change_amount : to sixty],player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+1587,audio,volume_down,nan,lower the volume [change_amount : to twenty],player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+1626,audio,volume_mute,nan,set mute mode for [time : one hour],player_setting,How would you ask your PDA not to speak for some time?,False,False
+1627,audio,volume_mute,nan,do not make any noise until [timeofday : morning] alarm,player_setting,How would you ask your PDA not to speak for some time?,False,False
+1628,audio,volume_mute,nan,quiet mode on until i am home from work,player_setting,How would you ask your PDA not to speak for some time?,False,False
+1643,audio,volume_up,nan,increase the volume [change_amount : to fifty],player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+1644,audio,volume_down,nan,decrease the volume [change_amount : to ten],player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+1645,audio,volume_up,nan,increase the volume of the [device_type : left speaker] [change_amount : by ten],player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,True,False
+1771,audio,volume_up,nan,raise the volume of the current music,player_setting,Write what you would tell your PDA in the following scenario: You want to know what music is currently playing.,False,False
+1772,audio,volume_up,nan,i need to hear the volume of the current music,player_setting,Write what you would tell your PDA in the following scenario: You want to know what music is currently playing.,False,False
+1773,audio,volume_up,nan,the volume of the music playing now should be raised,player_setting,Write what you would tell your PDA in the following scenario: You want to know what music is currently playing.,False,False
+1780,audio,volume_down,nan,please turn the volume down,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+1781,audio,volume_up,nan,turn it up,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+1782,audio,volume_down,nan,turn it down,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,True,False
+1825,audio,volume_up,nan,increase the volume of the music [change_amount : to ninety],player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+1826,audio,volume_up,nan,the music volume should increase [change_amount : to ninety],player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+1827,audio,volume_up,nan,set the music volume [change_amount : to ninety],player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+1850,audio,volume_down,nan,turn the speakers down [change_amount : to five percent],player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+1851,audio,volume_up,nan,change the speaker volume [change_amount : to sixty five percent],player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+1852,audio,volume_up,nan,i want the speakers turned up high,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+1853,audio,volume_down,nan,lower the volume [change_amount : ten percent],player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+1859,audio,volume_up,nan,speak as loud as you can,player_setting,How would you ask your PDA to speaker louder or quieter?,True,False
+1860,audio,volume_down,nan,lower volume [change_amount : by fifty percent],player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+1861,audio,volume_down,nan,could you speak a little more softly,player_setting,How would you ask your PDA to speaker louder or quieter?,True,False
+1944,audio,volume_down,nan,decrease the volume,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+1945,audio,volume_up,nan,set the volume higher,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+2032,audio,volume_up,nan,up,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,True
+2033,audio,volume_down,nan,down,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,True
+2053,audio,volume_up,nan,increase the volume a bit,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+2054,audio,volume_up,nan,increace the volume the sound is too low,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,True,False
+2055,audio,volume_up,nan,i cant hear a thing,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+2084,audio,volume_down,nan,decrease volume,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+2085,audio,volume_other,nan,improve volume clarity,player_setting,How would you ask your PDA to speaker louder or quieter?,True,False
+2137,audio,volume_up,nan,rise volume,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+2138,audio,volume_down,nan,lower volume,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+2147,audio,volume_up,nan,increase volume [change_amount : to fifty percent],player_setting,Write what you would tell your PDA in the following scenario: You want to know what music is currently playing.,False,False
+2164,audio,volume_down,nan,please decrease the volume of [device_type : music player],player_setting,Write what you would tell your PDA in the following scenario: You want to know what music is currently playing.,False,False
+2186,audio,volume_up,nan,please increase the volume [change_amount : to maximum],player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+2187,audio,volume_mute,nan,please change the volume to mute,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+2188,audio,volume_other,nan,set the [change_amount : average] of the device,player_setting,How would you ask your PDA to speaker louder or quieter?,False,True
+2207,audio,volume_mute,nan,please shut off,player_setting,How would you ask your PDA not to speak for some time?,False,True
+2208,audio,volume_mute,nan,please do not answer,player_setting,How would you ask your PDA not to speak for some time?,True,False
+2209,audio,volume_mute,nan,goodnight,player_setting,How would you ask your PDA not to speak for some time?,False,True
+2231,audio,volume_up,nan,increase volume [change_amount : by two levels],player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+2232,audio,volume_down,nan,decrease volume to very soft,player_setting,How would you ask your PDA to change some specific settings of your music player?,True,False
+2258,audio,volume_mute,nan,i dont want sound,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+2259,audio,volume_down,nan,lower the volume,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+2260,audio,volume_mute,nan,turn off the speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,True,False
+2283,audio,volume_other,nan,volume level,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,True,False
+2284,audio,volume_mute,nan,touch the mute button,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,True
+2285,audio,volume_mute,nan,turn off speaker,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+2295,audio,volume_down,nan,turn the volume down a little please,player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+2436,audio,volume_mute,nan,silence for [time : two hours],player_setting,How would you ask your PDA not to speak for some time?,False,False
+2437,audio,volume_mute,nan,from now on mute,player_setting,How would you ask your PDA not to speak for some time?,False,False
+2438,audio,volume_mute,nan,silently adjust,player_setting,How would you ask your PDA not to speak for some time?,False,True
+2444,audio,volume_down,MOD_XL,turn down the volume,player_setting,Write what you would tell your PDA in the following scenario: You want to know what music is currently playing.,True,False
+2532,audio,volume_up,nan,increase volume [change_amount : by one],player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+2567,audio,volume_mute,nan,mute the speaker please,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+2568,audio,volume_mute,nan,make the volume [change_amount : to zero],player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+2569,audio,volume_mute,nan,down the speaker volume at the end of level,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,True
+2587,audio,volume_up,nan,on the [device_type : music player] set the volume level at [change_amount : sixty],player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+2605,audio,volume_up,nan,get louder,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+2606,audio,volume_up,nan,turn the volume up,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+2668,audio,volume_up,nan,please turn up the volume [change_amount : to twenty one],player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+2748,audio,volume_up,nan,volume up,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+2749,audio,volume_up,nan,volume louder,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+2750,audio,volume_other,nan,change volume,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+2772,audio,volume_mute,nan,please be quiet for the next [time : two hours],player_setting,How would you ask your PDA not to speak for some time?,False,False
+2773,audio,volume_mute,nan,mute yourself [time : until five pm],player_setting,How would you ask your PDA not to speak for some time?,False,False
+2774,audio,volume_mute,nan,i need you to be quiet [time : until tomorrow],player_setting,How would you ask your PDA not to speak for some time?,False,False
+2858,audio,volume_mute,nan,quiet mode [time : four hours],player_setting,How would you ask your PDA not to speak for some time?,False,False
+2859,audio,volume_mute,nan,please be silent until i tell you not to be,player_setting,How would you ask your PDA not to speak for some time?,False,False
+2860,audio,volume_mute,nan,silent mode,player_setting,How would you ask your PDA not to speak for some time?,False,False
+2864,audio,volume_down,nan,start the [device_type : radio] now on low volume,radio_name,How would you ask your PDA to play the radio?,True,False
+2873,audio,volume_mute,nan,i've got a meeting by [timeofday : tonight] [time : seven pm] please mute the music for [time : an hour],"event_name, person",Write what you would tell your PDA in the following scenario: you want to be reminded about an upcoming meeting.,False,False
+2905,audio,volume_mute,nan,mute all responses now,player_setting,How would you ask your PDA not to speak for some time?,False,False
+2906,audio,volume_mute,nan,no speaking please,player_setting,How would you ask your PDA not to speak for some time?,False,False
+2907,audio,volume_mute,nan,please keep quiet for the [time : next hour],player_setting,How would you ask your PDA not to speak for some time?,False,False
+2911,audio,volume_up,nan,change my [device_type : music player] volume [change_amount : to eighty percent],player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+2912,audio,volume_up,nan,lower my [device_type : music player] volume [change_amount : by fifty percent] of its current level,player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+2913,audio,volume_up,nan,raise the volume of my [device_type : music player] [change_amount : by fifty percent],player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+2919,audio,volume_down,nan,lower the speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+2920,audio,volume_up,nan,raise the volume [change_amount : to fifty],player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+2921,audio,volume_mute,nan,mute volume now,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+2936,audio,volume_up,nan,turn up [device_type : radio] volume,radio_name,Write what you would tell your PDA in the following scenario: You want to play the radio.,False,False
+3000,audio,volume_down,nan,lower audio,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+3001,audio,volume_down,nan,turn down volume [change_amount : twenty percent],player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+3002,audio,volume_up,nan,louder please,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+3094,audio,volume_mute,nan,Silence speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+3095,audio,volume_mute,nan,silence volume on speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+3096,audio,volume_mute,nan,mute sound from speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+3127,audio,volume_mute,nan,mute the [device_type : living room speakers],player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+3128,audio,volume_mute,nan,pause the music,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+3129,audio,volume_mute,nan,stop playing,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+3156,audio,volume_mute,nan,mute for [time : two hours],player_setting,How would you ask your PDA not to speak for some time?,False,False
+3157,audio,volume_mute,nan,go silent for [time : a day],player_setting,How would you ask your PDA not to speak for some time?,False,False
+3158,audio,volume_mute,nan,stop making sounds for [time : forty minutes],player_setting,How would you ask your PDA not to speak for some time?,False,False
+3183,audio,volume_up,nan,increase the volume [change_amount : to seventy percent],player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+3200,audio,volume_down,MOD_XL,lower speaker volume,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+3201,audio,volume_down,nan,turn_down speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+3202,audio,volume_down,nan,lessen the speaker volume,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+3225,audio,volume_down,MOD_XL,turn down the speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+3324,audio,volume_up,nan,please turn the music volume up,music_type,Write what you would tell your PDA in the following scenario: You want to play music.,False,False
+3377,audio,volume_mute,nan,please mute the sound,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+3378,audio,volume_mute,nan,can you place the sound on mute,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+3379,audio,volume_mute,nan,i would like to mute the speakers please,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+3380,audio,volume_mute,nan,turn the volume off,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+3381,audio,volume_mute,nan,turn the sound off,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+3382,audio,volume_mute,nan,mute the sound,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+3416,audio,volume_mute,nan,please hold for the [time : next hour],player_setting,How would you ask your PDA not to speak for some time?,True,False
+3417,audio,volume_mute,nan,i'm in a [event_name : meeting] please do not speak,player_setting,How would you ask your PDA not to speak for some time?,False,False
+3418,audio,volume_mute,nan,turn off the sound,player_setting,How would you ask your PDA not to speak for some time?,False,False
+3446,audio,volume_down,nan,lower your volume please,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+3447,audio,volume_up,nan,Speak louder please,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+3448,audio,volume_down,nan,talk quieter please,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+3486,audio,volume_mute,nan,turn off the speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+3487,audio,volume_mute,nan,please mute the speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+3677,audio,volume_up,IRR,where is the car,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,True
+3678,audio,volume_up,IRR,where is the fire,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,True
+3736,audio,volume_other,nan,can i adjust the volume,player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+3795,audio,volume_mute,nan,please be quiet,player_setting,How would you ask your PDA not to speak for some time?,False,False
+3796,audio,volume_mute,nan,go to sleep,player_setting,How would you ask your PDA not to speak for some time?,False,False
+3797,audio,volume_mute,nan,mute for volume,player_setting,How would you ask your PDA not to speak for some time?,False,False
+3801,audio,volume_mute,nan,mute speaker,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+3802,audio,volume_mute,nan,please quiet the speaker,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+3803,audio,volume_mute,nan,quiet time,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+3810,audio,volume_up,nan,increase volume please,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+3811,audio,volume_up,nan,play it louder,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+3820,audio,volume_down,nan,please lower music volume,player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+3833,audio,volume_up,nan,speak louder please,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+3834,audio,volume_down,nan,speak softer please,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+3835,audio,volume_mute,nan,it's quiet time,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+3918,audio,volume_down,nan,please reduce the sound,player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+3919,audio,volume_up,nan,please increase the volume,player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+3942,audio,volume_mute,nan,mute for [time : twenty minutes],player_setting,How would you ask your PDA not to speak for some time?,False,False
+3943,audio,volume_mute,nan,go silent [time : until three pm],player_setting,How would you ask your PDA not to speak for some time?,False,False
+3944,audio,volume_mute,nan,turn on silent mode until my alarm goes off,player_setting,How would you ask your PDA not to speak for some time?,False,False
+3945,audio,volume_mute,nan,turn off sound,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+3946,audio,volume_mute,nan,mute please,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+3947,audio,volume_mute,nan,set volume [change_amount : to zero],player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+3954,audio,volume_up,nan,speak loudly,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+3955,audio,volume_up,nan,loudly,player_setting,How would you ask your PDA to speaker louder or quieter?,False,True
+4013,audio,volume_up,nan,i can't hear you can you say it again louder,player_setting,How would you ask your PDA to speaker louder or quieter?,True,False
+4014,audio,volume_mute,nan,google please be extra quiet the baby is sleeping,player_setting,How would you ask your PDA to speaker louder or quieter?,False,True
+4015,audio,volume_up,nan,i need you to say that last information again but much louder,player_setting,How would you ask your PDA to speaker louder or quieter?,True,False
+4065,audio,volume_up,nan,make this a bit louder,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+4066,audio,volume_up,nan,turn up the speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+4067,audio,volume_mute,nan,be silent for [time : thirty minutes],player_setting,How would you ask your PDA not to speak for some time?,False,False
+4128,audio,volume_down,nan,please lower the speaker volume,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+4129,audio,volume_down,nan,lower the volume on the speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+4130,audio,volume_down,nan,please adjust the speakers to a lower more comfortable level,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+4198,audio,volume_mute,nan,i need to mute the speaker,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+4199,audio,volume_up,nan,unmute the speaker now,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,True,False
+4200,audio,volume_mute,nan,i want to mute the speaker,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+4218,audio,volume_down,nan,slow down the speaker volume,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,True
+4219,audio,volume_up,nan,increase the volume of the speaker,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+4220,audio,volume_down,nan,slow the volume speaker,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,True
+4221,audio,volume_mute,nan,mute for [time : fifteen minutes],player_setting,How would you ask your PDA not to speak for some time?,False,False
+4222,audio,volume_mute,nan,please do not talk for [time : thirty minutes],player_setting,How would you ask your PDA not to speak for some time?,False,False
+4223,audio,volume_mute,nan,mute enabled until i say so,player_setting,How would you ask your PDA not to speak for some time?,False,False
+4248,audio,volume_mute,nan,mute the music,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+4249,audio,volume_mute,nan,turn off the sounds,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+4250,audio,volume_mute,nan,mute audio,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+4267,audio,volume_mute,nan,sound off please,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+4268,audio,volume_mute,nan,mute speakers please,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+4323,audio,volume_mute,nan,mute immediately,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+4324,audio,volume_mute,nan,please mute the volume control,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+4435,audio,volume_mute,nan,keep quiet,player_setting,How would you ask your PDA not to speak for some time?,False,False
+4436,audio,volume_mute,IRR_XL,stop it,player_setting,How would you ask your PDA not to speak for some time?,True,False
+4437,audio,volume_mute,nan,please be silent,player_setting,How would you ask your PDA not to speak for some time?,False,False
+4528,audio,volume_up,nan,increase the volume please,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+4529,audio,volume_down,nan,lower the volume please,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+4530,audio,volume_down,nan,can you turn that down,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+4551,audio,volume_up,nan,turn up the volume on my speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+4552,audio,volume_up,nan,i want volume on my speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+4553,audio,volume_mute,nan,mute my speakers for a minute here i need to make a call,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,True,False
+4632,audio,volume_other,nan,change volume [change_amount : to thirty five percent],player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+4642,audio,volume_other,nan,change volume level [change_amount : to maximum],player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+4643,audio,volume_down,nan,lower volume [change_amount : to half],player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+4724,audio,volume_other,nan,give me the volume settings,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+4727,audio,volume_mute,nan,please stop talking,player_setting,How would you ask your PDA not to speak for some time?,False,False
+4728,audio,volume_mute,nan,please do not speak,player_setting,How would you ask your PDA not to speak for some time?,False,False
+4729,audio,volume_mute,nan,please do not respond,player_setting,How would you ask your PDA not to speak for some time?,False,False
+4747,audio,volume_up,nan,turn up volume,player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+4755,audio,volume_up,nan,turn up the volume on the music,player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+4789,audio,volume_up,nan,speak louder,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+4790,audio,volume_up,nan,raise speaker volume,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+4839,audio,volume_up,nan,raise the volume of the speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+4840,audio,volume_down,nan,lower the volume of the speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+4841,audio,volume_up,nan,raise the volume of the speakers [change_amount : to fifty five percent],player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+4879,audio,volume_down,nan,lower volume of [device_type : music player],player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+4880,audio,volume_up,nan,raise volume [change_amount : to level seven] on [device_type : music player],player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+4881,audio,volume_mute,nan,disable [device_type : music player],player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+4903,audio,volume_other,nan,could you change the volume,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+4904,audio,volume_down,nan,turn down the volume,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+4911,audio,volume_up,nan,please speak up,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+4912,audio,volume_down,nan,can you speak quieter please,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+4913,audio,volume_up,nan,please turn the volume to the [change_amount : loudest] setting,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+4921,audio,volume_mute,nan,turn sound off,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+4922,audio,volume_mute,nan,mute sound,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+4940,audio,volume_mute,nan,mute the audio,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+4941,audio,volume_mute,nan,stop the audio,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+4972,audio,volume_up,nan,unmute,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+5038,audio,volume_mute,nan,mute the settings,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+5039,audio,volume_up,nan,please unmute the settings,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,True,False
+5040,audio,volume_mute,nan,set the settings to mute,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+5084,audio,volume_up,nan,turn up media volume,player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+5085,audio,volume_up,nan,adjust media volume up,player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+5086,audio,volume_up,nan,make media volume louder,player_setting,How would you ask your PDA to change some specific settings of your music player?,True,False
+5129,audio,volume_up,nan,turn up the volume of my speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+5130,audio,volume_up,nan,can you turn up the volume,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+5131,audio,volume_up,nan,please turn up the speaker volume,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+5203,audio,volume_down,nan,turn speaker volume down,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+5204,audio,volume_down,nan,decrease speaker volume,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+5205,audio,volume_other,nan,change volume settings in the negative,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,True
+5222,audio,volume_mute,nan,mute the speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+5223,audio,volume_mute,nan,set the speakers to mute,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+5228,audio,volume_mute,nan,silence for certain amount of hours,player_setting,How would you ask your PDA not to speak for some time?,False,True
+5229,audio,volume_mute,nan,do not talk,player_setting,How would you ask your PDA not to speak for some time?,False,False
+5278,audio,volume_up,nan,unmute my sound,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,True,False
+5279,audio,volume_up,nan,please turn my speakers on,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,True,False
+5280,audio,volume_up,nan,i need to hear sound on my speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,True,False
+5302,audio,volume_mute,nan,set to mute,player_setting,How would you ask your PDA not to speak for some time?,False,False
+5303,audio,volume_mute,nan,be mute,player_setting,How would you ask your PDA not to speak for some time?,False,False
+5312,audio,volume_down,nan,volume down,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+5315,audio,volume_other,nan,adjust the volume,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+5360,audio,volume_up,nan,can you increase the volume of the speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+5361,audio,volume_up,nan,sound is low can you tune it up,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,True,False
+5362,audio,volume_up,MOD,beef up the volume a little bit,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,True,False
+5453,audio,volume_up,MOD,speaker volume increase,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+5455,audio,volume_up,MOD,i need the volume to be louder,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+5458,audio,volume_mute,IRR,by hide,player_setting,How would you ask your PDA not to speak for some time?,False,True
+5459,audio,volume_mute,IRR,clear data,player_setting,How would you ask your PDA not to speak for some time?,False,True
+5460,audio,volume_mute,IRR,not use,player_setting,How would you ask your PDA not to speak for some time?,False,True
+5484,audio,volume_mute,nan,Shut down the sound,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+5485,audio,volume_mute,nan,cut off noise,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+5486,audio,volume_mute,nan,mute the volume,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+5543,audio,volume_down,nan,turn down media volume,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+5544,audio,volume_up,nan,turn up [media_type : music] please,player_setting,How would you ask your PDA to speaker louder or quieter?,True,False
+5545,audio,volume_mute,nan,turn off media volume,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+5599,audio,volume_down,nan,please talk softer,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+5600,audio,volume_up,nan,turn volume up to highest level,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+5627,audio,volume_down,nan,turn the volume down,player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+5647,audio,volume_up,nan,i need you to have the volume louder,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+5648,audio,volume_down,nan,please speak quieter to me,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+5649,audio,volume_other,nan,volume settings please,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+5665,audio,volume_mute,nan,please mute my speaker,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+5666,audio,volume_mute,nan,can you mute my speaker,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+5667,audio,volume_mute,nan,help me to mute my speaker,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+5711,audio,volume_up,nan,can you turn the volume up,player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+5753,audio,volume_up,nan,change the volume level [change_amount : to nineteen] please,player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+5801,audio,volume_up,nan,turn the volume up,player_setting,Write what you would tell your PDA in the following scenario: You want to know what music is currently playing.,True,False
+5854,audio,volume_mute,nan,silent mode on for the [time : next three hours],player_setting,How would you ask your PDA not to speak for some time?,False,False
+5855,audio,volume_mute,nan,quiet on,player_setting,How would you ask your PDA not to speak for some time?,False,False
+5901,audio,volume_up,nan,make sound louder,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+5902,audio,volume_up,nan,turn up speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+5903,audio,volume_up,nan,more volume please,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+5936,audio,volume_down,nan,please reduce the speaker volume,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+5937,audio,volume_up,nan,make the speaker volume on [change_amount : maximum],player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+5938,audio,volume_mute,nan,turn the vibrate off from speaker,player_setting,How would you ask your PDA to speaker louder or quieter?,False,True
+5978,audio,volume_up,nan,louder volume please,player_setting,Write what you would tell your PDA in the following scenario: You want to know what music is currently playing.,False,False
+5992,audio,volume_up,nan,turn the volume up on [device_type : music player],player_setting,How would you ask your PDA to change some specific settings of your music player?,False,False
+6022,audio,volume_up,nan,please increase volume in [device_type : music player],player_setting,Write what you would tell your PDA in the following scenario: You want to know what music is currently playing.,False,False
+6029,audio,volume_mute,nan,please you don't speak in [time : eight to ten pm],player_setting,How would you ask your PDA not to speak for some time?,False,False
+6030,audio,volume_mute,nan,please mute yourself,player_setting,How would you ask your PDA not to speak for some time?,False,False
+6031,audio,volume_up,nan,please unmute yourself,player_setting,How would you ask your PDA not to speak for some time?,True,False
+6045,audio,volume_up,nan,can you turn it up a little,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+6046,audio,volume_down,nan,can you make it a little quieter,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+6058,audio,volume_up,nan,turn up your volume,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+6178,audio,volume_up,nan,turn my audio higher,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+6179,audio,volume_down,nan,turn the music lower,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+6180,audio,volume_up,nan,turn the sound up,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+6290,audio,volume_down,nan,cut down the volume,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+6330,audio,volume_up,nan,turn up the sound,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+6349,audio,volume_mute,nan,mute for [time : one hour],player_setting,How would you ask your PDA not to speak for some time?,False,False
+6350,audio,volume_mute,nan,set mute until said otherwise,player_setting,How would you ask your PDA not to speak for some time?,False,False
+6367,audio,volume_up,nan,please increase the volume of the current song,player_setting,Write what you would tell your PDA in the following scenario: You want to know what music is currently playing.,False,False
+6386,audio,volume_mute,nan,stay quiet,player_setting,How would you ask your PDA not to speak for some time?,False,False
+6387,audio,volume_mute,nan,enter silence mode,player_setting,How would you ask your PDA not to speak for some time?,False,False
+6388,audio,volume_mute,nan,don't make any sounds,player_setting,How would you ask your PDA not to speak for some time?,False,False
+6429,audio,volume_down,nan,please change the volume lower of the speakers,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,True,False
+6430,audio,volume_other,nan,can you change the volume at,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,True
+6431,audio,volume_up,nan,Hey turn the volume high,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,True,False
+6473,audio,volume_down,nan,reduce volume,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+6626,audio,volume_mute,nan,please mute the [device_type : television] for [time : one hour],player_setting,How would you ask your PDA not to speak for some time?,True,False
+6627,audio,volume_mute,nan,set [device_type : music system] to mute,player_setting,How would you ask your PDA not to speak for some time?,False,False
+6628,audio,volume_mute,nan,can you set [device_type : radio] to mute,player_setting,How would you ask your PDA not to speak for some time?,True,False
+6635,audio,volume_up,nan,raise your volume,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+6636,audio,volume_up,nan,can you speak louder,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+6671,audio,volume_up,nan,audio up,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+6672,audio,volume_mute,nan,turn off audio,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+6673,audio,volume_up,nan,audio on,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,True,False
+6688,audio,volume_down,nan,too loud,player_setting,How would you ask your PDA to speaker louder or quieter?,False,False
+6753,audio,volume_other,nan,set the default audio setting,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+6767,audio,volume_up,nan,turn up,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+6768,audio,volume_down,nan,decrease volume [change_amount : twenty percent],player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,True,False
+6788,audio,volume_mute,nan,quiet,player_setting,How would you ask your PDA not to speak for some time?,False,False
+6789,audio,volume_mute,nan,activate silent,player_setting,How would you ask your PDA not to speak for some time?,False,False
+6894,audio,volume_up,nan,please raise the volume of speaker,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+6895,audio,volume_up,nan,i need a high volume,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,True,False
+6896,audio,volume_down,nan,Please lower the volume,player_setting,Write what you would tell your PDA in the following scenario: You want to change the volume of the speakers.,False,False
+6933,audio,volume_mute,nan,can you please be muted for a while,player_setting,How would you ask your PDA not to speak for some time?,False,False
+6934,audio,volume_mute,nan,can you please stop speaking,player_setting,How would you ask your PDA not to speak for some time?,True,False
+6935,audio,volume_mute,nan,i want you to mute,player_setting,How would you ask your PDA not to speak for some time?,False,False
+7028,audio,volume_mute,nan,turn down the noise,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,False
+7029,audio,volume_mute,nan,volume control,player_setting,Write what you would tell your PDA in the following scenario: You want to mute the speakers.,False,True
+7066,audio,volume_mute,nan,don't speak for [time : an hour],player_setting,How would you ask your PDA not to speak for some time?,False,False
+7067,audio,volume_mute,nan,don't respond for [time : fifty seconds],player_setting,How would you ask your PDA not to speak for some time?,False,False
+7068,audio,volume_mute,nan,don't talk,player_setting,How would you ask your PDA not to speak for some time?,False,False
+7189,audio,volume_mute,nan,please mute for [time : five minutes],player_setting,How would you ask your PDA not to speak for some time?,False,False
+7190,audio,volume_mute,nan,no notifications for [time : five minutes],player_setting,How would you ask your PDA not to speak for some time?,False,False
+7191,audio,volume_mute,nan,set to silent for [time : five minutes],player_setting,How would you ask your PDA not to speak for some time?,False,False

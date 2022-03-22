@@ -1,0 +1,5 @@
+jupyter
+pandas
+ipysheet
+sklearn
+sklearn_crfsuite

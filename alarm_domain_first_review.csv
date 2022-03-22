@@ -1,0 +1,620 @@
+,scenario,intent,status,answer_annotation,suggested_entities,question,review,remove
+0,alarm,set,nan,wake me up at [time : five am] [date : this week],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+1,alarm,set,nan,wake me up at [time : nine am] on [date : friday],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+2,alarm,set,nan,set an alarm for [time : two hours from now],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+42,alarm,remove,nan,cancel my [time : seven am] alarm,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+43,alarm,remove,nan,remove the alarm set for [time : ten pm],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+44,alarm,remove,nan,stop [time : seven am] alarm,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+45,alarm,query,nan,what alarms have i set,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,True,False
+46,alarm,query,nan,please list active alarms,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+47,alarm,query,nan,tell me about my alarms,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+81,alarm,set,nan,set an alarm for [time : twelve],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+82,alarm,set,nan,set an alarm for [time : forty minutes from now],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,True,False
+83,alarm,set,nan,set alarm for [time : eight] [general_frequency : every weekday],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+151,alarm,set,nan,set alarm at [time : ten am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+152,alarm,set,nan,set alarm [date : tomorrow] at [time : six am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+153,alarm,set,nan,set wake up [date : Thursday] [time : seven am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+179,alarm,remove,nan,delete the alarm i just set,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+180,alarm,remove,nan,remove the alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+181,alarm,query,MOD,show me the alarms i set,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+182,alarm,query,MOD,do i have any alarms,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+183,alarm,query,MOD,show alarms,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+208,alarm,set,nan,set an alarm at [time : six] in the [timeofday : morning],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+209,alarm,set,nan,set an alarm for [time : four] in the [timeofday : afternoon],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+210,alarm,set,nan,alert me at [time : three pm] to go to the [event_name : concert],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,True,False
+211,alarm,query,nan,do i have an alarm set for my [timeofday : morning] [event_name : flight],nan,How would you ask your PDA to tell you about the alarms it has set.,True,False
+212,alarm,query,nan,did i set an alarm to [alarm_type : wake up] in the [timeofday : morning],nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+213,alarm,query,nan,are there any alarms,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+330,alarm,query,nan,what's my next alarm,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+331,alarm,query,nan,please tell me my alarms,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+332,alarm,query,nan,what time will my alarm go off [date : today],nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+385,alarm,remove,nan,remove the first alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+386,alarm,remove,nan,disable the first alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+387,alarm,remove,nan,delete the first alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+397,alarm,query,nan,what alarms do i have set,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+398,alarm,query,nan,read me my alarms,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+399,alarm,query,nan,what time are my alarms set for,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+405,alarm,set,nan,set an alarm for me at [time : eight am],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+406,alarm,set,nan,make an alarm for [time : four pm],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+407,alarm,set,nan,make me a wake up alarm for [time : eight forty five am],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+408,alarm,set,IRR,go to alarm on menu,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+409,alarm,set,IRR,change the time,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+410,alarm,set,IRR,set alarm,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+509,alarm,query,nan,confirm the alarm time,nan,How would you tell your PDA to confirm a setting,False,False
+510,alarm,query,nan,what alarms are set,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+511,alarm,query,nan,which alarms do i have,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+512,alarm,query,nan,do i have an alarm set,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+540,alarm,set,nan,set an alarm for [time : nine am],"date, time",How would you ask your PDA to set an alarm?,False,False
+541,alarm,set,nan,set a wake up call for [time : ten am],"date, time",How would you ask your PDA to set an alarm?,False,False
+542,alarm,set,nan,i need a reminder alarm at [time : one],"date, time",How would you ask your PDA to set an alarm?,False,False
+543,alarm,set,nan,make an alarm for [time : three pm],"date, time",How would you ask your PDA to set an alarm?,False,False
+544,alarm,set,nan,turn on an alarm for [time : nine am],"date, time",How would you ask your PDA to set an alarm?,False,False
+545,alarm,set,nan,set an alarm for [time : one pm],"date, time",How would you ask your PDA to set an alarm?,False,False
+565,alarm,query,nan,how many alarms are listed,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+566,alarm,query,nan,do i have any alarms set for [date : tomorrow],nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+567,alarm,query,nan,what's the alarm situation for [date : tomorrow],nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+568,alarm,remove,nan,turn off [time : eight am] alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+569,alarm,remove,nan,cancel my [time : eight am] alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+570,alarm,remove,nan,get rid of my [time : eight am] alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+610,alarm,set,nan,start alarm,"date, time",How would you ask your PDA to set an alarm?,False,False
+611,alarm,set,nan,set alarm to begin,"date, time",How would you ask your PDA to set an alarm?,False,False
+612,alarm,set,MOD,change alarm to start at [time : midnight],"date, time",How would you ask your PDA to set an alarm?,False,False
+619,alarm,set,MOD,i want to wake up at [time : six am] [date : tomorrow] please,"date, time",How would you ask your PDA to set an alarm?,False,False
+620,alarm,set,nan,please set the alarm for [timeofday : next morning] to [time : seven am],"date, time",How would you ask your PDA to set an alarm?,False,False
+621,alarm,set,nan,please ring the [alarm_type : wake up] alarm at [time : eight am] next [date : saturday],"date, time",How would you ask your PDA to set an alarm?,False,False
+666,alarm,query,nan,can you tell me what alarms i have set,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+667,alarm,query,nan,do i have any alarms set for [date : today],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+668,alarm,query,nan,how many alarms do i have set,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,True,False
+724,alarm,query,nan,what alarms are set for [date : today],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+725,alarm,query,nan,[date : today] how many alarms do i have set,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+753,alarm,set,nan,create an alarm at [time : four] o'clock [date : tomorrow] [timeofday : morning],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+754,alarm,set,nan,make an alarm to wake me up [time : after five hours],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+755,alarm,set,nan,schedule an alarm to wake me up [time : after three hours],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+834,alarm,query,nan,confirm alarm for [date : tomorrow] [timeofday : morning],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+835,alarm,query,nan,what time is the alarm set for [date : tomorrow],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+836,alarm,query,nan,confirm my alarm settings,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+877,alarm,remove,nan,remove [alarm_type : wake up] calls for [date : this week],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+878,alarm,remove,nan,cancel [alarm_type : wake up] calls for [date : this week],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+879,alarm,remove,nan,stop [alarm_type : wake up] calls for [date : this week],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+885,alarm,query,nan,what alarms are set right now,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+886,alarm,query,nan,what alarms will wake me up [date : tomorrow],nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+887,alarm,query,nan,are there any alarms set right now,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+902,alarm,query,nan,my set alarms,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+903,alarm,query,nan,alarm settings,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+904,alarm,query,nan,my alarms,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+929,alarm,set,nan,set alarm for [time : eight am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+930,alarm,set,nan,alarm set [time : eight am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+940,alarm,remove,nan,turn off the alarm for [date : tomorrow] [timeofday : morning],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+941,alarm,remove,nan,turn off the [time : six am] alarm for [date : Wednesday],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+942,alarm,remove,nan,turn off any [timeofday : morning] alarms [date : after Friday],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+967,alarm,remove,nan,remove my [timeofday : morning] alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+968,alarm,remove,nan,please delete my [timeofday : morning] alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+969,alarm,remove,nan,please remove my alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+987,alarm,remove,IRR,phones,"date, time",How would you ask your PDA to remove an alarm you have set.,False,True
+988,alarm,remove,IRR,personal data assistants,"date, time",How would you ask your PDA to remove an alarm you have set.,False,True
+989,alarm,set,nan,set my alarm for [time : seven am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+990,alarm,set,nan,turn my [timeofday : morning] alarm on,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+991,alarm,set,nan,set my alarm please,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+1005,alarm,set,nan,set the alarm for [time : five] o'clock in the [timeofday : morning],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+1006,alarm,set,nan,set my alarm for [time : six thirty] in the [timeofday : morning] [date : tomorrow],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+1007,alarm,set,MOD,i want the alarm set for [time : six],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+1056,alarm,remove,nan,delete my alarm for [time : eight am],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+1057,alarm,remove,nan,remove my alarm for [date : tomorrow] [timeofday : morning],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+1058,alarm,remove,nan,please turn off my alarm for [timeofday : this evening],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+1093,alarm,query,nan,is my work alarm set for [date : tomorrow],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+1094,alarm,query,nan,what alarms do i have set for [date : thursday],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+1095,alarm,query,nan,is my school alarm set,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+1197,alarm,set,nan,put alarm on,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+1198,alarm,set,MOD,set alarm at [time : five thirty am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+1199,alarm,set,nan,place alarm at [time : five] o'clock [timeofday : morning],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+1255,alarm,remove,MOD,[time : two am] removed,"date, time",How would you ask your PDA to remove an alarm you have set.,False,True
+1257,alarm,remove,MOD,[time : twelve am] removed,"date, time",How would you ask your PDA to remove an alarm you have set.,False,True
+1259,alarm,remove,MOD,[time : one pm] removed,"date, time",How would you ask your PDA to remove an alarm you have set.,False,True
+1283,alarm,remove,nan,disable alarm for [time : three pm],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+1284,alarm,remove,nan,disable my [time : three pm] alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+1285,alarm,remove,nan,cancel my [time : three pm] alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+1352,alarm,query,nan,when is my alarm set for,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+1353,alarm,query,nan,how many alarms do i have,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+1354,alarm,query,nan,is my alarm set for [date : tomorrow] [timeofday : morning],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+1434,alarm,query,nan,what alarms do i have scheduled for [date : tomorrow],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+1435,alarm,query,nan,what alarms are set in the [timeofday : morning],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+1545,alarm,query,nan,what alarms do i got,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+1546,alarm,query,nan,let me see my alarms,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+1547,alarm,query,nan,what alarms do i have,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+1564,alarm,remove,nan,remove the alarm for [date : tomorrow],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+1565,alarm,remove,nan,change the alarm weekly settings,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+1566,alarm,remove,nan,set the alarm off,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+1598,alarm,query,nan,what alarms did i set,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+1599,alarm,query,nan,review the alarms i have,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+1600,alarm,query,nan,list all the alarms,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+1738,alarm,query,nan,check whether i have set any alarms for [date : tomorrow] [timeofday : morning],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+1739,alarm,query,nan,what time is the alarm set for [date : tomorrow] [timeofday : morning],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+1740,alarm,query,nan,is the alarm set for [date : tomorrow] [timeofday : morning],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+1765,alarm,set,nan,set the time,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+1766,alarm,query,IRR_XL,am or pm,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,True,True
+1767,alarm,set,nan,set the alarm tone,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+1774,alarm,query,nan,show me my alarms,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+1775,alarm,query,nan,how many alarms do i have set,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+1776,alarm,query,nan,what times do my alarms go off,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+1787,alarm,query,nan,do i have any alarms set,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+1788,alarm,query,nan,are there any alarms going off [date : today],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+1789,alarm,query,nan,can you tell me if i have any alarms set,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+1799,alarm,query,nan,show me all scheduled alarms,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+1800,alarm,query,nan,how many alarms are currently set,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+1801,alarm,query,nan,i want to see all set alarms,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+1819,alarm,remove,MOD,remove alarm of [time : seven thirty am] on [date : monday],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+1820,alarm,remove,MOD,remove [date : tuesday] alarm of [time : nine am],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+1821,alarm,remove,MOD,remove [time : six am] alarm of [time : whole week] for future,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+1865,alarm,set,MOD,set alarm of only [date : monday] [timeofday : morning] [time : six am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+1866,alarm,set,MOD,set alarm of every [date : tuesday] of [date : march] month [timeofday : morning] [time : eight am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+1867,alarm,set,MOD,set alarm of [time : whole week] [timeofday : morning] [time : ten am] in [date : april] month,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+1881,alarm,query,nan,checkout [date : today] set alarm of [time : ten am],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+1882,alarm,query,nan,checkout [date : today] third set alarm,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+1883,alarm,query,nan,checkout [date : today] alarm of meeting,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+1927,alarm,set,nan,please set alarm at [time : five pm],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+1928,alarm,set,nan,wake me up at [time : six am],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+1929,alarm,remove,nan,turn off the alarm,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+2037,alarm,query,nan,when does my alarm go off,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+2038,alarm,query,nan,have i got any alarms set,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+2039,alarm,query,nan,what alarms are on right now,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+2072,alarm,set,nan,put alarm at [time : five am],nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+2092,alarm,set,nan,set alarm at [time : five am],"date, time",How would you ask your PDA to set an alarm?,False,False
+2093,alarm,set,nan,wake me up at [time : five am],"date, time",How would you ask your PDA to set an alarm?,False,False
+2094,alarm,set,nan,alert me at [time : five] hours,"date, time",How would you ask your PDA to set an alarm?,False,False
+2172,alarm,query,nan,have i set any alarm for [date : today],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+2173,alarm,query,nan,if there are any alarms set then let me know,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,True,False
+2174,alarm,remove,nan,please remove the alarm which i set for [date : today] [timeofday : morning],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+2181,alarm,set,nan,set alarm at [time : six thirty am],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+2182,alarm,set,nan,set alarm [time : half an hour from my meal time],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+2297,alarm,query,nan,is my [alarm_type : wake up] alarm set a [time : six am],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+2298,alarm,query,nan,what time is set for my [alarm_type : wake up] alarm,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+2299,alarm,set,nan,set my alarm for [time : six am] [date : tomorrow],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+2358,alarm,set,nan,wake me up,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+2359,alarm,query,nan,when is the next alarm,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+2360,alarm,remove,nan,remove my [time : four am] alarm,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+2371,alarm,set,nan,open alarm,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+2392,alarm,set,MOD,set an alarm for [date : tomorrow] at [time : six] in the [timeofday : morning],"date, time",How would you ask your PDA to set an alarm?,False,False
+2393,alarm,set,nan,get me up in [time : half an hour],"date, time",How would you ask your PDA to set an alarm?,False,False
+2394,alarm,set,nan,ring the alarm when i get home,"date, time",How would you ask your PDA to set an alarm?,False,False
+2395,alarm,remove,nan,turn off my alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+2396,alarm,remove,nan,snooze,"date, time",How would you ask your PDA to remove an alarm you have set.,True,False
+2397,alarm,remove,nan,change my alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+2424,alarm,set,nan,make an alarm,"date, time",How would you ask your PDA to set an alarm?,False,False
+2425,alarm,set,MOD,fix an alarm,"date, time",How would you ask your PDA to set an alarm?,False,False
+2426,alarm,set,nan,set an alarm,"date, time",How would you ask your PDA to set an alarm?,False,False
+2482,alarm,set,nan,wake up time,"event_name, event_requency, time",Write what you would tell your PDA in the following scenario: you want to set a repeating reminder in your calendar.,False,False
+2520,alarm,set,nan,wake me up at [time : four am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+2521,alarm,set,nan,alarm for [time : ten am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+2522,alarm,set,nan,set alarm for [time : twelve weeks from today] at [time : eight am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+2578,alarm,set,MOD,set alarm for [time : six am] [date : tomorrow],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+2579,alarm,set,MOD,add an alarm for [date : tomorrow] [timeofday : morning] at [time : six am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+2580,alarm,set,MOD,make an alarm and wake me up at [time : six am] [date : tomorrow] [timeofday : morning],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,True,False
+2682,alarm,query,nan,alarm status,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+2683,alarm,query,nan,please check alarms,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+2684,alarm,query,nan,what alarms are upcoming,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+2767,alarm,set,nan,set an alarm for time,"date, time",How would you ask your PDA to set an alarm?,False,False
+2768,alarm,set,nan,set my alarm for time,"date, time",How would you ask your PDA to set an alarm?,False,False
+2769,alarm,set,nan,alarm set for time,"date, time",How would you ask your PDA to set an alarm?,False,False
+2770,alarm,set,MOD_XL,set my alarm for [date : tuesday] at [time : six pm],"date, time",How would you ask your PDA to set an alarm?,False,False
+2771,alarm,set,nan,i need to set an alarm for next [date : friday] at [timeofday : noon],"date, time",How would you ask your PDA to set an alarm?,False,False
+2832,alarm,set,nan,set an alarm for [date : tomorrow] [timeofday : morning] at [time : eight],"date, time",How would you ask your PDA to set an alarm?,False,False
+2833,alarm,set,nan,please set the alarm for next [date : friday] at [time : six thirty am],"date, time",How would you ask your PDA to set an alarm?,False,False
+2834,alarm,set,nan,need an alarm set for [date : sunday] at [time : five] in the [timeofday : morning],"date, time",How would you ask your PDA to set an alarm?,False,False
+2885,alarm,set,nan,make an alarm for me at [time : five am] [date : tomorrow],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+2886,alarm,set,nan,set the alarm for [time : two hours] from now,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+2887,alarm,set,nan,set an alarm for [time : one hour] from now,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+2962,alarm,query,nan,would you please check to see if i've set my alarm for [date : tomorrow] [timeofday : morning],nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+2963,alarm,query,nan,how many alarms do i have set for [timeofday : morning] hours between [time : six and nine am],nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+2964,alarm,query,nan,did i remember to set a reminder alarm for my next [event_name : doctor's appointment],nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+3014,alarm,set,nan,wake me up at [time : five hundred and thirty],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+3015,alarm,set,nan,set an alarm for [time : five hundred and thirty],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+3016,alarm,set,nan,set my alarm for [time : five hundred and thirty],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+3126,alarm,query,nan,how many alarms have i set,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+3173,alarm,query,nan,tell me my alarms,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+3174,alarm,query,nan,what alarms have been set for me,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+3175,alarm,query,nan,do i have alarms set,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+3176,alarm,query,nan,do i have alarms set for [date : today],nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+3180,alarm,remove,nan,cancel the alarm that is set for [date : tomorrow] at [time : eight am],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+3181,alarm,remove,nan,please cancel all alarms for [date : tomorrow],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+3182,alarm,remove,nan,please remove any alarms that i have set,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+3264,alarm,query,nan,what time are my alarms,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+3265,alarm,query,nan,is there an alarm for [time : ten am],nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+3294,alarm,remove,nan,remove set alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+3295,alarm,remove,nan,delete scheduled alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+3296,alarm,remove,nan,cancel alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+3351,alarm,remove,nan,reset alarm,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+3352,alarm,query,nan,what time is alarm set for,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+3353,alarm,query,nan,next alarm,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+3369,alarm,remove,nan,please remove this alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+3370,alarm,remove,nan,i would like this alarm permanently removed,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+3371,alarm,remove,nan,this alarm needs to be permanently silenced,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+3455,alarm,query,nan,what time is my wakeup alarm set for,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+3456,alarm,query,nan,do i have any alarms for [date : tomorrow] [timeofday : morning],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+3457,alarm,query,nan,when will my alarm go off in the [timeofday : morning],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+3458,alarm,remove,nan,remove my early alarms,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+3459,alarm,remove,nan,delete my [time : six am] alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+3460,alarm,remove,nan,clear my [time : nine am] alarms,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+3463,alarm,set,nan,i need to get going at [time : eight am] [date : tomorrow] set up an alarm [time : thirty minutes before that],"date, time",How would you ask your PDA to set an alarm?,True,False
+3464,alarm,set,nan,[event_name : mike will send me an email] [date : tomorrow] can you please set up an alarm [time : fifteen minutes] after receiving that email,"date, time",How would you ask your PDA to set an alarm?,True,False
+3465,alarm,set,nan,if my package shows that it is for [order_type : delivery] [date : tomorrow] can you set up an alarm [time : one hour after] thank you,"date, time",How would you ask your PDA to set an alarm?,True,False
+3469,alarm,query,nan,do i have any alarms set for [time : six am] [date : tomorrow],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+3470,alarm,query,nan,show me my alarms i have set,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+3471,alarm,query,nan,what alarms have i set for [date : tomorrow],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+3490,alarm,set,nan,please set an alarm for [time : seven hundred and thirty am] [date : tomorrow],"date, time",How would you ask your PDA to set an alarm?,False,False
+3491,alarm,set,nan,i'd like an alarm set for this [date : saturday] at [time : ten],"date, time",How would you ask your PDA to set an alarm?,False,False
+3492,alarm,set,nan,set an [time : eight hundred am] alarm for next [date : tuesday],"date, time",How would you ask your PDA to set an alarm?,False,False
+3530,alarm,set,nan,wake me up at this time,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,True,False
+3532,alarm,set,nan,set a new alarm for that time,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,True,False
+3536,alarm,set,nan,set alarm for [time : six am] [date : everyday],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+3537,alarm,set,nan,set alarm for [date : tomorrow] [timeofday : morning] at [time : six am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+3560,alarm,set,MOD_XL,set alarm for [timeofday : noon] [date : tomorrow],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+3561,alarm,set,nan,can you set the alarm for [time : one hundred and thirty],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+3562,alarm,set,nan,set alarm for [date : sixth of june two thousand seventeen] at [time : five am],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+3566,alarm,remove,nan,cancel all alarms,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+3567,alarm,remove,nan,cancel alarm for [date : tomorrow],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+3568,alarm,remove,nan,cancel alarm for [date : tenth of march two thousand seventeen],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+3594,alarm,remove,nan,remove all alarms,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+3595,alarm,remove,nan,remove alarms set for [date : tomorrow],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+3596,alarm,remove,nan,remove all alarms set [date : today],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+3636,alarm,set,nan,set my alarm for [date : sunday] at [time : nine] in the [timeofday : morning],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+3637,alarm,set,nan,set an alarm for me for [date : tomorrow] at [time : seven pm],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+3638,alarm,set,nan,i need an alarm for [date : sunday] at [time : eight am] can you please set one for me,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+3669,alarm,query,nan,what time is my alarm set for,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+3670,alarm,query,nan,what time am i waking up [date : tomorrow],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+3712,alarm,set,nan,please set the alarm for [time : eight pm] [date : wednesday] [timeofday : evening],"date, time",How would you ask your PDA to set an alarm?,False,False
+3713,alarm,set,nan,at [time : seven am] [date : tomorrow] [timeofday : morning] ring the alarm,"date, time",How would you ask your PDA to set an alarm?,False,False
+3727,alarm,set,nan,set an alarm for [time : eight am],"date, time",How would you ask your PDA to set an alarm?,False,False
+3728,alarm,set,nan,please set my alarm for [time : five pm],"date, time",How would you ask your PDA to set an alarm?,False,False
+3729,alarm,set,nan,i need an alarm for [time : nine pm],"date, time",How would you ask your PDA to set an alarm?,False,False
+3775,alarm,remove,nan,remove the latest alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+3776,alarm,set,nan,change alarm setting,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+3786,alarm,set,nan,let me know when it is [time : ten],nan,How would you ask your PDA what time it is?,False,False
+3804,alarm,set,nan,please set an alarm at [time : seven am] [date : tomorrow] [timeofday : morning],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+3805,alarm,set,nan,send me a [alarm_type : wake up] alert at [time : seven am] [date : tomorrow] [timeofday : morning],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+3806,alarm,set,nan,i would like a [alarm_type : wake up] alarm at [time : seven am] [date : tomorrow],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+3809,alarm,remove,nan,please turn off the alarm,socket_type,Write what you would tell your PDA in the following scenario: You want to turn on or off your smart plug socket.,False,False
+3821,alarm,set,nan,remind me at [time : one thousand three hundred],"date, time",How would you ask your PDA to set an alarm?,False,False
+3822,alarm,set,nan,wake me at [time : daybreak],"date, time",How would you ask your PDA to set an alarm?,False,False
+3823,alarm,set,nan,get me to alarm settings,"date, time",How would you ask your PDA to set an alarm?,True,False
+3847,alarm,set,nan,i need to get up at [time : seven am],"date, time",How would you ask your PDA to set an alarm?,False,False
+3848,alarm,set,nan,is my alarm set for [time : seven am],"date, time",How would you ask your PDA to set an alarm?,False,False
+3892,alarm,remove,nan,turn off all of my alarms,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+3893,alarm,remove,nan,turn off my alarms,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+3894,alarm,remove,nan,take off my alarms,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+3948,alarm,query,nan,when are the next three alarms set to go off,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,True,False
+3963,alarm,set,nan,set up an alarm clock at [time : one pm],nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+4033,alarm,set,nan,set an alarm for [time : seven am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+4034,alarm,set,nan,make an alarm for the [timeofday : morning],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+4035,alarm,set,nan,create an alarm for [time : five pm],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+4075,alarm,set,nan,i need an alarm set for [time : five hundred and thirty am] [date : tomorrow],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+4076,alarm,set,nan,i want an alarm for [time : three] [date : today],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+4077,alarm,set,nan,set my alarm to go off in [time : an hour],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,True,False
+4086,alarm,query,nan,do i have an alarm set for [date : tomorrow],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+4087,alarm,query,nan,what alarms are set for [date : this week],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+4088,alarm,query,nan,find any alarms i have set for [date : today],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,True,False
+4152,alarm,set,nan,wake me up at [time : seven am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+4153,alarm,set,nan,i need a [time : six am] wakeup call,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+4154,alarm,set,nan,get me up at [time : eight am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+4158,alarm,set,nan,set alarm for [time : nine am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+4159,alarm,set,nan,please set an alarm for me,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+4160,alarm,set,nan,set an alarm for me for [date : tomorrow],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+4164,alarm,query,nan,list alarms,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+4165,alarm,query,nan,tell me about alarms,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+4166,alarm,query,nan,please read me my alarms,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+4189,alarm,set,nan,wake me up at [time : five am] [timeofday : every morning],"event_name, event_requency, time",Write what you would tell your PDA in the following scenario: you want to set a repeating reminder in your calendar.,False,False
+4237,alarm,remove,nan,i need to delete the alarm for church on [date : sundays] at [time : eleven am],"date, time",How would you ask your PDA to remove an alarm you have set.,True,False
+4238,alarm,remove,nan,please remove the alarm that is set for [date : weekdays] at [time : nine],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+4239,alarm,remove,nan,i no longer need the daily [time : five pm] alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+4289,alarm,query,nan,what time do i have my alarm set for [date : tomorrow],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+4290,alarm,query,nan,is the alarm to the backdoor set and ready to go,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,True
+4291,alarm,query,nan,what is the [alarm_type : wake up] time for my alarm i have set for the flight [date : this weekend],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+4313,alarm,query,nan,list current set alarms,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+4314,alarm,query,nan,what alarms are currently set,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+4315,alarm,query,nan,any alarms currently listed,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+4334,alarm,remove,nan,please remove the alarm set for [date : wednesday] called [event_name : kickball],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+4335,alarm,remove,nan,please delete the [date : wednesday] [timeofday : evening] alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+4336,alarm,remove,nan,i do not need the alarm for kickball on [date : wednesday] [timeofday : evening] any longer,"date, time",How would you ask your PDA to remove an alarm you have set.,True,False
+4377,alarm,query,nan,show me all of my active alarms,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+4378,alarm,query,nan,show me the alarms that are set,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+4396,alarm,set,nan,i need you to set an alarm,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+4397,alarm,set,nan,can you set an alarm for me,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+4404,alarm,set,nan,set an alarm for [time : nine pm],"date, time",How would you ask your PDA to set an alarm?,False,False
+4405,alarm,set,nan,alert me in [time : three hours],"date, time",How would you ask your PDA to set an alarm?,False,False
+4408,alarm,set,nan,change my alarms to [time_zone : mountain] time,"location_start, location_stop, time",How would you ask your PDA to convert a time between two time zones?,False,False
+4413,alarm,query,nan,are there any alarms for [date : today],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+4414,alarm,query,nan,how many alarms are set,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+4415,alarm,query,nan,show me the list of alarms,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+4426,alarm,set,nan,please wake me up at [time : eight am],"date, time",How would you ask your PDA to set an alarm?,False,False
+4427,alarm,set,nan,set my alarm for [time : eight am],"date, time",How would you ask your PDA to set an alarm?,False,False
+4428,alarm,set,nan,alarm me at [time : eight am],"date, time",How would you ask your PDA to set an alarm?,False,False
+4438,alarm,set,nan,please set an alarm at [time : six am],"date, time",How would you ask your PDA to set an alarm?,False,False
+4439,alarm,set,nan,set an alarm at [time : six am],"date, time",How would you ask your PDA to set an alarm?,False,False
+4440,alarm,set,nan,could you please set an alarm at [time : six am],"date, time",How would you ask your PDA to set an alarm?,False,False
+4470,alarm,remove,nan,remove all of my alarms,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+4471,alarm,remove,nan,remove my [alarm_type : wake up] alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+4472,alarm,remove,nan,Get rid of my current alarms,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+4488,alarm,set,IRR_XL,its ok,"date, time",How would you ask your PDA to set an alarm?,False,True
+4489,alarm,set,IRR_XL,volume check,"date, time",How would you ask your PDA to set an alarm?,False,True
+4490,alarm,set,IRR_XL,quality of sound check,"date, time",How would you ask your PDA to set an alarm?,False,True
+4538,alarm,query,nan,what time is my alarm set for [date : tomorrow] [timeofday : morning],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+4539,alarm,set,nan,i need to set an alarm [date : tomorrow] at [time : one thousand two hundred pm] to remind me to [event_name : take my medication],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+4540,alarm,set,nan,i want to set an alarm when i'm driving home [date : tomorrow] to remember to [event_name : stop at the store and get food],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,True,False
+4555,alarm,set,nan,please put on an alarm for [time : eight am],"date, time",How would you ask your PDA to set an alarm?,False,False
+4556,alarm,set,nan,please set my alarm clock for [time : eight am],"date, time",How would you ask your PDA to set an alarm?,False,False
+4557,alarm,set,nan,i need an alarm set for [time : eight am],"date, time",How would you ask your PDA to set an alarm?,False,False
+4560,alarm,query,nan,just to confirm you set the alarm to go off at [time : eight hundred],nan,How would you tell your PDA to confirm a setting,False,False
+4569,alarm,query,nan,which alarms are set in the [device_type : phone],nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+4570,alarm,query,nan,what is wake up time,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+4571,alarm,query,nan,is there an alarm at [time : four am],nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+4587,alarm,query,nan,what alarm time have you set,nan,How would you ask your PDA to tell you about the alarms it has set.,True,False
+4588,alarm,query,nan,what time have you set the alarm,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+4589,alarm,query,nan,let me know the alarm time,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+4598,alarm,query,nan,do i currently have any alarms set,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+4599,alarm,query,nan,what alarms do i have set right now,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+4600,alarm,query,nan,is my reminder alarm set for [event_name : dance class],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+4616,alarm,query,nan,remind me about my alarms [date : today],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+4617,alarm,query,nan,what alarms did i set [date : today],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+4618,alarm,query,nan,let me know about any alarms set [date : today],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+4679,alarm,remove,nan,remove the alarm set for [time : four hundred am],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+4680,alarm,remove,nan,disable all alarms set for [date : today],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+4681,alarm,remove,nan,snooze all [date : today's] alarms permanently,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+4784,alarm,query,nan,please read out all the alarms that are set,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+4786,alarm,query,nan,could you tell me about the alerts i have set,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+4811,alarm,set,nan,set an alarm for [time : ten] o'clock [date : tomorrow] [timeofday : morning],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+4812,alarm,set,nan,wake me up at [time : ten],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+4813,alarm,set,nan,i need to get up at [time : ten] [date : tomorrow],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+4885,alarm,query,nan,review set alarms,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+4886,alarm,query,nan,review all alarms,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+4892,alarm,remove,nan,remove my earliest alarm for [date : tomorrow],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+4893,alarm,remove,nan,delete the [event_name : meeting] alarm at [time : two pm] on [date : tuesday],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+4894,alarm,remove,nan,get rid of my [alarm_type : wake up] alarm set for [date : saturday],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+4947,alarm,set,nan,alert me at [time : two hundred and thirty],"date, time",How would you ask your PDA to set an alarm?,False,False
+4948,alarm,set,nan,wake me up at [time : nine am],"date, time",How would you ask your PDA to set an alarm?,False,False
+4975,alarm,query,nan,what alarm do i have set for [date : today],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+4976,alarm,query,nan,what time will my alarm wake me up,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+4977,alarm,query,nan,do i have an alarm set for [date : today],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+5000,alarm,query,nan,have i set any alarms in the [timeofday : morning],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+5001,alarm,query,nan,at what time is my alarm set,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+5002,alarm,set,IRR_XL,postpone my alarm by [time : fifteen minutes],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,True,False
+5026,alarm,set,nan,set an alarm for [time : seven thirty am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+5027,alarm,set,nan,wake me up at [time : eight] o'clock,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+5028,alarm,set,nan,remind me at [time : six thirty pm],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+5052,alarm,remove,nan,disable the alarm at [time : ten am],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+5053,alarm,remove,nan,cancel the alarm at [time : four am] [time : ten pm],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+5054,alarm,remove,nan,turn off this alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,True,False
+5074,alarm,query,nan,can you tell me about the alarm called bed,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+5075,alarm,query,nan,what's my next scheduled alarm,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+5076,alarm,query,nan,what's the description for the alarm at [time : eleven am],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+5099,alarm,query,nan,show my alarms,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+5100,alarm,query,nan,list all of my alarms,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+5101,alarm,query,nan,all alarms,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+5135,alarm,remove,IRR_XL,ask them to remember to always to lock the door and keep a careful watch on their keys,"date, time",How would you ask your PDA to remove an alarm you have set.,False,True
+5136,alarm,remove,IRR_XL,teach [relation : children] to never answer the door when home alone,"date, time",How would you ask your PDA to remove an alarm you have set.,False,True
+5137,alarm,remove,IRR_XL,show them where the keys to internal locks are located in case they have to exit your home quickly,"date, time",How would you ask your PDA to remove an alarm you have set.,False,True
+5147,alarm,query,nan,what alarms are coming up,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+5148,alarm,query,nan,please tell me about upcoming alarms,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+5149,alarm,query,nan,show me the alarms i've set,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+5159,alarm,set,nan,tell me when it is [time : five pm],nan,Write what you would tell your PDA in the following scenario: You want to the time.,False,False
+5224,alarm,set,nan,set an alarm for [time : six thirty am],"date, time",How would you ask your PDA to set an alarm?,False,False
+5225,alarm,set,nan,set alarm for [time : one hour from now],"date, time",How would you ask your PDA to set an alarm?,False,False
+5226,alarm,set,nan,set an alarm for [date : thursday] at [time : seven pm],"date, time",How would you ask your PDA to set an alarm?,False,False
+5249,alarm,query,nan,please list all my alarms,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+5250,alarm,query,nan,what alarms do i have set,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,True,False
+5251,alarm,query,nan,how many alarms are currently on my phone,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+5270,alarm,set,nan,set an alarm for [time : five am],"date, time",How would you ask your PDA to set an alarm?,False,False
+5271,alarm,set,nan,please set an alarm for [time : ten pm],"date, time",How would you ask your PDA to set an alarm?,False,False
+5272,alarm,set,nan,can you set an alarm for [time : seven am],"date, time",How would you ask your PDA to set an alarm?,False,False
+5275,alarm,set,nan,remind me at [time : five pm],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+5276,alarm,set,IRR_XL,reminder,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,True
+5286,alarm,remove,nan,cancel my alarm for [date : tomorrow] [timeofday : morning],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+5287,alarm,remove,nan,do not wake me up [date : tomorrow],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+5288,alarm,remove,nan,do not wake me up on [time : weekends],"date, time",How would you ask your PDA to remove an alarm you have set.,True,False
+5291,alarm,set,nan,please we're the following alarm,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,True
+5292,alarm,set,nan,set alarm for [time : eight am] [date : tomorrow],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+5293,alarm,set,nan,set an alarm for [date : tomorrow] [date : monday] at [time : eight am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+5299,alarm,query,nan,list my different alarm,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+5300,alarm,query,nan,what are my alarms,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+5316,alarm,set,nan,wake me up [date : tomorrow] at [time : six am],"date, time",How would you ask your PDA to set an alarm?,False,False
+5317,alarm,set,nan,set the alarm for [time : nine am] on [time : weekends],"date, time",How would you ask your PDA to set an alarm?,True,False
+5318,alarm,set,nan,the set alarm for [time : nine pm] on [date : Thursday] [timeofday : night],"date, time",How would you ask your PDA to set an alarm?,False,False
+5329,alarm,query,MOD,tell me what alarms are set for me,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+5330,alarm,query,nan,list all of my upcoming alarms,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+5331,alarm,query,MOD,what is on my alarm schedule,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+5383,alarm,query,nan,please tell me what alarms are on,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+5390,alarm,set,nan,wake me up at [time : six thirty],"date, time",How would you ask your PDA to set an alarm?,False,False
+5391,alarm,set,MOD,please set the alarm for [time : seven],"date, time",How would you ask your PDA to set an alarm?,False,False
+5392,alarm,set,nan,set the alarm,"date, time",How would you ask your PDA to set an alarm?,False,False
+5477,alarm,set,nan,wake me up in [time : thirty minutes],"date, time",How would you ask your PDA to set an alarm?,False,False
+5478,alarm,set,nan,set an alarm for [time : eight pm],"date, time",How would you ask your PDA to set an alarm?,False,False
+5479,alarm,set,nan,set an alarm for [time : five minutes from now],"date, time",How would you ask your PDA to set an alarm?,False,False
+5480,alarm,query,nan,is my alarm set,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+5481,alarm,set,nan,can you set my alarm,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+5482,alarm,set,nan,please set my alarm,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+5510,alarm,remove,nan,remove my [time : six am] alarm,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+5511,alarm,remove,nan,remove my [time : eight pm] alarm and set it to [time : seven pm],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,True,False
+5512,alarm,set,nan,add a [time : five am] alarm in place of my [time : nine pm] alarm,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,True,False
+5568,alarm,remove,nan,turn off my first alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+5569,alarm,remove,nan,take away my alarm for [date : tomorrow] at [time : four thirty am],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+5570,alarm,remove,nan,turn off all alarms,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+5580,alarm,set,nan,turn on my first scheduled alarm,"date, time",How would you ask your PDA to set an alarm?,False,False
+5581,alarm,set,nan,turn on an alarm for [time : three thirty pm] [date : today],"date, time",How would you ask your PDA to set an alarm?,False,False
+5582,alarm,set,nan,set an alarm for [time : five am] [date : tomorrow] [timeofday : morning],"date, time",How would you ask your PDA to set an alarm?,False,False
+5634,alarm,remove,nan,remove my work alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+5635,alarm,remove,nan,remove my bedtime alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+5636,alarm,remove,nan,remove [person : finlee's] bedtime alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+5681,alarm,query,nan,what times are my alarms set for,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+5682,alarm,query,nan,what days are my alarms set for,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+5690,alarm,set,nan,confirm that the alarm is set for [date : tomorrow],nan,How would you tell your PDA to confirm a setting,False,False
+5723,alarm,set,nan,alarm time for [time : twelve pm],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+5724,alarm,set,nan,set my alarm for [time : twelve pm],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+5732,alarm,set,nan,make a new alarm,"date, time",How would you ask your PDA to set an alarm?,False,False
+5733,alarm,set,nan,i need an alarm,"date, time",How would you ask your PDA to set an alarm?,False,False
+5756,alarm,set,nan,please set the alarm for [date : tomorrow] [time : five am],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+5757,alarm,set,nan,set the alarm for [date : tomorrow] [time : five am],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+5758,alarm,set,nan,will you please set the alarm for [date : tomorrow] [time : five am],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+5761,alarm,set,nan,set new alarm fo [time : five am],"date, time",How would you ask your PDA to set an alarm?,False,False
+5762,alarm,set,nan,please create a new alarm,"date, time",How would you ask your PDA to set an alarm?,False,False
+5763,alarm,set,nan,[time : six am] alarm please,"date, time",How would you ask your PDA to set an alarm?,False,False
+5777,alarm,set,nan,new alarm for [time : six am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+5778,alarm,set,nan,create an alarm for [time : six am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+5779,alarm,set,nan,set an alarm for [time : six am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+5795,alarm,remove,nan,cancel alarms,"date, time",How would you ask your PDA to remove an alarm you have set.,True,False
+5796,alarm,remove,nan,cancel yoga alarms,"date, time",How would you ask your PDA to remove an alarm you have set.,True,False
+5797,alarm,remove,nan,cancel all [alarm_type : soccer practice] alarms,"date, time",How would you ask your PDA to remove an alarm you have set.,True,False
+5810,alarm,query,nan,is there any alarm after [time : five am],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+5811,alarm,remove,nan,remove alarm if any,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+5812,alarm,remove,nan,i dont want any alarms,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+5816,alarm,query,nan,check if any alarm is there after [time : five am],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+5817,alarm,remove,nan,remove all alarms if any,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+5818,alarm,query,nan,check if default alarm is set,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+5840,alarm,set,nan,Set an alarm for the day,"date, order, time",Write what you would tell your PDA in the following scenario: You want to have information about a particular date.,True,False
+5866,alarm,set,nan,call me at [time : six am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,True,False
+5867,alarm,set,nan,i wanna get up at [time : six am],"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+5877,alarm,set,nan,can you set my alarm for [time : seven thirty am],"date, time",How would you ask your PDA to set an alarm?,False,False
+5878,alarm,set,nan,please wake me up at [time : seven thirty am],"date, time",How would you ask your PDA to set an alarm?,False,False
+5879,alarm,set,nan,set a [alarm_type : continuous alarm] without the option to snooze for [time : seven am] please,"date, time",How would you ask your PDA to set an alarm?,False,False
+5926,alarm,query,nan,what alarms do i have set for [date : today],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+5966,alarm,query,nan,did you set the alarm for [time : five am],nan,How would you tell your PDA to confirm a setting,False,False
+6042,alarm,set,nan,fix alarm,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+6043,alarm,set,nan,update alarm,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+6044,alarm,set,nan,alarm set,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+6075,alarm,set,nan,set the alarm for [time : five am],"date, time",How would you ask your PDA to set an alarm?,False,False
+6096,alarm,query,nan,what alarms do you have set,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+6097,alarm,query,nan,are there any alarms set,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+6098,alarm,query,nan,provide me the alarm times you have set,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+6138,alarm,set,nan,set alarm for [timeofday : morning] [time : six],"date, time",How would you ask your PDA to set an alarm?,False,False
+6139,alarm,set,nan,set alarm for [date : tomorrow] [time : six am],"date, time",How would you ask your PDA to set an alarm?,False,False
+6140,alarm,set,nan,set alarm [time : six am],"date, time",How would you ask your PDA to set an alarm?,False,False
+6186,alarm,remove,nan,remove all alarms from [date : sunday],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,True,False
+6187,alarm,remove,nan,remove number three alarm of list,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+6188,alarm,remove,nan,remove alarm of [time : six am] on [date : tuesday],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+6229,alarm,remove,nan,remove [time : seven am] alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+6230,alarm,remove,nan,delete my [time : eight pm] alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+6231,alarm,remove,nan,get rid of the [time : five pm] alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+6283,alarm,set,nan,set my alarm for [time : six am],"date, time",How would you ask your PDA to set an alarm?,False,False
+6284,alarm,set,nan,i need you to get me up at [time : six am],"date, time",How would you ask your PDA to set an alarm?,False,False
+6300,alarm,remove,nan,can you please remove the alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+6301,alarm,remove,IRR,ibset a ararl can you turn it off,"date, time",How would you ask your PDA to remove an alarm you have set.,False,True
+6302,alarm,remove,nan,will you turn the alarm off for me,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+6320,alarm,query,nan,did i set my [alarm_type : house alarm],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,True,False
+6321,alarm,query,nan,what alarms are set in the [house_place : house],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,True,False
+6322,alarm,query,nan,tell me if my alarm is set for the [timeofday : morning],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+6323,alarm,set,nan,please set an alarm at [time : four am] [date : tomorrow],"date, time",How would you ask your PDA to set an alarm?,False,False
+6324,alarm,set,nan,please make me wake up at [time : four am] [date : tomorrow],"date, time",How would you ask your PDA to set an alarm?,False,False
+6325,alarm,set,nan,please arrange to wake me up at [time : three am] alarm,"date, time",How would you ask your PDA to set an alarm?,False,False
+6332,alarm,set,nan,wake me up at time,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,True,False
+6333,alarm,set,nan,turn on my alarm,"date, time",Write what you would tell your PDA in the following scenario: to set an alarm.,False,False
+6375,alarm,query,nan,please let me know the [timeofday : morning] alarm time for [date : weekdays],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+6376,alarm,query,nan,please let me know the [timeofday : morning] alarm time kept for [time : weekends],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,True,False
+6377,alarm,query,nan,please let me know the alarm kept for [date : tuesday's] [event_name : meeting],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+6405,alarm,set,nan,set alarm at [time : two am],"date, time",How would you ask your PDA to set an alarm?,False,False
+6406,alarm,set,nan,set alarm on [date : twenty fifth] [date : may] at [time : five pm],"date, time",How would you ask your PDA to set an alarm?,False,False
+6407,alarm,set,nan,set alarm at [time : nine am] on [date : next sunday],"date, time",How would you ask your PDA to set an alarm?,False,False
+6471,alarm,query,nan,report alarm settings,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+6472,alarm,query,nan,tell me when the next alarms are for,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+6482,alarm,query,nan,show me the alarms that you have set [date : today] [timeofday : morning],nan,How would you ask your PDA to tell you about the alarms it has set.,True,False
+6483,alarm,query,nan,please show me the alarms that you have set [date : sunday] [timeofday : morning],nan,How would you ask your PDA to tell you about the alarms it has set.,True,False
+6484,alarm,query,nan,show for me the alarms that you have set [date : tomorrow] [timeofday : morning],nan,How would you ask your PDA to tell you about the alarms it has set.,True,False
+6491,alarm,set,nan,wake me at [time : seven am],nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+6492,alarm,set,nan,alarm [time : ten am],nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+6493,alarm,set,nan,alarm [time : five pm],nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+6508,alarm,set,nan,set an alarm at [time : six am] [date : tomorrow],"date, time",How would you ask your PDA to set an alarm?,False,False
+6509,alarm,set,nan,ensure i have to get up at [time : six] in [timeofday : morning],"date, time",How would you ask your PDA to set an alarm?,False,False
+6557,alarm,query,IRR,tap start and then select settings,nan,How would you ask your PDA to tell you about the alarms it has set.,False,True
+6558,alarm,query,IRR,tap the system tab tap clock and then select the alarms tab tap and select the day you want the alarm to sound double tap the time displayed on the extreme left to set a time for the alarm,nan,How would you ask your PDA to tell you about the alarms it has set.,False,True
+6559,alarm,query,IRR,then tap ok,nan,How would you ask your PDA to tell you about the alarms it has set.,False,True
+6566,alarm,remove,nan,please remove the the alarm which i set,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+6567,alarm,remove,nan,disable the alarm which is set at [time : nine thirty pm],"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+6568,alarm,remove,nan,unset all alarms which are set,"date, time",How would you ask your PDA to remove an alarm you have set.,True,False
+6648,alarm,query,nan,what is [date : tomorrow's] alarm time set to,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+6649,alarm,query,nan,show me what alarm times i've set for the [time : week],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+6650,alarm,query,nan,give me the alarm times for the [time : next two days],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+6724,alarm,set,nan,set an alarm for [time : five] o'clock this [timeofday : evening] labelled [event_name : taxi],"date, time",How would you ask your PDA to set an alarm?,False,False
+6725,alarm,set,nan,wake me up at [time : six] o'clock [date : tomorrow] [timeofday : morning],"date, time",How would you ask your PDA to set an alarm?,False,False
+6726,alarm,set,nan,set an alarm in an [time : hour's time],"date, time",How would you ask your PDA to set an alarm?,False,False
+6819,alarm,query,nan,is there any alarm active,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+6820,alarm,query,nan,tell me about the alarm timings,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+6821,alarm,remove,nan,reset the alarm,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+6851,alarm,query,nan,list all set alarms,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+6852,alarm,query,nan,are there any alarms set what are they,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+6864,alarm,query,nan,check if alarm is set for [time : six am],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+6865,alarm,query,nan,confirm i have set an alarm for [time : six am],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+6866,alarm,query,nan,check if i have set any alarm for [timeofday : morning],nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+6875,alarm,set,nan,please set alarm to my mobile phones,"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,True
+6876,alarm,set,nan,please set alarm for [date : today],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+6877,alarm,set,nan,please set alarm for [date : all days],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+6950,alarm,remove,nan,could you please remove the set of alarms between [time : eight and nine],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+6951,alarm,query,nan,do i have alarms set [time : before six] in the [timeofday : morning],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+6952,alarm,query,nan,did I set an alarm [event_name : to have tablets] in the [timeofday : noon],"date, time",Write what you would tell your PDA in the following scenario: you want to know about any alarms you have set.,False,False
+6960,alarm,query,nan,let me know about the alarms you set,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+6961,alarm,query,nan,at what time have you set alarm for me,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+6962,alarm,query,nan,tell me the time of the alarm you set,nan,How would you ask your PDA to tell you about the alarms it has set.,True,False
+7008,alarm,query,nan,would like to know the alarm you sent,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+7009,alarm,query,nan,may i know the about alarm you set,nan,How would you ask your PDA to tell you about the alarms it has set.,False,True
+7010,alarm,query,nan,please tell about the alarms,nan,How would you ask your PDA to tell you about the alarms it has set.,False,False
+7035,alarm,set,nan,open clock,"date, time",How would you ask your PDA to set an alarm?,True,False
+7036,alarm,set,nan,set an alarm for [time : six am],"date, time",How would you ask your PDA to set an alarm?,False,False
+7037,alarm,set,nan,wake me up at [time : five thirty],"date, time",How would you ask your PDA to set an alarm?,False,False
+7086,alarm,set,nan,alarm,"date, event_name, time",How would you ask your PDA to remind you about something at some point in the future?,True,False
+7093,alarm,set,nan,create an alarm for [date : today] at [time : ten am],"date, time",How would you ask your PDA to set an alarm?,False,False
+7094,alarm,set,nan,alert me at [time : ten am] please,"date, time",How would you ask your PDA to set an alarm?,False,False
+7095,alarm,set,nan,open alarm and create an alert for [time : ten am],"date, time",How would you ask your PDA to set an alarm?,False,False
+7117,alarm,query,nan,what home alarms have been set,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,True
+7118,alarm,query,nan,are there any alarms currently set,nan,Write what you would tell your PDA in the following scenario: you to know about any alarms you have set.,False,False
+7183,alarm,remove,nan,remove alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+7184,alarm,remove,nan,delete alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+7185,alarm,remove,nan,forget alarm,"date, time",How would you ask your PDA to remove an alarm you have set.,False,False
+7343,alarm,set,nan,i want an alarm for [time : six am] [date : everyday],nan,Write what you would tell your PDA in the following scenario: You want to your PDA about your day.,False,False
+7577,alarm,query,nan,alarms,nan,Type top 3 topics you would be keen to have a small talk with your PDA?,True,False
+7986,alarm,set,nan,set an alarm for the [event_name : meeting] [date : tomorrow] [time : thirty minutes] before the event starts,"date, event_name, time",Write what you would tell your PDA in the following scenario: you want to be reminded about an upcoming meeting on a given time.,True,False
+7996,alarm,set,nan,set an alarm for the [event_name : dance classes] [time : two hours] before the classes start,"date, event_name, time",How would you ask your PDA to remind you about something at some point in the future?,True,False
+8007,alarm,set,nan,set an alarm on [date : Wednesday] [timeofday : noon] so i can register for [event_name : early adopters program],"date, event_name, time",Write what you would tell your PDA in the following scenario: you want to be reminded about an upcoming meeting on a given time.,False,False
+8008,alarm,set,nan,wake me up on [date : Friday] at [time : five] in the [timeofday : morning] i need to catch the [event_name : train],"date, event_name, time",Write what you would tell your PDA in the following scenario: you want to be reminded about an upcoming meeting on a given time.,False,False
+8016,alarm,set,nan,set an alarm at [time : ten am] [date : tomorrow] and label it as [event_name : meeting],"event_name, person",Write what you would tell your PDA in the following scenario: you want to be reminded about an upcoming meeting.,False,False
+8026,alarm,set,nan,set an alarm at [time : ten] [date : tomorrow] to remind me of a [event_name : meeting],"date, event_name, time",Write what you would tell your PDA in the following scenario: you want to be reminded about an upcoming meeting on a given time.,True,False
+8131,alarm,set,nan,please set an alarm clock for my next [event_name : meeting] with [relation : the team] at [time : three pm] next [date : friday],"date, event_name, time",Write what you would tell your PDA in the following scenario: you want to be reminded about an upcoming meeting on a given time.,True,False
+8233,alarm,set,nan,set a reminder alarm for my [event_name : meeting] with [relation : the agent] this [timeofday : evening],"date, event_name, time",Write what you would tell your PDA in the following scenario: you want to be reminded about an upcoming meeting.,True,False
+8246,alarm,set,nan,please set a reminder alarm for [time : three pm] on [date : Saturday],"date, event_name, time",How would you ask your PDA to remind you about something at some point in the future?,False,False
+8247,alarm,set,nan,set an alarm for [time : two hours from now] please,"date, event_name, time",How would you ask your PDA to remind you about something at some point in the future?,False,False
+8290,alarm,set,nan,set a reminder alarm for my [time : five pm] [event_name : meeting] please,"date, event_name, time",Write what you would tell your PDA in the following scenario: you want to be reminded about an upcoming meeting on a given time.,False,False
+8514,alarm,set,nan,set the alarm to [time : seven am] for [event_name : work],"date, event_name, time",How would you ask your PDA to remind you about something in some time?,False,False
+8738,alarm,set,MOD,set alarm on [date : tenth november] for clock,"date, event_name, location, time",How would you ask your PDA to add an event in a specific location to your calendar?,False,False
+8862,alarm,set,nan,repeat alarm,"event_name, event_requency, time",How would you ask your PDA to set a repeating event in your calendar?,True,False
+8895,alarm,set,nan,set alarm for [date : saturday] [timeofday : morning] [event_name : soccer practice] at [time : eight am],"event_name, person",Write what you would tell your PDA in the following scenario: you want to be reminded about an upcoming meeting.,False,False
+8902,alarm,remove,nan,remove [date : tomorrow's] alarm,event_name,Write what you would tell your PDA in the following scenario: you want to remove an event from your calendar.,False,False
+9015,alarm,set,nan,please set an alarm for [date : tomorrow's] [event_name : meeting] at [time : seven am],"event_name, person",Write what you would tell your PDA in the following scenario: you want to be reminded about an upcoming meeting.,True,False
+9047,alarm,set,nan,wake me up every weekday at [time : seven am],"event_name, event_requency, time",How would you ask your PDA to set a repeating event in your calendar?,False,False
+9202,alarm,set,nan,set an alarm for this [time : eight hundred pm] [timeofday : this evening],"date, event_name, time",How would you ask your PDA to remind you about something at some point in the future?,False,False
+9410,alarm,set,nan,set a [event_name : doctor's appointment] for [time : three hundred and thirty pm march seventh] with an alarm [time : thirty minutes] before,"date, event_name, time",Write what you would tell your PDA in the following scenario: you want to add an event to your calendar.,True,False
+9512,alarm,set,nan,set the alarm for [time : seven am] [general_frequency : every day],"event_name, event_requency, time",Write what you would tell your PDA in the following scenario: you want to set a repeating reminder in your calendar.,False,False
+9556,alarm,set,nan,will set alarm clock [time : one hour] before my [event_name : next dentist appointment],"event_name, person",Write what you would tell your PDA in the following scenario: you want to be reminded about an upcoming meeting.,False,False
+9559,alarm,set,nan,will you set alarm clock one day before for all [event_name : gym class] on my calendar,"event_name, event_requency, time",Write what you would tell your PDA in the following scenario: you want to set a repeating reminder in your calendar.,False,False
+9589,alarm,set,nan,make an alarm to help me remember,nan,Write what you would tell your PDA in the following scenario: you to know about any reminders you have set.,False,False
+9658,alarm,set,nan,wake me up at [time : five am] [general_frequency : every morning],"event_name, event_requency, time",Write what you would tell your PDA in the following scenario: you want to set a repeating reminder in your calendar.,False,False
+9659,alarm,set,nan,set a timer at [time : five am] [general_frequency : seven days a week],"event_name, event_requency, time",Write what you would tell your PDA in the following scenario: you want to set a repeating reminder in your calendar.,False,False
+9660,alarm,set,nan,set a reminder i need to wake up at [time : five am] [general_frequency : every morning],"event_name, event_requency, time",Write what you would tell your PDA in the following scenario: you want to set a repeating reminder in your calendar.,False,False
+9670,alarm,set,nan,please sound an alarm [time : three hours] before a scheduled event,"event_name, person",How would you ask your PDA to notify you about an event in your calendar?,False,False
+9804,alarm,set,nan,create event with alarm for [event_name : meeting] in [time : two hours],"event_name, person",Write what you would tell your PDA in the following scenario: you want to be reminded about an upcoming meeting.,False,False
+9961,alarm,set,nan,remind me two hours before [time : six pm] that i have to wake up at [time : four am] [date : friday] [timeofday : morning],"event_name, person",How would you ask your PDA to notify you about an event in your calendar?,False,False
+10071,alarm,set,nan,set alarm for [date : tomorrow] at [time : two pm],"date, event_name, time",How would you ask your PDA to remind you about something at some point in the future?,False,False
+10103,alarm,set,nan,set up each day an alarm at [time : ten] time for my [event_name : meal],"event_name, event_requency, time",How would you ask your PDA to set a repeating event in your calendar?,False,False
+10239,alarm,set,nan,set alarm for [date : saturday],"date, event_name, time",How would you ask your PDA to remind you about something at some point in the future?,False,False
+10258,alarm,set,nan,set a repeating reminder alarm for the [media_type : facebook] event i have to attend on [date : seventh april],"event_name, event_requency, time",Write what you would tell your PDA in the following scenario: you want to set a repeating reminder in your calendar.,True,False
+10269,alarm,set,nan,set an alarm for [time : two pm],"event_name, person",Write what you would tell your PDA in the following scenario: you want to be reminded about an upcoming meeting.,False,False
+10270,alarm,set,nan,set an alert for [time : two pm],"event_name, person",Write what you would tell your PDA in the following scenario: you want to be reminded about an upcoming meeting.,False,False
+10362,alarm,set,nan,please set alarm for,"date, event_name, time",How would you ask your PDA to remind you about something at some point in the future?,False,True
+10449,alarm,set,nan,set alarm for reminder,nan,How would you ask your PDA about any reminders you have pending?,False,False
+10469,alarm,set,nan,schedule an alarm for [date : next week's] [event_name : dentist appointment],"date, event_name, time",Write what you would tell your PDA in the following scenario: you want to be reminded about an upcoming meeting.,True,False
+10470,alarm,set,nan,make an alarm for the [event_name : meeting] with [person : bob] at [time : seven] [date : today],"date, event_name, time",Write what you would tell your PDA in the following scenario: you want to be reminded about an upcoming meeting.,False,False
+10472,alarm,set,nan,set an alarm for next [date : tuesday's] [event_name : meeting],"event_name, person",How would you ask your PDA to notify you about an event in your calendar?,True,False
+10473,alarm,set,nan,make an alarm for [date : friday's] [event_name : meeting] at [time : ten am],"event_name, person",How would you ask your PDA to notify you about an event in your calendar?,True,False
+10543,alarm,set,nan,put alarm for this [event_name : meeting],"date, event_name, time",Write what you would tell your PDA in the following scenario: you want to be reminded about an upcoming meeting.,False,False
+10544,alarm,set,nan,wake me for this alarm,"date, event_name, time",Write what you would tell your PDA in the following scenario: you want to be reminded about an upcoming meeting.,False,True
+10561,alarm,set,nan,add alarm,"date, event_name, location, time",How would you ask your PDA to add an event in a specific location to your calendar?,False,False
+10602,alarm,set,nan,turn on alarm [time : thirty minutes] before [event_name : liverpool started to play],"date, event_name, time",How would you ask your PDA to remind you about something at some point in the future?,False,False
+10720,alarm,set,nan,make an alarm for [time : five pm] on [date : tuesday],"date, event_name, time",Write what you would tell your PDA in the following scenario: you want to be reminded about an upcoming meeting on a given time.,False,False
+10721,alarm,set,nan,alarm [time : five pm] [date : tuesday],"date, event_name, time",Write what you would tell your PDA in the following scenario: you want to be reminded about an upcoming meeting on a given time.,False,False
+10722,alarm,set,nan,set my calendar for an alarm at [time : five pm] [date : tuesday],"date, event_name, time",Write what you would tell your PDA in the following scenario: you want to be reminded about an upcoming meeting on a given time.,False,False
+10727,alarm,set,nan,set an alarm for [time : four pm] [date : tuesday],"event_name, event_requency, time",Write what you would tell your PDA in the following scenario: you want to set a repeating reminder in your calendar.,False,False
+10818,alarm,set,nan,set alarm for this event reminder [event_name : repeating for ten times],"event_name, event_requency, time",Write what you would tell your PDA in the following scenario: you want to set a repeating reminder in your calendar.,False,False
+17347,alarm,query,nan,when was the last alarm set,"location, person",How would you ask your PDA a general knowledge question?,False,False
