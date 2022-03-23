@@ -1,6 +1,6 @@
 import pandas as pd
 import pickle
-
+import re
 
 from sklearn.ensemble import RandomForestClassifier
 from sklearn import svm
@@ -16,6 +16,7 @@ from sklearn.linear_model import LogisticRegression
 from .label_encoder import LabelEncoder
 from .tfidf_encoder import TfidfEncoder
 from .analytics import Analytics
+from .entity_extractor import EntityExtractor
 
 
 LR = LogisticRegression(
@@ -56,13 +57,25 @@ class NLUEngine:
         return data_df.dropna(axis=0, how='any', subset=['answer_normalised', 'scenario'])
 
     @staticmethod
-    def convert_annotated_utterances_to_utterances(data_df):
+    def convert_annotated_utterances_to_normalised_utterances(data):
         """
-        Convert the annotated utterances to the utterances.
-        :param data_df: pandas dataframe
-        :return: [string]
+        Convert the annotated utterances to normalized utterances.
+        :param data: annotated utterance string or pandas dataframe
+        :return: string or pandas dataframe
         """
-        pass
+
+        if isinstance(data, str):
+           normalised_data = EntityExtractor.normalise_utterance(utterance=data)
+    
+        elif isinstance(data, pd.DataFrame):
+            data_df = data
+            data_df['answer_normalised'] = data_df['answer_annotation'].apply(
+                EntityExtractor.normalise_utterance)
+            normalised_data = data_df
+        return normalised_data
+
+        
+
 
     @staticmethod
     def get_dense_array(classifier, x_train):
@@ -185,9 +198,6 @@ class NLUEngine:
             labels_to_predict,
             classifier
             )
-
-        print(f'Encoded labels to predict: {encoded_labels_to_predict}')
-        print(f'Vectorized utterances: {vectorized_utterances}')
 
         
         predictions = Analytics.cross_validate_classifier(
