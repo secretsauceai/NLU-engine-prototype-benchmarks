@@ -2,4 +2,5 @@ jupyter
 pandas
 ipysheet
 sklearn
+nltk
 sklearn_crfsuite

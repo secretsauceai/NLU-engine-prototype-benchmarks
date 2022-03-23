@@ -1,5 +1,6 @@
-from cProfile import label
 import pandas as pd
+import pickle
+
 
 from sklearn.ensemble import RandomForestClassifier
 from sklearn import svm
@@ -10,14 +11,12 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn.linear_model import LogisticRegression
  
-import sklearn_crfsuite
-from sklearn_crfsuite.metrics import flat_classification_report
+
 
 from .label_encoder import LabelEncoder
 from .tfidf_encoder import TfidfEncoder
 from .analytics import Analytics
 
-#import nltk
 
 LR = LogisticRegression(
     solver='liblinear',
@@ -38,7 +37,10 @@ SVM = svm.SVC(
 NB = GaussianNB()
 
 class NLUEngine:
-    tfidf_vectorizer = None
+    """
+    The NLUEngine class is the main class of the NLU engine, made up of intent (domain) labeling and entity extraction.
+    It contains all the necessary methods to train, test and evaluate the models.
+    """
 
     @staticmethod
     def load_data(data):
@@ -85,14 +87,87 @@ class NLUEngine:
         return classifier.fit(x_train, y_train)
 
     @staticmethod
+    def pickle_model(classifier, model_path):
+        """
+        Export the model to a pickle file.
+        :param classifier: classifier
+        :param model_path: path to the pickle file
+        :return: None
+        """
+        with open(model_path, 'wb') as file:
+            pickle.dump(classifier, file)
+
+    @staticmethod
+    def export_onnx_model(classifier, model_path):
+        """
+        Export the model to an onnx file like this: http://onnx.ai/sklearn-onnx/
+        :param classifier: classifier
+        :param model_path: path to the onnx file
+        :return: None
+        """
+        pass
+
+    @staticmethod
     def predict_label(classifier_model, utterance):
         utterance = utterance.lower()
-        transformed_utterance = NLUEngine.tfidf_vectorizer.transform([utterance])
+        print(f'Predicting label for utterance: {utterance}')
+        transformed_utterance = TfidfEncoder.encode_vectors(utterance)
+        print(f'Transformed utterance: {transformed_utterance}')
         transformed_utterance = NLUEngine.get_dense_array(classifier_model, transformed_utterance)
+        print(f'Transformed utterance: {transformed_utterance}')
         predicted_label = classifier_model.predict(transformed_utterance)
         decoded_label = LabelEncoder.inverse_transform(predicted_label)
         return decoded_label[0]
 
+    @staticmethod
+    def get_incorrect_predicted_labels():
+        """
+        For a data set, get the incorrect predicted labels and return a dataframe.
+        """
+        pass
+
+    @staticmethod
+    def encode_labels_and_utterances(
+        data_df_path,
+        labels_to_predict,
+        classifier
+        ):
+        """
+        Train the intent classifier.
+        :param data_df: pandas dataframe
+        :return: intent classifier
+        """
+        data_df = NLUEngine.load_data(data_df_path)
+
+        if labels_to_predict == 'intent':
+            encoded_labels_to_predict = LabelEncoder.encode(
+                data_df.intent.values)
+        elif labels_to_predict == 'scenario' or labels_to_predict == 'domain':
+            encoded_labels_to_predict = LabelEncoder.encode(
+                data_df.scenario.values)
+
+        vectorized_utterances = TfidfEncoder.encode_vectors(data_df)
+        vectorized_utterances = NLUEngine.get_dense_array(
+            classifier, vectorized_utterances)
+        return encoded_labels_to_predict, vectorized_utterances
+
+    @staticmethod
+    def train_intent_classifier(
+        data_df_path,
+        labels_to_predict,
+        classifier
+        ):
+        """
+        Train the intent classifier.
+        :param data_df: pandas dataframe
+        :return: intent classifier model
+        """
+        encoded_labels_to_predict, vectorized_utterances = NLUEngine.encode_labels_and_utterances(
+            data_df_path,
+            labels_to_predict,
+            classifier
+        )
+        return NLUEngine.train_classifier(classifier, vectorized_utterances, encoded_labels_to_predict)
 
     @staticmethod
     def evaluate_classifier(
@@ -104,18 +179,16 @@ class NLUEngine:
         Evaluates a classifier and generates a report
         """
         print(f'Evaluating {classifier}')
+        encoded_labels_to_predict, vectorized_utterances = NLUEngine.encode_labels_and_utterances(
+            data_df_path,
+            labels_to_predict,
+            classifier
+            )
 
-        data_df = NLUEngine.load_data(data_df_path)
+        print(f'Encoded labels to predict: {encoded_labels_to_predict}')
+        print(f'Vectorized utterances: {vectorized_utterances}')
 
-        if labels_to_predict == 'intent':
-            encoded_labels_to_predict = LabelEncoder.encode(
-                data_df.intent.values)
-        elif labels_to_predict == 'scenario' or labels_to_predict == 'domain':
-            encoded_labels_to_predict = LabelEncoder.encode(
-                data_df.scenario.values)
-
-        vectorized_utterances = TfidfEncoder.encode_vectors(data_df)
-        vectorized_utterances = NLUEngine.get_dense_array(classifier, vectorized_utterances)
+        
         predictions = Analytics.cross_validate_classifier(
             classifier,
             x_train=vectorized_utterances,
