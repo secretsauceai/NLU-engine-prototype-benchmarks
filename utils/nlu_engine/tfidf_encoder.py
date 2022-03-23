@@ -3,7 +3,7 @@ import pandas as pd
 
 class TfidfEncoder:
     @staticmethod
-    def encode_vectors(data):
+    def encode_vectors(data, tfidf_vectorizer):
         """
         Create a tfidf vectorizer.
         :param data: pandas dataframe (for training a model), utterance list (for running inference of trained model)
@@ -11,7 +11,6 @@ class TfidfEncoder:
         """
 
         #NOTE: I think I need to save the tfidf_vectorizer object, so that I can use it to encode the utterances!
-        tfidf_vectorizer = TfidfVectorizer()
 
 
         # TODO: change from answer_normalised to answer_annotated

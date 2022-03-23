@@ -108,13 +108,13 @@ class NLUEngine:
         pass
 
     @staticmethod
-    def predict_label(classifier_model, utterance):
+    def predict_label(classifier_model, tfidf_vectorizer, utterance):
         utterance = utterance.lower()
         print(f'Predicting label for utterance: {utterance}')
-        transformed_utterance = TfidfEncoder.encode_vectors(utterance)
-        print(f'Transformed utterance: {transformed_utterance}')
+        transformed_utterance = TfidfEncoder.encode_vectors(
+            utterance, tfidf_vectorizer)
         transformed_utterance = NLUEngine.get_dense_array(classifier_model, transformed_utterance)
-        print(f'Transformed utterance: {transformed_utterance}')
+
         predicted_label = classifier_model.predict(transformed_utterance)
         decoded_label = LabelEncoder.inverse_transform(predicted_label)
         return decoded_label[0]
@@ -146,10 +146,11 @@ class NLUEngine:
             encoded_labels_to_predict = LabelEncoder.encode(
                 data_df.scenario.values)
 
-        vectorized_utterances = TfidfEncoder.encode_vectors(data_df)
+        vectorized_utterances, tfidf_vectorizer = TfidfEncoder.encode_training_vectors(
+            data_df)
         vectorized_utterances = NLUEngine.get_dense_array(
             classifier, vectorized_utterances)
-        return encoded_labels_to_predict, vectorized_utterances
+        return encoded_labels_to_predict, vectorized_utterances, tfidf_vectorizer
 
     @staticmethod
     def train_intent_classifier(
@@ -162,12 +163,12 @@ class NLUEngine:
         :param data_df: pandas dataframe
         :return: intent classifier model
         """
-        encoded_labels_to_predict, vectorized_utterances = NLUEngine.encode_labels_and_utterances(
+        encoded_labels_to_predict, vectorized_utterances, tfidf_vectorizer = NLUEngine.encode_labels_and_utterances(
             data_df_path,
             labels_to_predict,
             classifier
         )
-        return NLUEngine.train_classifier(classifier, vectorized_utterances, encoded_labels_to_predict)
+        return NLUEngine.train_classifier(classifier, vectorized_utterances, encoded_labels_to_predict), tfidf_vectorizer
 
     @staticmethod
     def evaluate_classifier(
@@ -179,7 +180,7 @@ class NLUEngine:
         Evaluates a classifier and generates a report
         """
         print(f'Evaluating {classifier}')
-        encoded_labels_to_predict, vectorized_utterances = NLUEngine.encode_labels_and_utterances(
+        encoded_labels_to_predict, vectorized_utterances, tfidf_vectorizer = NLUEngine.encode_labels_and_utterances(
             data_df_path,
             labels_to_predict,
             classifier
