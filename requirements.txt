@@ -1,6 +1,6 @@
 jupyter
 pandas
 ipysheet
-sklearn
+sklearn<0.24
 nltk
 sklearn_crfsuite

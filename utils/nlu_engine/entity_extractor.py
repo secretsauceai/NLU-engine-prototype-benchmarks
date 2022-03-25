@@ -4,6 +4,14 @@ import nltk
 import sklearn_crfsuite
 from sklearn_crfsuite.metrics import flat_classification_report
 
+crf = sklearn_crfsuite.CRF(
+    algorithm='lbfgs',
+    c1=0.1,
+    c2=0.1,
+    max_iterations=100,
+    all_possible_transitions=True
+)
+
 class EntityExtractor:
     """
     Extracts entities from a text.
@@ -100,7 +108,6 @@ class EntityExtractor:
         """
         feature_dataset = []
         for utterance, utterance_with_tagging in zip(data_df['answer_normalised'], data_df['answer_annotation']):
-            print(utterance)
             entities = EntityExtractor.extract_entities(utterance_with_tagging)
             utterance_pos = EntityExtractor.pos_tag_utterance(utterance)
             feature_dataset.append(
@@ -108,69 +115,117 @@ class EntityExtractor:
         return feature_dataset
 
     @staticmethod
-    def create_crf_dataset(data_df):
+    def word2features(utterance, i):
         """
-        Creates a dataset for the CRF model.
+        Creates the features for the CRF.
         """
+        word = utterance[i][0]
+        postag = utterance[i][1]
+
+        features = {
+            'bias': 1.0,
+            'word': word,
+            'word[-3:]': word[-3:],
+            'word[-2:]': word[-2:],
+            'postag': postag,
+            'postag[:2]': postag[:2],
+        }
+        if i > 0:
+            word1 = utterance[i-1][0]
+            postag1 = utterance[i-1][1]
+            features.update({
+                '-1:word': word1,
+                '-1:postag': postag1,
+                '-1:postag[:2]': postag1[:2],
+            })
+        else:
+            features['BOS'] = True
+
+        if i < len(utterance)-1:
+            word1 = utterance[i+1][0]
+            postag1 = utterance[i+1][1]
+            features.update({
+                '+1:word': word1,
+                '+1:postag': postag1,
+                '+1:postag[:2]': postag1[:2],
+            })
+        else:
+            features['EOS'] = True
+
+        return features
+
+    @staticmethod
+    def utterance2features(utterance):
+        return [EntityExtractor.word2features(utterance, i) for i in range(len(utterance))]
+
+    @staticmethod
+    def utterance2labels(utterance):
+        return [label for token, postag, label in utterance]
+
+    @staticmethod
+    def utterance2tokens(utterance):
+        return [token for token, postag, label in utterance]
+
+    @staticmethod
+    def get_targets_and_labels(data_df):
         feature_dataset = EntityExtractor.create_feature_dataset(data_df)
-        def word2features(utterance, i):
-            word = utterance[i][0]
-            postag = utterance[i][1]
-
-            features = {
-                'bias': 1.0,
-                'word': word,
-                'word[-3:]': word[-3:],
-                'word[-2:]': word[-2:],
-                'postag': postag,
-                'postag[:2]': postag[:2],
-            }
-            if i > 0:
-                word1 = utterance[i-1][0]
-                postag1 = utterance[i-1][1]
-                features.update({
-                    '-1:word': word1,
-                    '-1:postag': postag1,
-                    '-1:postag[:2]': postag1[:2],
-                })
-            else:
-                features['BOS'] = True
-
-            if i < len(utterance)-1:
-                word1 = utterance[i+1][0]
-                postag1 = utterance[i+1][1]
-                features.update({
-                    '+1:word': word1,
-                    '+1:postag': postag1,
-                    '+1:postag[:2]': postag1[:2],
-                })
-            else:
-                features['EOS'] = True
-
-            return features
-
-        def utterance2features(utterance):
-            return [word2features(utterance, i) for i in range(len(utterance))]
-
-        def utterance2labels(utterance):
-            return [label for token, postag, label in utterance]
-
-        X = [utterance2features(utterance) for utterance in feature_dataset]
-        y = [utterance2labels(utterance) for utterance in feature_dataset]
+        X = [EntityExtractor.utterance2features(utterance)
+            for utterance in feature_dataset]
+        y = [EntityExtractor.utterance2labels(utterance)
+            for utterance in feature_dataset]
 
         return X, y
+
 
     @staticmethod
     def train_crf_model(X, y):
         """
         Trains a CRF model.
         """
-        crf = sklearn_crfsuite.CRF(
-            algorithm='lbfgs',
-            c1=0.1,
-            c2=0.1,
-            max_iterations=100,
-            all_possible_transitions=True
-        )
-        crf.fit(X, y)
-        return crf
+        crf_model = crf.fit(X, y)
+        return crf_model
+
+    @staticmethod
+    def predict_crf_model(crf_model, X):
+        """
+        Predicts the CRF model.
+        """
+        y_pred = crf_model.predict(X)
+        return y_pred
+
+    @staticmethod
+    def get_entities(utterance, crf_model):
+        utterance_pos = EntityExtractor.pos_tag_utterance(utterance)
+        utterance_features = EntityExtractor.utterance2features(utterance_pos)
+        label = crf_model.predict_single(utterance_features)
+        return label
+
+    @staticmethod
+    def get_entity_types_and_locations(utterance, crf_model):
+        entity_locations_and_types = []
+        entities = EntityExtractor.get_entities(utterance, crf_model)
+        for location, entity in enumerate(entities):
+            if entity is not '0':
+                entity_locations_and_types.append((location, entity))
+        return entity_locations_and_types
+
+    @staticmethod
+    def get_entity_tags(utterance, crf_model):
+        entity_locations_and_types = EntityExtractor.get_entity_types_and_locations(utterance, crf_model)
+        split_utterance = utterance.split(' ')
+        tagged_entities = [(entity_type, split_utterance[location])
+                        for location, entity_type in entity_locations_and_types]
+        return tagged_entities
+
+    @staticmethod
+    def tag_utterance(utterance, crf_model):
+        """
+        replaces the entities with the tagged entities in the utterance like this example utterance:
+        utterance = 'wake me up at five pm this week'
+        tagged_utterance = 'wake me up at [time : five] [time : pm] [date : this] [date : week]'
+        """
+        tagged_entities = EntityExtractor.get_entity_tags(utterance, crf_model)
+        tagged_utterance = utterance
+        for entity_type, entity in tagged_entities:
+            tagged_utterance = tagged_utterance.replace(entity, '[{} : {}]'.format(entity_type, entity))
+        return tagged_utterance

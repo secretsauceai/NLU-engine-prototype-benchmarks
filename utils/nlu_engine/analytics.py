@@ -3,13 +3,14 @@ import pandas as pd
 
 from sklearn.metrics import classification_report
 from sklearn.model_selection import cross_val_predict
+from sklearn_crfsuite.metrics import flat_classification_report
 
 class Analytics:
     @staticmethod
     def cross_validate_classifier(classifier, x_train, y_train):
         start = time.time()
         print(f'Cross validating with {str(classifier)}')
-
+        
         prediction = cross_val_predict(
             estimator=classifier,
             X=x_train,
@@ -48,4 +49,14 @@ class Analytics:
             df.index = df.index.set_names(['domain'])
         df = df.reset_index()
         df['encoding'] = encoding
+        return df
+
+    @staticmethod
+    def generate_entity_classification_report(predictions, y):
+        report = flat_classification_report(
+            y_pred=predictions, y_true=y, output_dict=True)
+
+        df = pd.DataFrame(report).transpose()
+        df.index = df.index.set_names(['entity-type'])
+        df = df.reset_index()
         return df
