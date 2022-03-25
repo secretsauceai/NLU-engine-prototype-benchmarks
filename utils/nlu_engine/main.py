@@ -44,6 +44,7 @@ class NLUEngine:
     It contains all the necessary methods to train, test and evaluate the models.
     """
     #TODO: All the methods related to the intent classifier should be moved to the intent classifier class
+    
     #CHALLENGE: Some of the methods for the intent classifier depend on the NLUEngine class, what is the best way to solve this?
     #SOLUTION: file data_utils.py and move in all modeling and data stuff
 
@@ -54,6 +55,7 @@ class NLUEngine:
         :param data: path to the csv file or the pandas dataframe
         :return: pandas dataframe
         """
+        #TODO: move to data_utils.py
         if isinstance(data, str):
             data_df = pd.read_csv(data, sep=';')
         elif isinstance(data, pd.DataFrame):
@@ -67,6 +69,7 @@ class NLUEngine:
         :param data: annotated utterance string or pandas dataframe
         :return: string or pandas dataframe
         """
+        #TODO: move to data_utils.py
 
         if isinstance(data, str):
            normalised_data = EntityExtractor.normalise_utterance(utterance=data)
@@ -85,6 +88,8 @@ class NLUEngine:
         :param x_train: tfidf numpy array
         :return: tfidf dense numpy array
         """
+        #TODO: move to data_utils.py, use NB in data_utils.py??
+
         if classifier is NB:
             x_train = x_train.todense()
         else:
@@ -108,6 +113,8 @@ class NLUEngine:
         :param model_path: path to the pickle file
         :return: None
         """
+        #TODO: move to data_utils.py
+
         with open(model_path, 'wb') as file:
             pickle.dump(classifier, file)
 
@@ -119,6 +126,7 @@ class NLUEngine:
         :param model_path: path to the onnx file
         :return: None
         """
+        #TODO: move to data_utils.py
         pass
 
     @staticmethod
@@ -139,7 +147,7 @@ class NLUEngine:
         """
         For a data set, get the incorrect predicted labels and return a dataframe.
         """
-        #TODO: move this to the intent classifier class
+        #TODO: implement in the analytics class
         pass
 
     @staticmethod

@@ -229,3 +229,11 @@ class EntityExtractor:
         for entity_type, entity in tagged_entities:
             tagged_utterance = tagged_utterance.replace(entity, '[{} : {}]'.format(entity_type, entity))
         return tagged_utterance
+
+    @staticmethod
+    def get_incorrectly_tagged_entities(utterance, crf_model):
+        """
+        Returns a dataframe of incorrectly tagged entities.
+        """
+        #TODO: implement in the analytics class
+        pass
