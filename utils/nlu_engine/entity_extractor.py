@@ -2,7 +2,6 @@ import re
 import nltk
 
 import sklearn_crfsuite
-from sklearn_crfsuite.metrics import flat_classification_report
 
 crf = sklearn_crfsuite.CRF(
     algorithm='lbfgs',
@@ -235,5 +234,5 @@ class EntityExtractor:
         """
         Returns a dataframe of incorrectly tagged entities.
         """
-        #TODO: implement in the analytics class
+        #TODO: implement in the analytics class (or keep here?)
         pass

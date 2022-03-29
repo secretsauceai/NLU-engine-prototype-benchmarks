@@ -48,11 +48,15 @@ class Analytics:
         elif label is 'scenario' or label is 'domain':
             df.index = df.index.set_names(['domain'])
         df = df.reset_index()
-        df['encoding'] = encoding
-        return df
+        output_df = df.copy()
+        output_df['encoding'] = encoding
+        return output_df
 
     @staticmethod
     def generate_entity_classification_report(predictions, y):
+        """
+        Generates a classification report for the entity classifier.
+        """
         report = flat_classification_report(
             y_pred=predictions, y_true=y, output_dict=True)
 
