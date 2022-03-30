@@ -153,6 +153,8 @@ class EntityExtractor:
 
         return features
 
+    #TODO: add brown clustering features like https://github.com/leondz/entity_recognition/blob/f5ef5aafc259139b20c2d54dd54dc1f6f239b605/base_extractors.py#L41 or here https://github.com/aleju/ner-crf/blob/master/model/features.py
+
     @staticmethod
     def utterance2features(utterance):
         return [EntityExtractor.word2features(utterance, i) for i in range(len(utterance))]
