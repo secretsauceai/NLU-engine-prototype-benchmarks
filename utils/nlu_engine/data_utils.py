@@ -31,12 +31,45 @@ class DataUtils:
 
         number_of_utterances = nlu_data_df['answer_normalised'].nunique()
 
+        number_of_intents_per_domain_df = nlu_data_df.pivot_table(
+            index='intent', columns='scenario', values='answer_normalised', aggfunc='count')
+
+        overlapping_intents_in_domains_df = number_of_intents_per_domain_df.dropna(
+            subset=list_of_domains, thresh=2).dropna(axis=1, how='all')
+
+
         print(
             f'From a total of {number_of_utterances} utterances, there are {number_of_domains} domains, and {number_of_intents} intents\n')
 
         print(f'List of domains: {list_of_domains}\n')
 
         print(f'List of intents: {list_of_intents}\n')
+
+        if overlapping_intents_in_domains_df.empty:
+            print('There are no overlapping intents in the domains (that\'s a good thing)')
+            output_df = number_of_intents_per_domain_df
+        else:
+            print(
+                f'Uh oh. There are {overlapping_intents_in_domains_df.shape[0]} intents with overlapping domains.\nThat\'s usually not good to have.\n\nThe easiest solution would be to rename them in respect to their domains.')
+            output_df = overlapping_intents_in_domains_df
+        
+        return output_df
+
+    @staticmethod
+    def rename_overlapping_intents(nlu_data_df, nlu_data_info_df):
+        """
+        Rename the intents that are overlapping over several domains:
+        e.g. 'intent' and 'intent' in domain 'domain_1' and 'domain_2' overlap, therefore they are renamed to 'intent_domain_1' and 'intent_domain_2'
+        :param nlu_data_df: pandas dataframe
+        :return: pandas dataframe
+        """
+        overlapping_intents_df = nlu_data_df[nlu_data_df['intent'].isin(
+            nlu_data_info_df.index)]
+
+        overlapping_intents_df['intent'] = overlapping_intents_df['scenario'] + \
+            '_' + overlapping_intents_df['intent']
+        nlu_data_df['intent'].update(overlapping_intents_df['intent'])
+        return nlu_data_df
     
 
     @staticmethod
