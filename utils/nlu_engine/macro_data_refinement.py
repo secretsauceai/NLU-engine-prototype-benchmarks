@@ -106,10 +106,15 @@ class MacroDataRefinement:
         # get an array of the correct intents for the incorrectly predicted intents
         intent_values = incorrect_intent_predictions_df['intent'].unique()
 
+
+
         # for every intent in intent_column_values, get the value_counts of the intent and a list of the predicted intents and their values
         for intent in intent_values:
+            all_examples_of_intent_df = nlu_domain_df[(nlu_domain_df["intent"] == intent)]
+            correct_utterance_example = all_examples_of_intent_df[~all_examples_of_intent_df.index.isin(
+                incorrect_intent_predictions_df.index)]['answer_annotation'].iloc[0]
             print(
-                f'intent: {intent}, total count: {nlu_domain_df[nlu_domain_df["intent"] == intent].shape[0]}, total incorrect count:{incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent].shape[0]}')
+                f'intent: {intent}, total count: {all_examples_of_intent_df.shape[0]}, total incorrect count: {incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent].shape[0]}\n example of correctly predicted utterance: {correct_utterance_example}\n example of incorrectly predicted utterance: {incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent]["answer_annotation"].iloc[0]}\n')
             print(
                 f'incorrect predicted intents for {intent} and their counts:\n{incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent].predicted_label.value_counts().to_string()}\n')
 
