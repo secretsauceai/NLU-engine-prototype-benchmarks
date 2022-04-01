@@ -1,4 +1,6 @@
 import pandas as pd
+import ipysheet
+
 
 class MacroDataRefinement:
     """
@@ -117,6 +119,62 @@ class MacroDataRefinement:
                 f'intent: {intent}, total count: {all_examples_of_intent_df.shape[0]}, total incorrect count: {incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent].shape[0]}\n example of correctly predicted utterance: {correct_utterance_example}\n example of incorrectly predicted utterance: {incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent]["answer_annotation"].iloc[0]}\n')
             print(
                 f'incorrect predicted intents for {intent} and their counts:\n{incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent].predicted_label.value_counts().to_string()}\n')
+
+    @staticmethod
+    def get_intent_dataframes_to_refine(incorrect_intent_predictions_df):
+        """
+        Get a dictionary of the incorrectly predicted dataframes by intent sorted by predicted intent.
+        :param incorrect_intent_predictions_df: pandas dataframe
+        :return: dictionary of pandas dataframes
+        """
+        # get an array of the correct intents for the incorrectly predicted intents
+        intent_values = incorrect_intent_predictions_df['intent'].unique()
+        print(f'intents: {intent_values}')
+        dataframe_dictionary = {}
+
+        # for every intent in intent_column_values, get the value_counts of the intent and a list of the predicted intents and their values
+        for intent in intent_values:
+            df = incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent].sort_values(by='predicted_label')
+            dataframe_dictionary[intent] = df
+
+        return dataframe_dictionary
+
+
+    @staticmethod
+    def create_sheet(to_review_df):
+        """
+        Create a sheet from a dataframe
+        :param df_to_review: pandas dataframe
+        :return: IPySheet
+        """
+        to_review_df.drop(
+            columns=['answer_normalised', 'question'], inplace=True)
+
+        to_review_df = to_review_df.assign(review=None)
+        to_review_df['review'] = to_review_df['review'].astype(bool)
+
+        to_review_df = to_review_df.assign(move=None)
+        to_review_df['move'] = to_review_df['move'].astype(bool)
+
+        to_review_df = to_review_df.assign(remove=None)
+        to_review_df['remove'] = to_review_df['remove'].astype(bool)
+
+        to_review_sheet = ipysheet.from_dataframe(to_review_df)
+
+        return to_review_sheet
+
+    @staticmethod
+    def convert_sheet_to_dataframe(sheet):
+        """
+        Convert a sheet to a dataframe
+        :param sheet: IPySheet
+        :return: pandas dataframe
+        """
+        df = ipysheet.to_dataframe(sheet)
+        df.index = pd.to_numeric(df.index)
+
+        return df
+
 
 
 
