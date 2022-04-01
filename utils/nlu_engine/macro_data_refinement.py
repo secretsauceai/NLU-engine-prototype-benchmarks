@@ -62,32 +62,58 @@ class MacroDataRefinement:
         :param incorrect_intent_predictions_df: pandas dataframe
         :return: pandas dataframe
         """
+
+        #TODO: unless these things are needed for the venn wordcloud diagrams, this can be removed
+
+        # get the list of the correct intents for the incorrectly predicted intents
+        correct_intents = incorrect_intent_predictions_df['intent'].unique()
+
         #TODO: this method is a work in progress and untested besides in the notebook itself
         incorrect_intent_prediction_counts = incorrect_intent_predictions_df['predicted_label'].value_counts(
         )
 
         # get predicted_label to list and rename it to incorrect_predicted_labels
-        incorrect_intents = incorrect_intent_predictions_df['predicted_label'].unique(
+        incorrect_predicted_intents = incorrect_intent_predictions_df['predicted_label'].unique(
         )
 
-        # do the same as above cell with the correct_intents ('intents')
-        # TODO: Why is this unused?? 
-        correct_intents = incorrect_intent_predictions_df['intent'].unique()
+        # get count of each intent in incorrect_predicted_intents from the nlu_data_df
+        all_intent_counts = nlu_data_df['intent'].value_counts()
 
-        # get count of each intent in incorrect_intents from the nlu_data_df
-        intent_counts = nlu_data_df['intent'].value_counts()
-
-        correct_intent_counts = intent_counts[intent_counts.index.isin(
-            incorrect_intents)]
+        correct_intent_counts = all_intent_counts[all_intent_counts.index.isin(
+            incorrect_predicted_intents)]
 
 
         # combine columns of correct_intent_counts and incorrect_intent_predictions_count by index
         #TODO: add in column for scenario ?
         domain_intent_counts_df = pd.concat(
             [correct_intent_counts, incorrect_intent_prediction_counts], axis=1)
-        domain_intent_counts_df.columns = ['correct_count', 'incorrect_count']
+        domain_intent_counts_df.columns = [
+            'correct_total_count', 'incorrect_in_domain_count']
+        print(
+            f'This is a table of all the incorrectly predicted intents from {incorrect_intent_predictions_df.shape[0]} utterances.\nIt\'s likely that some of the incorrectly predicted intents are outside of the domain you are checking.\nThe correct_total_count is the total number of correct utterances with that intent.\nThe incorrect_in_domain_count is the number of utterances with that intent that are incorrectly predicted in the domain you are checking.\n')
 
-        return domain_intent_counts_df
+        return domain_intent_counts_df.sort_values(by='incorrect_in_domain_count', ascending=False)
+
+
+    @staticmethod
+    def get_incorrect_predicted_intents_report(nlu_domain_df, incorrect_intent_predictions_df):
+        """
+        Get a report of the incorrectly predicted intents
+        :param nlu_domain_df: pandas dataframe
+        :param incorrect_intent_predictions_df: pandas dataframe
+        :return: pandas dataframe
+        """
+        # get an array of the correct intents for the incorrectly predicted intents
+        intent_values = incorrect_intent_predictions_df['intent'].unique()
+
+        # for every intent in intent_column_values, get the value_counts of the intent and a list of the predicted intents and their values
+        for intent in intent_values:
+            print(
+                f'intent: {intent}, total count: {nlu_domain_df[nlu_domain_df["intent"] == intent].shape[0]}, total incorrect count:{incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent].shape[0]}')
+            print(
+                f'incorrect predicted intents for {intent} and their counts:\n{incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent].predicted_label.value_counts().to_string()}\n')
+
+
 
     @staticmethod
     def refine_intent(data_df, classifier, model_path):
