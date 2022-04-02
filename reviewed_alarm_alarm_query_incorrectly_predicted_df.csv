@@ -1,0 +1,38 @@
+,scenario,intent,status,answer_annotation,predicted_label,review,move,remove
+212,alarm,alarm_query,nan,did i set an alarm to [alarm_type : wake up] in the [timeofday : morning],alarm_set,False,False,False
+6952,alarm,alarm_query,nan,did I set an alarm [event_name : to have tablets] in the [timeofday : noon],alarm_set,True,False,False
+6865,alarm,alarm_query,nan,confirm i have set an alarm for [time : six am],alarm_set,False,False,False
+6864,alarm,alarm_query,nan,check if alarm is set for [time : six am],alarm_set,False,False,False
+6650,alarm,alarm_query,nan,give me the alarm times for the [time : next two days],alarm_set,False,False,False
+5966,alarm,alarm_query,nan,did you set the alarm for [time : five am],alarm_set,False,False,False
+5810,alarm,alarm_query,nan,is there any alarm after [time : five am],alarm_set,False,False,False
+5076,alarm,alarm_query,nan,what's the description for the alarm at [time : eleven am],alarm_set,True,False,False
+4977,alarm,alarm_query,nan,do i have an alarm set for [date : today],alarm_set,False,False,False
+4571,alarm,alarm_query,nan,is there an alarm at [time : four am],alarm_set,False,False,False
+4560,alarm,alarm_query,nan,just to confirm you set the alarm to go off at [time : eight hundred],alarm_set,False,False,False
+4086,alarm,alarm_query,nan,do i have an alarm set for [date : tomorrow],alarm_set,False,False,False
+4976,alarm,alarm_query,nan,what time will my alarm wake me up,alarm_set,False,False,False
+3353,alarm,alarm_query,nan,next alarm,alarm_set,False,False,True
+512,alarm,alarm_query,nan,do i have an alarm set,alarm_set,False,False,False
+668,alarm,alarm_query,nan,i need to set an alarm how many do i have set,alarm_set,False,False,True
+1881,alarm,alarm_query,nan,checkout [date : today] set alarm of [time : ten am],alarm_set,False,False,True
+2297,alarm,alarm_query,nan,is my [alarm_type : wake up] alarm set a [time : six am],alarm_set,False,False,False
+2298,alarm,alarm_query,nan,what time is set for my [alarm_type : wake up] alarm,alarm_set,False,False,False
+2682,alarm,alarm_query,nan,alarm status,alarm_set,False,False,False
+17347,alarm,alarm_query,nan,when was the last alarm set,alarm_set,False,False,False
+3265,alarm,alarm_query,nan,is there an alarm for [time : ten am],alarm_set,False,False,False
+5075,alarm,alarm_query,nan,what's my next scheduled alarm,calendar_query,False,False,False
+3670,alarm,alarm_query,nan,what time i am waking up [date : tomorrow],calendar_query,False,False,False
+5331,alarm,alarm_query,MOD,what is on my alarm schedule,calendar_query,False,False,False
+2964,alarm,alarm_query,nan,did i remember to set a reminder alarm for my next [event_name : doctor's appointment],calendar_set,False,False,True
+6377,alarm,alarm_query,nan,please let me know the alarm kept for [date : tuesday's] [event_name : meeting],calendar_set,False,False,True
+4589,alarm,alarm_query,nan,let me know the alarm time,datetime_query,False,False,False
+4570,alarm,alarm_query,nan,what is wake up time,datetime_query,False,False,False
+5816,alarm,alarm_query,nan,check if any alarm is there after [time : five am],email_query,False,False,False
+5299,alarm,alarm_query,nan,list my different alarm,lists_query,False,False,True
+7008,alarm,alarm_query,nan,would like to know the alarm you sent,quirky,False,False,True
+4786,alarm,alarm_query,nan,could you tell me about the alerts i have set,quirky,False,False,True
+6557,alarm,alarm_query,IRR,tap start and then select settings,quirky,False,False,True
+6559,alarm,alarm_query,IRR,then tap ok,quirky,False,False,True
+5074,alarm,alarm_query,nan,can you tell me about the alarm called bed,quirky,False,False,True
+2037,alarm,alarm_query,nan,when does my alarm go off,takeaway_query,False,False,False

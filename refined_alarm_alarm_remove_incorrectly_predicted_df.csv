@@ -1,0 +1,42 @@
+,scenario,intent,status,answer_annotation,predicted_label,review,move,remove
+4472,alarm,alarm_remove,,Get rid of my current alarms,alarm_query,False,False,False
+3894,alarm,alarm_remove,,take off my alarms,alarm_query,False,False,True
+5812,alarm,alarm_remove,,i dont want any alarms,alarm_query,False,False,False
+942,alarm,alarm_remove,,turn off any [timeofday : morning] alarms [date : after Friday],alarm_query,False,False,False
+3893,alarm,alarm_remove,,turn off my alarms,alarm_query,False,False,False
+3596,alarm,alarm_remove,,remove all alarms set [date : today],alarm_query,False,False,False
+3595,alarm,alarm_remove,,remove alarms set for [date : tomorrow],alarm_query,False,False,False
+3460,alarm,alarm_remove,,clear my [time : nine am] alarms,alarm_query,False,False,False
+4680,alarm,alarm_remove,,disable all alarms set for [date : today],alarm_query,False,False,False
+3182,alarm,alarm_remove,,please remove any alarms that i have set,alarm_query,False,False,False
+4893,alarm,alarm_remove,,delete the [event_name : meeting] alarm at [time : two pm] on [date : tuesday],alarm_set,False,False,True
+44,alarm,alarm_remove,,stop [time : seven am] alarm,alarm_set,False,False,True
+5052,alarm,alarm_remove,,disable the alarm at [time : ten am],alarm_set,False,False,False
+5053,alarm,alarm_remove,,cancel the alarm at [time : four am],alarm_set,False,False,False
+5054,alarm,alarm_remove,,set off this alarm,alarm_set,False,False,True
+5287,alarm,alarm_remove,,do not wake me up [date : tomorrow],alarm_set,False,False,True
+5288,alarm,alarm_remove,,do not wake me up on [time : weekends],alarm_set,False,False,True
+5569,alarm,alarm_remove,,take away my alarm for [date : tomorrow] at [time : four thirty am],alarm_set,False,False,True
+6231,alarm,alarm_remove,,get rid of the [time : five pm] alarm,alarm_set,False,False,False
+4679,alarm,alarm_remove,,remove the alarm set for [time : four hundred am],alarm_set,False,False,False
+4894,alarm,alarm_remove,,get rid of my [alarm_type : wake up] alarm set for [date : saturday],alarm_set,False,False,False
+4239,alarm,alarm_remove,,i no longer need the daily [time : five pm] alarm,alarm_set,False,False,True
+6567,alarm,alarm_remove,,disable the alarm which is set at [time : nine thirty pm],alarm_set,False,False,False
+179,alarm,alarm_remove,,delete the alarm i just set,alarm_set,False,False,True
+879,alarm,alarm_remove,,stop [alarm_type : wake up] calls for [date : this week],alarm_set,False,False,True
+1566,alarm,alarm_remove,,set the alarm off,alarm_set,False,False,True
+6568,alarm,alarm_remove,,unset all alarm which is set,alarm_set,False,False,True
+3180,alarm,alarm_remove,,cancel the alarm that is set for [date : tomorrow] at [time : eight am],alarm_set,False,False,False
+4237,alarm,alarm_remove,,i need to delete the alarm for church on [date : sundays] at [time : eleven am],alarm_set,False,False,True
+2397,alarm,alarm_remove,,change my alarm,alarm_set,False,False,True
+3295,alarm,alarm_remove,,delete scheduled alarm,calendar_remove,False,False,False
+5795,alarm,alarm_remove,,cancel alarms,commandstop,False,False,True
+5797,alarm,alarm_remove,,cancel all [alarm_type : soccer practice] alarms,commandstop,False,False,False
+6301,alarm,alarm_remove,IRR,ibset a ararl can you turn it off,hue_lightoff,False,False,True
+6187,alarm,alarm_remove,,remove number three alarm of list,lists_remove,False,False,True
+2396,alarm,alarm_remove,,snooze,quirky,False,False,True
+1257,alarm,alarm_remove,MOD,[time : twelve am] removed,quirky,False,False,True
+1255,alarm,alarm_remove,MOD,[time : two am] removed,quirky,False,False,True
+987,alarm,alarm_remove,IRR,phones,quirky,False,False,True
+988,alarm,alarm_remove,IRR,personal data assistants,quirky,False,False,True
+4336,alarm,alarm_remove,,kickball is over i do not need the alarm for kickball on [date : wednesday] [timeofday : evening] any longer,weather_query,False,False,True
