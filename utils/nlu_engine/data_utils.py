@@ -18,7 +18,7 @@ class DataUtils:
             data_df = pd.read_csv(data, sep=';')
         elif isinstance(data, pd.DataFrame):
             data_df = data
-        return data_df.dropna(axis=0, how='any', subset=['answer_normalised', 'scenario'])
+        return data_df.dropna(axis=0, how='any', subset=['answer_annotation', 'scenario'])
     
 
     @staticmethod

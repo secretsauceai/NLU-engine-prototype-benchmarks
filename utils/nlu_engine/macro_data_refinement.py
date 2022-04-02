@@ -175,7 +175,28 @@ class MacroDataRefinement:
 
         return df
 
+    @staticmethod
+    def remove_entries_marked_remove(dataframe):
+        print('Removing all entries marked as "remove"')
+        dataframe = dataframe[dataframe['remove'] == False]
+        return dataframe
 
+    @staticmethod
+    def move_entry(row):
+        """
+        If a row is marked to be moved, get user input for the correct intent
+        :param row: pandas dataframe row
+        :return: pandas dataframe row
+        """
+        if row['move'] == True:
+            print(f'The utterance: {row.answer_annotation}\nwith intent: {row.intent}\nand predicted intent: {row.predicted_label}\nwas marked to be moved. Which intent should it be moved to?\nIf {row.predicted_label} is correct, just hit enter/return.')
+            corrected_intent = input()
+            if corrected_intent == '':
+                row['intent'] = row['predicted_label']
+            else:
+                row['intent'] = corrected_intent
+            row['move'] = False
+        return row
 
 
     @staticmethod

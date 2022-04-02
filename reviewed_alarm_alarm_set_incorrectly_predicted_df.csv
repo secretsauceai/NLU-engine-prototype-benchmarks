@@ -1,0 +1,42 @@
+,scenario,intent,status,answer_annotation,predicted_label,review,move,remove
+5690,alarm,alarm_set,nan,confirm that the alarm is set for [date : tomorrow],alarm_query,False,True,False
+4408,alarm,alarm_set,nan,change my alarms to [time_zone : mountain] time,alarm_query,False,False,True
+6333,alarm,alarm_set,nan,turn on my alarm,alarm_remove,False,False,True
+5580,alarm,alarm_set,nan,turn on my first scheduled alarm,alarm_remove,False,False,True
+990,alarm,alarm_set,nan,turn my [timeofday : morning] alarm on,alarm_remove,False,False,True
+5159,alarm,alarm_set,nan,tell me when it is [time : five pm],calendar_query,False,False,False
+10469,alarm,alarm_set,nan,schedule an alarm for [date : next weeks] [event_name : dentist appointment],calendar_query,False,False,True
+9961,alarm,alarm_set,nan,remind me two hours before [time : six pm] that i have to wake up at [time : four am] [date : friday] [timeofday : morning],calendar_set,False,False,True
+5866,alarm,alarm_set,nan,call me at [time : six am],calendar_set,False,False,True
+10270,alarm,alarm_set,nan,set an alert for [time : two pm],calendar_set,False,False,True
+7094,alarm,alarm_set,nan,alert me at [time : ten am] please,calendar_set,False,False,True
+7986,alarm,alarm_set,nan,set an alarm for the [event_name : meeting] [date : tomorrow] [time : thirty minutes] before the event starts,calendar_set,False,False,True
+8026,alarm,alarm_set,nan,set an alarm at [time : ten] [date : tomorrow] to remind me a [event_name : meeting],calendar_set,False,False,True
+8131,alarm,alarm_set,nan,please set an alarm clock for my next [event_name : meeting] with [relation : the team] at [time : three pm] next [date : friday],calendar_set,False,False,True
+8233,alarm,alarm_set,nan,set a reminder alarm for my [event_name : meeting] with [relation : the agent] this [timeofday : evening],calendar_set,False,False,True
+8290,alarm,alarm_set,nan,set a reminder alarm for my [time : five pm] [event_name : meeting] please,calendar_set,False,False,True
+9559,alarm,alarm_set,nan,will you set alarm clock one day before for all [event_name : gym class] on my calendar,calendar_set,False,False,True
+9659,alarm,alarm_set,nan,set a timer at [time : five am] [general_frequency : seven days a week],calendar_set,False,False,True
+9660,alarm,alarm_set,nan,set a reminder i need to wake up at [time : five am] [general_frequency : every morning],calendar_set,False,False,True
+9804,alarm,alarm_set,nan,create event with alarm for [event_name : meeting] in [time : two hours],calendar_set,False,False,True
+10258,alarm,alarm_set,nan,set a repeating reminder alarm for the [media_type : facebook] event i have to attend on [date : seventh april],calendar_set,False,False,True
+8246,alarm,alarm_set,nan,please set a reminder alarm for [time : three pm] on [date : Saturday],calendar_set,False,False,True
+210,alarm,alarm_set,nan,alert me at [time : three pm] to goto the [event_name : concert],calendar_set,False,False,True
+5028,alarm,alarm_set,nan,remind me at [time : six thirty pm],calendar_set,False,False,True
+1256,alarm,alarm_set,ADD,[time : four pm] set,calendar_set,False,False,True
+1258,alarm,alarm_set,ADD,[time : two pm] set,calendar_set,False,False,True
+1866,alarm,alarm_set,MOD,set an alarm for every [date : tuesday] in [date : march]  at [time : eight am],calendar_set,True,False,False
+2094,alarm,alarm_set,nan,alert me at [time : five] hours,calendar_set,False,False,True
+5275,alarm,alarm_set,nan,remind me at [time : five pm],calendar_set,False,False,True
+3821,alarm,alarm_set,nan,remind me at [time : one thousand three hundred],calendar_set,False,False,True
+10818,alarm,alarm_set,nan,set alarm for this event reminder [event_name : repeating for ten times],calendar_set,False,False,True
+4405,alarm,alarm_set,nan,alert me in [time : three hours],calendar_set,False,False,True
+4539,alarm,alarm_set,nan,i need to set an alarm [date : tomorrow] at [time : one thousand two hundred pm],calendar_set,True,False,False
+4813,alarm,alarm_set,nan,i need to get up at [time : ten] [date : tomorrow],calendar_set,False,False,False
+4947,alarm,alarm_set,nan,alert me at [time : two hundred and thirty],calendar_set,False,False,True
+4153,alarm,alarm_set,nan,i need a [time : six am] wakeup call,calendar_set,False,False,True
+1765,alarm,alarm_set,nan,set the time,datetime_query,False,False,True
+7035,alarm,alarm_set,nan,open clock,datetime_query,False,False,True
+409,alarm,alarm_set,IRR,change the time,datetime_query,False,False,True
+3786,alarm,alarm_set,nan,let me know when it is [time : ten],datetime_query,True,False,False
+3464,alarm,alarm_set,nan,[event_name : mike will send me an email] [date : tomorrow] can you please set up an alarm [time : fifteen minutes] after receiving that email,sendemail,False,False,True
