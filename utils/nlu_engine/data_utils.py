@@ -1,3 +1,4 @@
+from operator import index
 import pandas as pd
 import pickle
 from .entity_extractor import EntityExtractor
@@ -16,6 +17,10 @@ class DataUtils:
         #TODO: move to data_utils.py
         if isinstance(data, str):
             data_df = pd.read_csv(data, sep=';')
+            if {'Unnamed: 0'}.issubset(data_df):
+                data_df.index = data_df['Unnamed: 0']
+                data_df.drop('Unnamed: 0', axis=1, inplace=True)
+                data_df.index.name = None
         elif isinstance(data, pd.DataFrame):
             data_df = data
         return data_df.dropna(axis=0, how='any', subset=['answer_annotation', 'scenario'])
