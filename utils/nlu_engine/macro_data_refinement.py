@@ -1,6 +1,7 @@
 import pandas as pd
 import ipysheet
 
+from .label_encoder import LabelEncoder
 
 class MacroDataRefinement:
     """
@@ -56,6 +57,39 @@ class MacroDataRefinement:
             '_' + overlapping_intents_df['intent']
         nlu_data_df['intent'].update(overlapping_intents_df['intent'])
         return nlu_data_df
+
+
+    @staticmethod
+    def intent_keyword_feature_rankings(intent_classifier_model, tfidf_vectorizer):
+        """
+        This function ranks the intents based on their keywords.
+        :param intent_classifier_model:
+        :param tfidf_vectorizer:
+        :return: pandas dataframe
+        """
+        coefs = intent_classifier_model.coef_
+        classes = intent_classifier_model.classes_
+        feature_names = tfidf_vectorizer.get_feature_names()
+        
+        output = []
+        for class_index, features in enumerate(coefs):
+            for feature_index, feature in enumerate(features):
+                output.append(
+                    (classes[class_index], feature_names[feature_index], feature))
+        feature_rank_df = pd.DataFrame(output, columns=['class', 'feature', 'coef'])
+        
+        feature_rank_df['class'] = LabelEncoder.inverse_transform(
+            feature_rank_df['class'])
+
+        feature_rank_df["abs_value"] = feature_rank_df["coef"].apply(
+            lambda x: abs(x))
+
+        feature_rank_df["colors"] = feature_rank_df["coef"].apply(
+            lambda x: "green" if x > 0 else "red")
+
+        return feature_rank_df
+
+
 
     @staticmethod
     def get_incorrect_intent_and_prediction_counts(nlu_data_df, incorrect_intent_predictions_df):
