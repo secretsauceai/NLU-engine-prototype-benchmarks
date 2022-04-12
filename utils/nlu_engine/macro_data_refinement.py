@@ -130,9 +130,28 @@ class MacroDataRefinement:
 
         return domain_intent_counts_df.sort_values(by='incorrect_in_domain_count', ascending=False)
 
+    @staticmethod
+    def get_utterance_features(utterance, intent, intent_feature_rank_df):
+        """
+        Get the features of an utterance.
+        :param utterance: string
+        :param intent_feature_rank_df: pandas dataframe
+        :return: list of tuples
+        """
+        features = []
+        for word in utterance.split(' '):
+            try:
+                coef = intent_feature_rank_df[(intent_feature_rank_df['class'] == intent) & (
+                    intent_feature_rank_df['feature'] == word)]['coef'].values[0]
+            except:
+                coef = 0
+            features.append((word, coef))
+        return features
+
+
 
     @staticmethod
-    def get_incorrect_predicted_intents_report(nlu_domain_df, incorrect_intent_predictions_df, intent_report_df):
+    def get_incorrect_predicted_intents_report(nlu_domain_df, incorrect_intent_predictions_df, intent_report_df, intent_feature_rank_df):
         """
         Get a report of the incorrectly predicted intents
         :param nlu_domain_df: pandas dataframe
@@ -142,19 +161,54 @@ class MacroDataRefinement:
         # get an array of the correct intents for the incorrectly predicted intents
         intent_values = incorrect_intent_predictions_df['intent'].unique()
 
-
+        # json with intent, f1 score, total count, total incorrect count, notes, incorrect predicted intents and their counts
+        incorrect_predicted_intents_report = {}
 
         # for every intent in intent_column_values, get the value_counts of the intent and a list of the predicted intents and their values
         for intent in intent_values:
             f1_for_intent = intent_report_df[intent_report_df['intent'].str.contains(
                 intent)]['f1-score'].round(2).values[0]
             all_examples_of_intent_df = nlu_domain_df[(nlu_domain_df["intent"] == intent)]
-            correct_utterance_example = all_examples_of_intent_df[~all_examples_of_intent_df.index.isin(
+            
+            correct_utterance_annotated_example = all_examples_of_intent_df[~all_examples_of_intent_df.index.isin(
                 incorrect_intent_predictions_df.index)]['answer_annotation'].iloc[0]
+            correct_utterance_example = all_examples_of_intent_df[~all_examples_of_intent_df.index.isin(
+                incorrect_intent_predictions_df.index)]['answer_normalised'].iloc[0]
+
+            incorrect_utterance_annotated_example = incorrect_intent_predictions_df[
+                incorrect_intent_predictions_df["intent"] == intent]["answer_annotation"].iloc[0]
+
+            incorrect_utterance_example = incorrect_intent_predictions_df[
+                incorrect_intent_predictions_df["intent"] == intent]["answer_normalised"].iloc[0]
+
+            incorrect_utterance_intent = incorrect_intent_predictions_df[
+                incorrect_intent_predictions_df["intent"] == intent]["predicted_label"].iloc[0]
+            
             print(
                 f'intent: {intent}\n f1 score: {f1_for_intent}\n total count: {all_examples_of_intent_df.shape[0]}, total incorrect count: {incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent].shape[0]}\n example of correctly predicted utterance: {correct_utterance_example}\n example of incorrectly predicted utterance: {incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent]["answer_annotation"].iloc[0]}\n')
             print(
                 f'incorrect predicted intents for {intent} and their counts:\n{incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent].predicted_label.value_counts().to_string()}\n')
+
+            incorrect_predicted_intents_report[intent] = {
+                'f1_score': f1_for_intent,
+                'total_count': all_examples_of_intent_df.shape[0],
+                'total_incorrect_count': incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent].shape[0],
+                'top_features': intent_feature_rank_df[intent_feature_rank_df['class'] == intent].sort_values('coef', ascending=False)['feature'].head(10).to_list(),
+                'correct_utterance_example': [
+                    intent,
+                    correct_utterance_annotated_example,
+                    MacroDataRefinement.get_utterance_features(
+                        correct_utterance_example, intent, intent_feature_rank_df)
+                ],
+                'incorrect_utterance_example': [
+                    incorrect_utterance_intent,
+                    incorrect_utterance_annotated_example,
+                    MacroDataRefinement.get_utterance_features(
+                        incorrect_utterance_example, intent, intent_feature_rank_df)
+                ],
+                'incorrect_predicted_intents_and_counts': incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent].predicted_label.value_counts().to_dict()
+            }
+        return incorrect_predicted_intents_report
 
     @staticmethod
     def get_intent_dataframes_to_refine(incorrect_intent_predictions_df):
