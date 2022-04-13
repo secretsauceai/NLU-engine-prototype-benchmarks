@@ -1,0 +1,285 @@
+{
+    "alarm_remove": {
+        "f1_score": 0.67,
+        "total_count": 117,
+        "total_incorrect_count": 36,
+        "top_features": [
+            "alarm",
+            "remove",
+            "alarms",
+            "cancel",
+            "off",
+            "removed",
+            "disable",
+            "delete",
+            "wake",
+            "rid"
+        ],
+        "correct_utterance_example": [
+            "alarm_remove",
+            "cancel my [time : seven am] alarm",
+            [
+                [
+                    "cancel",
+                    3.2256674655709157
+                ],
+                [
+                    "my",
+                    0.8476517195850537
+                ],
+                [
+                    "seven",
+                    0.48199028886100836
+                ],
+                [
+                    "am",
+                    1.548025808183762
+                ],
+                [
+                    "alarm",
+                    7.808361134747968
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "alarm_set",
+            "stop [time : seven am] alarm",
+            [
+                [
+                    "stop",
+                    0.6226635805696362
+                ],
+                [
+                    "seven",
+                    0.48199028886100836
+                ],
+                [
+                    "am",
+                    1.548025808183762
+                ],
+                [
+                    "alarm",
+                    7.808361134747968
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "alarm_set": 19,
+            "alarm_query": 10,
+            "quirky": 3,
+            "commandstop": 2,
+            "calendar_remove": 1,
+            "lists_remove": 1
+        }
+    },
+    "alarm_set": {
+        "f1_score": 0.79,
+        "total_count": 289,
+        "total_incorrect_count": 40,
+        "top_features": [
+            "alarm",
+            "wake",
+            "set",
+            "at",
+            "an",
+            "up",
+            "am",
+            "five",
+            "clock",
+            "alert"
+        ],
+        "correct_utterance_example": [
+            "alarm_set",
+            "wake me up at [time : five am] [date : this week]",
+            [
+                [
+                    "wake",
+                    4.429454739550537
+                ],
+                [
+                    "me",
+                    1.6784361992946737
+                ],
+                [
+                    "up",
+                    3.10965451805076
+                ],
+                [
+                    "at",
+                    3.966924030652687
+                ],
+                [
+                    "five",
+                    2.4678333886706603
+                ],
+                [
+                    "am",
+                    3.1009773743019937
+                ],
+                [
+                    "this",
+                    -0.1232999836618595
+                ],
+                [
+                    "week",
+                    0.004163977307692039
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "calendar_set",
+            "alert me at [time : three pm] to goto the [event_name : concert]",
+            [
+                [
+                    "alert",
+                    2.17627633681955
+                ],
+                [
+                    "me",
+                    1.6784361992946737
+                ],
+                [
+                    "at",
+                    3.966924030652687
+                ],
+                [
+                    "three",
+                    0.9769636618041411
+                ],
+                [
+                    "pm",
+                    1.889988251259949
+                ],
+                [
+                    "to",
+                    -0.06723131171521263
+                ],
+                [
+                    "goto",
+                    0.5480203563956415
+                ],
+                [
+                    "the",
+                    -1.3741962191451664
+                ],
+                [
+                    "concert",
+                    0.3558011676073562
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "calendar_set": 28,
+            "alarm_remove": 3,
+            "datetime_query": 2,
+            "alarm_query": 2,
+            "calendar_query": 2,
+            "sendemail": 1,
+            "quirky": 1,
+            "game": 1
+        }
+    },
+    "alarm_query": {
+        "f1_score": 0.79,
+        "total_count": 199,
+        "total_incorrect_count": 35,
+        "top_features": [
+            "alarms",
+            "alarm",
+            "set",
+            "have",
+            "morning",
+            "there",
+            "are",
+            "time",
+            "what",
+            "wake"
+        ],
+        "correct_utterance_example": [
+            "alarm_query",
+            "what alarms i have set",
+            [
+                [
+                    "what",
+                    1.6945524875676055
+                ],
+                [
+                    "alarms",
+                    10.160949839305223
+                ],
+                [
+                    "i",
+                    0
+                ],
+                [
+                    "have",
+                    2.7756179198184143
+                ],
+                [
+                    "set",
+                    3.4905232830032316
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "alarm_set",
+            "did i set an alarm to [alarm_type : wake up] in the [timeofday : morning]",
+            [
+                [
+                    "did",
+                    1.0675053785146678
+                ],
+                [
+                    "i",
+                    0
+                ],
+                [
+                    "set",
+                    3.4905232830032316
+                ],
+                [
+                    "an",
+                    -0.28989547438284924
+                ],
+                [
+                    "alarm",
+                    7.404020879827028
+                ],
+                [
+                    "to",
+                    -0.34517875050179136
+                ],
+                [
+                    "wake",
+                    1.6935175471439943
+                ],
+                [
+                    "up",
+                    1.131419716777588
+                ],
+                [
+                    "in",
+                    -0.4808495157214086
+                ],
+                [
+                    "the",
+                    0.7043993027456317
+                ],
+                [
+                    "morning",
+                    2.3474463997986037
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "alarm_set": 22,
+            "calendar_query": 3,
+            "quirky": 3,
+            "calendar_set": 2,
+            "datetime_query": 2,
+            "takeaway_query": 1,
+            "lists_query": 1,
+            "email_query": 1
+        }
+    }
+}

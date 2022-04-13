@@ -13,7 +13,7 @@ crf = sklearn_crfsuite.CRF(
 
 class EntityExtractor:
     """
-    Extracts entities from a text.
+    Extracts entities from an utterance.
     """
     @staticmethod
     def seperate_types_and_entities(entities):

@@ -3,10 +3,15 @@ import pandas as pd
 import pickle
 from .entity_extractor import EntityExtractor
 from sklearn.naive_bayes import GaussianNB
+import json
 
 NB = GaussianNB()
 
 class DataUtils:
+    """
+    This class handles basic data functions like loading, converting, saving, etc.
+    """
+
     @staticmethod
     def load_data(data):
         """
@@ -14,7 +19,7 @@ class DataUtils:
         :param data: path to the csv file or the pandas dataframe
         :return: pandas dataframe
         """
-        #TODO: move to data_utils.py
+
         if isinstance(data, str):
             data_df = pd.read_csv(data, sep=';')
             if {'Unnamed: 0'}.issubset(data_df):
@@ -33,7 +38,6 @@ class DataUtils:
         :param data: annotated utterance string or pandas dataframe
         :return: string or pandas dataframe
         """
-        #TODO: move to data_utils.py
 
         if isinstance(data, str):
             normalised_data = EntityExtractor.normalise_utterance(utterance=data)
@@ -52,7 +56,6 @@ class DataUtils:
         :param x_train: tfidf numpy array
         :return: tfidf dense numpy array
         """
-        #TODO: move to data_utils.py, use NB in data_utils.py??
 
         if classifier is NB:
             x_train = x_train.todense()
@@ -68,7 +71,6 @@ class DataUtils:
         :param model_path: path to the pickle file
         :return: None
         """
-        #TODO: move to data_utils.py
 
         with open(model_path, 'wb') as file:
             pickle.dump(classifier, file)
@@ -81,5 +83,29 @@ class DataUtils:
         :param model_path: path to the onnx file
         :return: None
         """
-        #TODO: move to data_utils.py
         pass
+
+
+    @staticmethod
+    def save_json(data, path):
+        """
+        Save data to a json file.
+        :param data: data to save
+        :param path: path to the json file
+        :return: None
+        """
+
+        with open(path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=4)
+
+    @staticmethod
+    def load_json(path):
+        """
+        Load data from a json file.
+        :param path: path to the json file
+        :return: data
+        """
+
+        with open(path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        return data

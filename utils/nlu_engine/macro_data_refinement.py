@@ -184,10 +184,11 @@ class MacroDataRefinement:
             incorrect_utterance_intent = incorrect_intent_predictions_df[
                 incorrect_intent_predictions_df["intent"] == intent]["predicted_label"].iloc[0]
             
-            print(
-                f'intent: {intent}\n f1 score: {f1_for_intent}\n total count: {all_examples_of_intent_df.shape[0]}, total incorrect count: {incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent].shape[0]}\n example of correctly predicted utterance: {correct_utterance_example}\n example of incorrectly predicted utterance: {incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent]["answer_annotation"].iloc[0]}\n')
-            print(
-                f'incorrect predicted intents for {intent} and their counts:\n{incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent].predicted_label.value_counts().to_string()}\n')
+            #TODO: I will probanly just remove these print statements
+            #print(
+            #    f'intent: {intent}\n f1 score: {f1_for_intent}\n total count: {all_examples_of_intent_df.shape[0]}, total incorrect count: {incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent].shape[0]}\n example of correctly predicted utterance: {correct_utterance_example}\n example of incorrectly predicted utterance: {incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent]["answer_annotation"].iloc[0]}\n')
+            #print(
+            #    f'incorrect predicted intents for {intent} and their counts:\n{incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent].predicted_label.value_counts().to_string()}\n')
 
             incorrect_predicted_intents_report[intent] = {
                 'f1_score': f1_for_intent,
