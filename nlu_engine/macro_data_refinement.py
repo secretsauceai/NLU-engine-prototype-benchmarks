@@ -184,6 +184,17 @@ class MacroDataRefinement:
             incorrect_utterance_intent = incorrect_intent_predictions_df[
                 incorrect_intent_predictions_df["intent"] == intent]["predicted_label"].iloc[0]
             
+            top_features = intent_feature_rank_df[intent_feature_rank_df['class'] == intent].sort_values(
+                'coef', ascending=False)['feature'].head(10).to_list()
+
+            # Get overlapping features from top_features with the rest of the intent_feature_rank_df, return the features and the intents they overlap with
+            #TODO: group by intent or feature?
+            top_10_features_per_intent_df = intent_feature_rank_df.sort_values(
+                'coef', ascending=False).groupby('class').head(10)
+            overlapping_features = top_10_features_per_intent_df[(top_10_features_per_intent_df['class'] != intent) & (
+                top_10_features_per_intent_df['feature'].isin(top_features))].drop(['colors', 'abs_value'], axis=1).rename(columns={'class': 'intent'}).to_dict(orient='records')
+
+
             #TODO: I will probanly just remove these print statements
             #print(
             #    f'intent: {intent}\n f1 score: {f1_for_intent}\n total count: {all_examples_of_intent_df.shape[0]}, total incorrect count: {incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent].shape[0]}\n example of correctly predicted utterance: {correct_utterance_example}\n example of incorrectly predicted utterance: {incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent]["answer_annotation"].iloc[0]}\n')
@@ -194,7 +205,8 @@ class MacroDataRefinement:
                 'f1_score': f1_for_intent,
                 'total_count': all_examples_of_intent_df.shape[0],
                 'total_incorrect_count': incorrect_intent_predictions_df[incorrect_intent_predictions_df["intent"] == intent].shape[0],
-                'top_features': intent_feature_rank_df[intent_feature_rank_df['class'] == intent].sort_values('coef', ascending=False)['feature'].head(10).to_list(),
+                'top_features': top_features,
+                'overlapping_features': overlapping_features,
                 'correct_utterance_example': [
                     intent,
                     correct_utterance_annotated_example,

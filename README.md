@@ -1,6 +1,10 @@
-# NLU engine prototype benchmarks
-simple notebooks to load several intent classifiers and conditional random fields for entity extraction similar to a voice assistant's NLU engine. These are just prototype engines to perform basic benchmarks (f1 scores), explain the basic components of an NLU engine, and some notebooks to clean and refine the dataset.
+# NLU Engine prototype, benchmarks, and NLU data refinement
+simple notebooks to load several intent classifiers and conditional random fields for entity extraction similar to a voice assistant's NLU engine. 
 
+Overview:
+* Example of how to build an NLU engine to help developers learn about this topic, including benchmarking
+* NLU engine implementation using a simple intent classifier and conditional random fields for entity extraction
+* Flows for benchmarking, cleaning and refining NLU datasets
 
 ## Learning about NLU engines
 We want developers to easily learn how NLU engines work. We want to make it easy to understand the basic components of an NLU engine, and to understand how to use them to perform basic tasks.
