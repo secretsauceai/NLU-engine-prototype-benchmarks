@@ -17,82 +17,82 @@
         ],
         "overlapping_features": [
             {
-                "class": "alarm_query",
+                "intent": "alarm_query",
                 "feature": "alarms",
                 "coef": 10.160949839305223
             },
             {
-                "class": "alarm_set",
+                "intent": "alarm_set",
                 "feature": "alarm",
                 "coef": 8.873019421348754
             },
             {
-                "class": "hue_lightoff",
+                "intent": "hue_lightoff",
                 "feature": "off",
                 "coef": 8.829801974132113
             },
             {
-                "class": "calendar_remove",
+                "intent": "calendar_remove",
                 "feature": "delete",
                 "coef": 8.530851319752323
             },
             {
-                "class": "lists_remove",
+                "intent": "lists_remove",
                 "feature": "remove",
                 "coef": 7.891740024626758
             },
             {
-                "class": "alarm_query",
+                "intent": "alarm_query",
                 "feature": "alarm",
                 "coef": 7.404020879827028
             },
             {
-                "class": "calendar_remove",
+                "intent": "calendar_remove",
                 "feature": "remove",
                 "coef": 7.3099908377546505
             },
             {
-                "class": "lists_remove",
+                "intent": "lists_remove",
                 "feature": "delete",
                 "coef": 6.952396920134021
             },
             {
-                "class": "wemo_off",
+                "intent": "wemo_off",
                 "feature": "off",
                 "coef": 6.8714287083733545
             },
             {
-                "class": "commandstop",
+                "intent": "commandstop",
                 "feature": "cancel",
                 "coef": 6.586560003727837
             },
             {
-                "class": "calendar_remove",
+                "intent": "calendar_remove",
                 "feature": "cancel",
                 "coef": 5.357456387611486
             },
             {
-                "class": "alarm_set",
+                "intent": "alarm_set",
                 "feature": "wake",
                 "coef": 4.429454739550537
             },
             {
-                "class": "lists_remove",
+                "intent": "lists_remove",
                 "feature": "rid",
                 "coef": 3.1329857213334322
             },
             {
-                "class": "volume_mute",
+                "intent": "volume_mute",
                 "feature": "off",
                 "coef": 3.1208117157452864
             },
             {
-                "class": "alarm_query",
+                "intent": "alarm_query",
                 "feature": "wake",
                 "coef": 1.6935175471439943
             },
             {
-                "class": "wemo_off",
+                "intent": "wemo_off",
                 "feature": "disable",
                 "coef": 1.5901633531142814
             }
@@ -172,62 +172,62 @@
         ],
         "overlapping_features": [
             {
-                "class": "alarm_remove",
+                "intent": "alarm_remove",
                 "feature": "alarm",
                 "coef": 7.808361134747968
             },
             {
-                "class": "alarm_query",
+                "intent": "alarm_query",
                 "feature": "alarm",
                 "coef": 7.404020879827028
             },
             {
-                "class": "volume_up",
+                "intent": "volume_up",
                 "feature": "up",
                 "coef": 4.851679794810509
             },
             {
-                "class": "calendar_set",
+                "intent": "calendar_set",
                 "feature": "set",
                 "coef": 4.4859946713195304
             },
             {
-                "class": "hue_lightup",
+                "intent": "hue_lightup",
                 "feature": "up",
                 "coef": 4.255044390418477
             },
             {
-                "class": "calendar_set",
+                "intent": "calendar_set",
                 "feature": "at",
                 "coef": 4.185219329969278
             },
             {
-                "class": "alarm_query",
+                "intent": "alarm_query",
                 "feature": "set",
                 "coef": 3.4905232830032316
             },
             {
-                "class": "maths",
+                "intent": "maths",
                 "feature": "five",
                 "coef": 2.865595750106306
             },
             {
-                "class": "taxi",
+                "intent": "taxi",
                 "feature": "an",
                 "coef": 2.5194597139548724
             },
             {
-                "class": "alarm_remove",
+                "intent": "alarm_remove",
                 "feature": "wake",
                 "coef": 1.9081538086157899
             },
             {
-                "class": "greet",
+                "intent": "greet",
                 "feature": "up",
                 "coef": 1.8531070638938105
             },
             {
-                "class": "alarm_query",
+                "intent": "alarm_query",
                 "feature": "wake",
                 "coef": 1.6935175471439943
             }
@@ -341,97 +341,97 @@
         ],
         "overlapping_features": [
             {
-                "class": "datetime_query",
+                "intent": "datetime_query",
                 "feature": "time",
                 "coef": 9.530633091546793
             },
             {
-                "class": "alarm_set",
+                "intent": "alarm_set",
                 "feature": "alarm",
                 "coef": 8.873019421348754
             },
             {
-                "class": "alarm_remove",
+                "intent": "alarm_remove",
                 "feature": "alarm",
                 "coef": 7.808361134747968
             },
             {
-                "class": "alarm_remove",
+                "intent": "alarm_remove",
                 "feature": "alarms",
                 "coef": 5.306331850253194
             },
             {
-                "class": "definition",
+                "intent": "definition",
                 "feature": "what",
                 "coef": 5.2073119589272086
             },
             {
-                "class": "calendar_set",
+                "intent": "calendar_set",
                 "feature": "set",
                 "coef": 4.4859946713195304
             },
             {
-                "class": "calendar_query",
+                "intent": "calendar_query",
                 "feature": "have",
                 "coef": 4.440356922697079
             },
             {
-                "class": "alarm_set",
+                "intent": "alarm_set",
                 "feature": "wake",
                 "coef": 4.429454739550537
             },
             {
-                "class": "alarm_set",
+                "intent": "alarm_set",
                 "feature": "set",
                 "coef": 4.145686555390698
             },
             {
-                "class": "lists_query",
+                "intent": "lists_query",
                 "feature": "what",
                 "coef": 3.454516494406304
             },
             {
-                "class": "greet",
+                "intent": "greet",
                 "feature": "are",
                 "coef": 3.35914003565519
             },
             {
-                "class": "music_query",
+                "intent": "music_query",
                 "feature": "what",
                 "coef": 3.298677085812423
             },
             {
-                "class": "convert",
+                "intent": "convert",
                 "feature": "time",
                 "coef": 3.0951666428305216
             },
             {
-                "class": "traffic",
+                "intent": "traffic",
                 "feature": "there",
                 "coef": 2.2912682411926895
             },
             {
-                "class": "lists_query",
+                "intent": "lists_query",
                 "feature": "are",
                 "coef": 2.1182583396779715
             },
             {
-                "class": "movies",
+                "intent": "movies",
                 "feature": "what",
                 "coef": 1.9465082310531823
             },
             {
-                "class": "alarm_remove",
+                "intent": "alarm_remove",
                 "feature": "wake",
                 "coef": 1.9081538086157899
             },
             {
-                "class": "traffic",
+                "intent": "traffic",
                 "feature": "are",
                 "coef": 1.7984194836049185
             },
             {
-                "class": "greet",
+                "intent": "greet",
                 "feature": "morning",
                 "coef": 1.330132190147242
             }
