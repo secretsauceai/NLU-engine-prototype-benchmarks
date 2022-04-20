@@ -3,6 +3,10 @@ import pandas as pd
 from .label_encoder import LabelEncoder
 
 class MacroIntentRefinement:
+    """
+    Macro Data Refinement focused on the intent.
+    """
+
     @staticmethod
     def rename_overlapping_intents(nlu_data_df, nlu_data_info_df):
         """
