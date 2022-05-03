@@ -30,6 +30,23 @@ SVM = svm.SVC(
 NB = GaussianNB()
 
 class IntentMatcher:
+    """
+    All intent matching for the NLU engine is handled in the IntentMatcher.
+    """
+    @staticmethod
+    def get_dense_array(classifier, x_train):
+        """
+        When using NB classifier, convert the utterances to a dense array.
+        :param x_train: tfidf numpy array
+        :return: tfidf dense numpy array
+        """
+
+        if classifier is NB:
+            print(f'{NB} has been detected, switching to a dense array.')
+            x_train = x_train.todense()
+        else:
+            pass
+        return x_train
 
     @staticmethod
     def encode_labels_and_utterances(
@@ -42,15 +59,11 @@ class IntentMatcher:
         :param data_df: pandas dataframe
         :return: intent classifier
         """
-        #TODO: move this to the intent classifier class
+
         data_df = DataUtils.load_data(data_df_path)
 
-        if labels_to_predict == 'intent':
-            encoded_labels_to_predict = LabelEncoder.encode(
-                data_df.intent.values)
-        elif labels_to_predict == 'scenario' or labels_to_predict == 'domain':
-            encoded_labels_to_predict = LabelEncoder.encode(
-                data_df.scenario.values)
+        encoded_labels_to_predict = LabelEncoder.encode(
+                data_df[labels_to_predict].values) 
 
         vectorized_utterances, tfidf_vectorizer = TfidfEncoder.encode_training_vectors(
             data_df)
@@ -62,25 +75,28 @@ class IntentMatcher:
     def train_classifier(classifier, x_train, y_train):
         # TODO: add in training time
         print(f'Training {str(classifier)}')
-        x_train = DataUtils.get_dense_array(classifier, x_train)
+        x_train = IntentMatcher.get_dense_array(classifier, x_train)
         return classifier.fit(x_train, y_train)
 
     @staticmethod
     def predict_label(classifier_model, tfidf_vectorizer, utterance):
-        #TODO: move this to the intent classifier class
-        #utterance = utterance.lower()
-        #print(f'Predicting label for utterance: {utterance}')
-        # normalize the utterance without entity tags
+        """
+        Predict the label of the utterance.
+        :param classifier_model: classifier model
+        :param tfidf_vectorizer: tfidf vectorizer
+        :param utterance: string
+        :return: label
+        """
         if '[' in utterance:
             utterance = EntityExtractor.normalise_utterance(
                 utterance=utterance)
         transformed_utterance = TfidfEncoder.encode_vectors(
             utterance, tfidf_vectorizer)
-        transformed_utterance = DataUtils.get_dense_array(
+        transformed_utterance = IntentMatcher.get_dense_array(
             classifier_model, transformed_utterance)
 
         predicted_label = classifier_model.predict(transformed_utterance)
-        decoded_label = LabelEncoder.inverse_transform(predicted_label)
+        decoded_label = LabelEncoder.decode(predicted_label)
         return decoded_label[0]
 
     @staticmethod
@@ -88,7 +104,7 @@ class IntentMatcher:
         """
         For a data set, get the incorrect predicted labels and return a dataframe.
         """
-        #TODO: implement in the analytics class
+
         output_df = data_df.copy()
         output_df['predicted_label'] = output_df['answer_normalised'].apply(
             lambda utterance:  IntentMatcher.predict_label(classifier_model, tfidf_vectorizer, utterance))

@@ -43,7 +43,7 @@ class MacroIntentRefinement:
         feature_rank_df = pd.DataFrame(
             output, columns=['class', 'feature', 'coef'])
 
-        feature_rank_df['class'] = LabelEncoder.inverse_transform(
+        feature_rank_df['class'] = LabelEncoder.decode(
             feature_rank_df['class'])
 
         feature_rank_df["abs_value"] = feature_rank_df["coef"].apply(

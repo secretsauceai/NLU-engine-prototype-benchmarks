@@ -19,10 +19,5 @@ class LabelEncoder:
         :param label_encoded_y: encoded labels list
         :return: decoded labels list
         """
-        # NOTE: Something is WRONG here, I had to bypass this function in the predict_label function
         label_decoded_y = encoder.inverse_transform(label_encoded_y)
         return label_decoded_y
-
-    @staticmethod
-    def inverse_transform(predicted_label):
-        return encoder.inverse_transform(predicted_label)
