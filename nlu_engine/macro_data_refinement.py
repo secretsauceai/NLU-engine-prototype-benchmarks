@@ -108,6 +108,56 @@ class MacroDataRefinement:
                 row['intent'] = row['predicted_label']
             else:
                 row['intent'] = corrected_intent
-                #TODO: look up intent for the scenario and set row['scenario'] = corrected_scenario
+                #TODO: look up intent for the scenario and set row['scenario'] = corrected_scenario!!!
             row['move'] = False
         return row
+
+    @staticmethod
+    def mark_entries_as_refined(refined_dataframe, refined_type):
+        """
+        Mark all entries as refined by refined type
+        :param refined_dataframe: pandas dataframe
+        :param refined_type: string (intent or entity)
+        :return: pandas dataframe
+        """
+        refined_type = refined_type + '_refined'
+        refined_dataframe[refined_type] = True
+        return refined_dataframe
+
+    @staticmethod
+    def merge_refined_data_into_dataset(dataset_df, refined_dataframe):
+        """
+        Merge the refined data into the complete dataset and return the updated dataset
+        :param dataset_df: pandas dataframe
+        :param refined_dataframe: pandas dataframe
+        :return: pandas dataframe
+        """
+        #TODO: should I leave it as is with the intent and entity columns or add those in as a parameter?
+        #TODO: There must be a nicer way to do this, but I can never remember pandas syntax, LOL!
+        combined_df = dataset_df.merge(refined_dataframe, how='left',
+                                      left_index=True,
+                                      right_index=True)
+        combined_df['scenario_y'].fillna(combined_df['scenario_x'], inplace=True)
+        combined_df['intent_y'].fillna(combined_df['intent_x'], inplace=True)
+        combined_df['answer_annotation_y'].fillna(
+            combined_df['answer_annotation_y'], inplace=True)
+        combined_df['status_y'].fillna(combined_df['status_x'], inplace=True)
+        #NOTE: hard coded intent_refined and entity_refined for now!
+        combined_df['intent_refined'].fillna(False, inplace=True)
+        if 'entity_refined' in combined_df.columns:
+            combined_df['entity_refined'].fillna(False, inplace=True)
+        else:
+            combined_df['entity_refined'] = False
+        combined_df.drop(columns=[
+            'scenario_x',
+            'intent_x',
+            'answer_annotation_x',
+            'status_x',
+            'move'], inplace=True)
+        combined_df.rename(columns={
+            'scenario_y': 'scenario',
+            'intent_y': 'intent',
+            'answer_annotation_y': 'answer_annotation',
+            'status_y': 'status'}, inplace=True)
+
+        return combined_df
