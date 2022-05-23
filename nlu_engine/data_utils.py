@@ -49,19 +49,6 @@ class DataUtils:
             normalised_data = data_df
         return normalised_data     
 
-    @staticmethod
-    def get_dense_array(classifier, x_train):
-        """
-        When using NB classifier, convert the utterances to a dense array.
-        :param x_train: tfidf numpy array
-        :return: tfidf dense numpy array
-        """
-
-        if classifier is NB:
-            x_train = x_train.todense()
-        else:
-            pass
-        return x_train
 
     @staticmethod
     def pickle_model(classifier, model_path):

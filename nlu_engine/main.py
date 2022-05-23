@@ -21,7 +21,7 @@ class NLUEngine:
         :param data_df: pandas dataframe
         :return: intent classifier model
         """
-        #NOTE: This method will stay in main and won't be moved to a separate class
+
         encoded_labels_to_predict, vectorized_utterances, tfidf_vectorizer = IntentMatcher.encode_labels_and_utterances(
             data_df_path,
             labels_to_predict,
@@ -80,7 +80,7 @@ class NLUEngine:
         :param data_df: pandas dataframe
         :return: entity classifier model
         """
-        #TODO: check if data_df is a path or a dataframe, if path then load the dataframe
+
         print('Training entity classifier')
         X, y = EntityExtractor.get_targets_and_labels(data_df)
         crf_model = EntityExtractor.train_crf_model(X, y)

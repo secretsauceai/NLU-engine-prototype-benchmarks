@@ -132,6 +132,7 @@ class MacroDataRefinement:
         :param refined_dataframe: pandas dataframe
         :return: pandas dataframe
         """
+        #TODO: 
         #TODO: should I leave it as is with the intent and entity columns or add those in as a parameter?
         #TODO: There must be a nicer way to do this, but I can never remember pandas syntax, LOL!
         combined_df = dataset_df.merge(refined_dataframe, how='left',
@@ -143,7 +144,8 @@ class MacroDataRefinement:
             combined_df['answer_annotation_y'], inplace=True)
         combined_df['status_y'].fillna(combined_df['status_x'], inplace=True)
         #NOTE: hard coded intent_refined and entity_refined for now!
-        combined_df['intent_refined'].fillna(False, inplace=True)
+        if 'intent_refined_y' not in combined_df.columns:
+            combined_df['intent_refined'].fillna(False, inplace=True)
         if 'entity_refined' in combined_df.columns:
             combined_df['entity_refined'].fillna(False, inplace=True)
         else:
@@ -161,3 +163,40 @@ class MacroDataRefinement:
             'status_y': 'status'}, inplace=True)
 
         return combined_df
+
+    @staticmethod
+    def upgrade_dataframe(data_df):
+        updated_df = pd.DataFrame(columns=[
+            'userid',
+            'answerid',
+            'notes',
+            'question',
+            'suggested_entities',
+            'answer',
+            'answer_normalised',
+            'scenario',
+            'intent',
+            'predicted_label',
+            'intent_refined',
+            'entity_refined',
+            'remove',
+            'status',
+        ])
+        updated_df = updated_df.append(data_df)
+        return updated_df
+
+    @staticmethod
+    def update_dataframe(data_df, refined_intent_df):
+        """
+        Updates the dataframe with the refined data, if a previously updated dataframe doesn't exist, it formats the original dataframe correctly.
+        """
+        if 'predicted_label' in data_df.columns:
+            updated_df = data_df.copy()
+            updated_df.update(refined_intent_df)
+            print('Successfully updated dataframe')
+            return updated_df
+        else:
+            print("Dataframe hasn't been upgraded, make sure to upgrade the dataframe first.")
+            return None
+
+

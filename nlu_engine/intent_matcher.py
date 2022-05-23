@@ -67,7 +67,7 @@ class IntentMatcher:
 
         vectorized_utterances, tfidf_vectorizer = TfidfEncoder.encode_training_vectors(
             data_df)
-        vectorized_utterances = DataUtils.get_dense_array(
+        vectorized_utterances = IntentMatcher.get_dense_array(
             classifier, vectorized_utterances)
         return encoded_labels_to_predict, vectorized_utterances, tfidf_vectorizer
 
@@ -109,3 +109,14 @@ class IntentMatcher:
         output_df['predicted_label'] = output_df['answer_normalised'].apply(
             lambda utterance:  IntentMatcher.predict_label(classifier_model, tfidf_vectorizer, utterance))
         return output_df[output_df['intent'] != output_df['predicted_label']]
+
+    @staticmethod
+    def get_predicted_labels(data_df, classifier_model, tfidf_vectorizer):
+        """
+        For a data set, get the predicted labels and return a dataframe.
+        """
+
+        output_df = data_df.copy()
+        output_df['predicted_label'] = output_df['answer_normalised'].apply(
+            lambda utterance:  IntentMatcher.predict_label(classifier_model, tfidf_vectorizer, utterance))
+        return output_df
