@@ -1,0 +1,64 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+14942,transport,transport_query,calendar_set,are trains on schedule at [time : ten],False,False,True
+15379,transport,transport_query,createoradd,could you list out the list of trains heading to [place_name : chester] [date : the day after],False,False,False
+14986,transport,transport_query,datetime_query,what time will i arrive in [place_name : austin tx],False,False,False
+14646,transport,transport_query,datetime_query,what is time of [transport_name : indianapolis express],False,False,True
+14954,transport,transport_query,datetime_query,what time does the first [transport_type : metrolink] arrive in the [timeofday : morning],False,False,False
+14794,transport,transport_query,datetime_query,what is the commute time to the [place_name : theater],False,False,False
+14345,transport,transport_query,factoid,how far is [business_name : walmart] from here,False,False,False
+17088,transport,transport_query,factoid,find the shortest distance for the location needed,False,False,True
+16260,transport,transport_query,factoid,how far of a drive is it from [place_name : lexington kentucky] to [place_name : washington dc],False,False,False
+15358,transport,transport_query,factoid,search cost for amtrak luxury to [place_name : los angeles],False,False,False
+15341,transport,transport_query,factoid,can i have timing of [transport_name : keral express],False,False,True
+15340,transport,transport_query,factoid,what is the timing of [transport_name : bagmati express],False,False,True
+15244,transport,transport_query,factoid,where is the [business_type : public library],False,False,False
+17089,transport,transport_query,factoid,find the ways of travel for the same,False,False,True
+14838,transport,transport_query,factoid,how far away is the nearest [place_name : rest stop],True,False,True
+18187,transport,transport_query,factoid,how far is it from [place_name : new york] to [place_name : japan],True,False,False
+14776,transport,transport_query,factoid,how long is the [transport_type : walk] from [place_name : nyack] to [place_name : valley cottage],False,False,False
+14761,transport,transport_query,factoid,how far is [place_name : orlando] from [place_name : my house],True,False,False
+15418,transport,transport_query,locations,look up the map to [business_type : stores] near me,False,False,True
+14973,transport,transport_query,locations,help me find place,False,False,True
+14818,transport,transport_query,locations,where is the closest [food_type : mexican] [business_type : restaurant],False,False,True
+14775,transport,transport_query,locations,where is the nearest target,False,False,True
+14431,transport,transport_query,quirky,whats the best way to [place_name : france],False,False,False
+15118,transport,transport_query,quirky,navigation search,False,False,True
+15107,transport,transport_query,quirky,take me to [business_name : tnagar],True,False,False
+15106,transport,transport_query,quirky,take me to [business_name : mc donalds],True,False,False
+14634,transport,transport_query,quirky,what the tube like to [place_name : jersey],False,False,True
+15304,transport,transport_query,quirky,take me to [place_name : layfayette st and canal],False,False,False
+14711,transport,transport_query,quirky,what's the best way to [place_name : sheffield],False,False,False
+14739,transport,transport_query,quirky,tell me [date : today's] direction,False,False,True
+14817,transport,transport_query,quirky,how do i get to the grocery store,True,False,True
+14938,transport,transport_query,quirky,how do i get to [business_name : dunkin donut] in [place_name : atlantic city nj],True,False,True
+15799,transport,transport_query,quirky,what is the cheapest ticket available [date : next week] for a round trip three day trip to [place_name : iceland],False,False,False
+15417,transport,transport_query,quirky,please access [app_name : gps] to direct me,False,False,True
+14949,transport,transport_query,radio,go to [place_name : agha station],False,False,True
+15387,transport,transport_query,ticket,is it possible for you to get a [transport_type : train] ticket for me,False,False,True
+15385,transport,transport_query,ticket,please book a ticket on [transport_type : train] number seventy three using my debit card,False,False,True
+15370,transport,transport_query,ticket,what is the amount for [transport_type : train] ticket booking,False,False,True
+14537,transport,transport_query,ticket,where to buy a [transport_type : train] ticket,False,False,True
+15369,transport,transport_query,ticket,is there any [transport_type : train] ticket available,False,False,True
+14580,transport,transport_query,ticket,get me an amtrak ticket to [place_name : boston] for next [date : thursday] the later the better,False,False,True
+14601,transport,transport_query,ticket,can you look up [transport_type : train] ticket prices for me,False,False,True
+14602,transport,transport_query,ticket,can you get me [transport_type : train] ticket prices please,False,False,True
+15277,transport,transport_query,ticket,can you reserve a ticket to [place_name : grand rapids] by [transport_type : train],False,False,True
+15165,transport,transport_query,ticket,can you find me a [transport_type : train] ticket to [place_name : montauk],False,False,True
+14603,transport,transport_query,ticket,i'd like a [transport_type : train] ticket to this location,False,False,True
+14864,transport,transport_query,ticket,is there a [transport_type : train] ticket available for [place_name : boston] [date : tomorrow],False,False,True
+14874,transport,transport_query,ticket,where can i book a [transport_type : train] ticket to [place_name : oregon],False,False,True
+14934,transport,transport_query,ticket,can i find the cheapest [transport_type : train] ticket for this destination,False,False,True
+14936,transport,transport_query,ticket,can i purchase a [transport_type : train] ticket [date : today],False,False,True
+14963,transport,transport_query,ticket,get me a [transport_type : train] ticket to [place_name : atlanta],False,False,True
+15275,transport,transport_query,ticket,can you get me a [transport_type : train] ticket to [place_name : nyc],False,False,True
+14975,transport,transport_query,ticket,how much for a [transport_type : train] ticket,False,False,True
+15057,transport,transport_query,ticket,price of [transport_type : train] ticket from [place_name : delhi] to [place_name : mumbai],False,False,True
+15145,transport,transport_query,ticket,can you find me a [transport_type : train] ticket to go to [place_name : las vegas],False,False,True
+14789,transport,transport_query,ticket,i need a [transport_type : train] ticket to [place_name : denver],False,False,True
+15166,transport,transport_query,ticket,find me a [transport_type : train] ticket for the next trip to [place_name : washington dc],False,False,True
+15167,transport,transport_query,ticket,can you find me a [transport_type : train] ticket to [place_name : southampton] on [date : memorial day weekend],False,False,True
+14996,transport,transport_query,ticket,please send me info on how to go about purchasing a [transport_type : train] ticket to [place_name : new york],False,False,True
+14977,transport,transport_query,ticket,how do i book a [transport_type : train] ticket online,False,False,True
+14553,transport,transport_query,traffic,what is the traffic like on my commute [place_name : home] at [time : five],False,False,True
+15760,transport,transport_query,traffic,what is the quickest way to my work [place_name : downtown] without hitting any traffic,False,False,True
+15398,transport,transport_query,weather_query,will the [transport_type : train] be late [date : today] in [place_name : new york],False,False,False

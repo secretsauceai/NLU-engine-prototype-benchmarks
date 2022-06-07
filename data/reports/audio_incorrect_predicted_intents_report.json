@@ -1,0 +1,469 @@
+{
+    "volume_up": {
+        "f1_score": 0.78,
+        "total_count": 140,
+        "total_incorrect_count": 21,
+        "top_features": [
+            "volume",
+            "louder",
+            "up",
+            "increase",
+            "speak",
+            "unmute",
+            "sound",
+            "hear",
+            "raise",
+            "turn"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "volume_down",
+                "feature": "volume",
+                "coef": 6.21448674148627
+            },
+            {
+                "intent": "volume_other",
+                "feature": "volume",
+                "coef": 5.8315081861427585
+            },
+            {
+                "intent": "music",
+                "feature": "hear",
+                "coef": 4.994535212809442
+            },
+            {
+                "intent": "hue_lightup",
+                "feature": "increase",
+                "coef": 4.87280361720715
+            },
+            {
+                "intent": "repeat",
+                "feature": "hear",
+                "coef": 4.61858754822918
+            },
+            {
+                "intent": "hue_lightup",
+                "feature": "up",
+                "coef": 4.255044390418475
+            },
+            {
+                "intent": "hue_lightup",
+                "feature": "raise",
+                "coef": 3.8705313926576244
+            },
+            {
+                "intent": "wemo_on",
+                "feature": "turn",
+                "coef": 3.797614487686305
+            },
+            {
+                "intent": "volume_mute",
+                "feature": "sound",
+                "coef": 3.62797027127653
+            },
+            {
+                "intent": "alarm_set",
+                "feature": "up",
+                "coef": 3.1067164785331958
+            },
+            {
+                "intent": "hue_lighton",
+                "feature": "turn",
+                "coef": 2.7547896218848384
+            },
+            {
+                "intent": "hue_lightoff",
+                "feature": "turn",
+                "coef": 2.4525887151298065
+            },
+            {
+                "intent": "volume_mute",
+                "feature": "speak",
+                "coef": 2.371983952040949
+            },
+            {
+                "intent": "wemo_off",
+                "feature": "turn",
+                "coef": 1.88494465097511
+            },
+            {
+                "intent": "greet",
+                "feature": "up",
+                "coef": 1.8531070638938105
+            },
+            {
+                "intent": "volume_other",
+                "feature": "sound",
+                "coef": 1.634461576635109
+            }
+        ],
+        "correct_utterance_example": [
+            "volume_up",
+            "turn up the volume",
+            [
+                [
+                    "turn",
+                    2.5298487301390833
+                ],
+                [
+                    "up",
+                    4.851679794810509
+                ],
+                [
+                    "the",
+                    0.6220566524209884
+                ],
+                [
+                    "volume",
+                    7.473852100614908
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "music",
+            "i can't hear you",
+            [
+                [
+                    "i",
+                    0
+                ],
+                [
+                    "can't",
+                    0
+                ],
+                [
+                    "hear",
+                    2.745907466581521
+                ],
+                [
+                    "you",
+                    0.357742489536472
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "music": 5,
+            "quirky": 5,
+            "repeat": 5,
+            "audiobook": 3,
+            "volume_down": 1,
+            "music_query": 1,
+            "volume_mute": 1
+        }
+    },
+    "volume_down": {
+        "f1_score": 0.74,
+        "total_count": 80,
+        "total_incorrect_count": 13,
+        "top_features": [
+            "volume",
+            "lower",
+            "down",
+            "quieter",
+            "decrease",
+            "speakers",
+            "softer",
+            "speaker",
+            "loud",
+            "low"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "volume_up",
+                "feature": "volume",
+                "coef": 7.473852100614908
+            },
+            {
+                "intent": "volume_other",
+                "feature": "volume",
+                "coef": 5.8315081861427585
+            },
+            {
+                "intent": "hue_lightdim",
+                "feature": "lower",
+                "coef": 5.714725531561293
+            },
+            {
+                "intent": "hue_lightdim",
+                "feature": "down",
+                "coef": 4.124274672322319
+            },
+            {
+                "intent": "volume_mute",
+                "feature": "speakers",
+                "coef": 3.0646508371129326
+            },
+            {
+                "intent": "wemo_off",
+                "feature": "down",
+                "coef": 1.8020351068790423
+            }
+        ],
+        "correct_utterance_example": [
+            "volume_down",
+            "set the volume [change_amount : to low]",
+            [
+                [
+                    "set",
+                    -0.0814996711589552
+                ],
+                [
+                    "the",
+                    0.7028456496339164
+                ],
+                [
+                    "volume",
+                    6.21448674148627
+                ],
+                [
+                    "to",
+                    -0.12456782373803546
+                ],
+                [
+                    "low",
+                    1.9953344184550272
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "quirky",
+            "you're too loud",
+            [
+                [
+                    "you're",
+                    0
+                ],
+                [
+                    "too",
+                    1.5897213036188331
+                ],
+                [
+                    "loud",
+                    2.0752100034272196
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 6,
+            "audiobook": 2,
+            "negate": 1,
+            "radio": 1,
+            "volume_mute": 1,
+            "commandstop": 1,
+            "music": 1
+        }
+    },
+    "volume_mute": {
+        "f1_score": 0.75,
+        "total_count": 158,
+        "total_incorrect_count": 39,
+        "top_features": [
+            "mute",
+            "quiet",
+            "silent",
+            "silence",
+            "sound",
+            "off",
+            "speakers",
+            "until",
+            "pause",
+            "speak"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "hue_lightoff",
+                "feature": "off",
+                "coef": 8.829801974132106
+            },
+            {
+                "intent": "wemo_off",
+                "feature": "off",
+                "coef": 6.8714287083733545
+            },
+            {
+                "intent": "volume_up",
+                "feature": "speak",
+                "coef": 3.5883758916558293
+            },
+            {
+                "intent": "volume_up",
+                "feature": "sound",
+                "coef": 2.82632840927715
+            },
+            {
+                "intent": "alarm_remove",
+                "feature": "off",
+                "coef": 2.7191609358860425
+            },
+            {
+                "intent": "volume_down",
+                "feature": "speakers",
+                "coef": 2.4984169259613545
+            },
+            {
+                "intent": "volume_other",
+                "feature": "sound",
+                "coef": 1.634461576635109
+            }
+        ],
+        "correct_utterance_example": [
+            "volume_mute",
+            "quiet",
+            [
+                [
+                    "quiet",
+                    5.969895975654115
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "negate",
+            "do not speak [date : today]",
+            [
+                [
+                    "do",
+                    1.1399988089313626
+                ],
+                [
+                    "not",
+                    1.8240958358163588
+                ],
+                [
+                    "speak",
+                    2.371983952040949
+                ],
+                [
+                    "today",
+                    -0.5589206869996566
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 9,
+            "commandstop": 7,
+            "negate": 5,
+            "volume_up": 5,
+            "hue_lightoff": 4,
+            "music": 3,
+            "volume_down": 2,
+            "calendar_set": 2,
+            "datetime_query": 1,
+            "audiobook": 1
+        }
+    },
+    "volume_other": {
+        "f1_score": 0.15,
+        "total_count": 24,
+        "total_incorrect_count": 16,
+        "top_features": [
+            "volume",
+            "change",
+            "settings",
+            "adjust",
+            "sound",
+            "setting",
+            "level",
+            "audio",
+            "pleasant",
+            "control"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "volume_up",
+                "feature": "volume",
+                "coef": 7.473852100614908
+            },
+            {
+                "intent": "volume_down",
+                "feature": "volume",
+                "coef": 6.21448674148627
+            },
+            {
+                "intent": "hue_lightchange",
+                "feature": "change",
+                "coef": 5.45358163302531
+            },
+            {
+                "intent": "audiobook",
+                "feature": "audio",
+                "coef": 4.82785905433567
+            },
+            {
+                "intent": "volume_mute",
+                "feature": "sound",
+                "coef": 3.62797027127653
+            },
+            {
+                "intent": "convert",
+                "feature": "change",
+                "coef": 2.979385204737587
+            },
+            {
+                "intent": "volume_up",
+                "feature": "sound",
+                "coef": 2.82632840927715
+            },
+            {
+                "intent": "settings",
+                "feature": "settings",
+                "coef": 1.8049407509068025
+            }
+        ],
+        "correct_utterance_example": [
+            "volume_other",
+            "change the volume",
+            [
+                [
+                    "change",
+                    3.22950085368319
+                ],
+                [
+                    "the",
+                    0.3978300635566853
+                ],
+                [
+                    "volume",
+                    5.8315081861427585
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "volume_up",
+            "change the volume of the speakers",
+            [
+                [
+                    "change",
+                    3.22950085368319
+                ],
+                [
+                    "the",
+                    0.3978300635566853
+                ],
+                [
+                    "volume",
+                    5.8315081861427585
+                ],
+                [
+                    "of",
+                    -0.037714741994944796
+                ],
+                [
+                    "the",
+                    0.3978300635566853
+                ],
+                [
+                    "speakers",
+                    0.3808266700812685
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "volume_up": 9,
+            "factoid": 3,
+            "hue_lightchange": 1,
+            "volume_mute": 1,
+            "quirky": 1,
+            "audiobook": 1
+        }
+    }
+}

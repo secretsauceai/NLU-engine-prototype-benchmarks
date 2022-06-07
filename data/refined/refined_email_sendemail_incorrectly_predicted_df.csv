@@ -1,0 +1,26 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+19543,email,sendemail,addcontact,add this new email to my contacts,False,False,True
+20007,email,sendemail,addcontact,i need to add a new email to my contacts,False,False,True
+20008,email,sendemail,addcontact,how do i add a new email to my contacts,False,False,True
+19157,email,sendemail,calendar_query,email [person : david] about the [event_name : meeting] [date : tomorrow] [person : david] can we have the meeting in the [timeofday : afternoon],False,False,False
+19798,email,sendemail,calendar_set,message my [relation : mother in law] to book the reservations before [date : friday] or they will expire,False,False,False
+15955,email,sendemail,calendar_set,schedule text messages for later,False,False,True
+19742,email,sendemail,calendar_set,email [person : jake] a calendar invite for dinner on [date : sunday],False,False,False
+19180,email,sendemail,createoradd,go to contacts and add a new email to the list,False,False,True
+19184,email,sendemail,email_query,add mail id subject content,False,False,True
+20536,email,sendemail,email_query,new email for contact,False,False,True
+20460,email,sendemail,email_query,[email_folder : inbox] this mail,False,False,True
+20439,email,sendemail,email_query,[email_folder : inbox] my [relation : family],False,False,True
+19671,email,sendemail,email_query,put a new mail,False,False,True
+20255,email,sendemail,factoid,tell [person : sean] i appreciate him reaching out to me,False,False,True
+19112,email,sendemail,news_query,email to [person : pawel] regarding latest news,False,False,False
+20776,email,sendemail,querycontact,start email for address not in contacts,True,False,True
+19372,email,sendemail,querycontact,mail [person : gaurav] my phone number and other contact details,True,False,False
+20067,email,sendemail,querycontact,new address,False,False,True
+20193,email,sendemail,quirky,drop down a line,False,False,True
+20660,email,sendemail,quirky,send to [relation : mom] hey [relation : mom] hope you have a great day [date : today] see you [date : tomorrow],False,False,False
+20581,email,sendemail,quirky,mailed the personal data,False,False,True
+9120,email,sendemail,quirky,text [person : sarah] if she is free for [event_name : brunch] [date : today],False,False,True
+20332,email,sendemail,weather_query,my [relation : mother] needs the weekly weather sent to her,False,False,True
+19643,email,sendemail,weather_query,email [relation : dad] how is the weather [date : this week],False,False,False
+19219,email,sendemail,weather_query,send an email to [relation : mom] subject weather body what is the weather like there [date : this week],False,False,False

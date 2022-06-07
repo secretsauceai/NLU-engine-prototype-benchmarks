@@ -1,0 +1,66 @@
+{
+    "weather_query": {
+        "f1_score": 0.9,
+        "total_count": 1031,
+        "total_incorrect_count": 25,
+        "top_features": [
+            "weather",
+            "temperature",
+            "forecast",
+            "rain",
+            "wear",
+            "umbrella",
+            "outside",
+            "snow",
+            "need",
+            "should"
+        ],
+        "overlapping_features": [],
+        "correct_utterance_example": [
+            "weather_query",
+            "is it [weather_descriptor : raining]",
+            [
+                [
+                    "is",
+                    2.52578657326757
+                ],
+                [
+                    "it",
+                    3.308028517591827
+                ],
+                [
+                    "raining",
+                    4.01371886390431
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "factoid",
+            "what's the [weather_descriptor : humidity level]",
+            [
+                [
+                    "what's",
+                    0
+                ],
+                [
+                    "the",
+                    0.4847097257104436
+                ],
+                [
+                    "humidity",
+                    1.6446559228461801
+                ],
+                [
+                    "level",
+                    0.8137836059790314
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 18,
+            "factoid": 4,
+            "calendar_query": 2,
+            "news_query": 1
+        }
+    }
+}

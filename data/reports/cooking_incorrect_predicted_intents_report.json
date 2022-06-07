@@ -1,0 +1,220 @@
+{
+    "recipe": {
+        "f1_score": 0.81,
+        "total_count": 398,
+        "total_incorrect_count": 62,
+        "top_features": [
+            "recipe",
+            "cook",
+            "how",
+            "cooking",
+            "recipes",
+            "ingredients",
+            "make",
+            "chicken",
+            "substitute",
+            "rice"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "createoradd",
+                "feature": "make",
+                "coef": 3.4363551424424656
+            },
+            {
+                "intent": "coffee",
+                "feature": "make",
+                "coef": 3.3098380760040786
+            },
+            {
+                "intent": "transport_query",
+                "feature": "how",
+                "coef": 3.2483698217182515
+            },
+            {
+                "intent": "hue_lightchange",
+                "feature": "make",
+                "coef": 3.248098519696317
+            },
+            {
+                "intent": "factoid",
+                "feature": "how",
+                "coef": 3.2172350048407865
+            },
+            {
+                "intent": "stock",
+                "feature": "how",
+                "coef": 2.3577338080379415
+            },
+            {
+                "intent": "traffic",
+                "feature": "how",
+                "coef": 2.056495371890321
+            },
+            {
+                "intent": "joke",
+                "feature": "make",
+                "coef": 1.2313382428187856
+            },
+            {
+                "intent": "cooking_query",
+                "feature": "cooking",
+                "coef": 0.9855851326756297
+            },
+            {
+                "intent": "cooking_query",
+                "feature": "cook",
+                "coef": 0.914194536167454
+            }
+        ],
+        "correct_utterance_example": [
+            "recipe",
+            "your recipe of [food_type : steak] was superb",
+            [
+                [
+                    "your",
+                    -0.49809323659750876
+                ],
+                [
+                    "recipe",
+                    9.090471513290826
+                ],
+                [
+                    "of",
+                    -0.013223716836330782
+                ],
+                [
+                    "steak",
+                    2.3209001299682295
+                ],
+                [
+                    "was",
+                    -0.8886626107985139
+                ],
+                [
+                    "superb",
+                    0.297141265648503
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "quirky",
+            "can you suggest me a [food_type : healthy foods] for dinner",
+            [
+                [
+                    "can",
+                    0.4824218666193164
+                ],
+                [
+                    "you",
+                    -1.8340451280088303
+                ],
+                [
+                    "suggest",
+                    0.3474570938842813
+                ],
+                [
+                    "me",
+                    -0.547800312886895
+                ],
+                [
+                    "a",
+                    0
+                ],
+                [
+                    "healthy",
+                    0.9564238373101571
+                ],
+                [
+                    "foods",
+                    1.4201435861798786
+                ],
+                [
+                    "for",
+                    2.5234610862107734
+                ],
+                [
+                    "dinner",
+                    0.9289436637503233
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 34,
+            "factoid": 19,
+            "weather_query": 6,
+            "convert": 1,
+            "negate": 1,
+            "events": 1
+        }
+    },
+    "cooking_query": {
+        "f1_score": 0.0,
+        "total_count": 6,
+        "total_incorrect_count": 6,
+        "top_features": [
+            "cooking",
+            "cook",
+            "cookies",
+            "lunch",
+            "easiest",
+            "thighs",
+            "quickest",
+            "cooker",
+            "pressure",
+            "turkey"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "recipe",
+                "feature": "cook",
+                "coef": 6.665333371018839
+            },
+            {
+                "intent": "recipe",
+                "feature": "cooking",
+                "coef": 5.3583310559904005
+            }
+        ],
+        "correct_utterance_example": [
+            "cooking_query",
+            "There are no correct utterances!",
+            [
+                [
+                    "There",
+                    0
+                ],
+                [
+                    "are",
+                    -0.1397769624238119
+                ],
+                [
+                    "no",
+                    -0.05055722079455103
+                ],
+                [
+                    "correct",
+                    -0.04667763982633092
+                ],
+                [
+                    "utterances!",
+                    0
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "recipe",
+            "cooking",
+            [
+                [
+                    "cooking",
+                    0.9855851326756297
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "recipe": 5,
+            "quirky": 1
+        }
+    }
+}

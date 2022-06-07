@@ -1,0 +1,18 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+8,iot,hue_lightchange,calendar_set,please set the lighting [color_type : suitable for reading],False,False,True
+2339,iot,hue_lightchange,calendar_set,set the mood please,False,False,True
+3146,iot,hue_lightchange,hue_lighton,turn the lights on [color_type : party mode],False,False,True
+7,iot,hue_lightchange,hue_lightup,make the lighting a bit more [color_type : warm] here,True,False,False
+2340,iot,hue_lightchange,music,i need some ambiance please,False,False,True
+4669,iot,hue_lightchange,quirky,make [device_type : curser] adjustable position,False,False,True
+1596,iot,hue_lightchange,quirky,choose a brighter color for [color_type : reading],False,False,True
+4491,iot,hue_lightchange,quirky,[color_type : White],False,False,True
+2154,iot,hue_lightchange,quirky,it will be good if you [color_type : yellowish] the light,False,False,True
+4667,iot,hue_lightchange,quirky,go to setting,False,False,True
+3010,iot,hue_lightchange,quirky,want to have [color_type : vibrant] colours,False,False,True
+3216,iot,hue_lightchange,quirky,brightness [change_amount : ninety percent],False,False,True
+3392,iot,hue_lightchange,quirky,can you do me a favor my eyes are feeling strained on these lights can you please change it to a [color_type : cooler tone],False,False,True
+4049,iot,hue_lightchange,quirky,i would like the like in the [house_place : kitchen] to be a different color,False,False,True
+2505,iot,hue_lightchange,recipe,make a contrast one,False,False,True
+2064,iot,hue_lightchange,weather_query,let's have a [color_type : warm] glow in the [house_place : front room],False,False,False
+6,iot,hue_lightchange,weather_query,[color_type : pink] is all we need,False,False,True

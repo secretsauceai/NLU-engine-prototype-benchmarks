@@ -1,0 +1,12 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+22826,general,affirm,negate,it's correct.,False,False,False
+22835,general,affirm,negate,that's correct.,False,False,False
+22970,general,affirm,negate,that is correct.,False,False,False
+23334,general,affirm,negate,correct.,False,False,False
+22877,general,affirm,praise,you have done it right.,True,False,False
+22945,general,affirm,praise,it's great.,False,False,False
+23009,general,affirm,praise,you've done that right.,True,False,False
+23090,general,affirm,praise,that's great.,True,False,False
+23133,general,affirm,praise,it was wonderful.,False,False,False
+22837,general,affirm,quirky,good.,False,False,False
+23327,general,affirm,quirky,affirmative.,False,False,False

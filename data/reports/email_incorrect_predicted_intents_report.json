@@ -1,0 +1,559 @@
+{
+    "email_query": {
+        "f1_score": 0.93,
+        "total_count": 749,
+        "total_incorrect_count": 42,
+        "top_features": [
+            "emails",
+            "email",
+            "inbox",
+            "from",
+            "mail",
+            "any",
+            "check",
+            "mails",
+            "did",
+            "emailed"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "sendemail",
+                "feature": "email",
+                "coef": 10.772789920175008
+            },
+            {
+                "intent": "confirm",
+                "feature": "check",
+                "coef": 8.212099873697426
+            },
+            {
+                "intent": "sendemail",
+                "feature": "mail",
+                "coef": 6.06872514760635
+            },
+            {
+                "intent": "addcontact",
+                "feature": "email",
+                "coef": 4.669876695604924
+            },
+            {
+                "intent": "lists_remove",
+                "feature": "from",
+                "coef": 3.799224007832952
+            },
+            {
+                "intent": "order",
+                "feature": "from",
+                "coef": 2.7295873851596126
+            },
+            {
+                "intent": "traffic",
+                "feature": "any",
+                "coef": 1.7214777884463799
+            },
+            {
+                "intent": "ticket",
+                "feature": "from",
+                "coef": 1.5911258727550746
+            }
+        ],
+        "correct_utterance_example": [
+            "email_query",
+            "repeat last message",
+            [
+                [
+                    "repeat",
+                    0.5297160706409231
+                ],
+                [
+                    "last",
+                    2.7918196601987373
+                ],
+                [
+                    "message",
+                    3.0391306588456426
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "music",
+            "play back the last message",
+            [
+                [
+                    "play",
+                    -1.6665349793949507
+                ],
+                [
+                    "back",
+                    0.6761561861349823
+                ],
+                [
+                    "the",
+                    -0.12406673790306391
+                ],
+                [
+                    "last",
+                    2.7918196601987373
+                ],
+                [
+                    "message",
+                    3.0391306588456426
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "sendemail": 14,
+            "quirky": 12,
+            "news_query": 4,
+            "factoid": 4,
+            "calendar_set": 3,
+            "querycontact": 2,
+            "music": 1,
+            "calendar_query": 1,
+            "recipe": 1
+        }
+    },
+    "sendemail": {
+        "f1_score": 0.9,
+        "total_count": 678,
+        "total_incorrect_count": 25,
+        "top_features": [
+            "email",
+            "send",
+            "reply",
+            "mail",
+            "to",
+            "respond",
+            "her",
+            "dot",
+            "com",
+            "him"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "email_query",
+                "feature": "email",
+                "coef": 8.487384189327939
+            },
+            {
+                "intent": "transport_query",
+                "feature": "to",
+                "coef": 5.292640599693578
+            },
+            {
+                "intent": "email_query",
+                "feature": "mail",
+                "coef": 4.707015627524775
+            },
+            {
+                "intent": "addcontact",
+                "feature": "email",
+                "coef": 4.669876695604924
+            },
+            {
+                "intent": "addcontact",
+                "feature": "com",
+                "coef": 3.0273804670977644
+            },
+            {
+                "intent": "addcontact",
+                "feature": "dot",
+                "coef": 3.008556118249621
+            },
+            {
+                "intent": "ticket",
+                "feature": "to",
+                "coef": 2.9956603916026583
+            },
+            {
+                "intent": "createoradd",
+                "feature": "to",
+                "coef": 2.469903675301739
+            }
+        ],
+        "correct_utterance_example": [
+            "sendemail",
+            "please send a reminder email to peter and ask him how long he will be taking to prepare the presentation ppt",
+            [
+                [
+                    "please",
+                    -0.2954535067539908
+                ],
+                [
+                    "send",
+                    7.494684237549945
+                ],
+                [
+                    "a",
+                    0
+                ],
+                [
+                    "reminder",
+                    -0.691322860922047
+                ],
+                [
+                    "email",
+                    10.772789920175008
+                ],
+                [
+                    "to",
+                    5.6634614500234015
+                ],
+                [
+                    "peter",
+                    0.3706252571859885
+                ],
+                [
+                    "and",
+                    2.0848840501796295
+                ],
+                [
+                    "ask",
+                    1.0287728397295686
+                ],
+                [
+                    "him",
+                    2.6018667480467568
+                ],
+                [
+                    "how",
+                    -0.32099375536350033
+                ],
+                [
+                    "long",
+                    -0.2699772635832003
+                ],
+                [
+                    "he",
+                    0.8521077486925303
+                ],
+                [
+                    "will",
+                    0.8801990829582559
+                ],
+                [
+                    "be",
+                    2.0017788151173743
+                ],
+                [
+                    "taking",
+                    0.2526623826251597
+                ],
+                [
+                    "to",
+                    5.6634614500234015
+                ],
+                [
+                    "prepare",
+                    0.38842989850737375
+                ],
+                [
+                    "the",
+                    -0.6637618978671165
+                ],
+                [
+                    "presentation",
+                    0.11043353142819141
+                ],
+                [
+                    "ppt",
+                    0.26091818804881045
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "quirky",
+            "text [person : sarah] if she is free for [event_name : brunch] [date : today]",
+            [
+                [
+                    "text",
+                    1.3285210522313255
+                ],
+                [
+                    "sarah",
+                    0.18186264372131875
+                ],
+                [
+                    "if",
+                    -0.11584683500869057
+                ],
+                [
+                    "she",
+                    0.8441281646460211
+                ],
+                [
+                    "is",
+                    -1.702065834968655
+                ],
+                [
+                    "free",
+                    0.4099291370819624
+                ],
+                [
+                    "for",
+                    0.5731506779128589
+                ],
+                [
+                    "brunch",
+                    0.30142057889901086
+                ],
+                [
+                    "today",
+                    -0.25788119256254016
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "email_query": 5,
+            "quirky": 4,
+            "calendar_set": 3,
+            "weather_query": 3,
+            "querycontact": 3,
+            "addcontact": 3,
+            "news_query": 1,
+            "calendar_query": 1,
+            "createoradd": 1,
+            "factoid": 1
+        }
+    },
+    "querycontact": {
+        "f1_score": 0.66,
+        "total_count": 210,
+        "total_incorrect_count": 60,
+        "top_features": [
+            "number",
+            "contact",
+            "contacts",
+            "address",
+            "john",
+            "phone",
+            "mary",
+            "call",
+            "information",
+            "al_infoemail"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "addcontact",
+                "feature": "contact",
+                "coef": 5.319352307091675
+            },
+            {
+                "intent": "addcontact",
+                "feature": "contacts",
+                "coef": 4.813993976423707
+            },
+            {
+                "intent": "taxi",
+                "feature": "call",
+                "coef": 3.1666981355009827
+            },
+            {
+                "intent": "order",
+                "feature": "call",
+                "coef": 2.8932231072646863
+            },
+            {
+                "intent": "addcontact",
+                "feature": "address",
+                "coef": 2.2281066429026004
+            }
+        ],
+        "correct_utterance_example": [
+            "querycontact",
+            "call [relation : mom]",
+            [
+                [
+                    "call",
+                    3.210047601774373
+                ],
+                [
+                    "mom",
+                    1.8169904474696938
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "quirky",
+            "have you responded my [event_name : phone calls]",
+            [
+                [
+                    "have",
+                    0.3803569037483566
+                ],
+                [
+                    "you",
+                    -1.1714354674181826
+                ],
+                [
+                    "responded",
+                    0.5347018528010575
+                ],
+                [
+                    "my",
+                    0.6144792335221607
+                ],
+                [
+                    "phone",
+                    3.7348914549119145
+                ],
+                [
+                    "calls",
+                    0.3598639296891978
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "factoid": 22,
+            "quirky": 21,
+            "email_query": 6,
+            "sendemail": 3,
+            "calendar_query": 3,
+            "calendar_set": 2,
+            "createoradd": 1,
+            "repeat": 1,
+            "news_query": 1
+        }
+    },
+    "addcontact": {
+        "f1_score": 0.7,
+        "total_count": 87,
+        "total_incorrect_count": 18,
+        "top_features": [
+            "add",
+            "contact",
+            "contacts",
+            "email",
+            "com",
+            "dot",
+            "save",
+            "address",
+            "my",
+            "yahoo"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "sendemail",
+                "feature": "email",
+                "coef": 10.772789920175008
+            },
+            {
+                "intent": "email_query",
+                "feature": "email",
+                "coef": 8.487384189327939
+            },
+            {
+                "intent": "querycontact",
+                "feature": "contact",
+                "coef": 6.369006443966976
+            },
+            {
+                "intent": "createoradd",
+                "feature": "add",
+                "coef": 6.345721025084056
+            },
+            {
+                "intent": "likeness",
+                "feature": "save",
+                "coef": 6.228997064378007
+            },
+            {
+                "intent": "calendar_set",
+                "feature": "add",
+                "coef": 5.580554034637236
+            },
+            {
+                "intent": "querycontact",
+                "feature": "contacts",
+                "coef": 5.062626434903183
+            },
+            {
+                "intent": "querycontact",
+                "feature": "address",
+                "coef": 4.994642408713975
+            },
+            {
+                "intent": "lists_query",
+                "feature": "my",
+                "coef": 3.5558657294293297
+            },
+            {
+                "intent": "takeaway_query",
+                "feature": "my",
+                "coef": 2.9975194245439454
+            },
+            {
+                "intent": "sendemail",
+                "feature": "dot",
+                "coef": 2.7169109771300097
+            },
+            {
+                "intent": "sendemail",
+                "feature": "com",
+                "coef": 2.6760177886114453
+            }
+        ],
+        "correct_utterance_example": [
+            "addcontact",
+            "add this person's [personal_info : email]",
+            [
+                [
+                    "add",
+                    5.564157294229778
+                ],
+                [
+                    "this",
+                    0.8549642081593417
+                ],
+                [
+                    "person's",
+                    0
+                ],
+                [
+                    "email",
+                    4.669876695604924
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "createoradd",
+            "please add [person : tom] to my contact list",
+            [
+                [
+                    "please",
+                    0.006626958821972366
+                ],
+                [
+                    "add",
+                    5.564157294229778
+                ],
+                [
+                    "tom",
+                    0.35558948616418035
+                ],
+                [
+                    "to",
+                    0.11025434925376922
+                ],
+                [
+                    "my",
+                    2.0819561120232213
+                ],
+                [
+                    "contact",
+                    5.319352307091675
+                ],
+                [
+                    "list",
+                    -0.26484313110327234
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "sendemail": 12,
+            "querycontact": 3,
+            "createoradd": 2,
+            "email_query": 1
+        }
+    }
+}

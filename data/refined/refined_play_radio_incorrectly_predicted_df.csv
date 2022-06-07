@@ -1,0 +1,56 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+11194,play,radio,game,play the college baseball game,False,False,True
+11195,play,radio,game,play the miami heat and warriors game,False,False,True
+11200,play,radio,music,play [radio_name : rush limbaugh],False,False,True
+11206,play,radio,music,i want to listen to today's hits,False,False,True
+11209,play,radio,music,open media player and play top hits,False,False,True
+11479,play,radio,music,open [app_name : pandora] and play [music_descriptor : workout],True,False,False
+11218,play,radio,music,play [person : sam harris] please,False,False,True
+11258,play,radio,music,play the [radio_name : breakfast club],False,False,True
+11312,play,radio,music,play [music_genre : indi] song from [radio_name : fm],False,False,True
+11329,play,radio,music,play some [music_genre : soft rock],False,False,True
+11330,play,radio,music,put on some [music_genre : love songs],False,False,True
+10972,play,radio,music,play [app_name : spotify],False,False,True
+11368,play,radio,music,can you please put on [media_type : music],False,False,True
+11375,play,radio,music,could you please play this programme for me,False,False,True
+11388,play,radio,music,play britney spears live concert series,False,False,True
+11413,play,radio,music,play [person : howard stern],False,False,True
+11414,play,radio,music,i want listen to [radio_name : kevin and bean],False,False,True
+11457,play,radio,music,please play [song_name : doluma] from [music_album : vedhalam],False,False,True
+11461,play,radio,music,i want to hear [date : this week's] midweek motorsport,False,False,True
+11477,play,radio,music,start [app_name : pandora] and play the [artist_name : beatles],True,False,False
+11363,play,radio,music,load up [person : dr demento] and play it by my bed,False,False,True
+11341,play,radio,music,i want [media_type : music],False,False,True
+11216,play,radio,music,please play popular music on [app_name : pandora],True,False,False
+11153,play,radio,music,play [radio_name : american idol] for me now,False,False,True
+10973,play,radio,music,play [radio_name : soundcloud],True,False,True
+10976,play,radio,music,can you play [radio_name : acoustic music] with no commercials,False,False,True
+11030,play,radio,music,play am,False,False,True
+11031,play,radio,music,play old,False,False,True
+11039,play,radio,music,play [radio_name : radia],False,False,True
+11057,play,radio,music,play [media_type : tunes],False,False,True
+11080,play,radio,music,play any [radio_name : country music station],False,False,False
+11084,play,radio,music,put on [music_genre : rock] [radio_name : ten fifty three],False,False,True
+11090,play,radio,music,can you play [music_genre : kxly] for me,False,False,True
+11050,play,radio,music,tune to [radio_name : classic hits],True,False,False
+11492,play,radio,music,play [app_name : netflix] on my [device_type : ps four],False,False,True
+11115,play,radio,music,let's play music hits,False,False,True
+11152,play,radio,music,play [radio_name : ncaa match kentucky vs arizona live],False,False,True
+11151,play,radio,music,play [radio_name : ipl two thousand and seventeen],False,False,True
+11118,play,radio,music,please play some music,False,False,True
+11119,play,radio,music,please play some songs for [relation : kids],False,False,True
+11139,play,radio,music,i need you to find a good channels to listen to,False,False,True
+11460,play,radio,news_query,put the news on [radio_name : bbc],False,False,True
+11455,play,radio,news_query,play news programme,False,False,True
+11281,play,radio,news_query,please play the [radio_name : news channel] so that i can hear some news,False,False,True
+11459,play,radio,podcasts,play the latest episode of little steven's underground garage,False,False,True
+11314,play,radio,podcasts,play the neal brennan episode of wait wait don't tell me,False,False,True
+11219,play,radio,podcasts,i want to listen to the new [person : sam harris] episode,False,False,True
+10991,play,radio,quirky,[radio_name : radioshows dot mobi],False,False,True
+11184,play,radio,quirky,listen to [radio_name : sports talk],False,False,True
+11464,play,radio,quirky,i would like to hear fresh air,False,False,True
+11237,play,radio,quirky,tune best topic,False,False,True
+11415,play,radio,quirky,can you start [person : ryan seacrest],False,False,True
+10993,play,radio,sendemail,[radio_name : shoutcast dot com],False,False,True
+10992,play,radio,sendemail,[radio_name : live365 dot com],False,False,True
+11382,play,radio,weather_query,weather forecast from [radio_name : radio plus],False,False,True

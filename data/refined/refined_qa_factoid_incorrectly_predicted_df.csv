@@ -1,0 +1,68 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+16448,qa,factoid,calendar_query,when is the next lakers game,False,False,False
+16685,qa,factoid,currency,can you give me the exchange rate for dollar in rupees,False,False,True
+17820,qa,factoid,datetime_query,what time zone is in [place_name : cuba],False,False,True
+15764,qa,factoid,datetime_query,what time zone is [place_name : arizona] in,False,False,True
+15900,qa,factoid,datetime_query,tell me the next show time for the new marvel movie,False,False,True
+17338,qa,factoid,definition,describe the current state of politics,False,False,True
+17757,qa,factoid,definition,describe the general topography of [place_name : central park],True,False,False
+17989,qa,factoid,events,what are the climatic conditions in that area,False,False,True
+16161,qa,factoid,lists_remove,can you list off the top ten singles [date : this week],True,False,False
+16063,qa,factoid,music,list the latest books published by favorite authors,False,False,True
+17187,qa,factoid,news_query,tell me about [place_name : new york],False,False,False
+16455,qa,factoid,news_query,whats the crime rate in [place_name : chicago],False,False,False
+16769,qa,factoid,news_query,tell me about [person : donald trump],False,False,False
+18064,qa,factoid,news_query,what's [person : trump] been on about [date : this week],False,False,True
+16658,qa,factoid,querycontact,i want some information on [person : john lennon],False,False,False
+15687,qa,factoid,querycontact,do you know [person : jessica snout's] phone number,False,False,True
+17977,qa,factoid,quirky,find me some celebrities that are capricorns,False,False,True
+17050,qa,factoid,quirky,what do you know about [person : eminem],False,False,False
+18295,qa,factoid,quirky,look up bruno mars,False,False,False
+18200,qa,factoid,quirky,tell me why relationships are so hard,True,False,True
+17279,qa,factoid,quirky,what's the answer to the universe,True,False,True
+17287,qa,factoid,quirky,i want to learn about [person : donald trump],False,False,False
+17308,qa,factoid,quirky,what does a basketball feel like,False,False,True
+18198,qa,factoid,quirky,help me to understand the meaning of this life,True,False,True
+18136,qa,factoid,quirky,hey i would like to know some key facts about [place_name : mongolia],False,False,False
+17427,qa,factoid,quirky,how would you reach [place_name : moscow],False,False,True
+17481,qa,factoid,quirky,why has politics become so polarized recently,False,False,True
+17613,qa,factoid,quirky,explain to me how gravity works,False,False,False
+17615,qa,factoid,quirky,id like my to randomly make jokes unprompted,False,False,True
+18081,qa,factoid,quirky,hey would like to know about [person : bruce lee],False,False,False
+18070,qa,factoid,quirky,how would i do an psso in my knitting project,False,False,False
+16884,qa,factoid,quirky,what [person : johncena] do,False,False,True
+17843,qa,factoid,quirky,give me everything you know about [person : bob dean],False,False,False
+17867,qa,factoid,quirky,what does [person : lady gaga] like to eat,False,False,False
+17909,qa,factoid,quirky,compare [place_name : usa] and other countries,False,False,False
+18000,qa,factoid,quirky,how come you assistants are never male,True,False,True
+16855,qa,factoid,quirky,tell me about amazon's history,False,False,False
+15454,qa,factoid,quirky,tell me if its [event_name : national holiday] [date : tomorrow],True,False,False
+16800,qa,factoid,quirky,tell me everything you know about sloths,False,False,False
+15471,qa,factoid,quirky,search google shopping for the best price on a monoprice mxblue mechanical keyboard,True,False,True
+15482,qa,factoid,quirky,what are the oil prices like [date : today] for a barrel of crude oil,True,False,False
+15503,qa,factoid,quirky,i need to know why girls are so different to man explained as science man,False,False,True
+15630,qa,factoid,quirky,do you know actor [person : surya],False,False,True
+15824,qa,factoid,quirky,when is the next non working day,True,False,True
+15870,qa,factoid,quirky,what does celebrity do,False,False,True
+15894,qa,factoid,quirky,who are the best drummers in the world [date : today],True,False,False
+16018,qa,factoid,quirky,was there an improvement to the us economy,False,False,False
+16030,qa,factoid,quirky,can you give me a rundown on [person : john legend],False,False,False
+16043,qa,factoid,quirky,what can you tell me about [person : diana],False,False,False
+16854,qa,factoid,quirky,tell me about [person : donald trumps] early life,False,False,False
+16136,qa,factoid,quirky,is it better to invest or save,True,False,True
+16135,qa,factoid,quirky,when will [person : tesla] come to my town,False,False,False
+16172,qa,factoid,quirky,what is the answer to life,True,False,True
+16187,qa,factoid,quirky,are jello shots calorie free,False,False,False
+16660,qa,factoid,quirky,can you tell me about [person : wayne gretszky],False,False,False
+18296,qa,factoid,quirky,look up beyonce wikipedia,False,False,True
+16796,qa,factoid,quirky,how long does it take to fly to [place_name : china],True,False,False
+16142,qa,factoid,quirky,can cats eat fish,False,False,False
+18298,qa,factoid,quirky,can you convert my this money into,False,False,True
+17585,qa,factoid,transport_query,how long will it take to travel to [place_name : japan] from [place_name : south korea],False,False,True
+16564,qa,factoid,transport_query,how long does it take to get to the moon,False,False,False
+16670,qa,factoid,transport_query,can you get me the route to [place_name : chicago] before midnight,False,False,True
+16256,qa,factoid,weather_query,what is the temperature right now in [place_name : new york],False,False,True
+15993,qa,factoid,weather_query,what's going to be the cure for cancer,True,False,False
+16425,qa,factoid,weather_query,is [artist_name : adele] going to go on tour,False,False,False
+15890,qa,factoid,weather_query,whats going to be the forecast tomorrow for outer nowhereville,False,False,True
+16653,qa,factoid,weather_query,what is the temperature in [place_name : indianapolis indiana],False,False,True

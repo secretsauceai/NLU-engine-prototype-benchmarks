@@ -1,0 +1,50 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+12284,play,game,factoid,how about a game of [game_name : snakes and ladders],False,False,False
+12229,play,game,factoid,please begin [game_name : clash of clans],True,False,True
+12282,play,game,music,do you want to play a game,True,False,False
+12343,play,game,music,play [game_name : subway surfer],False,False,True
+12342,play,game,music,play [game_name : planetside two],False,False,True
+12339,play,game,music,play [game_name : fmod],False,False,True
+12335,play,game,music,we should play [game_name : nfs] at high speed,False,False,True
+12313,play,game,music,play [game_name : racing],False,False,True
+12371,play,game,music,i would like for us to play [game_name : jeopardy] now,True,False,True
+12280,play,game,music,let's play a game,True,False,False
+12273,play,game,music,let's play some [game_name : pong],True,False,True
+12376,play,game,music,play [game_name : cricket],False,False,True
+12260,play,game,music,start play [game_name : road rash],False,False,True
+12258,play,game,music,play [game_name : ping pong],False,False,True
+12344,play,game,music,[game_name : temple runner] play,False,False,True
+12244,play,game,music,i want to play [game_name : blackjack],True,False,True
+12377,play,game,music,play [game_name : tennis] for me,False,False,False
+12361,play,game,music,can we play [game_name : twenty questions],True,False,True
+12223,play,game,music,play [game_name : keno],False,False,True
+12222,play,game,music,play [game_name : bingo],False,False,True
+12221,play,game,music,play [game_name : golf],False,False,True
+12378,play,game,music,play [game_name : football match] for myself now,False,False,True
+12181,play,game,music,i want to play [game_name : rock paper scissors] let's play,False,False,True
+12214,play,game,music,start up [game_name : bejeweled],False,False,True
+12184,play,game,music,i would like to play [game_name : tetris],True,False,True
+12212,play,game,music,play [game_name : solitaire],False,False,True
+12234,play,game,music,start play [game_name : spider],False,False,True
+12387,play,game,music,i need to play [game_name : sims],False,False,True
+12198,play,game,music,play [game_name : rummy],False,False,True
+12191,play,game,music,i'd like to play [game_name : monopoly],True,False,True
+12248,play,game,praise,search for the teams that are playing,False,False,True
+12216,play,game,querycontact,i'm thinking of a [game_name : number one to ten],True,False,True
+12369,play,game,quirky,[game_name : twenty questions] you start,True,False,True
+12363,play,game,quirky,can you do [game_name : name that tune],True,False,True
+12374,play,game,quirky,could you harvest the crops in [game_name : farmvile],False,False,True
+12367,play,game,quirky,[game_name : paper scissors or stone],False,False,True
+12381,play,game,quirky,let's [game_name : roll the dice],True,False,True
+7705,play,game,quirky,puzzles and games app,True,False,False
+12332,play,game,quirky,[game_name : mario],False,False,True
+12287,play,game,quirky,lets [game_name : correct the sentences],False,False,True
+12286,play,game,quirky,lets solve [game_name : the puzzle],True,False,True
+12388,play,game,quirky,can you find [game_name : animal crossing],False,False,True
+12272,play,game,quirky,fight me in [game_name : street fighter],False,False,True
+12217,play,game,quirky,[game_name : tag you're it],False,False,True
+12202,play,game,quirky,anyone for [game_name : tennis],False,False,True
+12185,play,game,quirky,launch [game_name : super mario],False,False,True
+12341,play,game,quirky,load up [game_name : ghost recon wildlands],False,False,True
+15601,play,game,quirky,lets go nazi hunting,False,False,True
+12253,play,game,radio,turn on [device_type : console],True,False,True

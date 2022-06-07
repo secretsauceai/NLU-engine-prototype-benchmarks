@@ -1,0 +1,35 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+13272,lists,createoradd,addcontact,add business contacts to [list_name : contact list],False,False,True
+13133,lists,createoradd,calendar_set,remind me to order more soap,False,False,True
+13027,lists,createoradd,calendar_set,remind me to buy jeans on my [list_name : shopping] list,False,False,True
+12596,lists,createoradd,calendar_set,remember to put carrots in there,False,False,True
+13135,lists,createoradd,calendar_set,pick up dry cleaning [date : tomorrow],False,False,True
+13199,lists,createoradd,calendar_set,add this one also,False,False,True
+12635,lists,createoradd,calendar_set,add paav bhaji in menu card,False,False,True
+12659,lists,createoradd,calendar_set,add these documents to the [list_name : things i need to travel] with,False,False,True
+12782,lists,createoradd,calendar_set,please add an item in my calendar,False,False,True
+13032,lists,createoradd,calendar_set,add to my [list_name : groceries],False,False,True
+13026,lists,createoradd,lists_query,put laundry on my [list_name : to do] list,False,False,True
+12954,lists,createoradd,lists_query,get eggs on the list,False,False,True
+12660,lists,createoradd,lists_query,replace the furniture with electronics on the list,False,False,True
+13265,lists,createoradd,lists_query,update my list,False,False,True
+12734,lists,createoradd,lists_remove,the list should contain this item,False,False,True
+12622,lists,createoradd,lists_remove,select the item,False,False,True
+12621,lists,createoradd,lists_remove,search the item,False,False,True
+12862,lists,createoradd,music,create a playlist,False,False,True
+12605,lists,createoradd,music,i want to have a new playlist of songs,False,False,True
+13369,lists,createoradd,music,add the song the new playlist,False,False,True
+13258,lists,createoradd,music,make new playlist from [music_descriptor : recent] songs,False,False,True
+18332,lists,createoradd,order,please order me this months groceries,False,False,True
+13209,lists,createoradd,post,write down these items,False,False,True
+15561,lists,createoradd,quirky,i want sweet potato pie from a local bakery,False,False,True
+13192,lists,createoradd,quirky,we need milk,False,False,True
+13197,lists,createoradd,quirky,insert this item,False,False,True
+12817,lists,createoradd,quirky,open my notes,False,False,True
+13205,lists,createoradd,quirky,include this,False,False,True
+12685,lists,createoradd,quirky,produce a new register,False,False,True
+12683,lists,createoradd,quirky,generate a new inventory,False,False,True
+12595,lists,createoradd,quirky,hey put carrots on that,False,False,True
+13134,lists,createoradd,quirky,i need more milk,False,False,True
+12442,lists,createoradd,quirky,i also need to buy batteries aaa,False,False,True
+12684,lists,createoradd,recipe,make a catalogue,False,False,True

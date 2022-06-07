@@ -1,0 +1,13 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+4857,iot,cleaning,factoid,there is a pile of torn paper on the rug to suck up,False,False,True
+19,iot,cleaning,music,it's dirty here make some noise,False,False,True
+6834,iot,cleaning,music,start [device_type : irobot],False,False,False
+22,iot,cleaning,quirky,hoover the [house_place : hallway],False,False,False
+23,iot,cleaning,quirky,hoover the [house_place : carpets] around,False,False,False
+906,iot,cleaning,quirky,robot do the [house_place : whole house] now,False,False,True
+2627,iot,cleaning,quirky,initiate cleaning process,False,False,True
+4469,iot,cleaning,quirky,let's suck out the dust,False,False,True
+4989,iot,cleaning,quirky,start [device_type : robo vac],False,False,False
+6599,iot,cleaning,quirky,begin [device_type : vacuuming],False,False,False
+2266,iot,cleaning,radio,turn my [device_type : iroomba] on,False,False,False
+1803,iot,cleaning,weather_query,take it in hand,False,False,True

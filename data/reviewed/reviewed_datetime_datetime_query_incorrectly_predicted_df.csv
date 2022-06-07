@@ -1,0 +1,59 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+6999,datetime,datetime_query,calendar_query,do you have the time,False,False,False
+3546,datetime,datetime_query,calendar_query,what's the date [date : tomorrow],False,False,False
+5705,datetime,datetime_query,calendar_query,when is the next [date : friday] [date : the thirteenth],False,False,False
+6281,datetime,datetime_query,calendar_query,do we have a [date : thirty first] day [date : this month],False,False,False
+4473,datetime,datetime_query,calendar_query,when is the [event_name : next holiday],False,False,True
+6292,datetime,datetime_query,calendar_query,what is the date next [date : saturday],False,False,False
+1989,datetime,datetime_query,calendar_query,time left for [time : ten am],False,False,True
+3691,datetime,datetime_query,calendar_query,what is the date for next [date : tuesday],False,False,True
+6861,datetime,datetime_query,calendar_query,is [date : april fifteenth] on a [date : weekend],False,False,False
+1364,datetime,datetime_query,calendar_query,is there a national holiday on [date : fifth december],False,False,False
+1161,datetime,datetime_query,calendar_query,when is the [date : next month] that has thirty one days,False,False,False
+1084,datetime,datetime_query,calendar_query,can i have [date : today's] date,False,False,False
+4994,datetime,datetime_query,calendar_query,what is the [date : first friday of next month],False,False,False
+6675,datetime,datetime_query,calendar_set,[time : a quarter to two],False,False,True
+3609,datetime,datetime_query,convert,what is the time difference between here and [place_name : dakar],False,False,True
+1504,datetime,datetime_query,currency,how much in the clock,False,False,True
+2729,datetime,datetime_query,definition,what time does the [time : sun set],False,False,False
+6998,datetime,datetime_query,definition,what does the clock say,False,False,True
+4474,datetime,datetime_query,factoid,when is the first weekday of the month,False,False,False
+577,datetime,datetime_query,factoid,how many [event_name : birthday's] are on [date : twenty third],False,False,True
+4996,datetime,datetime_query,factoid,how many [date : saturdays are in march],False,False,False
+5487,datetime,datetime_query,factoid,how many fridays are there in [date : may],False,False,False
+6294,datetime,datetime_query,factoid,how many hours remaining to reach [time : midnight] in city,False,False,True
+6295,datetime,datetime_query,factoid,how many hours gone from [time : midnight] on city,False,False,True
+6296,datetime,datetime_query,factoid,how many hours remaining for [time : mid noon],False,False,False
+4995,datetime,datetime_query,factoid,how many days are in [date : february],False,False,False
+6291,datetime,datetime_query,factoid,how many days [date : until march thirty],False,False,False
+4407,datetime,datetime_query,factoid,how many hours ahead is [place_name : nyc],True,True,False
+4191,datetime,datetime_query,factoid,what is the timer in [place_name : japan],False,False,True
+1558,datetime,datetime_query,factoid,when is [event_name : halloween],False,False,False
+1969,datetime,datetime_query,factoid,how many minutes pass [time : four pm],False,False,True
+4389,datetime,datetime_query,factoid,when is [event_name : easter],False,False,False
+2430,datetime,datetime_query,factoid,what week of the year does the [time : summer season] start,False,False,False
+2822,datetime,datetime_query,factoid,what is [date : tomorrows] date,False,False,False
+2431,datetime,datetime_query,factoid,how many weeks are left for [event_name : christmas],False,False,False
+3141,datetime,datetime_query,factoid,what is [date : mondays] actual date,False,False,False
+3080,datetime,datetime_query,factoid,what is the date of next [date : saturday],False,False,False
+2429,datetime,datetime_query,maths,what day of the week was [date : december four one thousand nine hundred and eighty two],False,False,False
+6811,datetime,datetime_query,news_query,what is the current [date : date] in [place_name : new york],False,False,False
+6614,datetime,datetime_query,quirky,what is [date : today's] date,False,False,False
+1496,datetime,datetime_query,quirky,what was the date of [date : two wednesdays back from today],False,False,False
+4920,datetime,datetime_query,quirky,be my clock,False,False,True
+1394,datetime,datetime_query,quirky,hey what's [date : today's] date,False,False,False
+2368,datetime,datetime_query,quirky,what day was it on [date : my birth date],True,False,True
+2025,datetime,datetime_query,quirky,how many seconds are left to complete this [time : hour],False,False,True
+4486,datetime,datetime_query,quirky,what's the best day [date : next week] to go out for [food_type : pizza],False,False,True
+1333,datetime,datetime_query,quirky,can you tell me [date : today's] date,False,False,False
+6674,datetime,datetime_query,quirky,[time : ten past seven],False,False,True
+2369,datetime,datetime_query,radio,was [event_name : christmas] [date : one thousand nine hundred and seventy two] on a [date : weekend],False,False,False
+5072,datetime,datetime_query,transport_query,how close is it to [time : eight pm],False,False,False
+5767,datetime,datetime_query,weather_query,is it [time : five] yet,False,False,True
+5324,datetime,datetime_query,weather_query,is it [timeofday : noon] in [place_name : paris],True,False,False
+4722,datetime,datetime_query,weather_query,is it afternoon yet,False,False,False
+3785,datetime,datetime_query,weather_query,is it [time : ten],False,False,False
+5571,datetime,datetime_query,weather_query,what will the date be next [date : wednesday],False,False,False
+9763,datetime,datetime_query,weather_query,is it [date : wednesday],False,False,False
+6513,datetime,datetime_query,quirky,whats [date : today's] date,False,False,False
+6810,datetime,datetime_query,quirky,whats [date : today],False,False,False

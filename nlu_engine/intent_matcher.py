@@ -3,6 +3,8 @@ from .tfidf_encoder import TfidfEncoder
 from .data_utils import DataUtils
 from .entity_extractor import EntityExtractor
 
+import numpy as np
+
 from sklearn.ensemble import RandomForestClassifier
 from sklearn import svm
 from sklearn.naive_bayes import GaussianNB
@@ -98,6 +100,29 @@ class IntentMatcher:
         predicted_label = classifier_model.predict(transformed_utterance)
         decoded_label = LabelEncoder.decode(predicted_label)
         return decoded_label[0]
+
+    @staticmethod
+    def get_prediction_probability(classifier_model, tfidf_vectorizer, utterance):
+        """
+        Get the prediction probability of the label of the utterance.
+        :param classifier_model: classifier model
+        :param tfidf_vectorizer: tfidf vectorizer
+        :param utterance: string
+        :return: label
+        """
+        if '[' in utterance:
+            utterance = EntityExtractor.normalise_utterance(
+                utterance=utterance)
+        transformed_utterance = TfidfEncoder.encode_vectors(
+            utterance, tfidf_vectorizer)
+        transformed_utterance = IntentMatcher.get_dense_array(
+            classifier_model, transformed_utterance)
+
+        predicted_probability = classifier_model.predict_proba(
+            transformed_utterance)
+        ix = predicted_probability.argmax(1).item()
+
+        return predicted_probability.max()
 
     @staticmethod
     def get_incorrect_predicted_labels(data_df, classifier_model, tfidf_vectorizer):

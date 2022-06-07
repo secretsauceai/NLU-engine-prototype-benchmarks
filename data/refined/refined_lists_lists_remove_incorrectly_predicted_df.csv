@@ -1,0 +1,30 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+9313,lists,lists_remove,calendar_remove,delete everything on the menu,False,False,True
+13073,lists,lists_remove,calendar_remove,on my [list_name : to dos] remove mop kitchen,False,False,False
+13068,lists,lists_remove,calendar_remove,delete my [list_name : to do's] for [date : this week],False,False,False
+12981,lists,lists_remove,calendar_remove,remove [meal_type : lunch] with [relation : co workers] on [date : thursday],False,False,True
+12844,lists,lists_remove,calendar_remove,clear all from my iphone,False,False,True
+12718,lists,lists_remove,calendar_remove,if there is event of show then remove it,False,False,True
+12843,lists,lists_remove,calendar_remove,delete this [event_name : birthday party],False,False,True
+12570,lists,lists_remove,calendar_remove,delete all lists,False,False,False
+12900,lists,lists_remove,hue_lightoff,take that off there,False,False,True
+12406,lists,lists_remove,lists_query,please clean my [list_name : shopping] list,False,False,True
+13011,lists,lists_remove,lists_query,i want to cancel the recording i have on the [list_name : dvr] list for this [timeofday : morning],False,False,True
+12864,lists,lists_remove,lists_query,open lists remove list,False,False,True
+12587,lists,lists_remove,lists_query,reset my [list_name : locations] list,False,False,True
+13095,lists,lists_remove,lists_query,show list items,False,False,True
+12798,lists,lists_remove,lists_query,throw away my [list_name : to do] list please,False,False,True
+12553,lists,lists_remove,lists_query,i'm done with [date : today's] [list_name : to do] list,True,False,True
+13256,lists,lists_remove,music,remove all playlist from [list_name : music player],False,False,True
+13012,lists,lists_remove,music,please delete the last song that played from the playlist,False,False,True
+12478,lists,lists_remove,music,delete [list_name : happy dance] playlist,False,False,False
+12555,lists,lists_remove,music,please delete the list [list_name : gift ideas] for my [relation : wife] and play me some [music_descriptor : sad] [media_type : music],False,False,True
+12522,lists,lists_remove,music_query,delete the song [song_name : what if] in my [list_name : music],False,False,False
+12824,lists,lists_remove,negate,i do not need this any more,False,False,True
+13144,lists,lists_remove,quirky,trash file one,False,False,True
+13123,lists,lists_remove,quirky,kill item,False,False,True
+12893,lists,lists_remove,quirky,i don't have enough money to buy the nintendo switch right now can you please remove it on my amazon wishlist,False,False,True
+13072,lists,lists_remove,quirky,cut red peppers from [list_name : groceries],False,False,True
+13296,lists,lists_remove,quirky,i don't want eggs,False,False,True
+13109,lists,lists_remove,quirky,i won't be getting an oil change for my car [date : today],False,False,True
+13297,lists,lists_remove,quirky,get rid of peas,False,False,True

@@ -1,0 +1,14 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+3383,iot,wemo_off,commandstop,shut down the plug,False,False,False
+6808,iot,wemo_off,commandstop,shut down [device_type : sps],False,False,True
+5731,iot,wemo_off,factoid,off all type of active devices,False,False,True
+4478,iot,wemo_off,hue_lightdim,please power down,False,False,True
+3255,iot,wemo_off,hue_lightoff,turn off the [device_type : fan] in the [house_place : master bedroom],True,False,False
+4630,iot,wemo_off,hue_lightoff,turn off my wifi,False,False,True
+5154,iot,wemo_off,hue_lightoff,turn off [house_place : bedroom] fan,True,False,False
+5662,iot,wemo_off,hue_lightoff,turn off sockets,False,False,True
+6500,iot,wemo_off,hue_lightoff,turn off the [device_type : tv],True,False,False
+294,iot,wemo_off,quirky,disable my [device_type : okug],False,False,True
+1898,iot,wemo_off,quirky,if idle then turn off else turn on,False,False,True
+2986,iot,wemo_off,quirky,i do not want to use the [device_type : socket] anymore,True,False,False
+8575,iot,wemo_off,quirky,mute your [device_type : android phone] when you arrive at work,False,False,True

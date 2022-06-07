@@ -52,14 +52,8 @@ class MacroDataRefinement:
             f'Please select a domain from the list:\n{list_of_domains}')
         return domain_selection
 
-
     @staticmethod
-    def create_sheet(to_review_df):
-        """
-        Create a sheet from a dataframe
-        :param df_to_review: pandas dataframe
-        :return: IPySheet
-        """
+    def create_review_df(to_review_df):
         to_review_df.drop(
             columns=['answer_normalised', 'question'], inplace=True)
 
@@ -71,6 +65,17 @@ class MacroDataRefinement:
 
         to_review_df = to_review_df.assign(remove=None)
         to_review_df['remove'] = to_review_df['remove'].astype(bool)
+
+        return to_review_df
+
+    @staticmethod
+    def create_sheet(to_review_df):
+        """
+        Create a sheet from a dataframe
+        :param df_to_review: pandas dataframe
+        :return: IPySheet
+        """
+        to_review_df = MacroDataRefinement.create_review_df(to_review_df)
 
         to_review_sheet = ipysheet.from_dataframe(to_review_df)
 
@@ -123,46 +128,6 @@ class MacroDataRefinement:
         refined_type = refined_type + '_refined'
         refined_dataframe[refined_type] = True
         return refined_dataframe
-
-    @staticmethod
-    def merge_refined_data_into_dataset(dataset_df, refined_dataframe):
-        """
-        Merge the refined data into the complete dataset and return the updated dataset
-        :param dataset_df: pandas dataframe
-        :param refined_dataframe: pandas dataframe
-        :return: pandas dataframe
-        """
-        #TODO: 
-        #TODO: should I leave it as is with the intent and entity columns or add those in as a parameter?
-        #TODO: There must be a nicer way to do this, but I can never remember pandas syntax, LOL!
-        combined_df = dataset_df.merge(refined_dataframe, how='left',
-                                      left_index=True,
-                                      right_index=True)
-        combined_df['scenario_y'].fillna(combined_df['scenario_x'], inplace=True)
-        combined_df['intent_y'].fillna(combined_df['intent_x'], inplace=True)
-        combined_df['answer_annotation_y'].fillna(
-            combined_df['answer_annotation_y'], inplace=True)
-        combined_df['status_y'].fillna(combined_df['status_x'], inplace=True)
-        #NOTE: hard coded intent_refined and entity_refined for now!
-        if 'intent_refined_y' not in combined_df.columns:
-            combined_df['intent_refined'].fillna(False, inplace=True)
-        if 'entity_refined' in combined_df.columns:
-            combined_df['entity_refined'].fillna(False, inplace=True)
-        else:
-            combined_df['entity_refined'] = False
-        combined_df.drop(columns=[
-            'scenario_x',
-            'intent_x',
-            'answer_annotation_x',
-            'status_x',
-            'move'], inplace=True)
-        combined_df.rename(columns={
-            'scenario_y': 'scenario',
-            'intent_y': 'intent',
-            'answer_annotation_y': 'answer_annotation',
-            'status_y': 'status'}, inplace=True)
-
-        return combined_df
 
     @staticmethod
     def upgrade_dataframe(data_df):

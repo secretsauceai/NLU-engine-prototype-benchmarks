@@ -129,12 +129,14 @@ class MacroIntentRefinement:
                 intent)]['f1-score'].round(2).values[0]
             all_examples_of_intent_df = nlu_domain_df[(
                 nlu_domain_df["intent"] == intent)]
-
-            correct_utterance_annotated_example = all_examples_of_intent_df[~all_examples_of_intent_df.index.isin(
-                incorrect_intent_predictions_df.index)]['answer_annotation'].iloc[0]
-            correct_utterance_example = all_examples_of_intent_df[~all_examples_of_intent_df.index.isin(
-                incorrect_intent_predictions_df.index)]['answer_normalised'].iloc[0]
-
+            try:
+                correct_utterance_annotated_example = all_examples_of_intent_df[~all_examples_of_intent_df.index.isin(
+                    incorrect_intent_predictions_df.index)]['answer_annotation'].iloc[0]
+                correct_utterance_example = all_examples_of_intent_df[~all_examples_of_intent_df.index.isin(
+                    incorrect_intent_predictions_df.index)]['answer_normalised'].iloc[0]
+            except:
+                correct_utterance_annotated_example = 'There are no correct utterances!'
+                correct_utterance_example = 'There are no correct utterances!'
             incorrect_utterance_annotated_example = incorrect_intent_predictions_df[
                 incorrect_intent_predictions_df["intent"] == intent]["answer_annotation"].iloc[0]
 
@@ -206,3 +208,26 @@ class MacroIntentRefinement:
         intent_values = incorrect_intent_predictions_df['intent'].unique()
         intent_to_refine = input(f"select intent to refine from the list:\n{intent_values}")
         return intent_to_refine
+
+    @staticmethod
+    def remove_intent(df, intent_to_remove):
+        """
+        Remove all entries of an intent from the dataframe.
+        :param df: pandas dataframe
+        :return: pandas dataframe
+        """
+        df = df[df['intent'] == intent_to_remove]
+        return df
+
+    @staticmethod
+    def get_matched_domains_to_intents(df, intents):
+        intents_list = intents.unique().tolist()
+        domains_list = [domain for intent in intents for domain in df[df.intent == intent]['scenario'].unique()]
+        intent_domains = zip(intents_list, domains_list)
+        return intent_domains
+
+    @staticmethod
+    def append_reviewed_intents_csvs(intents_domains, df):
+        for intent, domain in intents_domains:
+            df[df.intent == intent].to_csv(
+                f'data/reviewed/{domain}_{intent}_incorrectly_predicted_df.csv', mode='a', header=False)

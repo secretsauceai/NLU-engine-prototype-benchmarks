@@ -1,0 +1,59 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+4899,music,music_query,factoid,what is the track information currently,False,False,True
+3698,music,music_query,factoid,who is singing,False,False,True
+2403,music,music_query,factoid,[song_name : hotel california] is sung by whom,False,False,True
+2401,music,music_query,factoid,who is the singer of [song_name : hotel california],False,False,True
+17163,music,music_query,factoid,show albums of [artist_name : rihana],False,False,False
+8487,music,music_query,factoid,where is band playing,False,False,True
+5737,music,music_query,factoid,who sing [song_name : we are the world],False,False,True
+11726,music,music_query,factoid,list of playback of [artist_name : ar rahman] collections,False,False,True
+6974,music,music_query,factoid,what have i played the most,False,False,True
+12615,music,music_query,lists_query,tell me a play list,False,False,True
+12487,music,music_query,lists_query,what is the list about my favorite songs,False,False,True
+12471,music,music_query,lists_query,what list is available for my favorite [media_type : music] from [person : ed sheeran],False,False,True
+1427,music,music_query,locations,where can i find this song,False,False,True
+3686,music,music_query,music,give me some [artist_name : bowie],False,False,True
+5775,music,music_query,music,what song do i play most,False,False,False
+4060,music,music_query,music,which songs do i listen to most,False,False,False
+5776,music,music_query,music,what music genre do i play most,False,False,False
+5959,music,music_query,music,what's the next song on my playlist,False,False,False
+3756,music,music_query,music,music traking,False,False,True
+5997,music,music_query,music,is the song by [artist_name : shakira],False,False,True
+7512,music,music_query,music,i want topics on music,False,False,True
+4061,music,music_query,music,what songs have i listened to at least ten times,False,False,False
+3150,music,music_query,music,listen to this song,False,False,True
+6120,music,music_query,music,show me my playlist,False,False,True
+16603,music,music_query,music,what are [artist_name : lady gagas] most popular songs,False,False,True
+673,music,music_query,music,can you locate some [music_genre : gospel] music for me,False,False,True
+1078,music,music_query,music,in [music_genre : classic] all music are there ever any singers,False,False,True
+1236,music,music_query,music,do i have any music by [artist_name : lady antebellum],False,False,False
+1611,music,music_query,music,recommend songs based on my playlist,False,False,False
+1686,music,music_query,music,suggest me some [music_genre : metal] music,False,False,False
+3285,music,music_query,music,other songs by this artist,False,False,True
+15632,music,music_query,music,do you hear songs of [artist_name : arrahman] music,False,False,True
+12616,music,music_query,music,list out all song,False,False,True
+1835,music,music_query,music,what music service has some soul music i can listen to,False,False,True
+2052,music,music_query,music,which was that [artist_name : coldplay] song i listened to [date : yesterday] [timeofday : evening],False,False,False
+2479,music,music_query,music,list the twenty most repeated songs,False,False,False
+2618,music,music_query,music,song info,False,False,True
+6454,music,music_query,music,show the playlist,False,False,True
+9504,music,music_query,querycontact,give me the details on [artist_name : elton john],False,False,True
+16332,music,music_query,quirky,i am interested in what emotions are conveyed in grateful dead music,False,False,True
+9505,music,music_query,quirky,tell me more about [artist_name : adele],False,False,True
+229,music,music_query,quirky,what music do i usually like after work,False,False,True
+5774,music,music_query,quirky,recommend artists similar to [artist_name : rihanna],False,False,True
+5541,music,music_query,quirky,do you know about this lyrics,False,False,True
+3152,music,music_query,quirky,what am i listening to,False,False,True
+2069,music,music_query,quirky,what did she just sing,False,False,True
+2008,music,music_query,quirky,tell me length and star ratings,False,False,True
+1972,music,music_query,quirky,title,False,False,True
+1077,music,music_query,quirky,is there any [music_genre : rap] that doesn't involve sex money and drugs,False,False,True
+546,music,music_query,quirky,search the album name with [artist_name : katy perry],False,False,True
+17546,music,music_query,quirky,how do you feel after hearing [person : justin bieber's] new album,False,False,True
+7000,music,music_query,radio,who is this on the radio,False,False,True
+1824,music,music_query,radio,what music is playing now nine hundred and ninety nine fm,False,False,True
+1823,music,music_query,radio,nine hundred and ninety nine fm is currently playing what music,False,False,True
+6477,music,music_query,radio,what's on the radio right now,False,False,True
+5658,music,music_query,settings,what playlist is on [player_setting : shuffle],False,False,False
+3737,music,music_query,settings,how to repeat the song,False,False,True
+5738,music,music_query,weather_query,when did [song_name : pop it like it's hot] come out,False,False,True

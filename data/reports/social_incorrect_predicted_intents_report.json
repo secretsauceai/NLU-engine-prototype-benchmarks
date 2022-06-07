@@ -1,0 +1,309 @@
+{
+    "social_query": {
+        "f1_score": 0.65,
+        "total_count": 183,
+        "total_incorrect_count": 56,
+        "top_features": [
+            "facebook",
+            "twitter",
+            "social",
+            "media",
+            "instagram",
+            "feed",
+            "likes",
+            "on",
+            "posts",
+            "trending"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "wemo_on",
+                "feature": "on",
+                "coef": 5.441198425933425
+            },
+            {
+                "intent": "post",
+                "feature": "twitter",
+                "coef": 5.208866110703161
+            },
+            {
+                "intent": "post",
+                "feature": "facebook",
+                "coef": 5.035515677940192
+            },
+            {
+                "intent": "hue_lighton",
+                "feature": "on",
+                "coef": 4.175559866830495
+            },
+            {
+                "intent": "radio",
+                "feature": "on",
+                "coef": 3.637913921004674
+            },
+            {
+                "intent": "lists_query",
+                "feature": "on",
+                "coef": 3.5372219989512943
+            }
+        ],
+        "correct_utterance_example": [
+            "social_query",
+            "what is going on right now on [media_type : twitter]",
+            [
+                [
+                    "what",
+                    1.4013412491073243
+                ],
+                [
+                    "is",
+                    -0.5286539949099066
+                ],
+                [
+                    "going",
+                    1.050897926433041
+                ],
+                [
+                    "on",
+                    3.045460582220305
+                ],
+                [
+                    "right",
+                    0.17548101728565324
+                ],
+                [
+                    "now",
+                    0.30649561931273367
+                ],
+                [
+                    "on",
+                    3.045460582220305
+                ],
+                [
+                    "twitter",
+                    5.059997038784841
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "news_query",
+            "is there anything new on [media_type : reddit]",
+            [
+                [
+                    "is",
+                    -0.5286539949099066
+                ],
+                [
+                    "there",
+                    1.322202072586869
+                ],
+                [
+                    "anything",
+                    1.6424864947394342
+                ],
+                [
+                    "new",
+                    2.538684195364766
+                ],
+                [
+                    "on",
+                    3.045460582220305
+                ],
+                [
+                    "reddit",
+                    0.5973705062922338
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "news_query": 23,
+            "quirky": 11,
+            "post": 10,
+            "email_query": 5,
+            "factoid": 3,
+            "calendar_query": 2,
+            "confirm": 1,
+            "takeaway_query": 1
+        }
+    },
+    "post": {
+        "f1_score": 0.89,
+        "total_count": 525,
+        "total_incorrect_count": 41,
+        "top_features": [
+            "tweet",
+            "complaint",
+            "post",
+            "twitter",
+            "service",
+            "facebook",
+            "status",
+            "customer",
+            "complain",
+            "write"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "social_query",
+                "feature": "facebook",
+                "coef": 7.351019388326324
+            },
+            {
+                "intent": "social_query",
+                "feature": "twitter",
+                "coef": 5.059997038784841
+            },
+            {
+                "intent": "takeaway_query",
+                "feature": "status",
+                "coef": 3.217894086148519
+            }
+        ],
+        "correct_utterance_example": [
+            "post",
+            "take me to the [media_type : huffington post] website",
+            [
+                [
+                    "take",
+                    -0.3066929631246609
+                ],
+                [
+                    "me",
+                    -2.540651707755166
+                ],
+                [
+                    "to",
+                    1.978788707545923
+                ],
+                [
+                    "the",
+                    -1.5893627741442586
+                ],
+                [
+                    "huffington",
+                    0.3993559041010248
+                ],
+                [
+                    "post",
+                    6.821550378251623
+                ],
+                [
+                    "website",
+                    0.6849027433387656
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "sendemail",
+            "send a message on facebook to pending friend requests that my friend list is full and i will be creating a new profile soon",
+            [
+                [
+                    "send",
+                    1.8255196788532269
+                ],
+                [
+                    "a",
+                    0
+                ],
+                [
+                    "message",
+                    1.8631859927435437
+                ],
+                [
+                    "on",
+                    0.8211192611617456
+                ],
+                [
+                    "facebook",
+                    5.035515677940192
+                ],
+                [
+                    "to",
+                    1.978788707545923
+                ],
+                [
+                    "pending",
+                    0.09548767677239037
+                ],
+                [
+                    "friend",
+                    -0.0997971903069175
+                ],
+                [
+                    "requests",
+                    0.27351410702049767
+                ],
+                [
+                    "that",
+                    0.9991297029992384
+                ],
+                [
+                    "my",
+                    0.9916877976098576
+                ],
+                [
+                    "friend",
+                    -0.0997971903069175
+                ],
+                [
+                    "list",
+                    -1.7627468560941488
+                ],
+                [
+                    "is",
+                    -1.3991888630429674
+                ],
+                [
+                    "full",
+                    0.18683529833374446
+                ],
+                [
+                    "and",
+                    0.5597719042119643
+                ],
+                [
+                    "i",
+                    0
+                ],
+                [
+                    "will",
+                    -0.7149721455393823
+                ],
+                [
+                    "be",
+                    -0.49842939089739247
+                ],
+                [
+                    "creating",
+                    0.2712685221491742
+                ],
+                [
+                    "a",
+                    0
+                ],
+                [
+                    "new",
+                    -0.675002253944801
+                ],
+                [
+                    "profile",
+                    0.9678107489629986
+                ],
+                [
+                    "soon",
+                    0.130386928723314
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 22,
+            "calendar_set": 6,
+            "sendemail": 3,
+            "social_query": 3,
+            "factoid": 3,
+            "order": 2,
+            "calendar_query": 1,
+            "negate": 1
+        }
+    }
+}

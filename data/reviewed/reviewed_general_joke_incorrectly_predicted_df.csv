@@ -1,0 +1,10 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+109,general,joke,quirky,cheer me up,True,False,True
+2557,general,joke,quirky,i wanna laugh can you make it happen,True,False,False
+2717,general,joke,quirky,could you tell me [joke_type : funny] things,True,False,False
+3179,general,joke,quirky,make me happy,True,False,True
+3693,general,joke,quirky,a [relation : priest] walks into a [business_type : bar],True,False,True
+3694,general,joke,quirky,knock knock,True,False,True
+6344,general,joke,quirky,humor me,False,False,True
+105,general,joke,recipe,make me laugh,True,False,False
+107,general,joke,sendemail,send a giggle my way,False,False,True

@@ -1,0 +1,14 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+17508,qa,currency,calendar_set,notify me when [currency_name : g. b. p.] to [currency_name : u. s. d.] rate as i expected,False,False,True
+16709,qa,currency,confirm,check currencies,False,False,True
+17548,qa,currency,convert,convert five [currency_name : s. d.] to [currency_name : rials],False,False,False
+15436,qa,currency,definition,what currency does [place_name : croatia] use,False,False,False
+16366,qa,currency,definition,what does one [currency_name : u. s. d.] equal in [currency_name : aus],False,False,False
+17567,qa,currency,definition,what currency does [currency_name : england] use,False,False,False
+15453,qa,currency,factoid,what is the currency of [currency_name : egypt],False,False,False
+16407,qa,currency,factoid,what is [currency_name : s. d.] in [currency_name : francs],False,False,False
+16367,qa,currency,quirky,what is worth more a [currency_name : u. s. d.] or [currency_name : aus],False,False,True
+16772,qa,currency,quirky,[currency_name : u. s. d.] position now,False,False,True
+17384,qa,currency,quirky,how much [currency_name : yens] per [currency_name : u. s. d.] [date : today],False,False,True
+17896,qa,currency,quirky,exchanges rates any problems,False,False,True
+17827,qa,currency,sendemail,[currency_name : u. s. d.] to [currency_name : g. b. p.],False,False,False

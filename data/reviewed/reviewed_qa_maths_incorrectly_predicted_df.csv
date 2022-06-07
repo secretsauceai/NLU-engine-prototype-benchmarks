@@ -1,0 +1,42 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+16209,qa,maths,currency,if i have fifty dollars and spend twenty four how many dollars will i have left,False,False,False
+16210,qa,maths,currency,how much money will i make for the week if i make dollars per hour and work twenty hours,False,False,True
+15983,qa,maths,currency,whats ten percent off forty dollars,False,False,False
+15567,qa,maths,currency,convert one kilo to pound,True,False,False
+16208,qa,maths,currency,what is the answer to dollars minus dollars,False,False,True
+16011,qa,maths,datetime_query,what is nine time ten,False,False,False
+15885,qa,maths,datetime_query,i've got dollars for the month how much can i spend [general_frequency : every day] [date : this month],False,False,True
+16073,qa,maths,factoid,tell me what the product of eighteen and thirty one is,False,False,False
+16338,qa,maths,factoid,how many miles in five kilometers,True,False,False
+15882,qa,maths,factoid,how much is remaining after subtracting four from eight,False,False,False
+15730,qa,maths,factoid,tell me the simple interest of seven with interest in two year,False,False,True
+15726,qa,maths,factoid,tell me the formula for the area of of a circle,True,False,False
+15646,qa,maths,factoid,how to calculate trigonametry,False,False,True
+15423,qa,maths,factoid,what is ten percentage of hundred,False,False,False
+15576,qa,maths,factoid,what is the linear equation,False,False,True
+17093,qa,maths,factoid,how many inches make one foot,True,False,False
+15568,qa,maths,factoid,how many three are available in twenty seven,False,False,True
+17095,qa,maths,factoid,how many cm make one foot,False,False,False
+15518,qa,maths,factoid,what is zero divided by zero,True,False,False
+15462,qa,maths,factoid,what is the total of 500 and 23,False,False,True
+15461,qa,maths,factoid,what is the square of 4,False,False,False
+15460,qa,maths,factoid,what is the sum of 9 and 12,False,False,False
+15459,qa,maths,factoid,what is the root of 16,False,False,False
+15578,qa,maths,factoid,tell what is the value of sin thirty,False,False,False
+15650,qa,maths,factoid,what is the factorial of x,False,False,True
+17620,qa,maths,music,multiply one thousand by twelve,False,False,False
+17091,qa,maths,quirky,convert ten inches to centimeters,True,False,False
+16583,qa,maths,quirky,do you know how to answer this math question,False,False,True
+16582,qa,maths,quirky,can you help me find the answer to this question,False,False,True
+17450,qa,maths,quirky,what do you get when you multiply sixteen by nine,False,False,False
+18084,qa,maths,quirky,let's do math,False,False,True
+15960,qa,maths,quirky,how do you subtract numbers,True,False,True
+15744,qa,maths,quirky,answer this mathematical question,False,False,True
+15743,qa,maths,quirky,do you know math,False,False,True
+15742,qa,maths,quirky,solve the calculation,False,False,True
+15574,qa,maths,quirky,are you solve my math,False,False,True
+15532,qa,maths,quirky,how many times does fifty go into one million,False,False,False
+15424,qa,maths,quirky,convert ten miles to kilometers,True,False,False
+16008,qa,maths,quirky,resolve this thirty twelve,False,False,True
+17094,qa,maths,recipe,how many pounds do sixty kg make,True,False,False
+15863,qa,maths,weather_query,i need to figure out this percentage,False,False,True

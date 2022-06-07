@@ -1,0 +1,437 @@
+{
+    "movies": {
+        "f1_score": 0.68,
+        "total_count": 107,
+        "total_incorrect_count": 30,
+        "top_features": [
+            "movie",
+            "movies",
+            "playing",
+            "watch",
+            "theatre",
+            "logan",
+            "recommend",
+            "theaters",
+            "good",
+            "what"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "definition",
+                "feature": "what",
+                "coef": 5.207311958926891
+            },
+            {
+                "intent": "music_query",
+                "feature": "playing",
+                "coef": 4.369195312214996
+            },
+            {
+                "intent": "lists_query",
+                "feature": "what",
+                "coef": 3.4545164944064553
+            },
+            {
+                "intent": "music_query",
+                "feature": "what",
+                "coef": 3.2986770858126016
+            },
+            {
+                "intent": "audiobook",
+                "feature": "playing",
+                "coef": 2.644200878305206
+            },
+            {
+                "intent": "joke",
+                "feature": "good",
+                "coef": 1.3358050084831277
+            }
+        ],
+        "correct_utterance_example": [
+            "movies",
+            "confirm a movie ticket at [place_name : glory theater]",
+            [
+                [
+                    "confirm",
+                    -0.07892158152961744
+                ],
+                [
+                    "a",
+                    0
+                ],
+                [
+                    "movie",
+                    8.557825024635104
+                ],
+                [
+                    "ticket",
+                    0.057345859023939544
+                ],
+                [
+                    "at",
+                    0.8255296432065369
+                ],
+                [
+                    "glory",
+                    0.45920234445872926
+                ],
+                [
+                    "theater",
+                    1.4575698975970681
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "quirky",
+            "what film should i watch",
+            [
+                [
+                    "what",
+                    1.9465082310531763
+                ],
+                [
+                    "film",
+                    1.0800868896805487
+                ],
+                [
+                    "should",
+                    1.1423377387057274
+                ],
+                [
+                    "i",
+                    0
+                ],
+                [
+                    "watch",
+                    2.827785099699192
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 15,
+            "factoid": 6,
+            "locations": 3,
+            "events": 1,
+            "transport_query": 1,
+            "music_query": 1,
+            "music": 1,
+            "datetime_query": 1,
+            "likeness": 1
+        }
+    },
+    "events": {
+        "f1_score": 0.73,
+        "total_count": 320,
+        "total_incorrect_count": 61,
+        "top_features": [
+            "events",
+            "in",
+            "local",
+            "happening",
+            "weekend",
+            "around",
+            "tonight",
+            "area",
+            "event",
+            "near"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "calendar_set",
+                "feature": "event",
+                "coef": 5.521119161500423
+            },
+            {
+                "intent": "calendar_query",
+                "feature": "events",
+                "coef": 4.947574918341971
+            },
+            {
+                "intent": "locations",
+                "feature": "near",
+                "coef": 4.620234967854728
+            },
+            {
+                "intent": "datetime_query",
+                "feature": "in",
+                "coef": 4.096162924328565
+            },
+            {
+                "intent": "locations",
+                "feature": "around",
+                "coef": 3.637454072982702
+            },
+            {
+                "intent": "calendar_remove",
+                "feature": "events",
+                "coef": 3.504234511986469
+            },
+            {
+                "intent": "calendar_remove",
+                "feature": "event",
+                "coef": 3.4809103230599647
+            },
+            {
+                "intent": "news_query",
+                "feature": "happening",
+                "coef": 3.362869330405067
+            },
+            {
+                "intent": "locations",
+                "feature": "in",
+                "coef": 3.2613180909804367
+            },
+            {
+                "intent": "order",
+                "feature": "near",
+                "coef": 2.7089540660999143
+            },
+            {
+                "intent": "convert",
+                "feature": "in",
+                "coef": 2.2674762649982916
+            }
+        ],
+        "correct_utterance_example": [
+            "events",
+            "tell me all the current events in my [place_name : hometown]",
+            [
+                [
+                    "tell",
+                    0.026335883505972837
+                ],
+                [
+                    "me",
+                    0.9212269161969918
+                ],
+                [
+                    "all",
+                    -0.51481708627279
+                ],
+                [
+                    "the",
+                    -1.5029798561387524
+                ],
+                [
+                    "current",
+                    0.22500889055468828
+                ],
+                [
+                    "events",
+                    5.97684419532757
+                ],
+                [
+                    "in",
+                    5.513508323254862
+                ],
+                [
+                    "my",
+                    -1.651212816340964
+                ],
+                [
+                    "hometown",
+                    0.5867631006174141
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "factoid",
+            "who and why is on at the [place_name : theater] [timeofday : tonight]",
+            [
+                [
+                    "who",
+                    -0.06781864709350158
+                ],
+                [
+                    "and",
+                    -0.7246101511606162
+                ],
+                [
+                    "why",
+                    0.3259792063185169
+                ],
+                [
+                    "is",
+                    0.19293683757030214
+                ],
+                [
+                    "on",
+                    1.1891202017515672
+                ],
+                [
+                    "at",
+                    1.2157928780683467
+                ],
+                [
+                    "the",
+                    -1.5029798561387524
+                ],
+                [
+                    "theater",
+                    1.4611460913750987
+                ],
+                [
+                    "tonight",
+                    3.795642012846168
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "calendar_query": 22,
+            "quirky": 15,
+            "factoid": 9,
+            "news_query": 7,
+            "calendar_set": 2,
+            "music": 1,
+            "movies": 1,
+            "transport_query": 1,
+            "radio": 1,
+            "locations": 1,
+            "weather_query": 1
+        }
+    },
+    "locations": {
+        "f1_score": 0.71,
+        "total_count": 255,
+        "total_incorrect_count": 29,
+        "top_features": [
+            "shops",
+            "where",
+            "shop",
+            "restaurant",
+            "near",
+            "restaurants",
+            "around",
+            "nearby",
+            "nearest",
+            "in"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "events",
+                "feature": "in",
+                "coef": 5.513508323254862
+            },
+            {
+                "intent": "takeaway_query",
+                "feature": "restaurant",
+                "coef": 4.516571275092315
+            },
+            {
+                "intent": "factoid",
+                "feature": "where",
+                "coef": 4.2112202908544685
+            },
+            {
+                "intent": "datetime_query",
+                "feature": "in",
+                "coef": 4.096162924328565
+            },
+            {
+                "intent": "events",
+                "feature": "around",
+                "coef": 3.8065955185780953
+            },
+            {
+                "intent": "events",
+                "feature": "near",
+                "coef": 3.2703905089610767
+            },
+            {
+                "intent": "order",
+                "feature": "near",
+                "coef": 2.7089540660999143
+            },
+            {
+                "intent": "transport_query",
+                "feature": "nearest",
+                "coef": 2.5275281992375875
+            },
+            {
+                "intent": "convert",
+                "feature": "in",
+                "coef": 2.2674762649982916
+            }
+        ],
+        "correct_utterance_example": [
+            "locations",
+            "find me a nice [business_type : restaurant] for [meal_type : dinner]",
+            [
+                [
+                    "find",
+                    2.5984056187599225
+                ],
+                [
+                    "me",
+                    1.5749300862152404
+                ],
+                [
+                    "a",
+                    0
+                ],
+                [
+                    "nice",
+                    0.7757353134407509
+                ],
+                [
+                    "restaurant",
+                    4.955521020862289
+                ],
+                [
+                    "for",
+                    -0.1292037116207463
+                ],
+                [
+                    "dinner",
+                    0.720739767569144
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "factoid",
+            "give the list of [business_type : theaters] in the [place_name : vicinity]",
+            [
+                [
+                    "give",
+                    0.27295552047655336
+                ],
+                [
+                    "the",
+                    -0.4609562688831719
+                ],
+                [
+                    "list",
+                    -0.05553603656470728
+                ],
+                [
+                    "of",
+                    -0.7337465216102541
+                ],
+                [
+                    "theaters",
+                    0.3353673278471767
+                ],
+                [
+                    "in",
+                    3.2613180909804367
+                ],
+                [
+                    "the",
+                    -0.4609562688831719
+                ],
+                [
+                    "vicinity",
+                    0.5839443417845296
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "factoid": 17,
+            "quirky": 7,
+            "events": 2,
+            "takeaway_query": 1,
+            "calendar_set": 1,
+            "transport_query": 1
+        }
+    }
+}

@@ -1,0 +1,169 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+8214,calendar,calendar_query,calendar_remove,is my calendar empty,False,False,True
+8608,calendar,calendar_query,calendar_remove,list all the events in my [date : march] calendar,False,False,False
+9124,calendar,calendar_query,calendar_remove,open my calendar,False,False,True
+10610,calendar,calendar_query,calendar_remove,[date : today] calendar,False,False,True
+8906,calendar,calendar_query,calendar_set,tell me my upcoming events,True,False,False
+9839,calendar,calendar_query,calendar_set,is my meeting with [person : bob] [date : tomorrow] at [time : three pm],False,False,False
+8874,calendar,calendar_query,calendar_set,hi event has been added in your calendar please check,False,False,True
+9842,calendar,calendar_query,calendar_set,i want to know more about this event,False,False,True
+8798,calendar,calendar_query,calendar_set,how much [person : mehta] willing to invest in my company in [event_name : meeting] which held [date : today] at [time : five hundred and twenty pm],False,False,True
+8774,calendar,calendar_query,calendar_set,where in [place_name : dc] is that [event_name : meeting] at [time : one pm] on [date : friday],False,False,True
+10211,calendar,calendar_query,calendar_set,i needed to prepare for a [event_name : meeting],False,False,True
+8746,calendar,calendar_query,calendar_set,show me all [event_name : meeting] reminders,True,False,False
+10032,calendar,calendar_query,calendar_set,check my calendar for me,False,False,True
+10038,calendar,calendar_query,calendar_set,schedule for [time : six thirty pm to seven hundred and thirty pm],False,False,True
+8682,calendar,calendar_query,calendar_set,remind me the reminders i have set,False,False,True
+8632,calendar,calendar_query,calendar_set,please check third event of [date : twenty second of march twenty seventeen],False,False,True
+9537,calendar,calendar_query,calendar_set,is the [event_name : meeting] with [person : julie] at [time : three pm] on [date : wednesday],False,False,False
+8767,calendar,calendar_query,calendar_set,is the [event_name : birthday dinner] on the calendar for [date : friday],False,False,False
+8990,calendar,calendar_query,calendar_set,did i ask you to remind me of anything,False,False,False
+9814,calendar,calendar_query,calendar_set,describe event on [date : march nineteenth] at [time : two pm] please,False,False,False
+10283,calendar,calendar_query,calendar_set,confirm that my notification is set to remind me when i leave,False,False,True
+9546,calendar,calendar_query,calendar_set,the meeting with [person : karl] will be in,False,False,True
+9547,calendar,calendar_query,calendar_set,pawel prepare the [event_name : meeting] with [person : john],False,False,True
+9548,calendar,calendar_query,calendar_set,[time : one thousand two hundred and thirty pm] already you will have a [event_name : meeting] in [time : ten mins],False,False,True
+9588,calendar,calendar_query,calendar_set,tell me [time : ten minutes] before [event_name : meeting],False,False,True
+9343,calendar,calendar_query,calendar_set,what's on for the [date : fourteenth] [timeofday : afternoon] that i could go with the [relation : two year old twins],False,False,True
+9318,calendar,calendar_query,calendar_set,did i tell you to remind me something,False,False,True
+9590,calendar,calendar_query,calendar_set,help to remind me to delete completed projects,False,False,True
+9289,calendar,calendar_query,calendar_set,please tell me what day this event reminder is set for,False,False,True
+9626,calendar,calendar_query,calendar_set,how are things looking for the meeting with [person : john],False,False,True
+9631,calendar,calendar_query,calendar_set,how long will my [event_name : lunch meeting] be on [date : tuesday],False,False,False
+9645,calendar,calendar_query,calendar_set,remind me [event_name : jack birthday] is on [date : fifteenth march],False,False,True
+9121,calendar,calendar_query,calendar_set,does [date : monday's] [event_name : meeting] at [time : eight am] include [person : chuck ingerman],False,False,False
+9741,calendar,calendar_query,calendar_set,did you add [date : tomorrow's] [event_name : meeting] to my calendar,False,False,False
+9060,calendar,calendar_query,calendar_set,is [person : wyatt's] [event_name : birthday party] at [time : ten pm],False,False,False
+9059,calendar,calendar_query,calendar_set,am i available at [time : five pm] on [date : sunday],False,False,False
+9816,calendar,calendar_query,calendar_set,read information about calendar event on [date : march nineteenth] at [time : two pm],False,False,False
+8463,calendar,calendar_query,calendar_set,tell me about the [date : next day's] event,True,False,False
+9456,calendar,calendar_query,calendar_set,can you let me know when my [event_name : appointment] is on [date : tuesday],False,False,False
+10307,calendar,calendar_query,calendar_set,is [person : jessica's] birthday on [date : april twelfth],False,False,False
+7994,calendar,calendar_query,calendar_set,who i am meeting with on [date : Wednesday] at [time : four pm],False,False,False
+8002,calendar,calendar_query,calendar_set,did i set reminder for [date : tomorrow] [event_name : meeting] at [time : five pm],False,False,False
+10699,calendar,calendar_query,calendar_set,[person : rahul] [event_name : marriage] reminder,False,False,True
+8045,calendar,calendar_query,calendar_set,when is that [event_name : sales meeting] set for,False,False,False
+10698,calendar,calendar_query,calendar_set,[event_name : meeting] [date : july] calendar,False,False,True
+10582,calendar,calendar_query,calendar_set,open calendar and find [event_name : meeting] time,False,False,False
+10306,calendar,calendar_query,calendar_set,do i have a [event_name : meeting] on [date : saturday] [date : march twenty fifth],False,False,False
+10486,calendar,calendar_query,calendar_set,when is [event_name : anna's birthday] remainder set,False,False,False
+8153,calendar,calendar_query,calendar_set,i need to confirm all [event_name : meetings] for [date : today],False,False,False
+10804,calendar,calendar_query,calendar_set,was there an [event_name : appointment] set up for [date : saturday],False,False,False
+8163,calendar,calendar_query,calendar_set,what do i need to remind for [timeofday : this afternoon],False,False,True
+10466,calendar,calendar_query,calendar_set,who am i [event_name : meeting] with later,False,False,False
+10821,calendar,calendar_query,calendar_set,could you please tell me what's in my schedule at [time : eight] [timeofday : tonight],False,False,False
+7980,calendar,calendar_query,calendar_set,have you added a [event_name : meeting] with [person : tom] [date : tomorrow] at [time : nine pm],False,False,False
+7941,calendar,calendar_query,calendar_set,who am i meeting at work [date : tomorrow],False,False,False
+8218,calendar,calendar_query,calendar_set,give me the details of next reminder,False,False,False
+7303,calendar,calendar_query,calendar_set,call [person : bill] to reschedule our [event_name : meeting],False,False,True
+8445,calendar,calendar_query,calendar_set,did you place the reminder about the [event_name : meeting] for [date : tomorrow],False,False,False
+16096,calendar,calendar_query,calendar_set,count down for the [event_name : birthday] of my [relation : brother],False,False,True
+8329,calendar,calendar_query,calendar_set,let me know if there is a [event_name : town meeting] [date : monday],False,False,False
+10828,calendar,calendar_query,calendar_set,notify me about the [event_name : meetings] over a period of some days,False,False,True
+10847,calendar,calendar_query,calendar_set,any meeting on [date : friday],False,False,False
+8275,calendar,calendar_query,calendar_set,schedule a [event_name : meeting] by asking your,False,False,True
+10823,calendar,calendar_query,calendar_set,could you reschedule my [event_name : meeting],False,False,True
+8220,calendar,calendar_query,calendar_set,what are the reminder i had set for [date : tomorrow],False,False,False
+7905,calendar,calendar_query,calendar_set,tell me about oldest reminder,False,False,True
+8295,calendar,calendar_query,calendar_set,when will my [event_name : meeting] with [person : sandy] occur,False,False,False
+10349,calendar,calendar_query,confirm,check calendar,False,False,True
+9576,calendar,calendar_query,datetime_query,what date is it,False,False,True
+14245,calendar,calendar_query,datetime_query,what time is the [event_name : parade] set for [date : today],False,False,False
+9158,calendar,calendar_query,datetime_query,what is left for [date : today],False,False,False
+9603,calendar,calendar_query,datetime_query,which days will i be working nights in the month of [date : march],False,False,True
+9295,calendar,calendar_query,datetime_query,what is on [date : november twenty],False,False,False
+10556,calendar,calendar_query,datetime_query,when are [event_name : holiday] in [time : current month],False,False,False
+8897,calendar,calendar_query,datetime_query,what time is the [event_name : cantonese dog festival],False,False,False
+10446,calendar,calendar_query,datetime_query,what time is [event_name : the function of the play joy] in [place_name : broadway theater] [date : today],False,False,False
+9940,calendar,calendar_query,datetime_query,what day and time is the [event_name : acme meeting] in [place_name : san diego california],False,False,False
+10445,calendar,calendar_query,datetime_query,give the time of [event_name : classical music concert] [date : today] in [place_name : the city],False,False,False
+10019,calendar,calendar_query,datetime_query,what time is the [event_name : holiday party] at the office,False,False,False
+8731,calendar,calendar_query,datetime_query,give me the time of the events,False,False,True
+10188,calendar,calendar_query,datetime_query,what day is [event_name : payday],False,False,False
+10308,calendar,calendar_query,datetime_query,is [event_name : mothers day] on a [date : sunday],False,False,True
+8364,calendar,calendar_query,datetime_query,what is on that date,False,False,True
+8410,calendar,calendar_query,datetime_query,what day of the week is my [event_name : birthday] this year,False,False,False
+8479,calendar,calendar_query,datetime_query,[date : today] is [date : fifth march],False,False,True
+9776,calendar,calendar_query,datetime_query,is there a [event_name : holiday] on the [date : twenty second],False,False,True
+1202,calendar,calendar_query,datetime_query,please tell me current events for the [time : day],False,False,False
+9261,calendar,calendar_query,definition,events description,False,False,True
+10222,calendar,calendar_query,events,events please,False,False,True
+9380,calendar,calendar_query,events,what's happening [date : this weekend],False,False,False
+8169,calendar,calendar_query,events,tell me about the latest events going around my [place_name : city],False,False,True
+8327,calendar,calendar_query,events,will there any events [place_name : downtown] [date : this weekend],False,False,True
+9419,calendar,calendar_query,events,what is happening [date : this weekend],False,False,False
+8180,calendar,calendar_query,events,latest events,False,False,True
+8730,calendar,calendar_query,events,show me events that are going on right now,False,False,False
+8172,calendar,calendar_query,events,make a list of all the [event_name : halloween] events going around in [place_name : new york],False,False,True
+9296,calendar,calendar_query,events,what are the upcoming concerts in [place_name : dallas],False,False,True
+7878,calendar,calendar_query,factoid,when does [event_name : monet's exhibition] take place,True,False,False
+8856,calendar,calendar_query,factoid,when is the [event_name : bill cycle],False,False,True
+9970,calendar,calendar_query,factoid,when is [person : bruno mars] coming to [place_name : sacramento],False,False,True
+8747,calendar,calendar_query,factoid,is there any reminder which is most urgent,False,False,True
+8896,calendar,calendar_query,factoid,when is [person : dale's] [date : birthday],False,False,False
+10166,calendar,calendar_query,factoid,in the [time : last year] how many hours have i been in [event_name : meetings],False,False,True
+9509,calendar,calendar_query,factoid,how far did i walk this [timeofday : morning],False,False,True
+10354,calendar,calendar_query,factoid,please tell me when is the [event_name : marriage] of [person : mr. jim],False,False,False
+10205,calendar,calendar_query,factoid,who was the [person : chief guest] of the event,False,False,True
+10206,calendar,calendar_query,factoid,how long it lasted,False,False,True
+8704,calendar,calendar_query,factoid,where is the venue,False,False,True
+10110,calendar,calendar_query,factoid,how long will be the duration of the event,False,False,True
+8450,calendar,calendar_query,factoid,where is the venue in which the [event_name : marriage] of tom is going to take place,False,False,True
+9193,calendar,calendar_query,factoid,where is [event_name : baseball practice] happening [date : tomorrow],False,False,False
+7895,calendar,calendar_query,factoid,when is [person : peter's] [event_name : birthday],False,False,False
+9518,calendar,calendar_query,factoid,is [timeofday : tonight] the full moon,False,False,True
+9666,calendar,calendar_query,factoid,where is [event_name : fallout boy] performing next,False,False,True
+10591,calendar,calendar_query,factoid,is the [date : year two thousand and eighteen] a leap year,False,False,True
+8087,calendar,calendar_query,factoid,who is invited to [date : tomorrow's] [event_name : get together],False,False,False
+10611,calendar,calendar_query,lists_query,can you show me list of [list_name : my appointment],False,False,True
+8010,calendar,calendar_query,lists_query,list out my schedule [date : today],False,False,True
+9160,calendar,calendar_query,lists_query,what else is on the list,False,False,True
+8167,calendar,calendar_query,lists_query,give me to do list,False,False,True
+8870,calendar,calendar_query,lists_query,list my [date : today's] [event_name : meeting],False,False,True
+9344,calendar,calendar_query,maths,[time : one thousand five hundred to one thousand seven hundred] how can i spend my time,False,False,True
+8060,calendar,calendar_query,movies,can you give me the [event_name : movie] schedule,False,False,True
+9390,calendar,calendar_query,music,what date is [person : justin's] [event_name : school play],False,False,False
+7936,calendar,calendar_query,music_query,what's the name of the event,False,False,True
+7906,calendar,calendar_query,news_query,read most recent reminder,False,False,True
+10461,calendar,calendar_query,news_query,anything happening [date : today],False,False,False
+9946,calendar,calendar_query,news_query,what were the highlights from [timeofday : this evening's] [sport_type : soccer match],False,False,True
+10136,calendar,calendar_query,news_query,whats happening on the [date : third of april],False,False,False
+9654,calendar,calendar_query,news_query,i need to know [date : today's] [sport_type : cricket match],False,False,True
+9867,calendar,calendar_query,news_query,what's the news for [time : six hundred and forty five am] [date : today],False,False,True
+10411,calendar,calendar_query,quirky,how does my day look like [date : tomorrow],False,False,False
+10356,calendar,calendar_query,quirky,could you please tell when we have to [event_name : pay for car insurance],False,False,False
+8059,calendar,calendar_query,quirky,are there [timeofday : morning] [event_name : shows] available,False,False,True
+8449,calendar,calendar_query,quirky,tell me the date of [event_name : inauguration] of my [relation : friend] [person : sams] business,False,False,True
+10547,calendar,calendar_query,quirky,are all [event_name : programs] in line,False,False,True
+10180,calendar,calendar_query,quirky,is [date : today] [event_name : st patricks day],False,False,True
+10224,calendar,calendar_query,quirky,am i off work on [date : memorial day],False,False,True
+18097,calendar,calendar_query,quirky,shall we meet for [date : today's] [event_name : party],False,False,True
+9423,calendar,calendar_query,quirky,how many people are coming to [timeofday : tonight's] [meal_type : dinner],False,False,True
+9382,calendar,calendar_query,quirky,what are we doing [date : next week],False,False,False
+9562,calendar,calendar_query,quirky,what are my to dos,False,False,True
+7315,calendar,calendar_query,quirky,give me idea about the day,False,False,True
+9154,calendar,calendar_query,quirky,what's up [date : today],False,False,True
+10851,calendar,calendar_query,quirky,hey please provide information about events [time : by the end of the day],False,False,True
+7317,calendar,calendar_query,quirky,can you tell me about [date : today],False,False,True
+8551,calendar,calendar_query,quirky,do i have a busy day [date : today],False,False,True
+9105,calendar,calendar_query,quirky,who am i eating [meal_type : lunch] with [date : today],False,False,True
+9034,calendar,calendar_query,quirky,could you tell me who's [event_name : birthdays] are there in [date : february],False,False,False
+9022,calendar,calendar_query,quirky,locate address for [event_name : myrtle beach state fair],False,False,True
+9965,calendar,calendar_query,quirky,what do i need to remember,False,False,True
+10137,calendar,calendar_query,quirky,what can you tell me about [date : this saturday],False,False,True
+8685,calendar,calendar_query,quirky,may i know my future schedules,False,False,True
+10189,calendar,calendar_query,quirky,tell me about [event_name : umf],False,False,True
+8630,calendar,calendar_query,quirky,please show [date : today] meting with [relation : clients],False,False,True
+8556,calendar,calendar_query,quirky,am i booked for something,False,False,True
+9096,calendar,calendar_query,quirky,am i having [event_name : brunch] with [person : sarah] [date : today],False,False,False
+10049,calendar,calendar_query,quirky,am i busy [date : today],False,False,False
+18541,calendar,calendar_query,social_query,do i have any notifications from social media,False,False,True
+18512,calendar,calendar_query,social_query,check my social notifications,False,False,True
+9511,calendar,calendar_query,transport_query,when are the trains running [date : tomorrow],False,False,True
+8103,calendar,calendar_query,weather_query,is it [date : Friday],False,False,True
+9861,calendar,calendar_query,weather_query,is there anything i need to be aware of,False,False,True
+9667,calendar,calendar_query,weather_query,will [person : sting] be in [place_name : tampa florida] soon,False,False,True
+9149,calendar,calendar_query,weather_query,should i go to the [place_name : market day] after [date : tomorrow],False,False,True
+7316,calendar,calendar_query,weather_query,how will be [date : today] for me,False,False,True
+9519,calendar,calendar_query,weather_query,is it [date : thursday tomorrow],False,False,True
+8088,calendar,calendar_query,weather_query,who should i expect to be at the [event_name : meeting] [date : today],False,False,False

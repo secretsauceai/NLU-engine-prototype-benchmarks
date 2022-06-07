@@ -1,0 +1,1258 @@
+{
+    "hue_lightchange": {
+        "f1_score": 0.89,
+        "total_count": 213,
+        "total_incorrect_count": 17,
+        "top_features": [
+            "lights",
+            "light",
+            "change",
+            "blue",
+            "color",
+            "red",
+            "green",
+            "make",
+            "colours",
+            "house"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "hue_lightdim",
+                "feature": "lights",
+                "coef": 6.472858325014309
+            },
+            {
+                "intent": "hue_lightup",
+                "feature": "lights",
+                "coef": 6.186430303737507
+            },
+            {
+                "intent": "hue_lightoff",
+                "feature": "lights",
+                "coef": 6.0497858740524055
+            },
+            {
+                "intent": "hue_lightoff",
+                "feature": "light",
+                "coef": 6.013313214589671
+            },
+            {
+                "intent": "hue_lightup",
+                "feature": "light",
+                "coef": 5.774519309535215
+            },
+            {
+                "intent": "hue_lighton",
+                "feature": "lights",
+                "coef": 5.21294275141067
+            },
+            {
+                "intent": "recipe",
+                "feature": "make",
+                "coef": 3.6671608682411496
+            },
+            {
+                "intent": "hue_lightdim",
+                "feature": "light",
+                "coef": 3.639360354132864
+            },
+            {
+                "intent": "createoradd",
+                "feature": "make",
+                "coef": 3.436355142442562
+            },
+            {
+                "intent": "coffee",
+                "feature": "make",
+                "coef": 3.3098380760040733
+            },
+            {
+                "intent": "volume_other",
+                "feature": "change",
+                "coef": 3.22950085368319
+            },
+            {
+                "intent": "convert",
+                "feature": "change",
+                "coef": 2.979385204737587
+            },
+            {
+                "intent": "hue_lighton",
+                "feature": "light",
+                "coef": 1.5189897332056026
+            },
+            {
+                "intent": "joke",
+                "feature": "make",
+                "coef": 1.2313382428187853
+            }
+        ],
+        "correct_utterance_example": [
+            "hue_lightchange",
+            "set lights [change_amount : to twenty percent]",
+            [
+                [
+                    "set",
+                    1.34965649829747
+                ],
+                [
+                    "lights",
+                    6.11664651476702
+                ],
+                [
+                    "to",
+                    1.5359410601362846
+                ],
+                [
+                    "twenty",
+                    0.05637529919442639
+                ],
+                [
+                    "percent",
+                    2.5505181833775756
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "weather_query",
+            "[color_type : pink] is all we need",
+            [
+                [
+                    "pink",
+                    1.99546145104285
+                ],
+                [
+                    "is",
+                    -1.3784275608535221
+                ],
+                [
+                    "all",
+                    0.005728156527359322
+                ],
+                [
+                    "we",
+                    0.3318274397018921
+                ],
+                [
+                    "need",
+                    0.048862772536618616
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 9,
+            "weather_query": 2,
+            "calendar_set": 2,
+            "hue_lightup": 1,
+            "music": 1,
+            "recipe": 1,
+            "hue_lighton": 1
+        }
+    },
+    "hue_lightoff": {
+        "f1_score": 0.9,
+        "total_count": 240,
+        "total_incorrect_count": 19,
+        "top_features": [
+            "off",
+            "lights",
+            "light",
+            "lamp",
+            "turn",
+            "room",
+            "kitchen",
+            "bedroom",
+            "sleep",
+            "switch"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "wemo_off",
+                "feature": "off",
+                "coef": 6.8714287083733545
+            },
+            {
+                "intent": "hue_lightdim",
+                "feature": "lights",
+                "coef": 6.472858325014309
+            },
+            {
+                "intent": "hue_lightup",
+                "feature": "lights",
+                "coef": 6.186430303737507
+            },
+            {
+                "intent": "hue_lightchange",
+                "feature": "lights",
+                "coef": 6.11664651476702
+            },
+            {
+                "intent": "hue_lightchange",
+                "feature": "light",
+                "coef": 5.8917208937716055
+            },
+            {
+                "intent": "hue_lightup",
+                "feature": "light",
+                "coef": 5.774519309535215
+            },
+            {
+                "intent": "hue_lighton",
+                "feature": "lights",
+                "coef": 5.21294275141067
+            },
+            {
+                "intent": "wemo_on",
+                "feature": "turn",
+                "coef": 3.797614487686305
+            },
+            {
+                "intent": "hue_lightdim",
+                "feature": "light",
+                "coef": 3.639360354132864
+            },
+            {
+                "intent": "volume_mute",
+                "feature": "off",
+                "coef": 3.120811715745287
+            },
+            {
+                "intent": "hue_lighton",
+                "feature": "turn",
+                "coef": 2.7547896218848384
+            },
+            {
+                "intent": "alarm_remove",
+                "feature": "off",
+                "coef": 2.7191609358860425
+            },
+            {
+                "intent": "volume_up",
+                "feature": "turn",
+                "coef": 2.5298487301390833
+            },
+            {
+                "intent": "hue_lightup",
+                "feature": "room",
+                "coef": 2.460993746961677
+            },
+            {
+                "intent": "wemo_off",
+                "feature": "turn",
+                "coef": 1.88494465097511
+            },
+            {
+                "intent": "hue_lighton",
+                "feature": "light",
+                "coef": 1.5189897332056026
+            },
+            {
+                "intent": "hue_lighton",
+                "feature": "switch",
+                "coef": 1.468045500496705
+            }
+        ],
+        "correct_utterance_example": [
+            "hue_lightoff",
+            "turn the lights off please",
+            [
+                [
+                    "turn",
+                    2.4525887151298065
+                ],
+                [
+                    "the",
+                    1.1790610569690343
+                ],
+                [
+                    "lights",
+                    6.0497858740524055
+                ],
+                [
+                    "off",
+                    8.829801974132106
+                ],
+                [
+                    "please",
+                    -0.1860782888966826
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "datetime_query",
+            "time to sleep",
+            [
+                [
+                    "time",
+                    -0.05430564087351538
+                ],
+                [
+                    "to",
+                    -0.3257431148329093
+                ],
+                [
+                    "sleep",
+                    1.6650388067147877
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "hue_lightchange": 4,
+            "quirky": 3,
+            "commandstop": 2,
+            "hue_lightdim": 2,
+            "datetime_query": 1,
+            "music": 1,
+            "weather_query": 1,
+            "hue_lighton": 1,
+            "wemo_off": 1,
+            "factoid": 1,
+            "hue_lightup": 1,
+            "negate": 1
+        }
+    },
+    "hue_lighton": {
+        "f1_score": 0.49,
+        "total_count": 39,
+        "total_incorrect_count": 20,
+        "top_features": [
+            "lights",
+            "on",
+            "dark",
+            "turn",
+            "here",
+            "light",
+            "switch",
+            "too",
+            "disco",
+            "it"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "hue_lightdim",
+                "feature": "lights",
+                "coef": 6.472858325014309
+            },
+            {
+                "intent": "hue_lightup",
+                "feature": "lights",
+                "coef": 6.186430303737507
+            },
+            {
+                "intent": "hue_lightchange",
+                "feature": "lights",
+                "coef": 6.11664651476702
+            },
+            {
+                "intent": "hue_lightoff",
+                "feature": "lights",
+                "coef": 6.0497858740524055
+            },
+            {
+                "intent": "hue_lightoff",
+                "feature": "light",
+                "coef": 6.013313214589671
+            },
+            {
+                "intent": "hue_lightchange",
+                "feature": "light",
+                "coef": 5.8917208937716055
+            },
+            {
+                "intent": "hue_lightup",
+                "feature": "light",
+                "coef": 5.774519309535215
+            },
+            {
+                "intent": "wemo_on",
+                "feature": "on",
+                "coef": 5.441198425933427
+            },
+            {
+                "intent": "wemo_on",
+                "feature": "turn",
+                "coef": 3.797614487686305
+            },
+            {
+                "intent": "hue_lightdim",
+                "feature": "light",
+                "coef": 3.639360354132864
+            },
+            {
+                "intent": "radio",
+                "feature": "on",
+                "coef": 3.6379139210046842
+            },
+            {
+                "intent": "lists_query",
+                "feature": "on",
+                "coef": 3.5372219989511855
+            },
+            {
+                "intent": "social_query",
+                "feature": "on",
+                "coef": 3.045460582220296
+            },
+            {
+                "intent": "volume_up",
+                "feature": "turn",
+                "coef": 2.5298487301390833
+            },
+            {
+                "intent": "hue_lightoff",
+                "feature": "turn",
+                "coef": 2.4525887151298065
+            },
+            {
+                "intent": "convert",
+                "feature": "here",
+                "coef": 2.441562174742593
+            },
+            {
+                "intent": "convert",
+                "feature": "it",
+                "coef": 2.3238963366894443
+            },
+            {
+                "intent": "wemo_off",
+                "feature": "turn",
+                "coef": 1.88494465097511
+            },
+            {
+                "intent": "hue_lightoff",
+                "feature": "switch",
+                "coef": 1.6367202622424495
+            }
+        ],
+        "correct_utterance_example": [
+            "hue_lighton",
+            "turn the lights on",
+            [
+                [
+                    "turn",
+                    2.7547896218848384
+                ],
+                [
+                    "the",
+                    0.5621474670796444
+                ],
+                [
+                    "lights",
+                    5.21294275141067
+                ],
+                [
+                    "on",
+                    4.175559866830495
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "factoid",
+            "and the darkness has fallen",
+            [
+                [
+                    "and",
+                    0.3728736306226662
+                ],
+                [
+                    "the",
+                    0.5621474670796444
+                ],
+                [
+                    "darkness",
+                    0.6333304196231864
+                ],
+                [
+                    "has",
+                    0.30004961753243475
+                ],
+                [
+                    "fallen",
+                    0.6078808094596084
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 7,
+            "hue_lightup": 4,
+            "hue_lightchange": 3,
+            "weather_query": 3,
+            "factoid": 1,
+            "radio": 1,
+            "hue_lightoff": 1
+        }
+    },
+    "hue_lightdim": {
+        "f1_score": 0.86,
+        "total_count": 126,
+        "total_incorrect_count": 15,
+        "top_features": [
+            "lights",
+            "dim",
+            "lower",
+            "down",
+            "light",
+            "reduce",
+            "bright",
+            "darken",
+            "brightness",
+            "less"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "hue_lightup",
+                "feature": "lights",
+                "coef": 6.186430303737507
+            },
+            {
+                "intent": "hue_lightchange",
+                "feature": "lights",
+                "coef": 6.11664651476702
+            },
+            {
+                "intent": "hue_lightoff",
+                "feature": "lights",
+                "coef": 6.0497858740524055
+            },
+            {
+                "intent": "hue_lightoff",
+                "feature": "light",
+                "coef": 6.013313214589671
+            },
+            {
+                "intent": "hue_lightchange",
+                "feature": "light",
+                "coef": 5.8917208937716055
+            },
+            {
+                "intent": "hue_lightup",
+                "feature": "light",
+                "coef": 5.774519309535215
+            },
+            {
+                "intent": "hue_lighton",
+                "feature": "lights",
+                "coef": 5.21294275141067
+            },
+            {
+                "intent": "volume_down",
+                "feature": "lower",
+                "coef": 5.039838647505636
+            },
+            {
+                "intent": "volume_down",
+                "feature": "down",
+                "coef": 4.5858629274772476
+            },
+            {
+                "intent": "hue_lightup",
+                "feature": "brightness",
+                "coef": 3.614497890806915
+            },
+            {
+                "intent": "wemo_off",
+                "feature": "down",
+                "coef": 1.8020351068790423
+            },
+            {
+                "intent": "hue_lighton",
+                "feature": "light",
+                "coef": 1.5189897332056026
+            }
+        ],
+        "correct_utterance_example": [
+            "hue_lightdim",
+            "dim the lights in the [house_place : hall]",
+            [
+                [
+                    "dim",
+                    6.07629775237698
+                ],
+                [
+                    "the",
+                    2.0028740787378365
+                ],
+                [
+                    "lights",
+                    6.472858325014309
+                ],
+                [
+                    "in",
+                    0.6444553170666315
+                ],
+                [
+                    "the",
+                    2.0028740787378365
+                ],
+                [
+                    "hall",
+                    0.5118706528505269
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "recipe",
+            "make a [house_place : room] darker",
+            [
+                [
+                    "make",
+                    -0.030412987103558036
+                ],
+                [
+                    "a",
+                    0
+                ],
+                [
+                    "room",
+                    1.6876919730352677
+                ],
+                [
+                    "darker",
+                    1.4995316936517187
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 8,
+            "hue_lightchange": 3,
+            "hue_lightup": 2,
+            "recipe": 1,
+            "events": 1
+        }
+    },
+    "cleaning": {
+        "f1_score": 0.93,
+        "total_count": 169,
+        "total_incorrect_count": 12,
+        "top_features": [
+            "vacuum",
+            "cleaner",
+            "roomba",
+            "clean",
+            "cleaning",
+            "start",
+            "robot",
+            "vacuuming",
+            "activate",
+            "the"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "game",
+                "feature": "start",
+                "coef": 2.5589946070501894
+            },
+            {
+                "intent": "audiobook",
+                "feature": "start",
+                "coef": 2.4292022665330806
+            },
+            {
+                "intent": "wemo_on",
+                "feature": "start",
+                "coef": 1.4175750669719611
+            }
+        ],
+        "correct_utterance_example": [
+            "cleaning",
+            "clean the [house_place : flat]",
+            [
+                [
+                    "clean",
+                    4.553145812230627
+                ],
+                [
+                    "the",
+                    1.9962667202119473
+                ],
+                [
+                    "flat",
+                    0.681331549759033
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "music",
+            "it's dirty here make some noise",
+            [
+                [
+                    "it's",
+                    0
+                ],
+                [
+                    "dirty",
+                    0.5607822638720786
+                ],
+                [
+                    "here",
+                    0.2309629187977579
+                ],
+                [
+                    "make",
+                    0.13619417513968424
+                ],
+                [
+                    "some",
+                    0.045395035626413005
+                ],
+                [
+                    "noise",
+                    0.5257542077909023
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 7,
+            "music": 2,
+            "weather_query": 1,
+            "radio": 1,
+            "factoid": 1
+        }
+    },
+    "hue_lightup": {
+        "f1_score": 0.88,
+        "total_count": 140,
+        "total_incorrect_count": 11,
+        "top_features": [
+            "lights",
+            "light",
+            "brighter",
+            "brighten",
+            "increase",
+            "up",
+            "raise",
+            "brightness",
+            "more",
+            "room"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "hue_lightdim",
+                "feature": "lights",
+                "coef": 6.472858325014309
+            },
+            {
+                "intent": "hue_lightchange",
+                "feature": "lights",
+                "coef": 6.11664651476702
+            },
+            {
+                "intent": "hue_lightoff",
+                "feature": "lights",
+                "coef": 6.0497858740524055
+            },
+            {
+                "intent": "hue_lightoff",
+                "feature": "light",
+                "coef": 6.013313214589671
+            },
+            {
+                "intent": "hue_lightchange",
+                "feature": "light",
+                "coef": 5.8917208937716055
+            },
+            {
+                "intent": "repeat",
+                "feature": "more",
+                "coef": 5.887140013536117
+            },
+            {
+                "intent": "hue_lighton",
+                "feature": "lights",
+                "coef": 5.21294275141067
+            },
+            {
+                "intent": "volume_up",
+                "feature": "up",
+                "coef": 4.851679794810509
+            },
+            {
+                "intent": "volume_up",
+                "feature": "increase",
+                "coef": 4.048662167336928
+            },
+            {
+                "intent": "hue_lightdim",
+                "feature": "light",
+                "coef": 3.639360354132864
+            },
+            {
+                "intent": "alarm_set",
+                "feature": "up",
+                "coef": 3.1067164785331958
+            },
+            {
+                "intent": "volume_up",
+                "feature": "raise",
+                "coef": 2.7034898457667573
+            },
+            {
+                "intent": "hue_lightdim",
+                "feature": "brightness",
+                "coef": 2.567451329344404
+            },
+            {
+                "intent": "hue_lightoff",
+                "feature": "room",
+                "coef": 2.3191054476706845
+            },
+            {
+                "intent": "greet",
+                "feature": "up",
+                "coef": 1.8531070638938105
+            },
+            {
+                "intent": "hue_lighton",
+                "feature": "light",
+                "coef": 1.5189897332056026
+            }
+        ],
+        "correct_utterance_example": [
+            "hue_lightup",
+            "set lights brightness higher",
+            [
+                [
+                    "set",
+                    0.20906955282571293
+                ],
+                [
+                    "lights",
+                    6.186430303737507
+                ],
+                [
+                    "brightness",
+                    3.614497890806915
+                ],
+                [
+                    "higher",
+                    1.118783692943832
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "hue_lightchange",
+            "make lights brightener",
+            [
+                [
+                    "make",
+                    1.9027148083476315
+                ],
+                [
+                    "lights",
+                    6.186430303737507
+                ],
+                [
+                    "brightener",
+                    0.7276929601416801
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "hue_lightchange": 4,
+            "calendar_set": 3,
+            "quirky": 2,
+            "hue_lightdim": 1,
+            "hue_lightoff": 1
+        }
+    },
+    "wemo_off": {
+        "f1_score": 0.84,
+        "total_count": 98,
+        "total_incorrect_count": 13,
+        "top_features": [
+            "off",
+            "socket",
+            "plug",
+            "wemo",
+            "power",
+            "smart",
+            "turn",
+            "down",
+            "fan",
+            "disable"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "hue_lightoff",
+                "feature": "off",
+                "coef": 8.829801974132106
+            },
+            {
+                "intent": "volume_down",
+                "feature": "down",
+                "coef": 4.5858629274772476
+            },
+            {
+                "intent": "wemo_on",
+                "feature": "plug",
+                "coef": 4.409370435303296
+            },
+            {
+                "intent": "hue_lightdim",
+                "feature": "down",
+                "coef": 4.124274672322319
+            },
+            {
+                "intent": "wemo_on",
+                "feature": "socket",
+                "coef": 4.03179689164398
+            },
+            {
+                "intent": "wemo_on",
+                "feature": "turn",
+                "coef": 3.797614487686305
+            },
+            {
+                "intent": "wemo_on",
+                "feature": "wemo",
+                "coef": 3.5314606318271617
+            },
+            {
+                "intent": "volume_mute",
+                "feature": "off",
+                "coef": 3.120811715745287
+            },
+            {
+                "intent": "hue_lighton",
+                "feature": "turn",
+                "coef": 2.7547896218848384
+            },
+            {
+                "intent": "alarm_remove",
+                "feature": "off",
+                "coef": 2.7191609358860425
+            },
+            {
+                "intent": "alarm_remove",
+                "feature": "disable",
+                "coef": 2.559276430356109
+            },
+            {
+                "intent": "volume_up",
+                "feature": "turn",
+                "coef": 2.5298487301390833
+            },
+            {
+                "intent": "wemo_on",
+                "feature": "smart",
+                "coef": 2.5239316641542353
+            },
+            {
+                "intent": "hue_lightoff",
+                "feature": "turn",
+                "coef": 2.4525887151298065
+            },
+            {
+                "intent": "wemo_on",
+                "feature": "power",
+                "coef": 1.3937040018175497
+            }
+        ],
+        "correct_utterance_example": [
+            "wemo_off",
+            "turn off the [device_type : rice cooker socket]",
+            [
+                [
+                    "turn",
+                    1.88494465097511
+                ],
+                [
+                    "off",
+                    6.8714287083733545
+                ],
+                [
+                    "the",
+                    0.5118437105745529
+                ],
+                [
+                    "rice",
+                    0.3457669953127255
+                ],
+                [
+                    "cooker",
+                    0.4259328026312017
+                ],
+                [
+                    "socket",
+                    5.097595723877244
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "quirky",
+            "disable my [device_type : okug]",
+            [
+                [
+                    "disable",
+                    1.5901633531142814
+                ],
+                [
+                    "my",
+                    -0.19844958008418517
+                ],
+                [
+                    "okug",
+                    0.7436052490879708
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "hue_lightoff": 5,
+            "quirky": 4,
+            "commandstop": 2,
+            "hue_lightdim": 1,
+            "factoid": 1
+        }
+    },
+    "wemo_on": {
+        "f1_score": 0.82,
+        "total_count": 76,
+        "total_incorrect_count": 13,
+        "top_features": [
+            "on",
+            "plug",
+            "socket",
+            "turn",
+            "wemo",
+            "smart",
+            "enable",
+            "start",
+            "power",
+            "charger"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "wemo_off",
+                "feature": "socket",
+                "coef": 5.097595723877244
+            },
+            {
+                "intent": "hue_lighton",
+                "feature": "on",
+                "coef": 4.175559866830495
+            },
+            {
+                "intent": "cleaning",
+                "feature": "start",
+                "coef": 3.7141715752988427
+            },
+            {
+                "intent": "radio",
+                "feature": "on",
+                "coef": 3.6379139210046842
+            },
+            {
+                "intent": "lists_query",
+                "feature": "on",
+                "coef": 3.5372219989511855
+            },
+            {
+                "intent": "wemo_off",
+                "feature": "plug",
+                "coef": 3.5306814998769736
+            },
+            {
+                "intent": "wemo_off",
+                "feature": "wemo",
+                "coef": 3.2616711211264042
+            },
+            {
+                "intent": "social_query",
+                "feature": "on",
+                "coef": 3.045460582220296
+            },
+            {
+                "intent": "wemo_off",
+                "feature": "power",
+                "coef": 3.018208575646057
+            },
+            {
+                "intent": "hue_lighton",
+                "feature": "turn",
+                "coef": 2.7547896218848384
+            },
+            {
+                "intent": "game",
+                "feature": "start",
+                "coef": 2.5589946070501894
+            },
+            {
+                "intent": "wemo_off",
+                "feature": "smart",
+                "coef": 2.536578182150627
+            },
+            {
+                "intent": "volume_up",
+                "feature": "turn",
+                "coef": 2.5298487301390833
+            },
+            {
+                "intent": "hue_lightoff",
+                "feature": "turn",
+                "coef": 2.4525887151298065
+            },
+            {
+                "intent": "audiobook",
+                "feature": "start",
+                "coef": 2.4292022665330806
+            },
+            {
+                "intent": "wemo_off",
+                "feature": "turn",
+                "coef": 1.88494465097511
+            }
+        ],
+        "correct_utterance_example": [
+            "wemo_on",
+            "turn on the [device_type : plug]",
+            [
+                [
+                    "turn",
+                    3.797614487686305
+                ],
+                [
+                    "on",
+                    5.441198425933427
+                ],
+                [
+                    "the",
+                    0.5919997642798567
+                ],
+                [
+                    "plug",
+                    4.409370435303296
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "wemo_off",
+            "switch the [device_type : smart plug] socket",
+            [
+                [
+                    "switch",
+                    1.2667554693780603
+                ],
+                [
+                    "the",
+                    0.5919997642798567
+                ],
+                [
+                    "smart",
+                    2.5239316641542353
+                ],
+                [
+                    "plug",
+                    4.409370435303296
+                ],
+                [
+                    "socket",
+                    4.03179689164398
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 4,
+            "wemo_off": 2,
+            "hue_lightoff": 2,
+            "news_query": 2,
+            "calendar_set": 1,
+            "radio": 1,
+            "music": 1
+        }
+    },
+    "coffee": {
+        "f1_score": 0.94,
+        "total_count": 195,
+        "total_incorrect_count": 14,
+        "top_features": [
+            "coffee",
+            "make",
+            "cappuccino",
+            "cup",
+            "brew",
+            "maker",
+            "machine",
+            "latte",
+            "espresso",
+            "some"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "recipe",
+                "feature": "make",
+                "coef": 3.6671608682411496
+            },
+            {
+                "intent": "createoradd",
+                "feature": "make",
+                "coef": 3.436355142442562
+            },
+            {
+                "intent": "hue_lightchange",
+                "feature": "make",
+                "coef": 3.2480985196963226
+            },
+            {
+                "intent": "order",
+                "feature": "some",
+                "coef": 2.0720949323284863
+            },
+            {
+                "intent": "joke",
+                "feature": "make",
+                "coef": 1.2313382428187853
+            }
+        ],
+        "correct_utterance_example": [
+            "coffee",
+            "make me a coffee",
+            [
+                [
+                    "make",
+                    3.3098380760040733
+                ],
+                [
+                    "me",
+                    0.6835521196590646
+                ],
+                [
+                    "a",
+                    0
+                ],
+                [
+                    "coffee",
+                    12.161122682802604
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "quirky",
+            "i'd like an [coffee_type : espresso]",
+            [
+                [
+                    "i'd",
+                    0
+                ],
+                [
+                    "like",
+                    0.7717327251310322
+                ],
+                [
+                    "an",
+                    0.25932364881764
+                ],
+                [
+                    "espresso",
+                    1.5815610041332255
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 8,
+            "order": 2,
+            "music": 2,
+            "recipe": 1,
+            "weather_query": 1
+        }
+    }
+}

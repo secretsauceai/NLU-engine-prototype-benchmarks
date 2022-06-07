@@ -1,0 +1,19 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+13164,email,addcontact,createoradd,please add [person : tom] to my contact list,True,False,False
+19169,email,addcontact,createoradd,create new contact,False,False,False
+19171,email,addcontact,email_query,change my [relation : mum's] [personal_info : email] in my phonebook,False,False,False
+20012,email,addcontact,querycontact,please create a new contact information about [person : jo],False,False,False
+19940,email,addcontact,querycontact,use that email address as a contact,False,False,True
+20817,email,addcontact,querycontact,store my contacts,False,False,True
+19576,email,addcontact,sendemail,here's an email address,False,False,True
+19669,email,addcontact,sendemail,i need you to add [person : gary's] email to my favorites,False,False,False
+20627,email,addcontact,sendemail,save email id,False,False,True
+19098,email,addcontact,sendemail,create new contact with [personal_info : email],False,False,False
+19097,email,addcontact,sendemail,add new [personal_info : email] to [person : anna],False,False,False
+20123,email,addcontact,sendemail,please add to my [list_name : contact lists] and send them a reminder email,False,False,True
+20218,email,addcontact,sendemail,locate the email to [business_name : giant eagle] and put it into my [list_name : contact list],False,False,True
+20327,email,addcontact,sendemail,send an email and save the contact information for [email_address : samuelwaters@hotmail dot com],False,False,True
+20328,email,addcontact,sendemail,add this email address to my contacts and send an email to,False,False,True
+20489,email,addcontact,sendemail,i want to and my email address,False,False,True
+19575,email,addcontact,sendemail,remember this email,False,False,True
+19932,email,addcontact,sendemail,email [email_address : hwu@gmail dot com] add to email contacts,False,False,True

@@ -1,0 +1,62 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+13850,recommendation,events,calendar_query,where is the event venue,False,False,True
+14179,recommendation,events,calendar_query,what do they have going on for [event_name : festivals] [place_name : downtown],True,False,False
+14163,recommendation,events,calendar_query,what do they have going on at young circle [date : this week],False,False,True
+14105,recommendation,events,calendar_query,is there anything to do [timeofday : tonight],False,False,True
+13870,recommendation,events,calendar_query,what [event_name : baseball games] are scheduled for [date : this week] in [place_name : tulsa],True,False,False
+14362,recommendation,events,calendar_query,inform about latest scheduled events near my location,False,False,True
+13957,recommendation,events,calendar_query,when is the yearly cultural event coming up,False,False,True
+14373,recommendation,events,calendar_query,please check on the [event_name : rock concerts] scheduled [date : this weekend],False,False,True
+13835,recommendation,events,calendar_query,when is the [event_name : next blues concert] in [place_name : liverpool],False,False,False
+14377,recommendation,events,calendar_query,find the events,False,False,True
+14070,recommendation,events,calendar_query,what kind of [event_name : free activities] can i do locally [date : this week],True,False,False
+10389,recommendation,events,calendar_query,info of the upcoming events,False,False,True
+14381,recommendation,events,calendar_query,events [date : today],False,False,True
+14382,recommendation,events,calendar_query,events upcoming,False,False,True
+17346,recommendation,events,calendar_query,what is [date : tomorrows] events,False,False,True
+10271,recommendation,events,calendar_query,what is happening [date : tomorrow],False,False,True
+9810,recommendation,events,calendar_query,are there any events coming up,False,False,True
+9808,recommendation,events,calendar_query,what events are coming up,False,False,True
+9584,recommendation,events,calendar_query,show me more information about this event,False,False,True
+9582,recommendation,events,calendar_query,what is that event,False,False,True
+14178,recommendation,events,calendar_query,do they have any events going on [place_name : downtown] [date : this weekend],False,False,False
+13921,recommendation,events,calendar_query,where is the [event_name : food festival] [timeofday : tonight],False,False,False
+14018,recommendation,events,calendar_set,recommend a [event_name : blue grass band] event [place_name : within twenty miles of manchester] ma [date : this week],True,False,False
+14061,recommendation,events,calendar_set,what's the next event at the [place_name : library],True,False,False
+14146,recommendation,events,factoid,which flags ride is the best,False,False,True
+14358,recommendation,events,factoid,when does [business_name : panama city mall] open,False,False,True
+14380,recommendation,events,factoid,[event_name : art exhibitions] in [place_name : california],True,False,False
+14305,recommendation,events,factoid,[place_name : west side] [event_name : races],False,False,True
+9321,recommendation,events,factoid,who and why is on at the [place_name : theater] [timeofday : tonight],False,False,True
+20655,recommendation,events,factoid,where are local [event_name : trump protests],False,False,False
+13899,recommendation,events,factoid,where is the [event_name : concert] of [person : amjad ali] taking place,True,False,False
+13849,recommendation,events,factoid,what type of event,False,False,True
+13919,recommendation,events,factoid,which [business_type : pubs] participate in the [event_name : jazz festival],True,False,False
+13943,recommendation,events,locations,show me where i can find a [business_type : hamburger],False,False,True
+13855,recommendation,events,movies,what [business_type : movie] can i watch [timeofday : tonight] on the theater here in [place_name : boston],False,False,True
+13821,recommendation,events,music,what bands are playing close by,True,False,False
+10272,recommendation,events,news_query,what happens on the [date : fourth of july],True,False,False
+10342,recommendation,events,news_query,searching for recent happenings on the particular dates,False,False,True
+14379,recommendation,events,news_query,[event_name : football matches] in [place_name : new york],False,False,True
+14336,recommendation,events,news_query,what's going on,False,False,True
+13929,recommendation,events,news_query,what's up in the [place_name : neighbourhood],False,False,True
+18442,recommendation,events,news_query,what is happening now,False,False,True
+14012,recommendation,events,news_query,whats going on in [place_name : cincinnati],False,False,True
+13983,recommendation,events,quirky,[event_name : badminton],False,False,True
+14410,recommendation,events,quirky,any [movie_type : good drama] released recently in the cinema,False,False,True
+10341,recommendation,events,quirky,searching for any [event_name : special holidays] for [place_name : us country],False,False,True
+13985,recommendation,events,quirky,[event_name : swimming],False,False,True
+13812,recommendation,events,quirky,tell me about things to do in [place_name : london],False,False,False
+14043,recommendation,events,quirky,what plays are showing at the [place_name : theatre],False,False,True
+13984,recommendation,events,quirky,[event_name : hockey],False,False,True
+13997,recommendation,events,quirky,do i need to undertake any particular activity during my stay at the [place_name : yellowstone national park],False,False,True
+14110,recommendation,events,quirky,[event_name : fun things] to do [date : today],False,False,False
+14359,recommendation,events,quirky,how much are tickets at [business_name : wonder works],True,False,True
+13874,recommendation,events,quirky,what [event_name : exhibits] or [event_name : shows] are scheduled at the [place_name : metropolitan theater],False,False,False
+14117,recommendation,events,quirky,what to do today in [place_name : biloxi],False,False,False
+13995,recommendation,events,quirky,make a to do list while visiting the [place_name : yellow stone national park],False,False,True
+14275,recommendation,events,quirky,i am bored can you find me something to do near me,False,False,False
+14363,recommendation,events,quirky,inform about [event_name : best circus] near me,True,False,False
+13940,recommendation,events,radio,please show me best [event_name : run] program in [place_name : jodhpur],False,False,True
+13902,recommendation,events,transport_query,what is there to do here,False,False,False
+14144,recommendation,events,weather_query,what should i do in [place_name : san diego],False,False,False

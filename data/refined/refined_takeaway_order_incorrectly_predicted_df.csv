@@ -1,0 +1,38 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+4910,takeaway,order,calendar_set,get me a [food_type : turkey jimmy johns sub] and set it to be delivered at [time : five pm] [timeofday : tonight],False,False,False
+1312,takeaway,order,currency,give me options for [food_type : indian] [order_type : carryout] under dollars,False,False,True
+3387,takeaway,order,datetime_query,it's time for [food_type : junk food],False,False,True
+5194,takeaway,order,factoid,is is [business_name : taco o'clock] yet,False,False,True
+2318,takeaway,order,factoid,how much does [food_type : general tsos chicken] cost at [business_name : peking garden],False,False,True
+2609,takeaway,order,factoid,who delivers near here,True,False,False
+3882,takeaway,order,locations,[business_name : macdonald shops],False,False,True
+5193,takeaway,order,locations,what [food_type : mexican] [business_type : restaurants] are there nearby for takeout,True,False,True
+4836,takeaway,order,locations,show me [order_type : delivery] near me,False,False,True
+4246,takeaway,order,locations,what [order_type : takeout] places are near me,False,False,False
+3880,takeaway,order,locations,near [business_name : pizza shops],False,False,True
+15903,takeaway,order,locations,call the closest [food_type : mexican] [business_type : restaurant],False,False,True
+2608,takeaway,order,locations,find me the nearest [food_type : chinese] for [order_type : delivery],False,False,True
+1101,takeaway,order,locations,what is the best [food_type : pizza] near me that [order_type : delivers],False,False,True
+15904,takeaway,order,locations,pull up the menu for the closest [food_type : mexican] [business_type : restaurant],False,False,True
+2916,takeaway,order,locations,show me nearby [order_type : takeout] [business_type : restaurants],False,False,True
+6451,takeaway,order,music,open [app_name : grubhub],False,False,False
+6453,takeaway,order,quirky,closest [business_name : chipotle],False,False,True
+6937,takeaway,order,quirky,any low priced [food_type : delicacies],False,False,True
+1574,takeaway,order,quirky,i would like to [order_type : pickup] a veggie sub with a cookie from subway,False,False,False
+2001,takeaway,order,quirky,i want to eat some [food_type : spicy] thing,False,False,True
+4316,takeaway,order,quirky,call [business_name : china wok],False,False,True
+16196,takeaway,order,quirky,give me the best [food_type : pizza] deals offered [date : today],False,False,True
+2317,takeaway,order,quirky,pull up [business_name : peking garden] online,False,False,True
+7480,takeaway,order,quirky,ordering food,False,False,True
+6713,takeaway,order,quirky,tell [business_name : the golden fork] that i want their [food_type : fish risotto] [order_type : delivered],False,False,False
+3388,takeaway,order,quirky,i want to eat two [food_type : pita gyros] please and some [drink_type : diet coke],False,False,False
+2019,takeaway,order,quirky,what are the offers in [order_type : uber eats],True,False,True
+6936,takeaway,order,quirky,any good [food_type : fast food] items,False,False,True
+6967,takeaway,order,sendemail,have [business_name : pho] send three [food_type : egg rolls],False,False,False
+1100,takeaway,order,takeaway_query,call the nearest [food_type : thai] [business_type : restaurant] with [order_type : delivery],False,False,True
+3881,takeaway,order,takeaway_query,get me [order_type : takeaway] food,False,False,True
+3611,takeaway,order,takeaway_query,schedule a [order_type : delivery] from food at the nearby [order_type : takeaway] [meal_type : diner],False,False,True
+1770,takeaway,order,takeaway_query,free home [order_type : delivery],False,False,True
+5500,takeaway,order,takeaway_query,find the nearest [business_name : olive garden] that has [order_type : take out service],False,False,True
+18331,takeaway,order,takeaway_query,please order my favorite dish from my favorite [business_type : restaurant],False,False,True
+3389,takeaway,order,weather_query,i need two [food_type : pizzas],False,False,False

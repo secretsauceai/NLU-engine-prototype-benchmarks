@@ -1,0 +1,8 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+25188,general,praise,affirm,that's wonderful.,True,False,True
+25204,general,praise,affirm,that's excellent.,True,False,True
+25301,general,praise,affirm,that was amazing.,True,False,True
+25483,general,praise,affirm,it's wonderful.,True,False,True
+25425,general,praise,music,"you rock,.",True,False,False
+25609,general,praise,quirky,"you are the best,.",True,False,False
+25028,general,praise,quirky,you are smart.,False,False,False

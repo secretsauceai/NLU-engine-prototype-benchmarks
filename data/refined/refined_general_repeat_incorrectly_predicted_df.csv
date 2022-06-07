@@ -1,0 +1,16 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+22690,general,repeat,confirm,what was the last thing you said to me.,False,False,False
+22254,general,repeat,definition,what is that.,False,False,True
+22313,general,repeat,negate,i am sorry.,False,False,True
+22395,general,repeat,negate,i'm sorry.,False,False,True
+22588,general,repeat,negate,what did you say.,False,False,False
+22637,general,repeat,negate,what was that.,False,False,False
+22665,general,repeat,negate,sorry.,False,False,True
+22722,general,repeat,negate,what's that.,False,False,True
+22260,general,repeat,quirky,pardon.,False,False,True
+22478,general,repeat,quirky,beg your pardon.,False,False,True
+22503,general,repeat,quirky,kindly break down your statement and make it simple.,False,False,True
+22654,general,repeat,quirky,what are you trying to say.,False,False,True
+22704,general,repeat,quirky,i beg your pardon.,False,False,True
+22822,general,repeat,quirky,what were you trying to say.,False,False,True
+22692,general,repeat,settings,repeat.,False,False,False

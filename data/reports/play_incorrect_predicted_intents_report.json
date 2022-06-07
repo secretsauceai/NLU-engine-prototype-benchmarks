@@ -1,0 +1,616 @@
+{
+    "music": {
+        "f1_score": 0.83,
+        "total_count": 1181,
+        "total_incorrect_count": 44,
+        "top_features": [
+            "play",
+            "playlist",
+            "song",
+            "music",
+            "hear",
+            "by",
+            "songs",
+            "listen",
+            "jazz",
+            "pop"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "music_query",
+                "feature": "song",
+                "coef": 7.452510250454135
+            },
+            {
+                "intent": "game",
+                "feature": "play",
+                "coef": 6.888001878988034
+            },
+            {
+                "intent": "likeness",
+                "feature": "song",
+                "coef": 6.571785954678361
+            },
+            {
+                "intent": "music_query",
+                "feature": "music",
+                "coef": 5.57348949623499
+            },
+            {
+                "intent": "radio",
+                "feature": "play",
+                "coef": 5.166056518145345
+            },
+            {
+                "intent": "repeat",
+                "feature": "hear",
+                "coef": 4.61858754822918
+            },
+            {
+                "intent": "dislikeness",
+                "feature": "song",
+                "coef": 4.125530000432767
+            },
+            {
+                "intent": "podcasts",
+                "feature": "play",
+                "coef": 4.039011590079619
+            },
+            {
+                "intent": "settings",
+                "feature": "song",
+                "coef": 3.9887943395297794
+            },
+            {
+                "intent": "likeness",
+                "feature": "music",
+                "coef": 3.9330863056502263
+            },
+            {
+                "intent": "audiobook",
+                "feature": "play",
+                "coef": 3.7745106553678234
+            },
+            {
+                "intent": "maths",
+                "feature": "by",
+                "coef": 3.073359080347457
+            },
+            {
+                "intent": "settings",
+                "feature": "music",
+                "coef": 2.9095655903700974
+            },
+            {
+                "intent": "volume_up",
+                "feature": "hear",
+                "coef": 2.745907466581521
+            },
+            {
+                "intent": "likeness",
+                "feature": "songs",
+                "coef": 2.5752785948946504
+            },
+            {
+                "intent": "settings",
+                "feature": "songs",
+                "coef": 1.7421164166372702
+            }
+        ],
+        "correct_utterance_example": [
+            "music",
+            "i want to listen [artist_name : arijit singh] song once again",
+            [
+                [
+                    "i",
+                    0
+                ],
+                [
+                    "want",
+                    1.3054042612163281
+                ],
+                [
+                    "to",
+                    0.19499048441891645
+                ],
+                [
+                    "listen",
+                    4.089007730272587
+                ],
+                [
+                    "arijit",
+                    0.756790911279275
+                ],
+                [
+                    "singh",
+                    0.5196723927322345
+                ],
+                [
+                    "song",
+                    5.831677494592381
+                ],
+                [
+                    "once",
+                    -0.31058180335703045
+                ],
+                [
+                    "again",
+                    -1.8560939109267165
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "repeat",
+            "play it again please",
+            [
+                [
+                    "play",
+                    10.136045863502773
+                ],
+                [
+                    "it",
+                    -1.6739841580612693
+                ],
+                [
+                    "again",
+                    -1.8560939109267165
+                ],
+                [
+                    "please",
+                    -0.037183636311509456
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 20,
+            "radio": 5,
+            "music_query": 3,
+            "audiobook": 2,
+            "calendar_set": 2,
+            "factoid": 2,
+            "settings": 2,
+            "repeat": 1,
+            "podcasts": 1,
+            "order": 1,
+            "lists_query": 1,
+            "datetime_query": 1,
+            "volume_mute": 1,
+            "news_query": 1,
+            "likeness": 1
+        }
+    },
+    "audiobook": {
+        "f1_score": 0.78,
+        "total_count": 212,
+        "total_incorrect_count": 42,
+        "top_features": [
+            "audiobook",
+            "resume",
+            "book",
+            "audio",
+            "play",
+            "continue",
+            "left",
+            "reading",
+            "playing",
+            "start"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "music",
+                "feature": "play",
+                "coef": 10.136045863502773
+            },
+            {
+                "intent": "game",
+                "feature": "play",
+                "coef": 6.888001878988034
+            },
+            {
+                "intent": "radio",
+                "feature": "play",
+                "coef": 5.166056518145345
+            },
+            {
+                "intent": "ticket",
+                "feature": "book",
+                "coef": 5.1566328544098194
+            },
+            {
+                "intent": "music_query",
+                "feature": "playing",
+                "coef": 4.369195312214985
+            },
+            {
+                "intent": "taxi",
+                "feature": "book",
+                "coef": 4.3379683087429175
+            },
+            {
+                "intent": "podcasts",
+                "feature": "play",
+                "coef": 4.039011590079619
+            },
+            {
+                "intent": "cleaning",
+                "feature": "start",
+                "coef": 3.7141715752988427
+            },
+            {
+                "intent": "movies",
+                "feature": "playing",
+                "coef": 3.5360371164950024
+            },
+            {
+                "intent": "game",
+                "feature": "start",
+                "coef": 2.5589946070501894
+            },
+            {
+                "intent": "wemo_on",
+                "feature": "start",
+                "coef": 1.4175750669719611
+            },
+            {
+                "intent": "volume_other",
+                "feature": "audio",
+                "coef": 0.9486015696861007
+            }
+        ],
+        "correct_utterance_example": [
+            "audiobook",
+            "read that back",
+            [
+                [
+                    "read",
+                    2.054237212402152
+                ],
+                [
+                    "that",
+                    -0.40073905709780466
+                ],
+                [
+                    "back",
+                    1.5774477051415032
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "repeat",
+            "please repeat the last sentence from that book",
+            [
+                [
+                    "please",
+                    -1.1390575793755684
+                ],
+                [
+                    "repeat",
+                    0.1446323687816359
+                ],
+                [
+                    "the",
+                    0.8137663869804732
+                ],
+                [
+                    "last",
+                    0.8760844166306447
+                ],
+                [
+                    "sentence",
+                    0.2681801352050124
+                ],
+                [
+                    "from",
+                    0.9476584382913582
+                ],
+                [
+                    "that",
+                    -0.40073905709780466
+                ],
+                [
+                    "book",
+                    6.267597339785554
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "music": 25,
+            "quirky": 8,
+            "repeat": 2,
+            "factoid": 2,
+            "calendar_query": 1,
+            "weather_query": 1,
+            "lists_query": 1,
+            "news_query": 1,
+            "podcasts": 1
+        }
+    },
+    "game": {
+        "f1_score": 0.71,
+        "total_count": 235,
+        "total_incorrect_count": 49,
+        "top_features": [
+            "game",
+            "play",
+            "games",
+            "with",
+            "chess",
+            "lets",
+            "let",
+            "bird",
+            "open",
+            "start"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "music",
+                "feature": "play",
+                "coef": 10.136045863502773
+            },
+            {
+                "intent": "radio",
+                "feature": "play",
+                "coef": 5.166056518145345
+            },
+            {
+                "intent": "calendar_set",
+                "feature": "with",
+                "coef": 4.77476194335252
+            },
+            {
+                "intent": "podcasts",
+                "feature": "play",
+                "coef": 4.039011590079619
+            },
+            {
+                "intent": "audiobook",
+                "feature": "play",
+                "coef": 3.7745106553678234
+            },
+            {
+                "intent": "cleaning",
+                "feature": "start",
+                "coef": 3.7141715752988427
+            },
+            {
+                "intent": "audiobook",
+                "feature": "start",
+                "coef": 2.4292022665330806
+            },
+            {
+                "intent": "wemo_on",
+                "feature": "start",
+                "coef": 1.4175750669719611
+            }
+        ],
+        "correct_utterance_example": [
+            "game",
+            "games",
+            [
+                [
+                    "games",
+                    4.27901772632938
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "quirky",
+            "puzzles and games app",
+            [
+                [
+                    "puzzles",
+                    0.6027762726619903
+                ],
+                [
+                    "and",
+                    -0.5336408079521159
+                ],
+                [
+                    "games",
+                    4.27901772632938
+                ],
+                [
+                    "app",
+                    0.5639531697109295
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "music": 28,
+            "quirky": 16,
+            "factoid": 2,
+            "querycontact": 1,
+            "praise": 1,
+            "radio": 1
+        }
+    },
+    "radio": {
+        "f1_score": 0.87,
+        "total_count": 518,
+        "total_incorrect_count": 55,
+        "top_features": [
+            "radio",
+            "station",
+            "fm",
+            "play",
+            "point",
+            "channel",
+            "tune",
+            "program",
+            "on",
+            "npr"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "music",
+                "feature": "play",
+                "coef": 10.136045863502773
+            },
+            {
+                "intent": "game",
+                "feature": "play",
+                "coef": 6.888001878988034
+            },
+            {
+                "intent": "wemo_on",
+                "feature": "on",
+                "coef": 5.441198425933427
+            },
+            {
+                "intent": "hue_lighton",
+                "feature": "on",
+                "coef": 4.175559866830495
+            },
+            {
+                "intent": "podcasts",
+                "feature": "play",
+                "coef": 4.039011590079619
+            },
+            {
+                "intent": "audiobook",
+                "feature": "play",
+                "coef": 3.7745106553678234
+            },
+            {
+                "intent": "lists_query",
+                "feature": "on",
+                "coef": 3.5372219989511855
+            },
+            {
+                "intent": "social_query",
+                "feature": "on",
+                "coef": 3.045460582220296
+            }
+        ],
+        "correct_utterance_example": [
+            "radio",
+            "play my favorite station",
+            [
+                [
+                    "play",
+                    5.166056518145345
+                ],
+                [
+                    "my",
+                    -1.2971297946859186
+                ],
+                [
+                    "favorite",
+                    0.240643831895583
+                ],
+                [
+                    "station",
+                    6.3110531229232665
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "music",
+            "play [app_name : spotify]",
+            [
+                [
+                    "play",
+                    5.166056518145345
+                ],
+                [
+                    "spotify",
+                    0.8334114607113063
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "music": 39,
+            "quirky": 5,
+            "podcasts": 3,
+            "news_query": 3,
+            "sendemail": 2,
+            "game": 2,
+            "weather_query": 1
+        }
+    },
+    "podcasts": {
+        "f1_score": 0.93,
+        "total_count": 358,
+        "total_incorrect_count": 29,
+        "top_features": [
+            "podcast",
+            "episode",
+            "podcasts",
+            "next",
+            "play",
+            "forward",
+            "skip",
+            "go",
+            "previous",
+            "back"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "music",
+                "feature": "play",
+                "coef": 10.136045863502773
+            },
+            {
+                "intent": "game",
+                "feature": "play",
+                "coef": 6.888001878988034
+            },
+            {
+                "intent": "radio",
+                "feature": "play",
+                "coef": 5.166056518145345
+            },
+            {
+                "intent": "audiobook",
+                "feature": "play",
+                "coef": 3.7745106553678234
+            },
+            {
+                "intent": "settings",
+                "feature": "skip",
+                "coef": 2.2085201117658846
+            }
+        ],
+        "correct_utterance_example": [
+            "podcasts",
+            "go back",
+            [
+                [
+                    "go",
+                    2.689974922947068
+                ],
+                [
+                    "back",
+                    1.8542813346674774
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "music",
+            "play next recording",
+            [
+                [
+                    "play",
+                    4.039011590079619
+                ],
+                [
+                    "next",
+                    4.617271919983059
+                ],
+                [
+                    "recording",
+                    1.1456748663916798
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "music": 17,
+            "quirky": 5,
+            "factoid": 2,
+            "calendar_set": 2,
+            "createoradd": 1,
+            "news_query": 1,
+            "order": 1
+        }
+    }
+}

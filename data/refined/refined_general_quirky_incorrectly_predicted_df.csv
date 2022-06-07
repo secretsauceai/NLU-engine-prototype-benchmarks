@@ -1,0 +1,216 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+7373,general,quirky,alarm_set,wake up,False,False,True
+7686,general,quirky,calendar_query,what i did at [time : this time],False,False,True
+7692,general,quirky,calendar_query,party,False,False,True
+7780,general,quirky,calendar_query,hi what is going on [date : today],False,False,True
+7877,general,quirky,calendar_query,tell me more about the [event_name : concert] on [date : friday's] [time : night],False,False,True
+8113,general,quirky,calendar_query,how will help this meeting,False,False,True
+8391,general,quirky,calendar_query,can you give me the details of upcoming [general_frequency : annual] [event_name : function] on [date : twenty sixth march],False,False,True
+8485,general,quirky,calendar_query,tell me more about that [event_name : concert],False,False,True
+9319,general,quirky,calendar_query,tell me more about the show,False,False,True
+7378,general,quirky,calendar_query,show me what i did [date : today],False,False,True
+9840,general,quirky,calendar_query,tell me more about my events,False,False,True
+10050,general,quirky,calendar_query,what am i doing [date : this week],False,False,True
+10051,general,quirky,calendar_query,when am i busy [date : this month],False,False,True
+10190,general,quirky,calendar_query,what are the details on [event_name : umf],False,False,True
+9737,general,quirky,calendar_query,i need to know more about the [event_name : parade] [date : this weekend],False,False,True
+12882,general,quirky,calendar_query,what's next,False,False,True
+33,general,quirky,calendar_query,give me the status on my available memory,False,False,True
+10759,general,quirky,calendar_query,look for free time,False,False,True
+16194,general,quirky,calendar_query,can you tell me when [date : friday the thirteenth] will be playing on tv [date : this year],False,False,True
+3433,general,quirky,calendar_query,how many [news_topic : tornadoes] have there been [date : this month],False,False,True
+16065,general,quirky,calendar_query,what is the answer to this,False,False,True
+16233,general,quirky,calendar_query,when is the next touring,False,False,True
+15961,general,quirky,calendar_query,what time are the hockey games [timeofday : tonight],False,False,True
+15810,general,quirky,calendar_query,what is my astrology report for [date : today],False,False,True
+16001,general,quirky,calendar_query,what store is having sales [date : tomorrow],False,False,True
+7244,general,quirky,calendar_query,hey tell me more about my [event_name : meetings] [date : today],False,False,True
+18861,general,quirky,calendar_remove,clear out the problem,False,False,True
+7866,general,quirky,calendar_set,i have to go,False,False,False
+15582,general,quirky,calendar_set,set up a date for just you and me,False,False,False
+7739,general,quirky,calendar_set,remind me some particular event,False,False,True
+7698,general,quirky,calendar_set,remind me when certain marvel shows return to netflix,False,False,True
+18321,general,quirky,calendar_set,please check this info on geographics for me,False,False,True
+15447,general,quirky,calendar_set,dance with me,False,False,False
+7600,general,quirky,calendar_set,i want you to remind me that [date : today] is a bad day for me because i have incurred a lossof five and to look in stock [date : tomorrow] very well,False,False,True
+7521,general,quirky,calendar_set,my daily schedule,False,False,True
+7479,general,quirky,calendar_set,please know that today i had a [event_name : meeting] with [person : george],False,False,True
+7459,general,quirky,calendar_set,add note that my day is going well,False,False,True
+7389,general,quirky,calendar_set,i have a deadline on [date : tuesday],False,False,True
+30,general,quirky,calendar_set,i need to have location services on can you check,False,False,True
+5534,general,quirky,calendar_set,get with new one,False,False,True
+7291,general,quirky,calendar_set,hey olly my friends gave me a surprise [event_name : birthday] party,False,False,True
+1127,general,quirky,cleaning,should i be concerned about the [device_type : robot vacuum cleaner] upon startup,False,False,True
+16020,general,quirky,confirm,please fact check in,False,False,True
+15587,general,quirky,createoradd,can you create a sugar free diet for me and create a shopping list for the ingredients,False,False,True
+17894,general,quirky,currency,in this matter in currency,False,False,True
+15548,general,quirky,datetime_query,what time the [business_name : costco] close,False,False,True
+7279,general,quirky,datetime_query,[date : today] i,False,False,True
+7283,general,quirky,datetime_query,hello is this your first time here,False,False,False
+12884,general,quirky,datetime_query,now what,False,False,False
+17080,general,quirky,datetime_query,could you please tell me which time will be the best time for me to date my lover,False,False,True
+7300,general,quirky,datetime_query,how is the day [date : today],False,False,True
+17897,general,quirky,definition,an object is an invisible,False,False,True
+6839,general,quirky,definition,meaning of a particular word,False,False,True
+15673,general,quirky,definition,what is the meaning of life,False,False,False
+15855,general,quirky,definition,define inflation and describe it's effects on an economy,True,False,True
+7762,general,quirky,definition,the definition of beauty,True,False,True
+7471,general,quirky,definition,What's up,False,False,False
+16174,general,quirky,definition,what does the title of the leo dicaprio movie mean,False,False,True
+16512,general,quirky,definition,what does it mean to call someone a snowflake,True,False,True
+17979,general,quirky,definition,if the object is for sale then what is the price,False,False,True
+7726,general,quirky,definition,what is the meaning of existence,False,False,False
+17608,general,quirky,definition,describe about it,False,False,True
+17361,general,quirky,definition,describe me about the new cleaner how it works,False,False,True
+17360,general,quirky,definition,describe the new football game rules,False,False,True
+17356,general,quirky,definition,define yourself in one word,True,False,False
+6212,general,quirky,dontcare,anything i need to know,False,False,True
+7524,general,quirky,dontcare,anything on your mind,False,False,False
+13432,general,quirky,dontcare,i don't like this one,False,False,True
+7392,general,quirky,events,what fun things are there to do in this area,False,False,True
+7590,general,quirky,explain,get me answers,False,False,True
+15428,general,quirky,explain,explain it to me,False,False,True
+15429,general,quirky,explain,explain it,False,False,True
+7564,general,quirky,explain,i couldn't get it all done,False,False,True
+18089,general,quirky,explain,please explain this sentence from the poem for me,False,False,True
+15842,general,quirky,factoid,what is my location,True,False,True
+15841,general,quirky,factoid,what is my age,True,False,False
+5098,general,quirky,factoid,is the giraffe baby born yet,False,False,True
+15798,general,quirky,factoid,what's the average price of a house in [place_name : michigan],True,False,True
+15757,general,quirky,factoid,how much can i bleed before i die,False,False,False
+18127,general,quirky,factoid,tell me how the world began,True,False,True
+15691,general,quirky,factoid,what is current economy of country,False,False,True
+15711,general,quirky,factoid,find recent events of the celebrity,False,False,True
+15682,general,quirky,factoid,how does production and population affects us,False,False,True
+18322,general,quirky,factoid,what is the geology of this location,False,False,True
+15844,general,quirky,factoid,how is the meta likely to shift with the next set of mtg,False,False,False
+7357,general,quirky,factoid,please tell me [person : bob] lives,False,False,True
+17925,general,quirky,factoid,has the celebrity does any charitable work,False,False,True
+18323,general,quirky,factoid,how high is this mountain,False,False,True
+6019,general,quirky,factoid,how long is this,False,False,True
+15754,general,quirky,factoid,what is your country,True,False,False
+17583,general,quirky,factoid,how does a rocket ship fly,False,False,True
+17257,general,quirky,factoid,tell me about reasons of winning of [person : trump],False,False,True
+15950,general,quirky,factoid,when will the world end,True,False,True
+17060,general,quirky,factoid,how big is the stone in this ring,False,False,True
+16784,general,quirky,factoid,where did he was [date : yesterday],False,False,True
+16579,general,quirky,factoid,which religion is most true,True,False,False
+16562,general,quirky,factoid,does [person : mr t] have a family,False,False,True
+16546,general,quirky,factoid,is mile marker sixty five where the hanging tree is located,False,False,True
+1911,general,quirky,factoid,how is [person : michael schumacher] doing,False,False,True
+16152,general,quirky,factoid,why is the earth round,False,False,True
+16148,general,quirky,factoid,tell me what [place_name : usa] thinks of [place_name : asia],False,False,True
+16116,general,quirky,factoid,please tell me who is going to win the nba championship,False,False,True
+15909,general,quirky,factoid,information on [person : Dolly parton],False,False,True
+18010,general,quirky,factoid,is that person living currently if yes where and how old is that person now,False,False,True
+16066,general,quirky,factoid,how many times does it go,False,False,True
+3578,general,quirky,factoid,give me the most recent stuff you have [person : angelina jolie],False,False,True
+16033,general,quirky,factoid,how many calories did i burn with my fifty minutes of yoga,False,False,True
+17903,general,quirky,factoid,is person is incredible,False,False,True
+15999,general,quirky,factoid,calculate the costs of cable and internet providers in my area where can i save the most,False,False,True
+15991,general,quirky,factoid,how much is a call per minute to [place_name : mauritania],False,False,True
+15989,general,quirky,factoid,how many subscriber does captain disillusion have,False,False,True
+17297,general,quirky,factoid,how much will be the world population after twenty years,False,False,True
+4394,general,quirky,factoid,did [person : obama] really wire tap [place_name : trump's hotel],False,False,True
+16099,general,quirky,factoid,why people who reads may not be the most courteous and well born,False,False,True
+17545,general,quirky,factoid,what are the similarities between [person : donald trump] and [person : obama],False,False,True
+19573,general,quirky,factoid,how many of them are important,False,False,True
+7653,general,quirky,factoid,tell me about [artist_name : rihana],False,False,True
+7734,general,quirky,factoid,who is the top of the music chart for [date : two thousand and seventeen],False,False,True
+7724,general,quirky,factoid,what is the history of smart phones,False,False,True
+7846,general,quirky,factoid,where are you from,True,False,False
+7850,general,quirky,factoid,are you married,True,False,False
+7298,general,quirky,factoid,what is the best way to live,True,False,False
+7637,general,quirky,factoid,what [person : rihanna] is doing,False,False,True
+7636,general,quirky,factoid,what is the story of the movie [movie_name : titanic],False,False,True
+7935,general,quirky,factoid,where is it,False,False,True
+8112,general,quirky,factoid,what is the purpose of,False,False,True
+7276,general,quirky,factoid,where are you from,True,False,False
+7768,general,quirky,factoid,about reality in world,False,False,True
+7626,general,quirky,factoid,what is the best cuisine in [place_name : the country],False,False,True
+7275,general,quirky,factoid,how old are you,True,False,False
+7591,general,quirky,factoid,what is the answer,False,False,True
+7308,general,quirky,factoid,show me the places where i was,False,False,True
+7507,general,quirky,factoid,how many languages does it know,False,False,True
+7506,general,quirky,factoid,how many words does it know,False,False,True
+7496,general,quirky,factoid,is there a groomer in town for cats only,False,False,True
+7495,general,quirky,factoid,how many top ten tunes did [artist_name : katy perry] have [date : last year],False,False,True
+9883,general,quirky,factoid,where can i park,False,False,True
+7323,general,quirky,factoid,who won the sports game last night,False,False,True
+7475,general,quirky,factoid,find me the cheapest copy of the four hour body,False,False,True
+7307,general,quirky,factoid,how many kilometers did i walk [date : today],False,False,True
+7831,general,quirky,factoid,the origins of the universe,False,False,True
+7356,general,quirky,game,please tell me the score of the game,False,False,False
+7293,general,quirky,joke,i am in bad mood tell me a joke,False,False,True
+15927,general,quirky,joke,just a joke here or there,False,False,True
+17076,general,quirky,likeness,do you like love song,True,False,True
+16100,general,quirky,lists_query,can you show me a list of all my recent commands,False,False,True
+7639,general,quirky,locations,good [business_type : restaurants],False,False,True
+7733,general,quirky,locations,what is the name of the best [food_type : italian] [business_type : restaurant],False,False,True
+15613,general,quirky,locations,find me a good [business_type : wine shop] that stock old wines like older than ten years navigate me to that shop,False,False,True
+17749,general,quirky,locations,compare prices of dairy items in local shops,False,False,True
+17123,general,quirky,locations,whats it near,False,False,True
+18011,general,quirky,maths,"may i know whats at location one million, two hundred and fifty eight thousand, seven hundred and forty five",False,False,True
+16330,general,quirky,movies,can you watch a movie on netflix with me,False,False,True
+7721,general,quirky,movies,latest movies in theatres,False,False,True
+7474,general,quirky,movies,movies,False,False,True
+17047,general,quirky,movies,give me the top rated movie in my area,False,False,True
+7569,general,quirky,music,play twenty questions,False,False,True
+7642,general,quirky,music,Play videos,False,False,True
+15899,general,quirky,music_query,tell me the name of the artist whose song is in the movie i am watching,False,False,True
+15840,general,quirky,music_query,what is my name,True,False,False
+7706,general,quirky,negate,i don't understand this question but what's it like in there,False,False,True
+7541,general,quirky,negate,what i do not like,False,False,True
+7622,general,quirky,news_query,current politics,False,False,True
+15658,general,quirky,news_query,i would like my to update all breaking news across the world,False,False,True
+15692,general,quirky,news_query,show me reviews of [person : donald trump],False,False,True
+16450,general,quirky,news_query,please pull up the wikipedia article on glass blowing,True,False,True
+17799,general,quirky,news_query,what are the specifications for the new iphone,True,False,True
+17778,general,quirky,news_query,what is the factor that let modi win the election,True,False,True
+16299,general,quirky,news_query,tell me the most strange thing happening in the world [date : today],False,False,False
+7498,general,quirky,news_query,trump,False,False,True
+7215,general,quirky,news_query,whats going on [date : today],False,False,True
+15520,general,quirky,news_query,tell me about the latest world scenario on global warming,False,False,True
+7239,general,quirky,news_query,did you watch the news about the car accident that happened [date : last night],False,False,True
+7347,general,quirky,news_query,what's been going on,False,False,True
+7517,general,quirky,news_query,whats going on in [place_name : hollywood],False,False,True
+7281,general,quirky,order,i would like to order a meal do have any special offers for sea food,False,False,True
+17350,general,quirky,order,order me something online,False,False,True
+7834,general,quirky,order,food,False,False,True
+7415,general,quirky,post,twitter,False,False,True
+7508,general,quirky,praise,are you smart,True,False,False
+6384,general,quirky,praise,thanks to ally for the photos,False,False,True
+7509,general,quirky,praise,how are you [date : today] doing well thank you,False,False,True
+18860,general,quirky,querycontact,address the situation,False,False,True
+4318,general,quirky,querycontact,"i am hungry,please contact China Wok for a number seven.",False,False,True
+16186,general,quirky,recipe,please tell me how to make a screwdriver,False,False,True
+15866,general,quirky,recipe,what is the recipe for chocolate chips,False,False,True
+15847,general,quirky,recipe,how many pumpkins do i need to make a [food_type : pumpkin pie],False,False,True
+15554,general,quirky,recipe,what should i cook [timeofday : tonight],False,False,True
+17271,general,quirky,recipe,google how hot does water need to be to boil,False,False,True
+15800,general,quirky,recipe,what is the best chocolate chip cookies recipe,False,False,True
+15563,general,quirky,recipe,what is the best chocolate chip cookie recipe,False,False,True
+16935,general,quirky,recipe,siri how do make a blt,False,False,True
+15876,general,quirky,recipe,can you make dinner for me,False,False,True
+7328,general,quirky,traffic,i hate how [time : long] the traffic jams get,True,False,True
+7272,general,quirky,traffic,there was heavy traffic on my way home,True,False,True
+7530,general,quirky,traffic,the traffic [date : today] was the worst i've seen,True,False,True
+16067,general,quirky,transport_query,can you tell me how to get the answer to this,False,False,True
+7774,general,quirky,weather_query,hi i will need my [drink_type : coffee] brewed at [time : seven am] [date : today],False,False,True
+7772,general,quirky,weather_query,it is cold out [date : today],False,False,True
+7770,general,quirky,weather_query,any dangerous weather [date : today],False,False,True
+7431,general,quirky,weather_query,isn't it funny how the weather keeps getting worse,False,False,True
+7732,general,quirky,weather_query,forecast rates,False,False,True
+16059,general,quirky,weather_query,i would like my robot to alert me of the weather every [timeofday : morning],False,False,True
+13460,general,quirky,weather_query,get it,False,False,True
+7238,general,quirky,weather_query,is is awful day it looks it will rain the whole day,False,False,True
+16113,general,quirky,weather_query,is there a correlation between the weather in [place_name : beijing] and nasdaq prices over the [date : last week],False,False,True
+7934,general,quirky,weather_query,when is it,False,False,True
+2400,general,quirky,weather_query,why is it snowing so much in [place_name : my city],False,False,True
+7500,general,quirky,weather_query,when is the first seventy degree day forecast,False,False,True
+7790,general,quirky,weather_query,how's it going,True,False,False
+16705,general,quirky,weather_query,tell me a place that has snow now,False,False,True
+7562,general,quirky,weather_query,i got drenched in the rain,False,False,True
+7261,general,quirky,weather_query,what should i do [date : today],False,False,True
+7529,general,quirky,weather_query,the weather was bad [date : today],False,False,True
+7286,general,quirky,weather_query,the weather is sunny [date : today],False,False,True

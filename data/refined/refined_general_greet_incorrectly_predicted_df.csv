@@ -1,0 +1,26 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+35,general,quirky,definition,what's up,True,False,False
+3959,general,quirky,factoid,how is everything,True,False,False
+278,general,quirky,news_query,morning what's up,True,False,False
+7242,general,quirky,quirky,good day,True,False,False
+7226,general,quirky,quirky,who are you,True,False,False
+5423,general,quirky,quirky,hi how are you,True,False,False
+3251,general,quirky,quirky,hey what's [date : today],True,False,False
+2222,general,quirky,quirky,hello how are you,True,False,False
+2149,general,quirky,quirky,hello how are you [date : today],True,False,False
+2101,general,quirky,quirky,good evening,True,False,False
+2000,general,quirky,quirky,hello what are you up to,True,False,False
+1950,general,quirky,quirky,good afternoon how are you,True,False,False
+1501,general,quirky,quirky,hey what's up,True,False,False
+1368,general,quirky,quirky,hey,True,False,False
+1164,general,quirky,quirky,good afternoon,True,False,False
+1163,general,quirky,quirky,good morning,True,False,False
+1162,general,quirky,quirky,how are you [date : today],True,False,False
+826,general,quirky,quirky,hey how are you,True,False,False
+752,general,quirky,quirky,hello,True,False,False
+751,general,quirky,quirky,hi,True,False,False
+277,general,quirky,quirky,how are you doing,True,False,False
+147,general,quirky,quirky,hey hey,True,False,False
+146,general,quirky,quirky,how are you,True,False,False
+7864,general,quirky,quirky,how are you,True,False,False
+15825,general,quirky,quirky,how was the day,True,False,False

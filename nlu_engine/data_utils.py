@@ -47,7 +47,66 @@ class DataUtils:
             data_df['answer_normalised'] = data_df['answer_annotation'].apply(
                 EntityExtractor.normalise_utterance)
             normalised_data = data_df
-        return normalised_data     
+        return normalised_data
+
+    @staticmethod
+    def upgrade_dataframe(data_df):
+        updated_df = pd.DataFrame(columns=[
+            'userid',
+            'answerid',
+            'notes',
+            'question',
+            'suggested_entities',
+            'answer',
+            'answer_normalised',
+            'scenario',
+            'intent',
+            'predicted_label',
+            'intent_refined',
+            'entity_refined',
+            'remove',
+            'status',
+        ])
+        updated_df = updated_df.append(data_df)
+        return updated_df
+
+    @staticmethod
+    def update_dataframe(data_df, refined_intent_df):
+        """
+        Updates the dataframe with the refined data, if a previously updated dataframe doesn't exist, it formats the original dataframe correctly.
+        """
+        if 'predicted_label' in data_df.columns:
+            updated_df = data_df.copy()
+            updated_df.update(refined_intent_df)
+            print('Successfully updated dataframe')
+            return updated_df
+        else:
+            print(
+                "Dataframe hasn't been upgraded, make sure to upgrade the dataframe first.")
+            return None
+
+    @staticmethod
+    def prepare_dataframe_for_refinement(data_df):
+        """
+        Prepares the dataframe for refinement.
+        """
+        #TODO: Will need to refactor for entity refinement
+        prepared_data_df = data_df.drop(
+                columns=[
+                    'userid', 'notes', 'answer', 'answerid', 'suggested_entities', 'intent_refined', 'remove', 'status', 'entity_refined'
+                ])
+        print('Successfully loaded dataframe')
+        return prepared_data_df
+
+    @staticmethod
+    def get_domain_df(data_df, domain_selection):
+        """
+        Gets the domain dataframe.
+        """
+        prepared_data_df = DataUtils.prepare_dataframe_for_refinement(data_df)
+        domain_df = prepared_data_df[prepared_data_df['scenario'] == domain_selection]
+        return domain_df
+
 
 
     @staticmethod

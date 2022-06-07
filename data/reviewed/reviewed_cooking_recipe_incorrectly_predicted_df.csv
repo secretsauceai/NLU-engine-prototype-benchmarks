@@ -1,0 +1,63 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+12013,cooking,recipe,convert,what is the difference between bake and broil,True,False,True
+12149,cooking,recipe,events,are there any cooking classes nearby my area,False,False,True
+11942,cooking,recipe,factoid,how many calories are in a one divided by of [food_type : peanuts],False,False,True
+11974,cooking,recipe,factoid,how is [food_type : lasagne] made,True,False,False
+12160,cooking,recipe,factoid,what is the best tasting cut of [food_type : beef],False,False,True
+11940,cooking,recipe,factoid,how many teaspoons are in a cup,True,False,True
+11933,cooking,recipe,factoid,what is in a [food_type : curry],True,False,False
+11928,cooking,recipe,factoid,how many cups are in a [time : quart],True,False,True
+11909,cooking,recipe,factoid,how many cups of sugar in [food_type : texas sheet cake] frosting,True,False,False
+12003,cooking,recipe,factoid,does [ingredient : shrimp] contain a lot of fat,False,False,True
+12011,cooking,recipe,factoid,what is the best [event_name : chili] there is,False,False,True
+11867,cooking,recipe,factoid,tell how [ingredient : vegetable] is cooked,False,False,True
+12038,cooking,recipe,factoid,find the right amount of cinnamon for the [food_type : garam masala],False,False,True
+11950,cooking,recipe,factoid,when is [food_type : asparagus] in season,False,False,True
+11961,cooking,recipe,factoid,what is an [ingredient : alternative to flour],False,False,True
+11842,cooking,recipe,factoid,[cooking_type : boiling],False,False,True
+12152,cooking,recipe,factoid,is [food_type : fish and chips] really british,False,False,True
+11782,cooking,recipe,factoid,how many millilitres is two table spoons,False,False,True
+12150,cooking,recipe,factoid,what are examples of spicy cuisines,False,False,True
+12099,cooking,recipe,factoid,how many cups are in a pint,False,False,True
+12075,cooking,recipe,factoid,how much is one serving of [food_type : broccoli],False,False,True
+12142,cooking,recipe,negate,it must be taste,False,False,True
+12073,cooking,recipe,quirky,easy meals,False,False,True
+11976,cooking,recipe,quirky,[food_type : healthy foods],False,False,True
+12141,cooking,recipe,quirky,its would be tasty,False,False,True
+11979,cooking,recipe,quirky,i would like a [food_type : cheeseburger],False,False,True
+12098,cooking,recipe,quirky,can you eat [food_type : sweet potato greens] raw,False,False,True
+12091,cooking,recipe,quirky,what are [food_type : jalapenos],False,False,True
+12083,cooking,recipe,quirky,Mix well,False,False,True
+12027,cooking,recipe,quirky,search for [food_type : gluten free] menus,False,False,True
+12082,cooking,recipe,quirky,get it with fry,False,False,True
+12056,cooking,recipe,quirky,what does [drink_type : rice wine] go with,False,False,True
+12128,cooking,recipe,quirky,good food,False,False,True
+12072,cooking,recipe,quirky,quick meals,False,False,True
+1287,cooking,recipe,quirky,can you suggest me a [food_type : healthy foods] for dinner,False,False,True
+11834,cooking,recipe,quirky,what is the menu [date : today] add some [food_type : boiled vegetables] also to it,False,False,True
+7624,cooking,recipe,quirky,is [food_type : soft cheese] better than hard,False,False,True
+11790,cooking,recipe,quirky,what all goes into a [food_type : red velvet cake],True,False,False
+11802,cooking,recipe,quirky,why do people use [ingredient : avocado seeds],False,False,True
+11821,cooking,recipe,quirky,what ingredient can be used to replace [ingredient : white wine],True,False,True
+11822,cooking,recipe,quirky,what ingredient can be used instead of [ingredient : saffron],True,False,True
+11825,cooking,recipe,quirky,what conducts heat better copper bottomed pots or cast iron,False,False,True
+11826,cooking,recipe,quirky,what's the best way to sharpen a butcher knife,False,False,True
+11962,cooking,recipe,quirky,how can i debone a [food_type : tilapia],False,False,True
+11843,cooking,recipe,quirky,[cooking_type : freezing],False,False,True
+11844,cooking,recipe,quirky,[cooking_type : evaporated],False,False,True
+12161,cooking,recipe,quirky,how much [food_type : meat] should i buy to serve ten people,False,False,True
+11857,cooking,recipe,quirky,show me [food_type : pancakes],False,False,True
+11860,cooking,recipe,quirky,what [ingredient : dairy] product contains several nutrients,False,False,True
+11861,cooking,recipe,quirky,how to create [food_type : buttermilk] from [drink_type : milk],True,False,False
+11871,cooking,recipe,quirky,select the type of meal whether a [meal_type : break fast] [meal_type : lunch] [meal_type : dinner],False,False,True
+11872,cooking,recipe,quirky,search for your favorite meal,False,False,True
+11887,cooking,recipe,quirky,google the steps for preparing the dish,False,False,True
+11896,cooking,recipe,quirky,explain in brief about [food_type : fish fry],False,False,True
+11935,cooking,recipe,quirky,how many [food_type : vegetables] should i eat a day,False,False,True
+11851,cooking,recipe,quirky,how do you [cooking_type : zest] a [ingredient : lime] without a zester,False,False,True
+12005,cooking,recipe,weather_query,what should the internal temperature of a [food_type : turkey] be,False,False,True
+11803,cooking,recipe,weather_query,what temperature should a [food_type : baked chicken] be,False,False,True
+11796,cooking,recipe,weather_query,what should the oven temperature be for [food_type : sponge cake],False,False,True
+12143,cooking,recipe,weather_query,it should spices,False,False,True
+11787,cooking,recipe,weather_query,what temperature should the [ingredient : oil] be for [cooking_type : frying] [food_type : french fries],False,False,True
+11944,cooking,recipe,weather_query,what temperature is it safe to eat [food_type : pork],False,False,True

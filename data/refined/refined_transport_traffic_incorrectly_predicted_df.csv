@@ -1,0 +1,28 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+14486,transport,traffic,calendar_query,are there any accidents on the [place_name : four hundred and five],False,False,False
+14927,transport,traffic,calendar_query,are there are any delays on my commute,False,False,False
+15081,transport,traffic,definition,what does i [place_name : seventy five] look like,False,False,True
+15384,transport,traffic,factoid,is the road a free way or a toll road,False,False,True
+14493,transport,traffic,factoid,what is the average speed on [place_name : main highway],False,False,True
+15193,transport,traffic,factoid,how long untill i get [place_name : home],False,False,True
+14829,transport,traffic,factoid,is the road clear in [place_name : florida],False,False,True
+15383,transport,traffic,factoid,is the road in some particular area wide or narrow,False,False,True
+14491,transport,traffic,news_query,latest news on traffic at my current location,False,False,False
+15192,transport,traffic,quirky,is it bumper to bumper,False,False,True
+15139,transport,traffic,quirky,what is my eta to the office if i leave in [time : thirty minutes],False,False,True
+15111,transport,traffic,quirky,where should i avoid this [timeofday : morning],False,False,True
+15074,transport,traffic,quirky,are the streets congested right now,False,False,False
+15073,transport,traffic,quirky,are there any detours that i need to know about,False,False,True
+14437,transport,traffic,quirky,how is my commute,False,False,True
+14882,transport,traffic,quirky,are there any roadblocks,False,False,True
+14516,transport,traffic,quirky,are there any construction areas on [place_name : harvard],False,False,False
+15033,transport,traffic,quirky,how's are the roads looking right now,False,False,True
+15040,transport,traffic,quirky,how long will it take me to drive to work [date : today],False,False,True
+15080,transport,traffic,transport_query,how long will it take to get home,False,False,True
+14926,transport,traffic,transport_query,how long to get to work,False,False,True
+14907,transport,traffic,transport_query,how long will it take to drive to [place_name : long beach],False,False,True
+14883,transport,traffic,transport_query,what is the fastest route to town,False,False,True
+15148,transport,traffic,transport_query,how long will it take me to get to the [place_name : west side],False,False,True
+14987,transport,traffic,weather_query,please give me the road forecast for i95 sb,False,False,False
+15149,transport,traffic,weather_query,should i go through the valley or on the ten to get to [place_name : westwood],False,False,True
+15263,transport,traffic,weather_query,is it possible to drive now in [place_name : ohio],False,False,True

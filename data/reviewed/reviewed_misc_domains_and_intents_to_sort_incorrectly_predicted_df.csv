@@ -1,0 +1,13 @@
+,scenario,intent,predicted_label,entity_refined,answer_annotation,review,move,remove
+4616,alarm,alarm_query,calendar_set,,remind me about my alarms [date : today],False,False,True
+6513,datetime,datetime_query,quirky,,whats [date : today's] date,False,False,False
+6810,datetime,datetime_query,quirky,,whats [date : today],False,False,False
+7364,general,quirky,email_query,,i got a package in the mail today,False,False,True
+7548,general,quirky,transport_query,,do i have to go to the [place_name : gym],False,False,True
+7602,general,quirky,movies,,review latest movies,False,False,True
+8752,calendar,calendar_query,quirky,,what are my current alerts,False,False,True
+16112,general,quirky,calendar_set,,find me someone to have dinner with,False,False,True
+18072,general,quirky,calendar_set,,when is the best time to shop at target so that i don't have to deal with a lot of people,False,False,True
+18859,general,quirky,dontcare,,please look in to the matter,False,False,True
+21160,general,negate,quirky,,are you sure.,False,False,True
+25028,general,praise,quirky,,you are smart.,False,False,False

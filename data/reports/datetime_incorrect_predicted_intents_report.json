@@ -1,0 +1,312 @@
+{
+    "convert": {
+        "f1_score": 0.56,
+        "total_count": 87,
+        "total_incorrect_count": 36,
+        "top_features": [
+            "difference",
+            "convert",
+            "zone",
+            "between",
+            "time",
+            "change",
+            "here",
+            "if",
+            "it",
+            "in"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "datetime_query",
+                "feature": "time",
+                "coef": 9.53063309154767
+            },
+            {
+                "intent": "events",
+                "feature": "in",
+                "coef": 5.513508323254726
+            },
+            {
+                "intent": "hue_lightchange",
+                "feature": "change",
+                "coef": 5.45358163302531
+            },
+            {
+                "intent": "datetime_query",
+                "feature": "in",
+                "coef": 4.0694228997183926
+            },
+            {
+                "intent": "locations",
+                "feature": "in",
+                "coef": 3.261318090980437
+            },
+            {
+                "intent": "volume_other",
+                "feature": "change",
+                "coef": 3.22950085368319
+            },
+            {
+                "intent": "quirky",
+                "feature": "if",
+                "coef": 2.4202440672966725
+            },
+            {
+                "intent": "alarm_query",
+                "feature": "time",
+                "coef": 1.6816457557686701
+            },
+            {
+                "intent": "hue_lighton",
+                "feature": "here",
+                "coef": 1.538320240070597
+            },
+            {
+                "intent": "hue_lighton",
+                "feature": "it",
+                "coef": 1.0846065496122652
+            }
+        ],
+        "correct_utterance_example": [
+            "convert",
+            "please convert the time of here at [time : nine pm] to [place_name : brasil] time zone",
+            [
+                [
+                    "please",
+                    -0.4093824382848855
+                ],
+                [
+                    "convert",
+                    4.463792257895816
+                ],
+                [
+                    "the",
+                    -0.7567604714876107
+                ],
+                [
+                    "",
+                    0
+                ],
+                [
+                    "of",
+                    -0.42197952959241136
+                ],
+                [
+                    "here",
+                    2.441562174742593
+                ],
+                [
+                    "at",
+                    0.37890541728174365
+                ],
+                [
+                    "nine",
+                    1.533888385612581
+                ],
+                [
+                    "pm",
+                    1.9422292084400763
+                ],
+                [
+                    "to",
+                    1.625370023139703
+                ],
+                [
+                    "brasil",
+                    0.3486549375337886
+                ],
+                [
+                    "",
+                    0
+                ],
+                [
+                    "zone",
+                    4.419655425930987
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "datetime_query",
+            "tell me the time in [time_zone : g. m. t. plus five]",
+            [
+                [
+                    "tell",
+                    -0.30998503710138686
+                ],
+                [
+                    "me",
+                    -1.3477352852607505
+                ],
+                [
+                    "the",
+                    -0.7567604714876107
+                ],
+                [
+                    "time",
+                    3.095166642830527
+                ],
+                [
+                    "in",
+                    2.2990563289930432
+                ],
+                [
+                    "g.",
+                    0
+                ],
+                [
+                    "m.",
+                    0
+                ],
+                [
+                    "t.",
+                    0
+                ],
+                [
+                    "plus",
+                    0.5002524903370044
+                ],
+                [
+                    "five",
+                    1.7091150714310364
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "datetime_query": 18,
+            "factoid": 7,
+            "weather_query": 6,
+            "maths": 2,
+            "calendar_query": 1,
+            "calendar_set": 1,
+            "transport_query": 1
+        }
+    },
+    "datetime_query": {
+        "f1_score": 0.85,
+        "total_count": 610,
+        "total_incorrect_count": 56,
+        "top_features": [
+            "time",
+            "day",
+            "today",
+            "date",
+            "in",
+            "month",
+            "twenty",
+            "current",
+            "is",
+            "many"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "events",
+                "feature": "in",
+                "coef": 5.513508323254726
+            },
+            {
+                "intent": "factoid",
+                "feature": "is",
+                "coef": 3.7333331054449643
+            },
+            {
+                "intent": "locations",
+                "feature": "in",
+                "coef": 3.261318090980437
+            },
+            {
+                "intent": "convert",
+                "feature": "time",
+                "coef": 3.095166642830527
+            },
+            {
+                "intent": "quirky",
+                "feature": "day",
+                "coef": 2.9320442424308832
+            },
+            {
+                "intent": "convert",
+                "feature": "in",
+                "coef": 2.2990563289930432
+            },
+            {
+                "intent": "alarm_query",
+                "feature": "time",
+                "coef": 1.6816457557686701
+            }
+        ],
+        "correct_utterance_example": [
+            "datetime_query",
+            "what's the time in [place_name : australia]",
+            [
+                [
+                    "what's",
+                    0
+                ],
+                [
+                    "the",
+                    2.434446202015182
+                ],
+                [
+                    "time",
+                    9.53063309154767
+                ],
+                [
+                    "in",
+                    4.0694228997183926
+                ],
+                [
+                    "australia",
+                    0.5021505013248698
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "factoid",
+            "how many [event_name : birthday's] are on [date : twenty third]",
+            [
+                [
+                    "how",
+                    0.24137404950222094
+                ],
+                [
+                    "many",
+                    3.348088199031899
+                ],
+                [
+                    "birthday's",
+                    0
+                ],
+                [
+                    "are",
+                    -0.2232765490851645
+                ],
+                [
+                    "on",
+                    0.20777920501445118
+                ],
+                [
+                    "twenty",
+                    3.6682742312014187
+                ],
+                [
+                    "third",
+                    1.7973201221690625
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "factoid": 19,
+            "calendar_query": 13,
+            "quirky": 9,
+            "weather_query": 6,
+            "definition": 2,
+            "currency": 1,
+            "radio": 1,
+            "maths": 1,
+            "convert": 1,
+            "transport_query": 1,
+            "calendar_set": 1,
+            "news_query": 1
+        }
+    }
+}

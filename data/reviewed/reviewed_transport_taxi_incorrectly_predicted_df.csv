@@ -1,0 +1,9 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+14859,transport,taxi,calendar_set,call a [transport_type : car] for me,False,False,True
+14983,transport,taxi,calendar_set,schedule me a [transport_type : taxi] for after my [date : thursday] [event_name : meeting],False,False,False
+14810,transport,taxi,factoid,catcha a ride,False,False,True
+14856,transport,taxi,quirky,get me a [transport_type : car],False,False,True
+14916,transport,taxi,quirky,find transportation to [place_name : rome],False,False,True
+15126,transport,taxi,quirky,help me find transportation to the [place_name : mall of america],False,False,True
+15308,transport,taxi,quirky,open [app_name : lyft],False,False,True
+14441,transport,taxi,transport_query,call me a [transport_type : cab] to the [place_name : train station],False,False,False

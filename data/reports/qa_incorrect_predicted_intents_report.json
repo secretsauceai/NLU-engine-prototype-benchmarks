@@ -1,0 +1,556 @@
+{
+    "stock": {
+        "f1_score": 0.89,
+        "total_count": 263,
+        "total_incorrect_count": 36,
+        "top_features": [
+            "stock",
+            "stocks",
+            "price",
+            "share",
+            "market",
+            "prices",
+            "apple",
+            "dow",
+            "how",
+            "of"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "recipe",
+                "feature": "how",
+                "coef": 5.359146592489879
+            },
+            {
+                "intent": "factoid",
+                "feature": "of",
+                "coef": 3.470671462913741
+            },
+            {
+                "intent": "transport_query",
+                "feature": "how",
+                "coef": 3.2483698217182515
+            },
+            {
+                "intent": "factoid",
+                "feature": "how",
+                "coef": 3.2172350048407865
+            },
+            {
+                "intent": "traffic",
+                "feature": "how",
+                "coef": 2.056495371890321
+            }
+        ],
+        "correct_utterance_example": [
+            "stock",
+            "keep me updated on [news_topic : stock market prices]",
+            [
+                [
+                    "keep",
+                    0.04812636060751161
+                ],
+                [
+                    "me",
+                    -0.40934325367130464
+                ],
+                [
+                    "updated",
+                    0.13749484939761294
+                ],
+                [
+                    "on",
+                    -0.29390576208688785
+                ],
+                [
+                    "stock",
+                    11.947934811376154
+                ],
+                [
+                    "market",
+                    2.5360518809809527
+                ],
+                [
+                    "prices",
+                    2.474752089802459
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "news_query",
+            "notify me of the latest news on the [news_topic : stock market]",
+            [
+                [
+                    "notify",
+                    0.10684870990218259
+                ],
+                [
+                    "me",
+                    -0.40934325367130464
+                ],
+                [
+                    "of",
+                    2.0899770011393666
+                ],
+                [
+                    "the",
+                    0.7440649390482903
+                ],
+                [
+                    "latest",
+                    -0.17822990299303698
+                ],
+                [
+                    "news",
+                    -0.3667579539634938
+                ],
+                [
+                    "on",
+                    -0.29390576208688785
+                ],
+                [
+                    "the",
+                    0.7440649390482903
+                ],
+                [
+                    "stock",
+                    11.947934811376154
+                ],
+                [
+                    "market",
+                    2.5360518809809527
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 13,
+            "factoid": 11,
+            "currency": 5,
+            "news_query": 2,
+            "weather_query": 2,
+            "datetime_query": 1,
+            "recipe": 1,
+            "calendar_query": 1
+        }
+    },
+    "maths": {
+        "f1_score": 0.77,
+        "total_count": 148,
+        "total_incorrect_count": 41,
+        "top_features": [
+            "plus",
+            "two",
+            "math",
+            "four",
+            "times",
+            "one",
+            "by",
+            "root",
+            "five",
+            "square"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "music",
+                "feature": "by",
+                "coef": 4.9653502314756475
+            },
+            {
+                "intent": "transport_query",
+                "feature": "times",
+                "coef": 2.5363297427249307
+            },
+            {
+                "intent": "alarm_set",
+                "feature": "five",
+                "coef": 2.4767053018006884
+            }
+        ],
+        "correct_utterance_example": [
+            "maths",
+            "seven times seven",
+            [
+                [
+                    "seven",
+                    2.0483354300009973
+                ],
+                [
+                    "times",
+                    3.2585302173405912
+                ],
+                [
+                    "seven",
+                    2.0483354300009973
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "factoid",
+            "ten percentages of hundred",
+            [
+                [
+                    "ten",
+                    2.671287265871571
+                ],
+                [
+                    "percentages",
+                    0.6973068829031756
+                ],
+                [
+                    "of",
+                    2.0783240698773113
+                ],
+                [
+                    "hundred",
+                    1.870627975434012
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "factoid": 18,
+            "quirky": 13,
+            "currency": 5,
+            "datetime_query": 2,
+            "weather_query": 1,
+            "recipe": 1,
+            "music": 1
+        }
+    },
+    "definition": {
+        "f1_score": 0.81,
+        "total_count": 456,
+        "total_incorrect_count": 45,
+        "top_features": [
+            "define",
+            "definition",
+            "describe",
+            "word",
+            "description",
+            "what",
+            "mean",
+            "meaning",
+            "does",
+            "object"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "takeaway_query",
+                "feature": "does",
+                "coef": 4.910731975121641
+            },
+            {
+                "intent": "lists_query",
+                "feature": "what",
+                "coef": 3.4545164944064553
+            },
+            {
+                "intent": "music_query",
+                "feature": "what",
+                "coef": 3.2986770858126016
+            },
+            {
+                "intent": "movies",
+                "feature": "what",
+                "coef": 1.9465082310531763
+            }
+        ],
+        "correct_utterance_example": [
+            "definition",
+            "what is skynet",
+            [
+                [
+                    "what",
+                    5.207311958926891
+                ],
+                [
+                    "is",
+                    2.003056574711067
+                ],
+                [
+                    "skynet",
+                    0.7742766776756073
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "quirky",
+            "tell me about it",
+            [
+                [
+                    "tell",
+                    1.6092918839293207
+                ],
+                [
+                    "me",
+                    0.4639150474197024
+                ],
+                [
+                    "about",
+                    1.2200772716047874
+                ],
+                [
+                    "it",
+                    -2.1763933861279927
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 23,
+            "factoid": 15,
+            "news_query": 2,
+            "calendar_query": 1,
+            "taxi": 1,
+            "social_query": 1,
+            "wemo_off": 1,
+            "explain": 1
+        }
+    },
+    "currency": {
+        "f1_score": 0.95,
+        "total_count": 377,
+        "total_incorrect_count": 13,
+        "top_features": [
+            "dollar",
+            "exchange",
+            "dollars",
+            "rate",
+            "euro",
+            "currency",
+            "rates",
+            "much",
+            "yen",
+            "pound"
+        ],
+        "overlapping_features": [],
+        "correct_utterance_example": [
+            "currency",
+            "tell me the current dollar ratio for the [place_name : us] and [place_name : canada]",
+            [
+                [
+                    "tell",
+                    0.18959725883309228
+                ],
+                [
+                    "me",
+                    -0.7507906427080122
+                ],
+                [
+                    "the",
+                    -0.24307070490404023
+                ],
+                [
+                    "current",
+                    0.5133238110822357
+                ],
+                [
+                    "dollar",
+                    6.836425481229807
+                ],
+                [
+                    "ratio",
+                    0.6923721408846363
+                ],
+                [
+                    "for",
+                    0.15321234913864268
+                ],
+                [
+                    "the",
+                    -0.24307070490404023
+                ],
+                [
+                    "us",
+                    2.7997604587050517
+                ],
+                [
+                    "and",
+                    1.152933411018144
+                ],
+                [
+                    "canada",
+                    0.4528093074414999
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "definition",
+            "what currency does [place_name : croatia] use",
+            [
+                [
+                    "what",
+                    1.3227113323828474
+                ],
+                [
+                    "currency",
+                    4.769701975817882
+                ],
+                [
+                    "does",
+                    0.37747686435688654
+                ],
+                [
+                    "croatia",
+                    0.5742772639956281
+                ],
+                [
+                    "use",
+                    0.7214234407833695
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 4,
+            "definition": 3,
+            "factoid": 2,
+            "confirm": 1,
+            "calendar_set": 1,
+            "convert": 1,
+            "sendemail": 1
+        }
+    },
+    "factoid": {
+        "f1_score": 0.68,
+        "total_count": 991,
+        "total_incorrect_count": 67,
+        "top_features": [
+            "where",
+            "is",
+            "who",
+            "old",
+            "of",
+            "born",
+            "capital",
+            "how",
+            "geographic",
+            "married"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "locations",
+                "feature": "where",
+                "coef": 5.558606477980436
+            },
+            {
+                "intent": "recipe",
+                "feature": "how",
+                "coef": 5.359146592489879
+            },
+            {
+                "intent": "music_query",
+                "feature": "who",
+                "coef": 4.982352529536076
+            },
+            {
+                "intent": "datetime_query",
+                "feature": "is",
+                "coef": 3.5476662851748757
+            },
+            {
+                "intent": "transport_query",
+                "feature": "how",
+                "coef": 3.2483698217182515
+            },
+            {
+                "intent": "stock",
+                "feature": "how",
+                "coef": 2.3577338080379415
+            },
+            {
+                "intent": "stock",
+                "feature": "of",
+                "coef": 2.0899770011393666
+            },
+            {
+                "intent": "traffic",
+                "feature": "how",
+                "coef": 2.056495371890321
+            }
+        ],
+        "correct_utterance_example": [
+            "factoid",
+            "what is the gross domestic product of [place_name : us]",
+            [
+                [
+                    "what",
+                    0.864856951265491
+                ],
+                [
+                    "is",
+                    3.7333331054308525
+                ],
+                [
+                    "the",
+                    -0.6343325969119726
+                ],
+                [
+                    "gross",
+                    0.36681372167385434
+                ],
+                [
+                    "domestic",
+                    0.36681372167385434
+                ],
+                [
+                    "product",
+                    0.1134519246667773
+                ],
+                [
+                    "of",
+                    3.470671462913741
+                ],
+                [
+                    "us",
+                    1.0619868508892343
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "quirky",
+            "tell me if its [event_name : national holiday] [date : tomorrow]",
+            [
+                [
+                    "tell",
+                    2.227917887410355
+                ],
+                [
+                    "me",
+                    -1.5161574564312739
+                ],
+                [
+                    "if",
+                    -0.4211630020251999
+                ],
+                [
+                    "its",
+                    0.3270867442710918
+                ],
+                [
+                    "national",
+                    0.28069265191735115
+                ],
+                [
+                    "holiday",
+                    -0.10428508966934227
+                ],
+                [
+                    "tomorrow",
+                    -1.133165235948253
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 43,
+            "weather_query": 5,
+            "news_query": 4,
+            "datetime_query": 3,
+            "transport_query": 3,
+            "querycontact": 2,
+            "definition": 2,
+            "music": 1,
+            "lists_remove": 1,
+            "calendar_query": 1,
+            "currency": 1,
+            "events": 1
+        }
+    }
+}

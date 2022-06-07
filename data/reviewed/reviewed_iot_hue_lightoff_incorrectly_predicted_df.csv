@@ -1,0 +1,20 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+1029,iot,hue_lightoff,commandstop,please shut the lights,False,False,True
+4446,iot,hue_lightoff,commandstop,can you shut everything down,False,False,True
+10,iot,hue_lightoff,datetime_query,time to sleep,False,False,True
+3072,iot,hue_lightoff,factoid,discontinue use of lights,False,False,True
+4447,iot,hue_lightoff,hue_lightchange,can you make the lights go out,False,False,True
+3358,iot,hue_lightoff,hue_lightchange,shut down the [house_place : garage] light and set the den light to [color_type : orange] please,False,False,True
+3359,iot,hue_lightoff,hue_lightchange,lights off for the [house_place : kids bedroom] please then change the lights to my [house_place : room] to [color_type : red],False,False,True
+2264,iot,hue_lightoff,hue_lightchange,shut the [house_place : living room] lights,False,False,True
+3715,iot,hue_lightoff,hue_lightdim,turn down the lights to medium,False,False,True
+6760,iot,hue_lightoff,hue_lightdim,kill the lights,False,False,True
+2385,iot,hue_lightoff,hue_lighton,make it dark in here,False,False,True
+6226,iot,hue_lightoff,hue_lightup,put out the lights,False,False,True
+535,iot,hue_lightoff,music,by remote sensor,False,False,True
+6728,iot,hue_lightoff,negate,no lights,False,False,True
+3961,iot,hue_lightoff,quirky,i want to sleep,False,False,True
+4846,iot,hue_lightoff,quirky,cease operating lights,False,False,True
+6112,iot,hue_lightoff,quirky,give me dark,False,False,True
+2256,iot,hue_lightoff,weather_query,i dont need light,False,False,True
+3006,iot,hue_lightoff,wemo_off,power off the current,False,False,True

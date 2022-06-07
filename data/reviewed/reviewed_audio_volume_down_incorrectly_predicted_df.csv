@@ -1,0 +1,14 @@
+,scenario,intent,status,answer_annotation,predicted_label,review,move,remove
+1107,audio,volume_down,,turn off the bass from the audio,audiobook,False,False,True
+3000,audio,volume_down,,lower audio,audiobook,False,False,True
+4530,audio,volume_down,,can you turn that down,commandstop,False,False,True
+6179,audio,volume_down,,turn the music lower,music,False,False,True
+1782,audio,volume_down,,no no turn it down,negate,False,False,True
+232,audio,volume_down,,you're too loud,quirky,False,False,True
+307,audio,volume_down,,softer,quirky,False,False,True
+3201,audio,volume_down,,turn_down speakers,quirky,False,False,True
+5599,audio,volume_down,,please talk softer,quirky,False,False,True
+6046,audio,volume_down,,can you make it a little quieter,quirky,False,False,True
+6688,audio,volume_down,,too loud,quirky,False,False,True
+2864,audio,volume_down,,start the [device_type : radio] now on low volume,radio,False,False,True
+3918,audio,volume_down,,please reduce the sound,volume_mute,False,False,True

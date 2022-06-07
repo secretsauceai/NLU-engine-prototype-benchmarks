@@ -1,0 +1,36 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+2892,takeaway,takeaway_query,calendar_set,remember i've ordered a [food_type : cake] for [timeofday : tonight's] [event_name : birthday party] let me know the status please,False,False,True
+3988,takeaway,takeaway_query,events,are there any [order_type : takeaways] around here,False,False,False
+6390,takeaway,takeaway_query,factoid,who takes less of duration of time for [order_type : delivery],False,False,True
+1331,takeaway,takeaway_query,factoid,is [business_name : mr pizza] on skip the dishes,False,False,True
+5158,takeaway,takeaway_query,factoid,tell me which catering packages are available,False,False,True
+4993,takeaway,takeaway_query,factoid,is [business_name : fongs] dine in only,True,False,True
+6391,takeaway,takeaway_query,locations,reviews of the [business_type : restaurants],False,False,True
+4590,takeaway,takeaway_query,locations,what [food_type : asian] [business_type : restaurants] nearby offer to go food,False,False,False
+6873,takeaway,takeaway_query,locations,any [business_type : restaurant] in the beautiful,False,False,True
+40,takeaway,takeaway_query,music,i want some [food_type : curry] to go any recommendations,False,False,False
+6458,takeaway,takeaway_query,order,what's the exact time we get food delivered once we place an order for food,False,False,True
+4591,takeaway,takeaway_query,order,where is the closest spot to order food for [order_type : pickup],True,False,False
+4495,takeaway,takeaway_query,order,where can i order [food_type : pizza] for [order_type : delivery],True,False,False
+4399,takeaway,takeaway_query,order,can i order [business_name : olive garden] to go,True,False,False
+3989,takeaway,takeaway_query,order,tell me all the [order_type : takeaways] nearby and i want to order food,True,False,False
+2977,takeaway,takeaway_query,order,last [order_type : take away] order,True,False,True
+78,takeaway,takeaway_query,order,whats with my dinner order,False,False,False
+2687,takeaway,takeaway_query,order,what is happening to my order,False,False,False
+2667,takeaway,takeaway_query,order,where can i order [order_type : takeout],True,False,False
+529,takeaway,takeaway_query,order,prepare the order as soon as possible,False,False,True
+1487,takeaway,takeaway_query,order,can i get an order [order_type : delivered] from [business_name : romero's],False,False,True
+3147,takeaway,takeaway_query,order,what's up with my order,False,False,False
+2389,takeaway,takeaway_query,order,hows the food order going,False,False,False
+4860,takeaway,takeaway_query,querycontact,what is the [personal_info : phone number] for the nearest location of [business_name : church's chicken],False,False,False
+718,takeaway,takeaway_query,quirky,i just ordered food call and see it has been [order_type : delivered],False,False,True
+6082,takeaway,takeaway_query,quirky,hello i would like to know whether you provide home [order_type : delivery] services,False,False,True
+3218,takeaway,takeaway_query,quirky,tell me if [business_name : taco bell] delivers,False,False,False
+2390,takeaway,takeaway_query,quirky,when can we eat,False,False,True
+2391,takeaway,takeaway_query,quirky,is [meal_type : dinner] ready yet,False,False,True
+4506,takeaway,takeaway_query,quirky,look up whether or not [business_name : charley's steakhouse] delivers,False,False,False
+2891,takeaway,takeaway_query,quirky,what happened to my [food_type : pizza] order it has been an [time : hour] since i ordered,True,False,True
+4592,takeaway,takeaway_query,quirky,where can i get a shot of [food_type : tequila] and some to go [food_type : mexican] food,False,False,False
+15901,takeaway,takeaway_query,quirky,tell me the soup of the day at [business_name : panera bread] [business_type : restaurant],False,False,False
+6459,takeaway,takeaway_query,stock,check the [food_type : dish] price and all,False,False,True
+5216,takeaway,takeaway_query,weather_query,will the [food_type : pizza] be here soon,False,False,False

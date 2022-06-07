@@ -1,0 +1,40 @@
+,scenario,intent,status,answer_annotation,predicted_label,review,move,remove
+4941,audio,volume_mute,,stop the audio,audiobook,False,False,True
+6029,audio,volume_mute,,please you don't speak in [time : eight to ten pm],calendar_set,False,False,True
+3416,audio,volume_mute,,please hold for the [time : next hour],calendar_set,False,False,True
+1552,audio,volume_mute,,shut up,commandstop,False,False,True
+2207,audio,volume_mute,,please shut off,commandstop,False,False,True
+6934,audio,volume_mute,,can you please stop speaking,commandstop,False,False,True
+5484,audio,volume_mute,,Shut down the sound,commandstop,False,False,True
+4727,audio,volume_mute,,please stop talking,commandstop,False,False,True
+3129,audio,volume_mute,,stop playing,commandstop,False,False,True
+1148,audio,volume_mute,,please stop for a bit,commandstop,False,False,True
+3835,audio,volume_mute,,it's quiet time,datetime_query,False,False,True
+6672,audio,volume_mute,,turn off audio,hue_lightoff,False,False,True
+2285,audio,volume_mute,,turn off speaker,hue_lightoff,False,False,True
+4249,audio,volume_mute,,turn off the sounds,hue_lightoff,False,False,True
+3486,audio,volume_mute,,turn off the speakers,hue_lightoff,False,False,True
+1417,audio,volume_mute,,Please pause the song,music,False,False,True
+4881,audio,volume_mute,,disable [device_type : music player],music,False,False,True
+3128,audio,volume_mute,,pause the music,music,False,False,True
+4729,audio,volume_mute,,please do not respond,negate,False,False,True
+290,audio,volume_mute,,do not speak [date : today],negate,False,False,True
+7190,audio,volume_mute,,no notifications for [time : five minutes],negate,False,False,True
+2906,audio,volume_mute,,no speaking please,negate,False,False,True
+2208,audio,volume_mute,,please do not answer,negate,False,False,True
+787,audio,volume_mute,,don't talk until i ask you to,quirky,False,False,True
+1150,audio,volume_mute,,get yourself muted,quirky,False,False,True
+6031,audio,volume_mute,,please unmute yourself,quirky,False,False,True
+7068,audio,volume_mute,,don't talk,quirky,False,False,True
+5229,audio,volume_mute,,do not talk,quirky,False,False,True
+3796,audio,volume_mute,,go to sleep,quirky,False,False,True
+2438,audio,volume_mute,,silently adjust,quirky,False,False,True
+2258,audio,volume_mute,,i dont want sound,quirky,False,False,True
+2209,audio,volume_mute,,goodnight,quirky,False,False,True
+2569,audio,volume_mute,,down the speaker volume at the end of level,volume_down,False,False,True
+7028,audio,volume_mute,,turn down the noise,volume_down,False,False,True
+5545,audio,volume_mute,,turn off media volume,volume_up,False,False,True
+2568,audio,volume_mute,,make the volume [change_amount : to zero],volume_up,False,False,True
+3947,audio,volume_mute,,set volume [change_amount : to zero],volume_up,False,False,True
+3380,audio,volume_mute,,turn the volume off,volume_up,False,False,True
+7029,audio,volume_mute,,volume control,volume_up,False,False,True

@@ -1,0 +1,46 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+16462,qa,definition,calendar_query,what is this,False,False,True
+17518,qa,definition,explain,explain me about [definition_word : rock],False,False,False
+16368,qa,definition,factoid,what is a [definition_word : cow],False,False,False
+17971,qa,definition,factoid,what defines a [definition_word : triangle],False,False,False
+17732,qa,definition,factoid,what is a [definition_word : president],False,False,False
+16403,qa,definition,factoid,what is a [definition_word : cell tower],False,False,False
+16744,qa,definition,factoid,what is the point of a [definition_word : banana],False,False,True
+16255,qa,definition,factoid,what is a [definition_word : torque wrench],False,False,False
+16312,qa,definition,factoid,what is the [definition_word : largest desk],False,False,True
+17798,qa,definition,factoid,how [definition_word : the eiffel tower] looks like,False,False,True
+17939,qa,definition,factoid,how is a [definition_word : typhoon] defined,False,False,False
+15662,qa,definition,factoid,what are the synonyms of [definition_word : placid],False,False,False
+15589,qa,definition,factoid,what are the definitions of [definition_word : orange],False,False,False
+17941,qa,definition,factoid,what is the [definition_word : nuclear triad],False,False,False
+15475,qa,definition,factoid,tell me the synonym of [definition_word : telegraph],False,False,False
+17746,qa,definition,factoid,what exactly is a [definition_word : resin tooth filling],False,False,False
+17306,qa,definition,factoid,what is a [definition_word : basketball],False,False,False
+16352,qa,definition,news_query,give me the facts on [definition_word : yankee stadium],False,False,True
+16353,qa,definition,news_query,give me the specs on [definition_word : the bugatti veyron],False,False,True
+17181,qa,definition,quirky,please defined about [definition_word : printing works],False,False,True
+17204,qa,definition,quirky,explain [definition_word : god],True,False,True
+15426,qa,definition,quirky,tell me about it,False,False,True
+17698,qa,definition,quirky,can you give me some idea about [definition_word : dance bar],False,False,True
+17171,qa,definition,quirky,hey what's a [definition_word : book],False,False,False
+17781,qa,definition,quirky,explain [definition_word : marketing],False,False,True
+17414,qa,definition,quirky,how would the [definition_word : volkswagen golf car] look like,False,False,True
+16995,qa,definition,quirky,what are [definition_word : converse shoes],False,False,False
+16777,qa,definition,quirky,[definition_word : mobile device] explanation,False,False,False
+16917,qa,definition,quirky,tell me about [definition_word : medieval war engines],True,False,True
+15480,qa,definition,quirky,look up [definition_word : melancholy],False,False,False
+15672,qa,definition,quirky,tell me all about [definition_word : hurricane],False,False,True
+15716,qa,definition,quirky,explain [definition_word : photosynthesis],False,False,True
+15751,qa,definition,quirky,look up [definition_word : etymology] in google,False,False,True
+16023,qa,definition,quirky,use [definition_word : schadenfraude] in a sentence,False,False,False
+16431,qa,definition,quirky,what do you know about [definition_word : the statue of liberty],False,False,True
+16965,qa,definition,quirky,how would i use [definition_word : formidable] in a sentence,False,False,False
+16432,qa,definition,quirky,tell me about [definition_word : the sports stadium],False,False,True
+16693,qa,definition,quirky,tell me about the [definition_word : solar powered garden stakes],False,False,True
+16824,qa,definition,quirky,look up [definition_word : economy] in the dictionary,False,False,False
+16896,qa,definition,quirky,what i can do with [definition_word : laptop],False,False,True
+16544,qa,definition,quirky,tell me about [definition_word : morel mushrooms],False,False,True
+18037,qa,definition,quirky,what's a [definition_word : fuel rail injector],False,False,True
+17180,qa,definition,social_query,please defined about [definition_word : social media],False,False,True
+16631,qa,definition,taxi,what is [definition_word : uber],False,False,False
+17498,qa,definition,wemo_off,what is [definition_word : smart plug socket],False,False,False

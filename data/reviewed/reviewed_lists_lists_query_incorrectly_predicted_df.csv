@@ -1,0 +1,38 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+12430,lists,lists_query,calendar_query,what i am going to do [date : today],False,False,True
+13157,lists,lists_query,calendar_query,do i have anything planned for [date : today],False,False,True
+13104,lists,lists_query,calendar_query,do i have repair work [date : today],False,False,True
+12828,lists,lists_query,calendar_query,what do i have to do next,False,False,True
+12826,lists,lists_query,calendar_query,what are my tasks,False,False,True
+12655,lists,lists_query,calendar_query,what is on the menu for [meal_type : dinner] this evening,False,False,True
+12534,lists,lists_query,calendar_query,evaluate [date : today's] schedule,False,False,True
+12832,lists,lists_query,calendar_query,whats the schedule for [date : today],False,False,True
+13371,lists,lists_query,calendar_query,upcoming events on list,False,False,True
+12506,lists,lists_query,calendar_query,tell me what is next on my query,False,False,True
+12488,lists,lists_query,calendar_query,what's on a list about my [event_name : meetings] [date : this month],False,False,False
+13210,lists,lists_query,createoradd,[list_name : groceries] list,False,False,True
+12436,lists,lists_query,createoradd,add vodka to my [list_name : party shopping] list,True,False,False
+12440,lists,lists_query,createoradd,did you added milk to the [list_name : shopping] list,False,False,False
+12937,lists,lists_query,createoradd,did i make a [list_name : shopping] list,False,False,True
+12926,lists,lists_query,createoradd,show [list_name : grocery] list,False,False,False
+12813,lists,lists_query,createoradd,did i add milk to the [list_name : shopping] list,False,False,False
+12543,lists,lists_query,definition,describe your list,False,False,True
+13248,lists,lists_query,movies,what next in my [list_name : must watch movie] list,False,False,True
+13005,lists,lists_query,music,what is on my [music_genre : rap] playlist,False,False,True
+13304,lists,lists_query,news_query,open [app_name : google keep],False,False,True
+13242,lists,lists_query,order,give me the details on purchase order,False,False,True
+13323,lists,lists_query,quirky,My [list_name : health planning],False,False,True
+13311,lists,lists_query,quirky,Get all availables,False,False,True
+13302,lists,lists_query,quirky,open [app_name : note pad],False,False,True
+12468,lists,lists_query,quirky,speak all items for to day,False,False,True
+13329,lists,lists_query,quirky,my [list_name : expenses],False,False,True
+12657,lists,lists_query,quirky,what are the things i need for my [list_name : journey],False,False,True
+13091,lists,lists_query,quirky,what are the jobs to be done [date : today],False,False,True
+13025,lists,lists_query,quirky,what groups are listed in my contacts,False,False,True
+12532,lists,lists_query,quirky,what to do [date : today],False,False,True
+12756,lists,lists_query,quirky,what items did i plan to [list_name : buy],False,False,True
+12777,lists,lists_query,quirky,what do i need to pick up at the [place_name : grocery store],False,False,True
+12878,lists,lists_query,quirky,tell me what to do,False,False,True
+12607,lists,lists_query,quirky,what are listed,False,False,True
+12557,lists,lists_query,weather_query,what do i need to [list_name : get done] [date : today],False,False,True
+13156,lists,lists_query,weather_query,what do i need to do [date : today],False,False,True

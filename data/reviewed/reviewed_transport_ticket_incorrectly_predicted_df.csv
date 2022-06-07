@@ -1,0 +1,28 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+15031,transport,ticket,calendar_set,set me up with a ticket for the [time : five pm] commuter to [place_name : rockville],False,False,False
+15171,transport,ticket,factoid,i need the current dart rail schedule from [place_name : west irving station] to [place_name : north lake college],True,False,False
+15127,transport,ticket,order,order travel ticket,False,False,True
+7504,transport,ticket,quirky,cheapest flights to [place_name : kansas city] from [place_name : dallas],True,False,False
+17666,transport,ticket,quirky,tell me about the cheapest flight fares to [place_name : nj] [date : today],True,False,False
+14554,transport,ticket,sendemail,please go to amtrak dot com to purchase tickets,False,False,True
+14545,transport,ticket,transport_query,google [transport_type : train] tickets to [place_name : washington dc],False,False,True
+15363,transport,ticket,transport_query,[transport_descriptor : bullet train] from [place_name : tokyo] to [place_name : hokkaido] [transport_descriptor : under three yen] for [date : next weekend],False,False,False
+15352,transport,ticket,transport_query,please [transport_type : train],False,False,True
+15232,transport,ticket,transport_query,get me a seat on the next [transport_type : train] going to [place_name : new york],False,False,False
+15199,transport,ticket,transport_query,i need the times for the [transport_descriptor : south bound] [transport_type : train] on [place_name : allison rd],False,False,True
+14421,transport,ticket,transport_query,hey i want to get trains to [place_name : manchester] on [date : Wednesday],True,False,True
+14422,transport,ticket,transport_query,i need to go to [place_name : dundee] at [time : five am] on [date : sunday] by [transport_type : train],False,False,False
+15070,transport,ticket,transport_query,book me a [transport_type : train] for the next available train,False,False,True
+14425,transport,ticket,transport_query,schedule a journey to [place_name : las vegas] by [transport_type : train],True,False,False
+15030,transport,ticket,transport_query,i need to leave on the [time : five pm] [transport_type : train] to [place_name : rockville],False,False,False
+15022,transport,ticket,transport_query,find a non stop [transport_type : train] to [place_name : seattle],False,False,False
+15010,transport,ticket,transport_query,id like to get on the next [transport_type : train] that will be departing [place_name : indianapolis] headed to [place_name : chicago],False,False,False
+15376,transport,ticket,transport_query,get me a ride on the commuter [transport_type : train] from [place_name : nj] to [place_name : ny],False,False,False
+14909,transport,ticket,transport_query,fetch me two [transport_type : train] tickets for the earliest [transport_type : train] to [place_name : paris],False,False,False
+14820,transport,ticket,transport_query,show me [transport_type : train] tickets,False,False,True
+14751,transport,ticket,transport_query,get me two [transport_type : train] tickets from where i am now to [place_name : dallas] arriving [time : before dark],False,False,False
+14709,transport,ticket,transport_query,find out the the [transport_type : train] arrival time and book me,False,False,True
+14570,transport,ticket,transport_query,i want to know the timings of trains going to [place_name : delhi],True,False,True
+14555,transport,ticket,transport_query,go to www dot metronorth dot com for [transport_type : train] tickets,False,False,True
+14538,transport,ticket,transport_query,find me [transport_type : train] tickets,False,False,True
+14962,transport,ticket,transport_query,can you check [transport_type : train] schedule to [place_name : berkeley],True,False,True

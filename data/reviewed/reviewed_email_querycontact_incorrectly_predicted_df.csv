@@ -1,0 +1,61 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+20075,email,querycontact,calendar_query,is this the correct area code for my [relation : boss],False,False,False
+19689,email,querycontact,calendar_query,what information do you have on file in my information about [person : bill],False,False,True
+19662,email,querycontact,calendar_query,is it anyone i knows [event_name : birthday] [date : this month],False,False,True
+20647,email,querycontact,calendar_set,please let me know when is [person : sam's] [event_name : birthday],False,False,True
+20022,email,querycontact,calendar_set,make a call to,False,False,True
+19355,email,querycontact,createoradd,add [person : rebecca green] to my list of favorite contacts,True,False,False
+20686,email,querycontact,email_query,check for this mail in my contact if not then add it,False,False,True
+20728,email,querycontact,email_query,when was the last call i received from [person : jordan],False,False,True
+20393,email,querycontact,email_query,what is [relation : my wife's] [personal_info : email address],False,False,False
+19926,email,querycontact,email_query,do i have any missed call from [person : patrick],False,False,True
+20576,email,querycontact,email_query,did i receive a message from [person : kevin],False,False,True
+19925,email,querycontact,email_query,did [relation : mom] text me,False,False,True
+20649,email,querycontact,factoid,please let me know where [person : david] is [personal_info : travelling],False,False,True
+20206,email,querycontact,factoid,where does [person : joe joe] [personal_info : live],True,False,False
+20234,email,querycontact,factoid,how many of my contacts live or work in [place_name : detroit],True,False,True
+19680,email,querycontact,factoid,does [person : bob] [personal_info : live] in [place_name : france],False,False,False
+19679,email,querycontact,factoid,how [personal_info : old] is [person : joanne],False,False,False
+19678,email,querycontact,factoid,is it [person : joes] [event_name : birthday] soon,True,False,False
+19803,email,querycontact,factoid,who is the most frequently called person in my [device_type : phone book],False,False,True
+19648,email,querycontact,factoid,how [personal_info : old] is [person : mary s.],False,False,False
+19570,email,querycontact,factoid,where does [person : tar] [personal_info : work] currently,False,False,False
+19143,email,querycontact,factoid,what is [personal_info : job title] of [person : jan medvesek],False,False,False
+19144,email,querycontact,factoid,where [person : seth] [personal_info : lives],False,False,True
+19165,email,querycontact,factoid,when is [person : jacob's] [event_name : birthday],True,False,False
+19230,email,querycontact,factoid,how many [personal_info : numbers] are saved for [person : alex],False,False,False
+19266,email,querycontact,factoid,when is [person : john's] [event_name : birthday],True,False,False
+19267,email,querycontact,factoid,what is [person : john's] [personal_info : last name],False,False,False
+20688,email,querycontact,factoid,find [person : jhonny's] [personal_info : address],False,False,False
+19404,email,querycontact,factoid,what's [person : jesse's] [event_name : birthday],True,False,False
+19391,email,querycontact,factoid,please check and tell me where is the [personal_info : location] of [person : toms] [personal_info : new business],True,False,True
+19407,email,querycontact,factoid,is [person : hayden] still [personal_info : living] on [place_name : turnpike lane],False,False,False
+19509,email,querycontact,factoid,where does [person : fred] [personal_info : work],False,False,False
+19540,email,querycontact,factoid,give me the details of friend,False,False,True
+19541,email,querycontact,factoid,where does this [relation : friend] [personal_info : live],False,False,True
+20648,email,querycontact,news_query,please let me know the what [person : raj's] [personal_info : status update] in [app_name : facebook],False,False,True
+20736,email,querycontact,quirky,[person : rahul] [personal_info : contact],False,False,True
+20577,email,querycontact,quirky,did [person : sara] tried to call me,False,False,True
+20727,email,querycontact,quirky,what's [person : leon's] [personal_info : email],False,False,False
+20448,email,querycontact,quirky,tell me the [personal_info : area code] for [person : jen k],False,False,False
+20690,email,querycontact,quirky,[person : julie's] [personal_info : information],False,False,True
+20447,email,querycontact,quirky,how many [personal_info : phone numbers] do i have for [person : brenden],False,False,False
+20392,email,querycontact,quirky,find my [relation : wife],False,False,True
+10546,email,querycontact,quirky,have you responded my [event_name : phone calls],False,False,True
+20341,email,querycontact,quirky,what do you know about [person : mary],False,False,True
+19405,email,querycontact,quirky,what's [person : june's] [personal_info : address],False,False,False
+19542,email,querycontact,quirky,show me the information of [relation : friend],False,False,True
+19622,email,querycontact,quirky,can you pull up [person : jeff],False,False,True
+19688,email,querycontact,quirky,look up [person : bill] information,False,False,True
+20342,email,querycontact,quirky,tell me about [person : joose],False,False,True
+19712,email,querycontact,quirky,how do i [personal_info : reach] [person : sarah],True,False,False
+19711,email,querycontact,quirky,how do i [personal_info : dial] [person : sarah],True,False,False
+20020,email,querycontact,quirky,help me call [person : james],True,False,False
+20021,email,querycontact,quirky,find me someone,False,False,True
+20235,email,querycontact,quirky,are my contacts mostly female or male,False,False,True
+20752,email,querycontact,quirky,show [person : dan's] [personal_info : contact detail],False,False,False
+20842,email,querycontact,quirky,show [person : ana's] [personal_info : phone number],False,False,False
+20585,email,querycontact,repeat,when was the last time that i spoke to [person : john],False,False,True
+20157,email,querycontact,sendemail,send a text to [person : alice],False,False,True
+19508,email,querycontact,sendemail,what is [relation : mom's] [personal_info : email address],False,False,False
+19468,email,querycontact,sendemail,list [personal_info : phone] and [personal_info : email id] of [person : robert],False,False,False

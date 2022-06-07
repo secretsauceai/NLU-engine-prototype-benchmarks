@@ -1,0 +1,251 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+1697,iot,coffee,coffee,can i have an [coffee_type : espresso] please,False,False,False
+1259,alarm,alarm_remove,alarm_remove,[time : one pm] removed,False,False,True
+12276,play,game,game,give me a company for playing [game_name : football],False,False,True
+14258,recommendation,movies,movies,what's playing at [place_name : brea plaza five],False,False,True
+5009,play,music,music,get the beat,False,False,True
+15657,qa,maths,maths,what is the answer to that question,False,False,True
+3834,audio,volume_down,volume_down,speak softer please,False,False,True
+11743,play,audiobook,audiobook,open [audiobook_name : the two towers],False,False,True
+7067,audio,volume_mute,volume_mute,don't respond for [time : fifty seconds],False,False,True
+10260,calendar,calendar_remove,calendar_remove,please relocate all dates to the trash,False,False,True
+3158,audio,volume_mute,volume_mute,stop making sounds for [time : forty minutes],False,False,True
+12356,play,game,game,start a [game_name : competitive crossword] for us,False,False,True
+6714,takeaway,order,order,please call [business_name : the golden fork] and tell them to [order_type : deliver] one portion of the [food_type : fish risotto],False,False,True
+11637,play,audiobook,audiobook,please [player_setting : restart] [audiobook_name : the handmaid's tale],False,False,True
+13626,play,podcasts,podcasts,start the [podcast_name : gilmore guys],False,False,True
+2063,iot,hue_lighton,hue_lighton,turn the [device_type : disco lights] on,False,False,False
+18291,qa,definition,definition,please search for [definition_word : dining tables],False,False,True
+14303,recommendation,events,events,any [event_name : runs] on [place_name : the west side],False,False,True
+12340,play,game,game,start up [game_name : league of legends] for me,False,False,True
+1627,audio,volume_mute,volume_mute,do not make any noise until [timeofday : morning] alarm,False,False,True
+11040,play,radio,radio,open [radio_name : radia],False,False,True
+2581,takeaway,order,order,[food_type : noodles] one pack make it as [order_type : takeaway],False,False,True
+2307,takeaway,order,order,call [business_name : peking garden],False,False,True
+17042,qa,stock,stock,could you give me the exact rate for dow nifty futures,True,False,False
+13198,lists,createoradd,createoradd,include this item,False,False,True
+2257,iot,hue_lightdim,hue_lightdim,light is too much,False,False,True
+19965,general,quirky,quirky,"Olly, learn that when i say [relation : mom], I mean [person : giselle adams]",False,False,True
+5,audio,volume_mute,volume_mute,pause for [time : ten seconds],False,False,True
+14374,recommendation,events,events,please check on the [event_name : live football matches] [date : this weekend],True,False,False
+7055,iot,hue_lightoff,hue_lightoff,did i leave the light on in the [house_place : garage],False,False,True
+945,iot,hue_lightchange,hue_lightchange,give me some [color_type : lavender] toned light,False,False,False
+12183,play,game,game,open up [game_name : tetris],False,False,True
+2893,takeaway,takeaway_query,takeaway_query,i've cancelled the order placed at [business_name : mcd] did it go through,True,False,True
+15161,transport,traffic,traffic,fast road to get home,False,False,True
+14487,transport,traffic,traffic,is there any construction on [place_name : route sixty six],True,False,True
+4325,play,audiobook,audiobook,read that back,False,False,True
+20084,email,querycontact,querycontact,please delete the contacts that i havent spoken to in [date : three of months],False,False,True
+14304,recommendation,events,events,[event_name : running competitions] on [place_name : the west side],False,False,True
+878,alarm,alarm_remove,alarm_remove,cancel [alarm_type : wake up] calls for [date : this week],False,False,True
+14007,recommendation,events,events,could you list out the information on [event_name : book fairs] in [place_name : washington dc] for [date : next week],True,False,False
+11745,play,audiobook,audiobook,[player_setting : keep playing] [audiobook_name : secret garden],False,False,True
+6388,audio,volume_mute,volume_mute,don't make any sounds,False,False,True
+5494,iot,hue_lightdim,hue_lightdim,[house_place : bed room two] darken,True,False,True
+4130,audio,volume_down,volume_down,please adjust the speakers to a lower more comfortable level,False,False,True
+555,music,settings,settings,please [player_setting : lower] the [player_setting : shuffle] rate of [song_name : hips don't lie],False,False,True
+457,audio,volume_up,volume_up,please speak loud,False,False,True
+2739,takeaway,order,order,open [order_type : takeout] menus,False,False,True
+5869,iot,hue_lightdim,hue_lightdim,darken the [house_place : room] [change_amount : a bit],False,False,False
+13756,play,podcasts,podcasts,[player_setting : forward] to [time : four twenty],False,False,True
+242,datetime,datetime_query,datetime_query,is it [time : five] o'clock already,False,False,False
+2190,iot,hue_lighton,hue_lighton,turn on [device_type : disco lights] in my [house_place : apartment],False,False,False
+10340,recommendation,events,events,searching on [event_name : holidays] in my location,False,False,True
+2582,takeaway,order,order,[order_type : takeaway] [food_type : noodles] one pack,False,False,True
+7923,calendar,calendar_set,calendar_set,tell me later to file the [event_name : invoice],True,False,False
+4519,iot,hue_lightchange,hue_lightchange,i don't like this light please show me other options,False,False,True
+7687,general,quirky,quirky,when i came back from [place_name : this place],False,False,True
+7408,music,music_query,music_query,what is a good [music_genre : rap] album that came out [date : this year],False,False,False
+14081,recommendation,locations,locations,what stores have clearance,True,False,True
+14114,recommendation,movies,movies,what are the show times for [event_name : logan] at the [place_name : nearby theatre],True,False,False
+11932,cooking,recipe,recipe,what food is good,False,False,True
+12259,play,game,game,start [game_name : spider],False,False,True
+5485,audio,volume_mute,volume_mute,cut off noise,False,False,True
+3391,iot,hue_lightdim,hue_lightdim,lighter shade on the lights please,False,False,True
+7699,general,quirky,quirky,wake me only [time : after the sun is up] on sundays,False,False,True
+8151,calendar,calendar_query,calendar_query,can you check the facts on this issue,False,False,True
+3371,alarm,alarm_remove,alarm_remove,this alarm needs to be permanently silenced,True,False,False
+12133,cooking,recipe,recipe,search in the web for buying bakeware for muffins,False,False,True
+2132,iot,cleaning,cleaning,start [house_place : house] cleanup,False,False,False
+14631,transport,transport_query,transport_query,direct me towards nearest [place_name : railway station],True,False,False
+15173,transport,transport_query,transport_query,what time does the dart orange line leave for [place_name : west plano],False,False,False
+6331,audio,volume_down,volume_down,turn down the sound,False,False,False
+11750,play,audiobook,audiobook,pick up we left off on [audiobook_name : battle royale],False,False,True
+16169,general,quirky,quirky,open the door,False,False,True
+2372,music,music_query,music_query,show me results of what i'm listening to,False,False,True
+4659,datetime,datetime_query,datetime_query,what is [time : ten am] in [time_zone : eastern] time,False,False,True
+5192,takeaway,order,order,is there any good [food_type : chinese] [order_type : takeout] that's open late,False,False,False
+9508,calendar,calendar_query,calendar_query,anything i haven't done yet,False,False,True
+18003,qa,factoid,factoid,what's the cheapest price for [person : zoella's] first book,False,False,True
+4625,iot,hue_lighton,hue_lighton,overhead lights on please,False,False,False
+1311,takeaway,order,order,can you direct me to the menu for the highest rated [food_type : chinese] [order_type : carryout] near me,False,False,False
+14867,transport,traffic,traffic,are there any backups on [place_name : route eighty] [date : today],True,False,False
+20018,email,querycontact,querycontact,call [relation : dad],False,False,True
+1231,music,settings,settings,please go to settings of the [device_type : music player] and make the [device_type : equalizer] in the [player_setting : flat sound mode],False,False,False
+14020,recommendation,events,events,please recommend which [event_name : la lakers basketball] game i should attend [date : this month],False,False,True
+17068,recommendation,locations,locations,find me the oldest hotel in [place_name : washington dc],True,False,False
+12227,play,game,game,please start [game_name : clash of clans],False,False,True
+11594,play,audiobook,audiobook,lets listen to [audiobook_name : hunt for read october],False,False,True
+6611,play,music,music,start my [playlist_name : movies soundtrack] list,False,False,True
+5874,news,news_query,news_query,please take me to [media_type : wall street journal],True,False,False
+5335,iot,wemo_off,wemo_off,deactive the socket,False,False,False
+15678,general,quirky,quirky,show me a funny video on [media_type : youtube],False,False,True
+12294,play,game,game,open [game_name : subway surfers],False,False,True
+5537,news,news_query,news_query,[news_topic : sports] head lines please,False,False,False
+41,takeaway,takeaway_query,takeaway_query,find [food_type : thai] [order_type : takeaways] around [place_name : grassmarket],False,False,False
+14394,recommendation,movies,movies,what's [event_name : playing in the roosendaal cinema],False,False,True
+19655,email,querycontact,querycontact,read about [person : mary s.],False,False,True
+6938,takeaway,order,order,any [food_type : fast food] meal offers,True,False,False
+11509,play,audiobook,audiobook,[player_setting : restart] [audiobook_name : american gods],False,False,True
+789,audio,volume_mute,volume_mute,don't speak for a while,False,False,True
+20840,email,querycontact,querycontact,call [person : vikki],False,False,True
+4684,iot,wemo_off,wemo_off,cut [device_type : wemo] power please,False,False,False
+5823,news,news_query,news_query,[news_topic : dea guam prescription drug abuse on the rise],False,False,True
+13022,lists,lists_remove,lists_remove,eliminate the list [list_name : kickball] but make sure the contacts remain,False,False,True
+14069,recommendation,events,events,can you find me a [event_name : street fair] in the [place_name : neighborhood],False,False,False
+16200,general,quirky,quirky,show me a map of everywhere the cat has been [date : this week],False,False,True
+640,news,news_query,news_query,did the [news_topic : bitcoin go past ten mark] [date : yesterday],False,False,True
+18282,qa,factoid,factoid,find me the perfect girlfriend,False,False,True
+17823,qa,maths,maths,divide seventy six in two parts,False,False,False
+16114,general,quirky,quirky,please give me the winning lottery numbers for [date : this weekend],False,False,False
+9990,calendar,calendar_query,calendar_query,list events from this [time : three o'clock to five o'clock],False,False,True
+8734,calendar,calendar_set,calendar_set,my [event_name : flight] is by [time : six pm] please keep me posted,False,False,True
+6499,iot,wemo_on,wemo_on,turn on the [device_type : geyser],False,False,True
+287,iot,hue_lightup,hue_lightup,set lights [change_amount : to full power],False,False,False
+530,general,quirky,quirky,it is already late,False,False,False
+3954,audio,volume_up,volume_up,speak loudly,False,False,True
+16633,music,music_query,music_query,i want to know what song has the phrase stairway to heaven in it,False,False,True
+8576,iot,wemo_off,wemo_off,turn off [device_type : wifi] when you leave home to save power,False,False,True
+7052,iot,hue_lightup,hue_lightup,spread some lights,False,False,True
+14647,transport,transport_query,transport_query,when [transport_name : indianapolis express] will reach [place_name : indiana],True,False,False
+1565,alarm,alarm_remove,alarm_remove,change the alarm weekly settings,False,False,True
+770,audio,volume_down,volume_down,could you please lower the tone,False,False,True
+6933,audio,volume_mute,volume_mute,can you please be muted for a while,False,False,True
+5212,iot,hue_lightdim,hue_lightdim,i want the room to be less bright,False,False,False
+6768,audio,volume_down,volume_down,decrease [change_amount : twenty percent],False,False,True
+12316,play,game,game,bring up [game_name : papa pear saga],False,False,True
+5967,general,quirky,quirky,did you set the phone on flight mode,False,False,True
+2120,iot,wemo_on,wemo_on,enable [device_type : wemo],True,False,False
+11886,cooking,recipe,recipe,find the set of procedures for a meal course,False,False,True
+14240,recommendation,events,events,anything unique to do in the city [date : today],False,False,False
+4542,iot,coffee,coffee,make us a [coffee_type : brew],False,False,False
+13871,recommendation,events,events,list [event_name : college sports] for [date : tomorrow] in [place_name : tulsa],True,False,False
+13726,play,podcasts,podcasts,next button,False,False,True
+1883,alarm,alarm_query,alarm_query,checkout [date : today] alarm of meeting,False,False,True
+14591,transport,transport_query,transport_query,will [place_name : punjab] mail reach on time in [place_name : gwalior],False,False,True
+7342,general,quirky,quirky,i don't want to take any more calls after [time : five pm],False,False,True
+4901,iot,hue_lightup,hue_lightup,turn the chandelier all the way up,False,False,False
+12055,cooking,recipe,recipe,what goes with [food_type : risotto],True,False,False
+7813,recommendation,events,events,what is playing at the [place_name : local theater] right now,True,False,False
+10944,play,radio,radio,open [app_name : iheartradio] rov the [music_genre : rock],False,False,True
+7066,audio,volume_mute,volume_mute,don't speak for [time : an hour],False,False,True
+536,iot,hue_lightoff,hue_lightoff,by main power off,False,False,True
+20419,email,email_query,email_query,show unread emails,False,False,False
+5144,news,news_query,news_query,make a new notification for [news_topic : political campaign] tweets,False,False,True
+11526,play,audiobook,audiobook,[player_setting : start] chapter seven of [audiobook_name : alma],True,False,False
+17358,qa,currency,currency,has [currency_name : pound] value decreased,False,False,False
+9792,calendar,calendar_query,calendar_query,where am i supposed to be [date : wednesday] from [time : two to eleven],False,False,False
+3529,news,news_query,news_query,let me know if anything happens on that subject,False,False,True
+11866,cooking,recipe,recipe,show the method to prepare [food_type : icecream],False,False,True
+12176,play,game,game,turn on [game_name : flappy bird],False,False,True
+16192,recommendation,locations,locations,can you tell me the cheapest place to get ground beef,True,False,True
+14365,recommendation,events,events,refer top reviewed [event_name : live band show] near me,False,False,True
+637,play,music,music,please let me hear [song_name : six hundred and sixty six the number of the beast],False,False,False
+14184,recommendation,events,events,what are some [event_name : theme parks] nearby,True,False,True
+5039,audio,volume_up,volume_up,please unmute the settings,False,False,True
+10052,calendar,calendar_remove,calendar_remove,rm rf calendar,False,False,True
+1963,news,news_query,news_query,which teams are playing [date : today] in the [news_topic : premier league],True,False,True
+13663,play,podcasts,podcasts,[player_setting : move] to next section,False,False,True
+2562,iot,hue_lightdim,hue_lightdim,minimize the light power,False,False,True
+877,alarm,alarm_remove,alarm_remove,remove [alarm_type : wake up] calls for [date : this week],True,False,False
+7697,general,quirky,quirky,heating levels at what times in [place_name : the apt],False,False,True
+7388,general,quirky,quirky,i got invited to the [place_name : pub] on [date : saturday],False,False,False
+4927,play,music,music,start playing [song_name : bag of hammers],True,False,False
+15124,transport,taxi,taxi,find me a ride to the [place_name : mall of america] please,False,False,False
+10894,calendar,calendar_query,calendar_query,has my calendar been updated in the [time : last ten minutes],False,False,False
+15789,qa,maths,maths,find the sum of thirteen and fourteen,False,False,False
+15988,general,quirky,quirky,i would like it to order me stuff with little to no error,False,False,True
+6552,weather,weather_query,weather_query,can i plan [event_name : basketball match] in the [timeofday : evening],False,False,True
+4877,iot,hue_lightup,hue_lightup,connect to lights,False,False,True
+447,news,news_query,news_query,which are the games lined up for [date : this weekend] in the [news_topic : english premier league],False,False,True
+19624,email,querycontact,querycontact,link me to [person : jeff's] [personal_info : email],False,False,True
+15390,transport,ticket,ticket,secure [transport_type : train] passage for me on [date : july three],False,False,False
+11936,cooking,recipe,recipe,what spices are in [food_type : indian food],False,False,False
+9841,general,quirky,quirky,please provide me more info,False,False,True
+12759,lists,createoradd,createoradd,hey make a list of [list_name : names starting with vowels and ending with vowels],False,False,True
+12085,cooking,recipe,recipe,learn to cut [food_type : potatoes] correctly,False,False,True
+1607,news,news_query,news_query,open the site [media_type : bbcnews dot com],False,False,True
+15119,transport,transport_query,transport_query,navigate to a place,False,False,True
+16581,qa,maths,maths,what is the answer to this math question,False,False,True
+5336,iot,wemo_off,wemo_off,i would love the [device_type : wemo] socket to not be active right now,False,False,True
+12081,cooking,recipe,recipe,boiled,False,False,True
+15425,qa,maths,maths,seven times seven,False,False,False
+12757,lists,createoradd,createoradd,hey i need you to make a list of [list_name : cricket players of indian team] who played for the international team in [date : two thousand and fourteen],False,False,True
+8389,calendar,calendar_query,calendar_query,get me the details of upcoming [event_name : oscar two thousand and seventeen],False,False,True
+5917,datetime,convert,convert,[time : eight am] [place_name : manila] time is what in [time_zone : eastern] time,False,False,False
+7604,general,quirky,quirky,show stage shows near me,False,False,True
+10696,calendar,calendar_set,calendar_set,tell me when i need to leave the airport,False,False,True
+16051,news,news_query,news_query,the newest samsung phone,False,False,True
+2399,news,news_query,news_query,what were the cities affected by the earthquake,True,False,True
+3417,audio,volume_mute,volume_mute,i'm in a [event_name : meeting] please do not speak,False,False,True
+5037,news,news_query,news_query,what did [media_type : vogue] post [date : today],True,False,False
+11309,play,radio,radio,turn on [radio_name : sportsnet] for hockey,False,False,True
+1900,iot,wemo_on,wemo_on,if switch is on then turn on else turn off,False,False,True
+13246,lists,createoradd,createoradd,create [list_name : packing] checklist,False,False,False
+20103,email,email_query,email_query,can you please read the email my [relation : mom] sent this [timeofday : morning] at [time : ten am],False,False,False
+305,play,music,music,[song_name : cheap thrills],False,False,True
+12110,cooking,recipe,recipe,i need some ideas for dinner that are [food_type : mexican],False,False,False
+13913,recommendation,locations,locations,let's see whats around,False,False,True
+15891,general,quirky,quirky,i want to know what the specials are [timeofday : tonight] at [person : bob's] house of burgers anything with [food_type : cheese],False,False,True
+8866,calendar,calendar_set,calendar_set,send apologies to all the attendees of the upcoming [event_name : tavern lunch],False,False,True
+31,general,quirky,quirky,check the status of my power usage,False,False,True
+12507,lists,lists_query,lists_query,let me know what is remaining on my query,False,False,True
+227,play,music,music,death [music_genre : metal] now,False,False,True
+9381,calendar,calendar_query,calendar_query,what is set for the [date : weekend three weeks from now],False,False,False
+1852,audio,volume_up,volume_up,i want the speakers turned up high,False,False,True
+4681,alarm,alarm_remove,alarm_remove,snooze all [date : today's] alarms permanently,False,False,True
+617,audio,volume_up,volume_up,unmute after,False,False,True
+12029,email,querycontact,querycontact,call [relation : mom],False,False,True
+13941,recommendation,events,events,please show me [event_name : dress competitions] in [place_name : jaipur],True,False,False
+15446,general,quirky,quirky,explain how [place_name : usa] social status differs from the one in the [place_name : uk] now and in the past,False,False,True
+5918,datetime,convert,convert,[time : eight am] in [place_name : manila] is what in [place_name : new york],False,False,False
+20217,email,addcontact,addcontact,add lowes hardware to my contact emails located in [place_name : cleveland ohio],False,False,True
+1332,takeaway,takeaway_query,takeaway_query,i need to know if [business_name : mr pizza] [order_type : delivers],False,False,False
+11824,cooking,recipe,recipe,is there anything to do with [ingredient : quinoa] to make it not taste awful,False,False,True
+18115,general,quirky,quirky,internet please,False,False,True
+10182,calendar,calendar_query,calendar_query,is it any ones [event_name : birthday],False,False,False
+11240,play,radio,radio,broadcast the health show from the [house_place : kitchen],False,False,True
+3320,iot,hue_lightup,hue_lightup,retrieve the light for me,False,False,True
+2785,news,news_query,news_query,whats the [news_topic : scoop],True,False,False
+16443,qa,stock,stock,is the dow up or down,False,False,False
+6034,news,news_query,news_query,show [media_type : bbc] report of [news_topic : migrations],False,False,True
+4222,audio,volume_mute,volume_mute,please do not talk for [time : thirty minutes],False,False,True
+1949,music,music_query,music_query,could you update me with the list of my music likes,False,False,True
+80,takeaway,takeaway_query,takeaway_query,does [business_name : byron's] supports [order_type : takeaways],False,False,False
+5228,audio,volume_mute,volume_mute,silence for certain amount of hours,False,False,True
+20738,email,querycontact,querycontact,[person : raju phone] book,False,False,True
+15655,general,quirky,quirky,may i know the answer to that question,False,False,False
+8797,calendar,calendar_query,calendar_query,what we got in that [event_name : meeting] which held [date : yesterday],False,False,True
+4717,iot,hue_lighton,hue_lighton,turn on the lights that are outdoors,False,False,False
+4972,audio,volume_up,volume_up,unmute,False,False,True
+15330,transport,transport_query,transport_query,show map,False,False,True
+20153,email,email_query,email_query,did the [relation : boss] send anything,False,False,False
+12213,play,game,game,open up [game_name : angry birds],False,False,True
+9945,calendar,calendar_query,calendar_query,please tell me the main points of my [time : two hundred] [event_name : meeting] from [timeofday : this afternoon],False,False,True
+16729,general,quirky,quirky,did [person : ashwin] joined [event_name : party] [date : yesterday],False,False,True
+15994,general,quirky,quirky,let's make some popcorn and watch an old movie together,False,False,False
+13047,lists,lists_remove,lists_remove,please delete what i just typed,False,False,True
+18124,general,quirky,quirky,can i mine for gold on any public land,False,False,True
+2463,datetime,convert,convert,what is [time : nine am] [place_name : cst] in [place_name : est],True,False,False
+5214,takeaway,takeaway_query,takeaway_query,when is [business_name : taco bell] going to arrive,False,False,True
+19748,email,querycontact,querycontact,do you have the mailing address for the [business_name : electric company],False,False,False
+12627,lists,lists_remove,lists_remove,the list should not contain all food items with the prefix dry,False,False,True
+7491,general,quirky,quirky,here is something from [date : today],False,False,True
+21186,general,negate,negate,olly's command failed.,True,False,True
+13418,lists,lists_query,lists_query,tell me the pound for pound list for the top ten in the ufc,False,False,True
+11829,cooking,recipe,recipe,give me a list of ingredients for [food_type : welsh rarebit],False,False,False
+13431,play,podcasts,podcasts,skip,False,False,True
+2200,play,music,music,can you open [artist_name : beatles],False,False,True
+3747,takeaway,takeaway_query,takeaway_query,when did i place my order and what was the projected time it would take,True,False,True
+10725,calendar,calendar_remove,calendar_remove,cancel [event_name : medical engagements] [date : this weekend],False,False,True
+15684,general,quirky,quirky,what does the hyphen represent in the equation,False,False,True

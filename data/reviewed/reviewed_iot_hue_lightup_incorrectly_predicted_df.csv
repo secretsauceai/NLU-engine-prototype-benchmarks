@@ -1,0 +1,12 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+2191,iot,hue_lightup,calendar_set,please olly put on [device_type : multi colored lightning] in my [house_place : apartment] set for festival diwali,False,False,True
+6422,iot,hue_lightup,calendar_set,please set the brightness of lightness appropriately in [house_place : kitchen],False,False,True
+6744,iot,hue_lightup,calendar_set,add light,False,False,True
+67,iot,hue_lightup,hue_lightchange,make lights brighter,False,False,False
+2507,iot,hue_lightup,hue_lightchange,light colour for [house_place : study room],False,False,False
+3138,iot,hue_lightup,hue_lightchange,switch up the color of the lights in the [house_place : house],False,False,True
+3139,iot,hue_lightup,hue_lightchange,change up the light colors at [house_place : home],False,False,True
+722,iot,hue_lightup,hue_lightdim,can you brighten the lights please,False,False,False
+764,iot,hue_lightup,hue_lightoff,turn out the lights,False,False,True
+4012,iot,hue_lightup,quirky,i would like all the lights on when i enter,False,False,True
+6469,iot,hue_lightup,quirky,more bright,False,False,True

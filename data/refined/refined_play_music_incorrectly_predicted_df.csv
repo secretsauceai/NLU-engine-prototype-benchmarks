@@ -1,0 +1,45 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+11636,play,music,audiobook,[player_setting : resume] [song_name : born to run],False,False,False
+389,play,music,audiobook,start playing,False,False,True
+5350,play,music,calendar_set,put [artist_name : william] [song_name : its my birthday] in next,False,False,True
+825,play,music,calendar_set,add [song_name : shape of you] to the current queue,True,False,True
+3879,play,music,datetime_query,time to workout,False,False,True
+4580,play,music,factoid,i haven't been hearing any [artist_name : king crimson] please add their first seven albums,False,False,True
+4485,play,music,factoid,what are [date : todays] [music_genre : country] hits,False,False,True
+4882,play,music,likeness,my this song for me,False,False,True
+3865,play,music,lists_query,go to [music_genre : rap] list,False,False,True
+5670,play,music,music_query,add this song for the next playing song,False,False,True
+2493,play,music,music_query,change this song to the first place,False,False,True
+3082,play,music,music_query,now playing,False,False,True
+4337,play,music,news_query,please crank up [artist_name : huey lewis] and the news,False,False,True
+2495,play,music,order,repeat this list in random order,False,False,True
+1557,play,music,podcasts,show me the best podcast of [music_genre : folk] songs having [music_descriptor : good rating] and play it,False,False,True
+6765,play,music,quirky,[song_name : comfort my ears] with [artist_name : arijit singh],False,False,True
+4864,play,music,quirky,give me some good sounds,False,False,True
+304,play,music,quirky,[song_name : seven years],False,False,True
+5199,play,music,quirky,can you drop a beat for me,False,False,True
+1320,play,music,quirky,shazam,False,False,True
+4604,play,music,quirky,load [app_name : spotify],False,False,True
+6088,play,music,quirky,i would like [music_genre : classic country],False,False,True
+6397,play,music,quirky,[date : today] feels like [music_genre : hard rock],False,False,True
+6432,play,music,quirky,assistant [player_setting : shuffle] [music_descriptor : entire library],False,False,True
+226,play,music,quirky,i feel like [music_genre : jazz] right now how about you,False,False,True
+429,play,music,quirky,open [artist_name : bad religion] folder,False,False,True
+4419,play,music,quirky,[music_genre : indie],False,False,True
+4163,play,music,quirky,i am in the mood for [music_genre : metal],False,False,True
+6588,play,music,quirky,[artist_name : ricky matin],False,False,True
+3680,play,music,quirky,[music_genre : punjabi],False,False,True
+3438,play,music,quirky,we are dancing today can you please pull up my favorite dance tracks,False,False,True
+2031,play,music,quirky,[artist_name : akon],False,False,True
+2029,play,music,quirky,[artist_name : fifty cent],False,False,True
+2021,play,music,quirky,sing to me,False,False,True
+4578,play,music,quirky,make my collection mostly [music_genre : pop] with a good bit of psychedelia,False,False,True
+735,play,music,radio,i want to hear [artist_name : radio head] please,False,False,False
+1319,play,music,radio,pandora,False,False,True
+11232,play,music,radio,play a [music_genre : country] station please,False,False,True
+859,play,music,radio,go to pandora find [music_descriptor : twenty one pilots] radio play please,False,False,True
+6604,play,music,radio,turn on the tunes,False,False,True
+133,play,music,repeat,play it again please,False,False,True
+6858,play,music,settings,repeat [song_name : earth song],False,False,True
+4678,play,music,settings,repeat the next song,False,False,True
+4100,play,music,volume_mute,it's too quiet in here,False,False,True

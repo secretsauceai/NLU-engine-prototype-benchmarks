@@ -1,0 +1,98 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+8829,news,news_query,calendar_query,what were [date : yesterday's] activities between [time : five pm] and [time : eight pm],False,False,True
+1023,news,news_query,calendar_query,what is going for [date : tomorrow],False,False,True
+4452,news,news_query,calendar_query,what is going on [date : today],False,False,True
+1476,news,news_query,calendar_query,what do we have on the [media_type : new york time's] front page,False,False,False
+3656,news,news_query,calendar_set,add newscast time to daily schedule,False,False,True
+5143,news,news_query,calendar_set,add a new notifier for the [device_type : gps] on my [transport_type : car],False,False,True
+1097,news,news_query,datetime_query,what's on the [media_type : new york times],False,False,False
+366,news,news_query,datetime_query,what's sensational in [media_type : time of india],False,False,True
+1022,news,news_query,datetime_query,what is new [date : today],False,False,True
+856,news,news_query,email_query,open my morning briefing email from the [media_type : new york times],False,False,True
+297,news,news_query,email_query,tell me some fresh info from [media_type : daily mail],False,False,False
+2909,news,news_query,email_query,did we get any update from the [media_type : new provider],False,False,False
+2786,news,news_query,events,whats going on around here,False,False,True
+18488,news,news_query,events,what's going on here,False,False,True
+1182,news,news_query,events,is there any special in [news_topic : politic],False,False,True
+6259,news,news_query,events,what's going on in [place_name : chicago],False,False,False
+3406,news,news_query,events,show me some current news events,False,False,False
+219,news,news_query,events,what's happening in [place_name : america],False,False,False
+726,news,news_query,events,what happening in [place_name : Virginia],False,False,False
+739,news,news_query,factoid,what is the [news_topic : scorecard of the india versus australia] [news_topic : hockey game],False,False,True
+3362,news,news_query,factoid,did paok won [place_name : liverpool],False,False,True
+634,news,news_query,factoid,tell me that how [news_topic : demonetization policy] is affecting [place_name : india],False,False,True
+3502,news,news_query,factoid,has the [news_topic : war] in [place_name : syria] ended,False,False,True
+3533,news,news_query,factoid,what is the current state of the [news_topic : investigation into trump's ties] with [place_name : russia],False,False,True
+633,news,news_query,factoid,how is the [news_topic : performance of liverpool] in this match,False,False,True
+446,news,news_query,factoid,who is currently leading in the [news_topic : parliamentary election],False,False,True
+5252,news,news_query,factoid,when is trumps [news_topic : next press conference],False,False,True
+5254,news,news_query,factoid,[news_topic : fire] in [place_name : columbus ohio],False,False,True
+5954,news,news_query,factoid,how many runs did [person : cheteshwar pujara] scored [date : yesterday],False,False,True
+252,news,news_query,factoid,what is the current state of [news_topic : brexit negotiations],False,False,True
+7103,news,news_query,factoid,how is [news_topic : brexit] going recently,False,False,True
+7783,news,news_query,factoid,Cricket live scorecards,False,False,True
+7804,news,news_query,factoid,economic affairs,False,False,True
+2957,news,news_query,factoid,what is the [place_name : seattle] [news_topic : city council doing about homelessness],False,False,True
+641,news,news_query,factoid,what is position of [news_topic : bitcoin] as of now,False,False,True
+19172,news,news_query,factoid,what is new,False,False,True
+738,news,news_query,factoid,who is leading the [news_topic : formula one] race right now,False,False,True
+1392,news,news_query,factoid,is [person : narendra modi] the indian prime minister [news_topic : visiting any country] now,False,False,True
+1814,news,news_query,factoid,"tral encounter [news_topic : two terrorists killed] in encounter in [place_name : south kashmir], 1 Policeman Dies",False,False,True
+1909,news,news_query,factoid,how is [news_topic : president's trump office proceeding],False,False,True
+1910,news,news_query,factoid,what and how is [news_topic : india's economy] at the moment,False,False,True
+1962,news,news_query,factoid,what is the current [news_topic : price of brent crude],False,False,True
+642,news,news_query,factoid,tell me about [time : first week] collection of [news_topic : movie hidden figures],False,False,True
+4234,news,news_query,lists_remove,list current [news_topic : car stories],False,False,True
+1155,news,news_query,post,go to the [media_type : washington post] website,False,False,True
+7679,news,news_query,quirky,hwood,False,False,True
+6916,news,news_query,quirky,[news_topic : terrorist activities],False,False,True
+6737,news,news_query,quirky,[news_topic : newly launched four wheelers],False,False,True
+6736,news,news_query,quirky,[news_topic : iphone],False,False,True
+7141,news,news_query,quirky,bring up my current provider information,False,False,True
+7514,news,news_query,quirky,i want topics on [news_topic : celebrity gossip],False,False,False
+7574,news,news_query,quirky,[news_topic : sports] scores,False,False,True
+6917,news,news_query,quirky,[news_topic : international trade and business market],False,False,True
+2540,news,news_query,quirky,keep me up to date with [date : today's] [news_topic : nba scores],False,False,True
+7704,news,news_query,quirky,artificial intelligence,False,False,True
+7703,news,news_query,quirky,nano technology,False,False,True
+6404,news,news_query,quirky,did [person : ben] and [person : jen] get back together,False,False,True
+7784,news,news_query,quirky,automobiles,False,False,True
+7794,news,news_query,quirky,air pollution,False,False,True
+7797,news,news_query,quirky,finance,False,False,True
+7836,news,news_query,quirky,finances,False,False,True
+7842,news,news_query,quirky,ethics,False,False,True
+8828,news,news_query,quirky,tell me what happened [date : today] from [time : eight am] to [time : nine am],False,False,True
+224,news,news_query,quirky,[media_type : hackernews],False,False,True
+15727,news,news_query,quirky,tell me how are the results of assembly elections in [place_name : delhi] going to come out,False,False,True
+17275,news,news_query,quirky,tell me my congressional representatives voting records on reproductive health issues,False,False,True
+7702,news,news_query,quirky,education,False,False,True
+643,news,news_query,quirky,and also tell about the [news_topic : reviews and rating of the movie],False,False,True
+6086,news,news_query,quirky,how are things in the [place_name : world],False,False,True
+6142,news,news_query,quirky,what happened with it,False,False,True
+1953,news,news_query,quirky,what was the [news_topic : scores between okc and den],False,False,True
+3695,news,news_query,quirky,go to [media_type : cnncom],False,False,True
+3088,news,news_query,quirky,did the yankees win [date : last night],False,False,True
+6257,news,news_query,quirky,show me [media_type : rediff masala],False,False,True
+4143,news,news_query,quirky,[media_type : reddit] popular,False,False,True
+4443,news,news_query,quirky,[media_type : espn],False,False,True
+1691,news,news_query,quirky,can you give me a flash briefing,False,False,True
+3368,news,news_query,quirky,i want to know what is this [media_type : newsource] reporting,False,False,True
+4585,news,news_query,quirky,i want to know everything that breaks about the dam breaking in [place_name : california],False,False,True
+2035,news,news_query,quirky,did [news_topic : snap become public] yet,False,False,True
+1533,news,news_query,quirky,let me know when you hear about [news_topic : france],False,False,True
+635,news,news_query,quirky,tell me all the [news_topic : positive and negative outcomes of demonetization],False,False,True
+2902,news,news_query,quirky,when this story updates would you let me know please,False,False,True
+5822,news,news_query,quirky,[news_topic : people canceling iowa vacations over congressman's words],False,False,True
+2036,news,news_query,quirky,is [news_topic : snap] doing good after the [news_topic : ipo],False,False,True
+2201,news,news_query,quirky,can you search [news_topic : trump],False,False,True
+815,news,news_query,quirky,tell me if an [news_topic : earthquake] happens in the world,False,False,True
+3360,news,news_query,quirky,what happened lately regarding [news_topic : fashion],False,False,True
+1154,news,news_query,sendemail,go to [media_type : nytimes dot com],False,False,True
+3870,news,news_query,social_query,what are the most recent developments on [media_type : facebook],False,False,True
+3869,news,news_query,social_query,anything new on [media_type : facebook],False,False,True
+5165,news,news_query,stock,find information on [date : today's] stocks,False,False,True
+445,news,news_query,stock,get me the latest [news_topic : stock price for costco],False,False,True
+5609,news,news_query,transport_query,[news_topic : train wreck],True,False,True
+5610,news,news_query,transport_query,where was the [news_topic : train wreck],True,False,True
+16890,news,news_query,weather_query,i need to subscribe to the newspaper,False,False,True
+5842,news,news_query,weather_query,could you please tell me is there any update in [news_topic : weather],False,False,True

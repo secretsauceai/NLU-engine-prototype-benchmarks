@@ -1,0 +1,37 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+18347,qa,stock,calendar_query,is [business_name : i. b. m.'s] stock up [date : today],False,False,False
+13847,qa,stock,currency,how much rate will be calculated,False,False,True
+18244,qa,stock,currency,how is the exchange rate for [business_name : microsoft],False,False,True
+17432,qa,stock,currency,how much is [business_name : fb's] stock worth,False,False,False
+17213,qa,stock,currency,how strong is the [currency_name : dollar] compared to the [currency_name : peso],False,False,True
+17211,qa,stock,currency,what is the value of the [currency_name : yen] right now,False,False,True
+18030,qa,stock,datetime_query,is now a good time to sell some [currency_name : euros],False,False,True
+18120,qa,stock,factoid,how much does [business_name : nestle's] stock cost,False,False,False
+18050,qa,stock,factoid,how have [business_name : megatel] shares done [date : last week],False,False,False
+17982,qa,stock,factoid,how much does [business_name : bde's] shares cost,False,False,False
+17251,qa,stock,factoid,how high is [business_name : s n. p's] stock,False,False,False
+18345,qa,stock,factoid,how is [business_name : i. b. m.] doing in the market,False,False,True
+17189,qa,stock,factoid,what is [date : today's] close of the ticker  [business_name : goog],False,False,False
+17250,qa,stock,factoid,what did the [business_name : s n. p] stock close out at,False,False,False
+15729,qa,stock,factoid,tell me which mutual funds have maximum yearly returns,True,False,False
+16391,qa,stock,factoid,what is the value of [business_name : apple's] shares,False,False,False
+16392,qa,stock,factoid,how many shares of [business_name : apple] can i get for,False,False,True
+16442,qa,stock,factoid,what is [business_name : amazon's] stock worth,False,False,False
+5306,qa,stock,news_query,notify me of the latest news on the [news_topic : stock market],False,False,True
+16556,qa,stock,news_query,what's going on on wall street [date : this week],False,False,False
+18219,qa,stock,quirky,what is [business_name : apple] trading at,False,False,False
+18075,qa,stock,quirky,how much was [business_name : airtel] sold for sometime back,False,False,True
+18052,qa,stock,quirky,have [business_name : halifax] shares gone up [date : today],False,False,False
+18028,qa,stock,quirky,what is the [business_name : sensex] and nifty points for [date : today],False,False,True
+17078,qa,stock,quirky,please tell me when i can become rich if i invested in dow stocks today and what will be the return after five years,False,False,True
+17790,qa,stock,quirky,how much would it cost to buy a share of [business_name : target],False,False,False
+17254,qa,stock,quirky,is [business_name : chase] doing well in the stock market,False,False,False
+16711,qa,stock,quirky,what's the change in best buy stock,False,False,False
+17037,qa,stock,quirky,give me today's market trends for [business_name : panasonic],False,False,False
+17043,qa,stock,quirky,i want you to tell me what is the rate for [business_name : oscwal pipes],False,False,True
+17072,qa,stock,quirky,whats the dow jones at [date : today],False,False,False
+17140,qa,stock,quirky,open td ameritrade,False,False,True
+16555,qa,stock,quirky,what happened to the dow jones [date : today],False,False,False
+18074,qa,stock,recipe,for how much is [business_name : hp's] stock selling for,False,False,False
+17565,qa,stock,weather_query,tell me summary forecast [business_name : microsoft] stock forecast to thirty days ahead,False,False,True
+17431,qa,stock,weather_query,what are [business_name : motorola's] shares going for [date : today],False,False,False

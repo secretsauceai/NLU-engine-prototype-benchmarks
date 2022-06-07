@@ -1,0 +1,1003 @@
+{
+    "quirky": {
+        "f1_score": 0.46,
+        "total_count": 1075,
+        "total_incorrect_count": 215,
+        "top_features": [
+            "had",
+            "day",
+            "life",
+            "why",
+            "went",
+            "if",
+            "dog",
+            "happened",
+            "talk",
+            "person"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "datetime_query",
+                "feature": "day",
+                "coef": 5.267035242808114
+            },
+            {
+                "intent": "news_query",
+                "feature": "happened",
+                "coef": 4.026596588864551
+            },
+            {
+                "intent": "commandstop",
+                "feature": "talk",
+                "coef": 3.3993808304022264
+            },
+            {
+                "intent": "convert",
+                "feature": "if",
+                "coef": 2.436292814824976
+            }
+        ],
+        "correct_utterance_example": [
+            "quirky",
+            "check my car is ready",
+            [
+                [
+                    "check",
+                    -1.6163218196574074
+                ],
+                [
+                    "my",
+                    0.732426267586777
+                ],
+                [
+                    "car",
+                    1.633363435162219
+                ],
+                [
+                    "is",
+                    -2.4844376842576903
+                ],
+                [
+                    "ready",
+                    0.43675717205145415
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "calendar_set",
+            "i need to have location services on can you check",
+            [
+                [
+                    "i",
+                    0
+                ],
+                [
+                    "need",
+                    -1.1951371437430298
+                ],
+                [
+                    "to",
+                    -0.17465918544383363
+                ],
+                [
+                    "have",
+                    -1.36569093206052
+                ],
+                [
+                    "location",
+                    0.34767448969124504
+                ],
+                [
+                    "services",
+                    0.432738195401743
+                ],
+                [
+                    "on",
+                    -2.078742586097716
+                ],
+                [
+                    "can",
+                    0.05085275441425107
+                ],
+                [
+                    "you",
+                    1.2532768226132418
+                ],
+                [
+                    "check",
+                    -1.6163218196574074
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "factoid": 67,
+            "calendar_query": 25,
+            "weather_query": 18,
+            "calendar_set": 14,
+            "definition": 14,
+            "news_query": 13,
+            "recipe": 9,
+            "datetime_query": 6,
+            "locations": 5,
+            "explain": 5,
+            "movies": 4,
+            "dontcare": 3,
+            "praise": 3,
+            "traffic": 3,
+            "order": 3,
+            "music": 2,
+            "negate": 2,
+            "joke": 2,
+            "querycontact": 2,
+            "music_query": 2,
+            "lists_query": 1,
+            "likeness": 1,
+            "currency": 1,
+            "confirm": 1,
+            "maths": 1,
+            "transport_query": 1,
+            "events": 1,
+            "createoradd": 1,
+            "post": 1,
+            "alarm_set": 1,
+            "game": 1,
+            "cleaning": 1,
+            "calendar_remove": 1
+        }
+    },
+    "greet": {
+        "f1_score": 0.0,
+        "total_count": 25,
+        "total_incorrect_count": 25,
+        "top_features": [
+            "how",
+            "hey",
+            "are",
+            "hello",
+            "good",
+            "up",
+            "you",
+            "hi",
+            "morning",
+            "afternoon"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "recipe",
+                "feature": "how",
+                "coef": 5.359146592490333
+            },
+            {
+                "intent": "volume_up",
+                "feature": "up",
+                "coef": 4.851679794810509
+            },
+            {
+                "intent": "praise",
+                "feature": "you",
+                "coef": 4.656412530566406
+            },
+            {
+                "intent": "confirm",
+                "feature": "you",
+                "coef": 4.484367865286839
+            },
+            {
+                "intent": "hue_lightup",
+                "feature": "up",
+                "coef": 4.255044390418475
+            },
+            {
+                "intent": "commandstop",
+                "feature": "you",
+                "coef": 3.932966955070228
+            },
+            {
+                "intent": "transport_query",
+                "feature": "how",
+                "coef": 3.248369821718241
+            },
+            {
+                "intent": "factoid",
+                "feature": "how",
+                "coef": 3.2172350048508003
+            },
+            {
+                "intent": "alarm_set",
+                "feature": "up",
+                "coef": 3.1067164785331958
+            },
+            {
+                "intent": "stock",
+                "feature": "how",
+                "coef": 2.357733808037936
+            },
+            {
+                "intent": "alarm_query",
+                "feature": "morning",
+                "coef": 2.2904356408432207
+            },
+            {
+                "intent": "lists_query",
+                "feature": "are",
+                "coef": 2.118258339677978
+            },
+            {
+                "intent": "traffic",
+                "feature": "how",
+                "coef": 2.056495371890322
+            },
+            {
+                "intent": "movies",
+                "feature": "good",
+                "coef": 1.9684055435819257
+            },
+            {
+                "intent": "traffic",
+                "feature": "are",
+                "coef": 1.7984194836049163
+            },
+            {
+                "intent": "alarm_query",
+                "feature": "are",
+                "coef": 1.7444787161608257
+            },
+            {
+                "intent": "joke",
+                "feature": "good",
+                "coef": 1.335805008483127
+            }
+        ],
+        "correct_utterance_example": [
+            "greet",
+            "There are no correct utterances!",
+            [
+                [
+                    "There",
+                    0
+                ],
+                [
+                    "are",
+                    3.35914003565519
+                ],
+                [
+                    "no",
+                    -0.09219279209940856
+                ],
+                [
+                    "correct",
+                    -0.09312849787986817
+                ],
+                [
+                    "utterances!",
+                    0
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "definition",
+            "what's up",
+            [
+                [
+                    "what's",
+                    0
+                ],
+                [
+                    "up",
+                    1.8531070638938105
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 22,
+            "definition": 1,
+            "news_query": 1,
+            "factoid": 1
+        }
+    },
+    "joke": {
+        "f1_score": 0.91,
+        "total_count": 122,
+        "total_incorrect_count": 9,
+        "top_features": [
+            "joke",
+            "jokes",
+            "funny",
+            "knock",
+            "laugh",
+            "tell",
+            "me",
+            "good",
+            "make",
+            "know"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "recipe",
+                "feature": "make",
+                "coef": 3.6671608682411496
+            },
+            {
+                "intent": "createoradd",
+                "feature": "make",
+                "coef": 3.436355142442562
+            },
+            {
+                "intent": "coffee",
+                "feature": "make",
+                "coef": 3.3098380760040733
+            },
+            {
+                "intent": "hue_lightchange",
+                "feature": "make",
+                "coef": 3.2480985196963226
+            },
+            {
+                "intent": "greet",
+                "feature": "good",
+                "coef": 2.599360483897052
+            },
+            {
+                "intent": "movies",
+                "feature": "good",
+                "coef": 1.9684055435819257
+            }
+        ],
+        "correct_utterance_example": [
+            "joke",
+            "tell me a [joke_type : good] joke",
+            [
+                [
+                    "tell",
+                    1.6675424533816645
+                ],
+                [
+                    "me",
+                    1.3872694518368869
+                ],
+                [
+                    "a",
+                    0
+                ],
+                [
+                    "good",
+                    1.335805008483127
+                ],
+                [
+                    "joke",
+                    10.985295922661132
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "recipe",
+            "make me laugh",
+            [
+                [
+                    "make",
+                    1.2313382428187853
+                ],
+                [
+                    "me",
+                    1.3872694518368869
+                ],
+                [
+                    "laugh",
+                    1.9088821006585344
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 7,
+            "recipe": 1,
+            "sendemail": 1
+        }
+    },
+    "negate": {
+        "f1_score": 0.96,
+        "total_count": 939,
+        "total_incorrect_count": 30,
+        "top_features": [
+            "not",
+            "wrong",
+            "incorrect",
+            "think",
+            "no",
+            "didn",
+            "incorrectly",
+            "but",
+            "command",
+            "isn"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "explain",
+                "feature": "not",
+                "coef": 4.8434563879422985
+            },
+            {
+                "intent": "dontcare",
+                "feature": "no",
+                "coef": 4.533285888560119
+            },
+            {
+                "intent": "affirm",
+                "feature": "command",
+                "coef": 4.425774957220902
+            },
+            {
+                "intent": "dislikeness",
+                "feature": "not",
+                "coef": 1.4344006403975675
+            }
+        ],
+        "correct_utterance_example": [
+            "negate",
+            "i think you have done it all wrong.",
+            [
+                [
+                    "i",
+                    0
+                ],
+                [
+                    "think",
+                    5.501526491522452
+                ],
+                [
+                    "you",
+                    3.4350123802185863
+                ],
+                [
+                    "have",
+                    0.12010844718747617
+                ],
+                [
+                    "done",
+                    0.09399788535562521
+                ],
+                [
+                    "it",
+                    1.9924979154077218
+                ],
+                [
+                    "all",
+                    1.0186118954308134
+                ],
+                [
+                    "wrong.",
+                    0
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "explain",
+            "you do not understand what i just said.",
+            [
+                [
+                    "you",
+                    3.4350123802185863
+                ],
+                [
+                    "do",
+                    -0.6380218596712289
+                ],
+                [
+                    "not",
+                    7.333575691644199
+                ],
+                [
+                    "understand",
+                    1.1416284060765565
+                ],
+                [
+                    "what",
+                    0.9809072102733548
+                ],
+                [
+                    "i",
+                    0
+                ],
+                [
+                    "just",
+                    0.2521250302053722
+                ],
+                [
+                    "said.",
+                    0
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 13,
+            "repeat": 5,
+            "confirm": 3,
+            "explain": 2,
+            "calendar_query": 2,
+            "affirm": 1,
+            "calendar_set": 1,
+            "calendar_remove": 1,
+            "factoid": 1,
+            "music": 1
+        }
+    },
+    "repeat": {
+        "f1_score": 0.96,
+        "total_count": 585,
+        "total_incorrect_count": 15,
+        "top_features": [
+            "again",
+            "retry",
+            "more",
+            "replay",
+            "reset",
+            "repeat",
+            "over",
+            "hear",
+            "say",
+            "try"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "settings",
+                "feature": "repeat",
+                "coef": 5.449038729663225
+            },
+            {
+                "intent": "music",
+                "feature": "hear",
+                "coef": 4.994535212809442
+            },
+            {
+                "intent": "hue_lightup",
+                "feature": "more",
+                "coef": 2.9795725593327615
+            },
+            {
+                "intent": "volume_up",
+                "feature": "hear",
+                "coef": 2.745907466581521
+            },
+            {
+                "intent": "dislikeness",
+                "feature": "again",
+                "coef": 1.1252942814021059
+            }
+        ],
+        "correct_utterance_example": [
+            "repeat",
+            "will you tell me one more again please.",
+            [
+                [
+                    "will",
+                    1.1797881328218611
+                ],
+                [
+                    "you",
+                    2.4201642769100213
+                ],
+                [
+                    "tell",
+                    3.2519867226291486
+                ],
+                [
+                    "me",
+                    -1.4811021935141397
+                ],
+                [
+                    "one",
+                    2.954089206151614
+                ],
+                [
+                    "more",
+                    5.887140013536117
+                ],
+                [
+                    "again",
+                    7.736056878009812
+                ],
+                [
+                    "please.",
+                    0
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "definition",
+            "what is that.",
+            [
+                [
+                    "what",
+                    1.2573241175010113
+                ],
+                [
+                    "is",
+                    -1.4428881053992233
+                ],
+                [
+                    "that.",
+                    0
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 6,
+            "negate": 6,
+            "definition": 1,
+            "confirm": 1,
+            "settings": 1
+        }
+    },
+    "affirm": {
+        "f1_score": 0.98,
+        "total_count": 554,
+        "total_incorrect_count": 11,
+        "top_features": [
+            "yeah",
+            "yeap",
+            "yes",
+            "perfectly",
+            "correcly",
+            "confirmed",
+            "exactly",
+            "response",
+            "command",
+            "right"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "negate",
+                "feature": "command",
+                "coef": 4.171088151610123
+            }
+        ],
+        "correct_utterance_example": [
+            "affirm",
+            "yeah excellent response to the command.",
+            [
+                [
+                    "yeah",
+                    5.953241991820838
+                ],
+                [
+                    "excellent",
+                    3.4894341131578543
+                ],
+                [
+                    "response",
+                    4.466423648261585
+                ],
+                [
+                    "to",
+                    -0.9603749200160686
+                ],
+                [
+                    "the",
+                    -1.4628038520577884
+                ],
+                [
+                    "command.",
+                    0
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "negate",
+            "it's correct.",
+            [
+                [
+                    "it's",
+                    0
+                ],
+                [
+                    "correct.",
+                    0
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "praise": 5,
+            "negate": 4,
+            "quirky": 2
+        }
+    },
+    "commandstop": {
+        "f1_score": 0.97,
+        "total_count": 320,
+        "total_incorrect_count": 1,
+        "top_features": [
+            "shut",
+            "stop",
+            "cancel",
+            "olly",
+            "enough",
+            "you",
+            "just",
+            "later",
+            "all",
+            "talk"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "calendar_remove",
+                "feature": "cancel",
+                "coef": 5.357456387611508
+            },
+            {
+                "intent": "praise",
+                "feature": "you",
+                "coef": 4.656412530566406
+            },
+            {
+                "intent": "confirm",
+                "feature": "you",
+                "coef": 4.484367865286839
+            },
+            {
+                "intent": "dontcare",
+                "feature": "olly",
+                "coef": 4.454055338531218
+            },
+            {
+                "intent": "praise",
+                "feature": "olly",
+                "coef": 4.395727284837185
+            },
+            {
+                "intent": "calendar_remove",
+                "feature": "all",
+                "coef": 3.562042206144135
+            },
+            {
+                "intent": "alarm_remove",
+                "feature": "cancel",
+                "coef": 3.2256674655709165
+            },
+            {
+                "intent": "quirky",
+                "feature": "talk",
+                "coef": 2.3942589553470306
+            },
+            {
+                "intent": "greet",
+                "feature": "you",
+                "coef": 1.6006241130050374
+            }
+        ],
+        "correct_utterance_example": [
+            "commandstop",
+            "olly would you please shut down.",
+            [
+                [
+                    "olly",
+                    4.4725083888628525
+                ],
+                [
+                    "would",
+                    2.2776499809560518
+                ],
+                [
+                    "you",
+                    3.932966955070228
+                ],
+                [
+                    "please",
+                    2.2295230898977234
+                ],
+                [
+                    "shut",
+                    7.506181067406142
+                ],
+                [
+                    "down.",
+                    0
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "calendar_remove",
+            "cancel.",
+            [
+                [
+                    "cancel.",
+                    0
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "calendar_remove": 1
+        }
+    },
+    "explain": {
+        "f1_score": 0.98,
+        "total_count": 684,
+        "total_incorrect_count": 6,
+        "top_features": [
+            "catch",
+            "clarify",
+            "elaborate",
+            "explain",
+            "rephrase",
+            "unclear",
+            "clear",
+            "further",
+            "not",
+            "s2"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "negate",
+                "feature": "not",
+                "coef": 7.333575691644199
+            },
+            {
+                "intent": "calendar_remove",
+                "feature": "clear",
+                "coef": 6.04289478421362
+            },
+            {
+                "intent": "lists_remove",
+                "feature": "clear",
+                "coef": 2.377558143667708
+            },
+            {
+                "intent": "dislikeness",
+                "feature": "not",
+                "coef": 1.4344006403975675
+            }
+        ],
+        "correct_utterance_example": [
+            "explain",
+            "do not get this.",
+            [
+                [
+                    "do",
+                    0.26231324305784565
+                ],
+                [
+                    "not",
+                    4.8434563879422985
+                ],
+                [
+                    "get",
+                    3.681544453012349
+                ],
+                [
+                    "this.",
+                    0
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "negate",
+            "have you made a mistake.",
+            [
+                [
+                    "have",
+                    0.7295905200049556
+                ],
+                [
+                    "you",
+                    2.8459691906518634
+                ],
+                [
+                    "made",
+                    0.4970071043406425
+                ],
+                [
+                    "a",
+                    0
+                ],
+                [
+                    "mistake.",
+                    0
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "negate": 4,
+            "definition": 2
+        }
+    },
+    "praise": {
+        "f1_score": 0.98,
+        "total_count": 785,
+        "total_incorrect_count": 6,
+        "top_features": [
+            "appreciate",
+            "thanks",
+            "appreciated",
+            "thank",
+            "you",
+            "olly",
+            "job",
+            "helpful",
+            "work",
+            "that"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "confirm",
+                "feature": "you",
+                "coef": 4.484367865286839
+            },
+            {
+                "intent": "commandstop",
+                "feature": "olly",
+                "coef": 4.4725083888628525
+            },
+            {
+                "intent": "dontcare",
+                "feature": "olly",
+                "coef": 4.454055338531218
+            },
+            {
+                "intent": "commandstop",
+                "feature": "you",
+                "coef": 3.932966955070228
+            },
+            {
+                "intent": "greet",
+                "feature": "you",
+                "coef": 1.6006241130050374
+            },
+            {
+                "intent": "dislikeness",
+                "feature": "that",
+                "coef": 1.3698877351032397
+            }
+        ],
+        "correct_utterance_example": [
+            "praise",
+            "that's good one, thank you very much.",
+            [
+                [
+                    "that's",
+                    0
+                ],
+                [
+                    "good",
+                    1.8075142017309214
+                ],
+                [
+                    "one,",
+                    0
+                ],
+                [
+                    "thank",
+                    5.789993076669676
+                ],
+                [
+                    "you",
+                    4.656412530566406
+                ],
+                [
+                    "very",
+                    1.8172516410061104
+                ],
+                [
+                    "much.",
+                    0
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "affirm",
+            "that's wonderful.",
+            [
+                [
+                    "that's",
+                    0
+                ],
+                [
+                    "wonderful.",
+                    0
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "affirm": 4,
+            "music": 1,
+            "quirky": 1
+        }
+    }
+}

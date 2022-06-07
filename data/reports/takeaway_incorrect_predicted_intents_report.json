@@ -1,0 +1,300 @@
+{
+    "takeaway_query": {
+        "f1_score": 0.77,
+        "total_count": 215,
+        "total_incorrect_count": 35,
+        "top_features": [
+            "delivery",
+            "takeaway",
+            "does",
+            "deliver",
+            "restaurant",
+            "order",
+            "food",
+            "status",
+            "my",
+            "take"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "order",
+                "feature": "order",
+                "coef": 9.56910720380977
+            },
+            {
+                "intent": "locations",
+                "feature": "restaurant",
+                "coef": 4.955521020862289
+            },
+            {
+                "intent": "post",
+                "feature": "status",
+                "coef": 3.9766835729714525
+            },
+            {
+                "intent": "definition",
+                "feature": "does",
+                "coef": 3.7508987240694887
+            },
+            {
+                "intent": "order",
+                "feature": "food",
+                "coef": 3.615743632164124
+            },
+            {
+                "intent": "lists_query",
+                "feature": "my",
+                "coef": 3.5558657294293297
+            },
+            {
+                "intent": "lists_remove",
+                "feature": "take",
+                "coef": 2.635117476597455
+            },
+            {
+                "intent": "order",
+                "feature": "takeaway",
+                "coef": 2.6091503025329312
+            },
+            {
+                "intent": "addcontact",
+                "feature": "my",
+                "coef": 2.0819561120232213
+            }
+        ],
+        "correct_utterance_example": [
+            "takeaway_query",
+            "most rated [order_type : delivery] options for [food_type : chinese] food",
+            [
+                [
+                    "most",
+                    0.03057192284042333
+                ],
+                [
+                    "rated",
+                    0.3086930239322332
+                ],
+                [
+                    "delivery",
+                    5.928269751224147
+                ],
+                [
+                    "options",
+                    0.6671090461475648
+                ],
+                [
+                    "for",
+                    -1.0029623565884802
+                ],
+                [
+                    "chinese",
+                    0.7336376028988782
+                ],
+                [
+                    "food",
+                    3.4249037555388595
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "music",
+            "i want some [food_type : curry] to go any recommendations",
+            [
+                [
+                    "i",
+                    0
+                ],
+                [
+                    "want",
+                    -0.4924091301150907
+                ],
+                [
+                    "some",
+                    -0.8310050675128104
+                ],
+                [
+                    "curry",
+                    0.526971504877599
+                ],
+                [
+                    "to",
+                    -0.896347097276453
+                ],
+                [
+                    "go",
+                    1.4128004108315775
+                ],
+                [
+                    "any",
+                    -0.30050024861563085
+                ],
+                [
+                    "recommendations",
+                    0.5686948103246351
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "order": 13,
+            "quirky": 9,
+            "factoid": 4,
+            "locations": 3,
+            "music": 1,
+            "calendar_set": 1,
+            "events": 1,
+            "querycontact": 1,
+            "weather_query": 1,
+            "stock": 1
+        }
+    },
+    "order": {
+        "f1_score": 0.75,
+        "total_count": 195,
+        "total_incorrect_count": 37,
+        "top_features": [
+            "order",
+            "pizza",
+            "food",
+            "takeout",
+            "call",
+            "chinese",
+            "from",
+            "near",
+            "takeaway",
+            "some"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "takeaway_query",
+                "feature": "takeaway",
+                "coef": 5.632831594064564
+            },
+            {
+                "intent": "email_query",
+                "feature": "from",
+                "coef": 4.7559698402841235
+            },
+            {
+                "intent": "locations",
+                "feature": "near",
+                "coef": 4.620234967854728
+            },
+            {
+                "intent": "takeaway_query",
+                "feature": "order",
+                "coef": 4.345154257484372
+            },
+            {
+                "intent": "lists_remove",
+                "feature": "from",
+                "coef": 3.799224007832952
+            },
+            {
+                "intent": "takeaway_query",
+                "feature": "food",
+                "coef": 3.4249037555388595
+            },
+            {
+                "intent": "events",
+                "feature": "near",
+                "coef": 3.2703905089610767
+            },
+            {
+                "intent": "querycontact",
+                "feature": "call",
+                "coef": 3.210047601774373
+            },
+            {
+                "intent": "taxi",
+                "feature": "call",
+                "coef": 3.1666981355009827
+            },
+            {
+                "intent": "ticket",
+                "feature": "from",
+                "coef": 1.5911258727550746
+            },
+            {
+                "intent": "coffee",
+                "feature": "some",
+                "coef": 1.4988572121369934
+            }
+        ],
+        "correct_utterance_example": [
+            "order",
+            "please order some [food_type : sushi] for [meal_type : dinner]",
+            [
+                [
+                    "please",
+                    -0.8141663727861902
+                ],
+                [
+                    "order",
+                    9.56910720380977
+                ],
+                [
+                    "some",
+                    2.072094932328487
+                ],
+                [
+                    "sushi",
+                    1.2779925379127446
+                ],
+                [
+                    "for",
+                    0.689259841578169
+                ],
+                [
+                    "dinner",
+                    0.5170171018199006
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "takeaway_query",
+            "call the nearest [food_type : thai] [business_type : restaurant] with [order_type : delivery]",
+            [
+                [
+                    "call",
+                    2.8932231072646863
+                ],
+                [
+                    "the",
+                    -1.3473728549528854
+                ],
+                [
+                    "nearest",
+                    1.3942108611380148
+                ],
+                [
+                    "thai",
+                    0.7219369096116306
+                ],
+                [
+                    "restaurant",
+                    1.5381900545733753
+                ],
+                [
+                    "with",
+                    0.6418641711883544
+                ],
+                [
+                    "delivery",
+                    1.707801973009808
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 12,
+            "locations": 10,
+            "takeaway_query": 6,
+            "factoid": 3,
+            "currency": 1,
+            "datetime_query": 1,
+            "weather_query": 1,
+            "calendar_set": 1,
+            "music": 1,
+            "sendemail": 1
+        }
+    }
+}

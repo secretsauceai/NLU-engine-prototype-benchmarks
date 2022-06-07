@@ -1,0 +1,37 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+7984,calendar,calendar_remove,calendar_query,free up my schedule for the [date : next week],False,False,False
+9696,calendar,calendar_remove,calendar_query,remove what i have to do on the [date : twenty three of march],False,False,False
+9054,calendar,calendar_remove,calendar_query,i am no longer going to [event_name : wyatts birthday party],False,False,True
+9021,calendar,calendar_remove,calendar_query,i would like a free day [date : tomorrow] from all the events,False,False,True
+9006,calendar,calendar_remove,calendar_query,clean up my schedule,False,False,True
+8957,calendar,calendar_remove,calendar_query,cancel all my [event_name : appointments] after [time : three pm] [date : today],False,False,False
+8772,calendar,calendar_remove,calendar_query,next event is canceled,False,False,True
+8490,calendar,calendar_remove,calendar_query,what do i have scheduled for [date : tomorrow] i need to cancel,False,False,True
+9306,calendar,calendar_remove,calendar_query,can you please disregard the [event_name : party] that i will be going to [date : this weekend] on my calendar,False,False,True
+8155,calendar,calendar_remove,calendar_query,what do i have to do [date : today],False,False,True
+8154,calendar,calendar_remove,calendar_query,do is on my calendar for [date : today],False,False,True
+8141,calendar,calendar_remove,calendar_query,make sure there is no events on my calendar,False,False,True
+9691,calendar,calendar_remove,calendar_set,take [event_name : birthday party] off of calendar for [date : may],False,False,False
+10754,calendar,calendar_remove,calendar_set,i don't need that event anymore,False,False,True
+10707,calendar,calendar_remove,calendar_set,make blank on [date : july three] calendar,False,False,True
+10704,calendar,calendar_remove,calendar_set,mark all remaining calendar events for [date : today] as cleared,False,False,False
+10529,calendar,calendar_remove,calendar_set,abolish a specific calendar event,False,False,True
+10230,calendar,calendar_remove,calendar_set,cancels [meal_type : lunch] at the [business_type : restaurant] booked for [date : march twenty five],False,False,True
+10094,calendar,calendar_remove,calendar_set,take off the [event_name : doctor's appointment] on [date : march twentieth],False,False,False
+9931,calendar,calendar_remove,calendar_set,this event needs to be deleted,False,False,True
+9914,calendar,calendar_remove,calendar_set,remove my reminder for the [event_name : meeting] [date : today] at [date : one pm],False,False,False
+9751,calendar,calendar_remove,calendar_set,take [event_name : lunch meeting] off my calendar,False,False,False
+8047,calendar,calendar_remove,calendar_set,cancel the [event_name : meeting] [date : next week] [date : Thursday] at [time : two pm],False,False,False
+10866,calendar,calendar_remove,calendar_set,update the calendar with the [event_name : last event removed],False,False,False
+9634,calendar,calendar_remove,calendar_set,let's just skip [event_name : appointment] at time,False,False,True
+9580,calendar,calendar_remove,calendar_set,i'd like [date : monday] to remain open,False,False,True
+9545,calendar,calendar_remove,calendar_set,change the plan of [event_name : meeting],False,False,True
+10806,calendar,calendar_remove,calendar_set,please reset my calendar back to day one,False,False,True
+8049,calendar,calendar_remove,calendar_set,erase the [event_name : meeting] [date : tomorrow] at [time : ten am],False,False,False
+8998,calendar,calendar_remove,calendar_set,unlist the [event_name : meeting] on [date : fourth october] [time : twelve pm],False,False,True
+8901,calendar,calendar_remove,calendar_set,remove [event_name : meeting] reminder for [date : tuesday],False,False,False
+8484,calendar,calendar_remove,calendar_set,reschedule the [event_name : party] to [date : thursday],False,False,True
+8156,calendar,calendar_remove,lists_query,what in on my to do list of events,False,False,False
+9633,calendar,calendar_remove,negate,i'm not doing thing [date : this week],False,False,True
+10247,calendar,calendar_remove,negate,no [event_name : lunch date] [date : tomorrow],False,False,True
+8644,calendar,calendar_remove,weather_query,i will no longer be joining [relation : mom] for [meal_type : lunch] [date : tomorrow],False,False,True

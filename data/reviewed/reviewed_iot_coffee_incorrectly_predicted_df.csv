@@ -1,0 +1,15 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+1699,iot,coffee,music,get me some [coffee_type : latte] please,False,False,False
+1744,iot,coffee,music,start brewing please,False,False,False
+1642,iot,coffee,order,order a [coffee_type : latte] from [business_name : starbucks],False,False,True
+1987,iot,coffee,order,want to wake up can you order a [coffee_type : cappochino],False,False,True
+1237,iot,coffee,quirky,i'd like an [coffee_type : espresso],False,False,False
+1238,iot,coffee,quirky,can i please have a cafe [coffee_type : americano],False,False,False
+1698,iot,coffee,quirky,make me a [coffee_type : capuccino],False,False,False
+2550,iot,coffee,quirky,a cup of joe would be nice right now,True,False,False
+3283,iot,coffee,quirky,can you begin the brew,False,False,False
+4544,iot,coffee,quirky,can you boil the [device_type : kettle],False,False,True
+6759,iot,coffee,quirky,[coffee_type : double cappuccino small] please,False,False,False
+7033,iot,coffee,quirky,make me [coffee_type : happy juice],False,False,True
+2990,iot,coffee,recipe,cook some coffees,False,False,True
+14182,iot,coffee,weather_query,i need a drink,False,False,True

@@ -1,0 +1,30 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+13991,recommendation,locations,calendar_set,make a reservation for two at [business_type : olive garden],False,False,False
+13928,recommendation,locations,events,what's around me,True,False,False
+14842,recommendation,locations,events,what's the [place_name : local taxi company] around here,False,False,False
+13864,recommendation,locations,factoid,give the list of [business_type : theaters] in the [place_name : vicinity],False,False,False
+17087,recommendation,locations,factoid,find the exact location of the places,False,False,True
+16704,recommendation,locations,factoid,what is a good place for cruise close by,False,False,False
+16014,recommendation,locations,factoid,tell me what is the nicest place to go,False,False,True
+15822,recommendation,locations,factoid,where is the closer [business_name : starbucks],False,False,False
+15242,recommendation,locations,factoid,where is the nearest [business_type : shopping mall],False,False,False
+14837,recommendation,locations,factoid,where is the closest [business_name : sweet frog],False,False,False
+14702,recommendation,locations,factoid,where is the closest [place_name : mcdo],False,False,False
+14388,recommendation,locations,factoid,is there any [business_type : salon] in [place_name : babaji nagar],False,False,False
+17400,recommendation,locations,factoid,tell me where should i go in world tour and which places are most important,False,False,True
+18105,recommendation,locations,factoid,where is the closest kroger,False,False,False
+14237,recommendation,locations,factoid,where is a great [business_type : pub] nearby,False,False,False
+14057,recommendation,locations,factoid,who sells the cheapest netbooks in [place_name : south austin],False,False,False
+13969,recommendation,locations,factoid,what's the most popular [business_type : curry place] in [place_name : town],False,False,False
+13885,recommendation,locations,factoid,where is the [business_type : pharmacy] in [place_name : leavenworth],False,False,False
+13883,recommendation,locations,factoid,where is the best [business_type : mechanic] in [place_name : eagle point],False,False,False
+14299,recommendation,locations,factoid,how many grocery stores are located in my neighborhood,False,False,True
+14196,recommendation,locations,quirky,i'm looking for reasonably priced [food_type : tapas] in [place_name : miami beach],False,False,False
+14097,recommendation,locations,quirky,where are  local [place_name : karate studios],False,False,False
+15702,recommendation,locations,quirky,which stores got the cheapest three pound beef rump,False,False,True
+15817,recommendation,locations,quirky,where to buy cannon cameras,False,False,False
+13926,recommendation,locations,quirky,i'm looking for a [business_type : bar],False,False,False
+13886,recommendation,locations,quirky,is there a well rated [food_type : pizza] [business_type : place] [place_name : between fourteenth and eighteenth streets],False,False,False
+14324,recommendation,locations,quirky,whats [business_type : good to eat] in [place_name : cincinnati],False,False,False
+13990,recommendation,locations,takeaway_query,when does [business_type : olive garden] close [date : today],False,False,False
+15056,recommendation,locations,transport_query,what [business_type : train companies] are near me,False,False,True

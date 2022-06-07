@@ -1,0 +1,41 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+1232,music,settings,calendar_set,please set the [device_type : equalizer] in the [player_setting : party mode],False,False,True
+4621,music,settings,calendar_set,make a laundry setting for the volume at twenty,False,False,True
+4619,music,settings,calendar_set,please program volume settings for sixteen when i'm in the room at fourteen for when i've gone to bed,False,False,True
+6883,music,settings,factoid,[player_setting : replay] the required of the musics,False,False,True
+136,music,settings,likeness,save settings,False,False,True
+5787,music,settings,music,skip the next two songs,False,False,False
+5785,music,settings,music,skip this song,False,False,False
+5989,music,settings,music,[player_setting : change song],False,False,True
+5385,music,settings,music,[player_setting : shuffle] the songs in the [music_descriptor : music library],False,False,False
+5015,music,settings,music,[player_setting : shazam] this music,False,False,True
+4756,music,settings,music,[player_setting : move] to the next song in the list,False,False,False
+5991,music,settings,music,open [device_type : music player] settings,True,False,False
+6882,music,settings,music,cut the songs in this musics,False,False,True
+3185,music,settings,music,[player_setting : stop] after current song,False,False,True
+2935,music,settings,music,please check my playlists for [music_genre : jazz] music,False,False,True
+2721,music,settings,music,[player_setting : shuffle] music by [artist_name : aaron carter],False,False,True
+5858,music,settings,music,please [player_setting : skip] to the next song,False,False,False
+6368,music,settings,music,please [player_setting : proceed] to the next available [music_genre : rock song],False,False,True
+2593,music,settings,music,show current track in [device_type : music player],False,False,True
+1855,music,settings,music,[player_setting : change] the music mode to [music_genre : rock],False,False,True
+1854,music,settings,music,[player_setting : repeat] song number ten from [playlist_name : main list],False,False,True
+1418,music,settings,music,please add this song to [playlist_name : work out playlist],False,False,True
+862,music,settings,music,put the playlist on [player_setting : shuffle],False,False,False
+583,music,settings,music,play only particular singer [media_type : songs],False,False,True
+6715,music,settings,music,music change,False,False,True
+6021,music,settings,music,please don't shuffle songs in [device_type : music player] just [player_setting : playing continuously],False,False,True
+5859,music,settings,music,please [player_setting : skip] the next two songs,False,False,False
+2166,music,settings,music_query,[player_setting : equalize] the bass of this music,False,False,True
+2148,music,settings,music_query,[player_setting : repeat] the song playing now,False,False,False
+863,music,settings,music_query,[player_setting : stop repeating] this song,False,False,False
+99,music,settings,quirky,[player_setting : loop] this track,False,False,True
+4631,music,settings,quirky,[player_setting : lower battery consumption] to save setting,False,False,True
+4620,music,settings,quirky,make sure my shuffles are [player_setting : always repeat and always shuffled],False,False,True
+2933,music,settings,radio,could you please create a pandora channel for [artist_name : adele],False,False,True
+6064,music,settings,radio,please put [media_type : radio] in [player_setting : shuffle],False,False,True
+6020,music,settings,repeat,please check and repeat this song one time more,False,False,True
+556,music,settings,repeat,please [player_setting : repeat] that music again of [artist_name : akon],False,False,True
+6881,music,settings,repeat,[player_setting : replay] the musics,False,False,True
+5386,music,settings,repeat,[player_setting : repeat] [music_descriptor : the last song] again,False,False,False
+2594,music,settings,volume_up,display volume strength on current track,False,False,True

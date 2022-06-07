@@ -1,0 +1,31 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+21125,general,negate,affirm,please double check the instructions to make sure you got it right.,False,False,False
+21676,general,negate,calendar_query,i said do this.,False,False,False
+21395,general,negate,calendar_query,what the fuck please do this.,False,False,False
+21420,general,negate,calendar_remove,clear last action.,False,False,False
+21138,general,negate,calendar_set,sorry let me clarify with new instructions.,True,False,True
+21578,general,negate,confirm,"you made a mistake, please check that.",False,False,False
+21471,general,negate,confirm,please check that command.,False,False,False
+21289,general,negate,confirm,please check the command.,False,False,False
+20879,general,negate,explain,you do not understand what i just said.,False,False,False
+21756,general,negate,explain,you don't get me.,False,False,False
+21494,general,negate,factoid,you are using old piece of information.,False,False,True
+21714,general,negate,music,listen carefully instructions.,False,False,True
+21171,general,negate,quirky,i needed something else.,False,False,False
+21687,general,negate,quirky,show me what i asked to see.,False,False,True
+21683,general,negate,quirky,there are errors.,False,False,False
+20954,general,negate,quirky,goddammit.,True,False,True
+21003,general,negate,quirky,oh my god why did you do that.,True,False,False
+21543,general,negate,quirky,i will repeat the question clearly for you to understand.,False,False,True
+21152,general,negate,quirky,i will speak slowly so you can find the correct answer.,False,False,True
+21085,general,negate,quirky,are you serious.,True,False,True
+21093,general,negate,quirky,recheck last action.,False,False,False
+21119,general,negate,quirky,there was error.,False,False,False
+21204,general,negate,quirky,do it some other way.,False,False,False
+21422,general,negate,quirky,refresh with my instruction.,False,False,True
+21342,general,negate,quirky,i asked for something else.,False,False,False
+21113,general,negate,repeat,that wasn't what i wanted please try again.,False,False,False
+21549,general,negate,repeat,don't do it again.,False,False,False
+21376,general,negate,repeat,dont do that again.,False,False,False
+21669,general,negate,repeat,"no, let me say it again.",False,False,True
+21188,general,negate,repeat,that was incorrect let's try again.,True,False,False

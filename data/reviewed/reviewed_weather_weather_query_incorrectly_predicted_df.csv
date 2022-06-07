@@ -1,0 +1,26 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+833,weather,weather_query,calendar_query,what are the chances of [weather_descriptor : hail] [date : this week],False,False,False
+2572,weather,weather_query,calendar_query,what is the [weather_descriptor : high] for [date : today],False,False,False
+344,weather,weather_query,factoid,what's the [weather_descriptor : humidity level],False,False,False
+1870,weather,weather_query,factoid,what is the highest [weather_descriptor : temperature] of [place_name : delhi],True,False,False
+4603,weather,weather_query,factoid,tell me how many inches of [weather_descriptor : snow] did [place_name : new york city] get [date : today],False,False,False
+7309,weather,weather_query,factoid,what was the temperature when i was in the park,False,False,True
+3587,weather,weather_query,news_query,hit me up with the weather news,False,False,True
+7199,weather,weather_query,quirky,is it a good day to go to the [weather_descriptor : beach],True,False,True
+7198,weather,weather_query,quirky,are [weather_descriptor : sunglasses] a good choice for [date : today],True,False,False
+7145,weather,weather_query,quirky,do you recommend an [weather_descriptor : umbrella],True,False,False
+7092,weather,weather_query,quirky,should i plan to [weather_descriptor : shovel my way] out of the house,True,False,True
+7073,weather,weather_query,quirky,are [weather_descriptor : storms] likely [date : today],False,False,False
+6920,weather,weather_query,quirky,ask my friend hows the climate there,False,False,True
+6643,weather,weather_query,quirky,shall i change my car tyres to [weather_descriptor : snow tyres] soon,True,False,True
+6602,weather,weather_query,quirky,can i [weather_descriptor : dry my clothes on the line],True,False,True
+6118,weather,weather_query,quirky,how is the day [weather_descriptor : outwards],False,False,True
+6489,weather,weather_query,quirky,[weather_descriptor : temp] [place_name : chennai],False,False,True
+5981,weather,weather_query,quirky,[weather_descriptor : raincoat] needed for my bike driving,False,False,True
+4686,weather,weather_query,quirky,are there any [weather_descriptor : tornado] warnings [date : today],False,False,False
+2899,weather,weather_query,quirky,am i going to have to worry about the [weather_descriptor : snowplows burying my car] in the driveway [date : tuesday],False,False,True
+2253,weather,weather_query,quirky,what a [weather_descriptor : sunny] day,False,False,True
+773,weather,weather_query,quirky,how [weather_descriptor : humid] is the environment [date : today],False,False,False
+662,weather,weather_query,quirky,what are the chances of [weather_descriptor : snowfall] [date : this week],False,False,False
+6490,weather,weather_query,quirky,[weather_descriptor : temp] [place_name : oregon],False,False,True
+7661,weather,weather_query,quirky,global warming,False,False,True

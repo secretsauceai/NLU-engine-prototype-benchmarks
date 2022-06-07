@@ -1,0 +1,31 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+14287,recommendation,movies,datetime_query,what time does [movie_name : thor] start,False,False,False
+13842,recommendation,movies,events,can you tell me which [event_name : movie] is going on in the [place_name : nearby multiplex],False,False,False
+14285,recommendation,movies,factoid,when is [movie_name : trolls] playing,True,False,True
+14401,recommendation,movies,factoid,[movie_name : ocean eleven],False,False,True
+13920,recommendation,movies,factoid,what are the show times of [movie_name : logan],False,False,False
+14000,recommendation,movies,factoid,how is the new movie [movie_name : swat],False,False,False
+13994,recommendation,movies,factoid,what is the biggest [movie_type : blockbuster] [date : this week],False,False,False
+13963,recommendation,movies,factoid,show me theatre where [movie_name : pirates of caribbean] is playing,True,False,False
+16111,recommendation,movies,likeness,suggest movies and songs that i would like but that aren't necessarily like ones i've already said i like,False,False,True
+13962,recommendation,movies,locations,show me nearest [business_type : theatre],True,False,True
+14005,recommendation,movies,locations,[business_type : theaters] near to me,True,False,True
+14257,recommendation,movies,locations,recommend a [movie_type : romantic comedy] in me area,True,False,True
+14167,recommendation,movies,music,play a movie i'll like,False,False,True
+14075,recommendation,movies,music_query,what is playing at [place_name : amc twenty],False,False,False
+14400,recommendation,movies,quirky,[movie_name : kung fu panda three],False,False,True
+14203,recommendation,movies,quirky,what should i watch [date : today],True,False,True
+14202,recommendation,movies,quirky,can you suggest a good [movie_type : drama] for me to watch,False,False,False
+14187,recommendation,movies,quirky,can you tell me what movie has the best reviews,False,False,False
+7395,recommendation,movies,quirky,what film should i watch,False,False,False
+14055,recommendation,movies,quirky,i need a good [movie_name : chick flick] any thoughts,False,False,True
+14049,recommendation,movies,quirky,[movie_name : training day],False,False,True
+14402,recommendation,movies,quirky,[movie_name : fast and the furious],False,False,True
+14047,recommendation,movies,quirky,[movie_name : deadpool],False,False,True
+14035,recommendation,movies,quirky,what do you suggest that i watch [date : this weekend],False,False,True
+13964,recommendation,movies,quirky,show me best in class [business_type : theatre],False,False,True
+13955,recommendation,movies,quirky,do you have any suggestion [movie_type : action] movies,False,False,True
+7409,recommendation,movies,quirky,what is a good iranian film from [date : two thousand and sixteen],False,False,False
+14165,recommendation,movies,quirky,what's worth watching,False,False,True
+14048,recommendation,movies,quirky,[movie_name : logan],False,False,True
+13992,recommendation,movies,transport_query,Show times for nearest [business_type : theater],False,False,False

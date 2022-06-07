@@ -1,0 +1,7 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+24469,general,explain,definition,what do you mean.,False,False,False
+24897,general,explain,definition,what did you mean.,False,False,False
+24370,general,explain,negate,have you made a mistake.,False,False,True
+24731,general,explain,negate,did not understand it.,False,False,True
+24878,general,explain,negate,i do not understand it.,False,False,False
+24917,general,explain,negate,did you make a mistake.,False,False,True

@@ -1,0 +1,43 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+20316,email,email_query,calendar_query,what information do we have on the data breach,False,False,True
+20017,email,email_query,calendar_set,notify me when [relation : mom] sends me an email,False,False,False
+20431,email,email_query,calendar_set,i emailed [person : conrad] [date : a week ago] please remind me what i wrote,True,False,False
+20376,email,email_query,calendar_set,please send a notification when [person : john] replies,False,False,False
+19583,email,email_query,factoid,did [person : charlotte] responded,False,False,True
+19581,email,email_query,factoid,who mailed me [date : yesterday],False,False,False
+19550,email,email_query,factoid,who is the latest sender,False,False,True
+20190,email,email_query,factoid,has [person : ben] got in touch,False,False,False
+6412,email,email_query,music,play back the last message,False,False,True
+19396,email,email_query,news_query,give me notifications when i get any emails from [business_name : starbucks],False,False,False
+19166,email,email_query,news_query,any mails from [person : agnes],False,False,False
+20800,email,email_query,news_query,anything new,False,False,True
+20336,email,email_query,news_query,update outlook [email_folder : mailbox],False,False,False
+20313,email,email_query,querycontact,get contact,False,False,True
+20312,email,email_query,querycontact,find contact,False,False,True
+20673,email,email_query,quirky,search nandy,False,False,True
+20674,email,email_query,quirky,search nandy containing payment,False,False,True
+20315,email,email_query,quirky,compile information on the data breach,False,False,True
+20249,email,email_query,quirky,can you see what [person : andrew] emailed me about,False,False,False
+20423,email,email_query,quirky,[person : jane doe],False,False,True
+20808,email,email_query,quirky,did [person : bert] write me [date : today],False,False,False
+19530,email,email_query,quirky,physical education [person : drill marilyn],False,False,True
+19160,email,email_query,quirky,has [person : david] got back to me yet,False,False,True
+19732,email,email_query,quirky,what did the [business_name : clinic] say about my exams,False,False,True
+19346,email,email_query,quirky,if it is from a very familiar place mark it as important,False,False,True
+19641,email,email_query,quirky,tell me person a message,False,False,True
+19419,email,email_query,quirky,search [person : matthews] deadlines,False,False,True
+20430,email,email_query,recipe,tell me what i told [relation : mom] when we spoke of the recipe,False,False,True
+19344,email,email_query,sendemail,send a reply if it is very important,False,False,True
+19385,email,email_query,sendemail,open email,False,False,True
+20380,email,email_query,sendemail,my mail,False,False,True
+19517,email,email_query,sendemail,the email of office staff must be checked,False,False,True
+19779,email,email_query,sendemail,transcribe email content,False,False,True
+19557,email,email_query,sendemail,did [person : jack] send any emails,False,False,False
+19574,email,email_query,sendemail,do i have the reply from [person : charlotte] relating to [date : yesterdays] enquiry,False,False,True
+19718,email,email_query,sendemail,did anyone send me an email,False,False,False
+20281,email,email_query,sendemail,did [person : mike] send me an email,False,False,False
+19731,email,email_query,sendemail,tell me who send the email about the boss [date : yesterday],False,False,True
+20073,email,email_query,sendemail,olly find the new email address for [person : bill] that i added [date : friday],False,False,False
+20072,email,email_query,sendemail,i added a new email address for [person : joe] [date : yesterday] will you find it please,False,False,True
+20806,email,email_query,sendemail,did [person : rosa] ever reply to my email about the global warning meeting,True,False,False
+19977,email,email_query,sendemail,did my [relation : mom] send me an email,False,False,False

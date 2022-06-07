@@ -1,0 +1,91 @@
+{
+    "news_query": {
+        "f1_score": 0.82,
+        "total_count": 858,
+        "total_incorrect_count": 97,
+        "top_features": [
+            "news",
+            "headlines",
+            "trump",
+            "latest",
+            "happened",
+            "updates",
+            "update",
+            "cnn",
+            "happening",
+            "election"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "events",
+                "feature": "happening",
+                "coef": 4.320442544303426
+            },
+            {
+                "intent": "quirky",
+                "feature": "happened",
+                "coef": 2.3836146591370677
+            }
+        ],
+        "correct_utterance_example": [
+            "news_query",
+            "whats new in [place_name : london]",
+            [
+                [
+                    "whats",
+                    1.4710216293632603
+                ],
+                [
+                    "new",
+                    3.055301265462832
+                ],
+                [
+                    "in",
+                    1.2184833828724302
+                ],
+                [
+                    "london",
+                    0.11694070472608496
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "events",
+            "what's happening in [place_name : america]",
+            [
+                [
+                    "what's",
+                    0
+                ],
+                [
+                    "happening",
+                    3.362869330405067
+                ],
+                [
+                    "in",
+                    1.2184833828724302
+                ],
+                [
+                    "america",
+                    0.5633225556287924
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 43,
+            "factoid": 24,
+            "events": 7,
+            "calendar_query": 4,
+            "email_query": 3,
+            "datetime_query": 3,
+            "stock": 2,
+            "calendar_set": 2,
+            "social_query": 2,
+            "transport_query": 2,
+            "weather_query": 2,
+            "sendemail": 1,
+            "post": 1,
+            "lists_remove": 1
+        }
+    }
+}

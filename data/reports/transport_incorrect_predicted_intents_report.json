@@ -1,0 +1,555 @@
+{
+    "ticket": {
+        "f1_score": 0.85,
+        "total_count": 228,
+        "total_incorrect_count": 27,
+        "top_features": [
+            "ticket",
+            "train",
+            "book",
+            "tickets",
+            "to",
+            "seat",
+            "from",
+            "for",
+            "york",
+            "reserve"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "transport_query",
+                "feature": "train",
+                "coef": 10.450144043537986
+            },
+            {
+                "intent": "audiobook",
+                "feature": "book",
+                "coef": 6.267597339785556
+            },
+            {
+                "intent": "sendemail",
+                "feature": "to",
+                "coef": 5.6634614500234015
+            },
+            {
+                "intent": "transport_query",
+                "feature": "to",
+                "coef": 5.292640599693578
+            },
+            {
+                "intent": "email_query",
+                "feature": "from",
+                "coef": 4.7559698402841235
+            },
+            {
+                "intent": "taxi",
+                "feature": "book",
+                "coef": 4.337968308742918
+            },
+            {
+                "intent": "lists_remove",
+                "feature": "from",
+                "coef": 3.799224007832952
+            },
+            {
+                "intent": "order",
+                "feature": "from",
+                "coef": 2.7295873851596126
+            },
+            {
+                "intent": "createoradd",
+                "feature": "to",
+                "coef": 2.469903675301739
+            }
+        ],
+        "correct_utterance_example": [
+            "ticket",
+            "confirm a travel ticket to [place_name : german]",
+            [
+                [
+                    "confirm",
+                    0.2475331998803043
+                ],
+                [
+                    "a",
+                    0
+                ],
+                [
+                    "travel",
+                    0.7859870023224899
+                ],
+                [
+                    "ticket",
+                    8.380438920107446
+                ],
+                [
+                    "to",
+                    2.9956603916026583
+                ],
+                [
+                    "german",
+                    0.5269336764887201
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "quirky",
+            "cheapest flights to [place_name : kansas city] from [place_name : dallas]",
+            [
+                [
+                    "cheapest",
+                    1.024533906657997
+                ],
+                [
+                    "flights",
+                    0.5143828828877828
+                ],
+                [
+                    "to",
+                    2.9956603916026583
+                ],
+                [
+                    "kansas",
+                    0.41171338457447937
+                ],
+                [
+                    "city",
+                    1.0338297771994198
+                ],
+                [
+                    "from",
+                    1.5911258727550746
+                ],
+                [
+                    "dallas",
+                    0.6650149073710564
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "transport_query": 21,
+            "quirky": 2,
+            "sendemail": 1,
+            "calendar_set": 1,
+            "order": 1,
+            "factoid": 1
+        }
+    },
+    "transport_query": {
+        "f1_score": 0.78,
+        "total_count": 392,
+        "total_incorrect_count": 63,
+        "top_features": [
+            "train",
+            "directions",
+            "to",
+            "trains",
+            "route",
+            "direction",
+            "how",
+            "map",
+            "times",
+            "nearest"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "ticket",
+                "feature": "train",
+                "coef": 7.408535653477511
+            },
+            {
+                "intent": "sendemail",
+                "feature": "to",
+                "coef": 5.6634614500234015
+            },
+            {
+                "intent": "recipe",
+                "feature": "how",
+                "coef": 5.359146592489879
+            },
+            {
+                "intent": "locations",
+                "feature": "nearest",
+                "coef": 3.313655771102934
+            },
+            {
+                "intent": "maths",
+                "feature": "times",
+                "coef": 3.2585302173405912
+            },
+            {
+                "intent": "factoid",
+                "feature": "how",
+                "coef": 3.2172350048407865
+            },
+            {
+                "intent": "ticket",
+                "feature": "to",
+                "coef": 2.9956603916026583
+            },
+            {
+                "intent": "createoradd",
+                "feature": "to",
+                "coef": 2.469903675301739
+            },
+            {
+                "intent": "stock",
+                "feature": "how",
+                "coef": 2.3577338080379415
+            },
+            {
+                "intent": "traffic",
+                "feature": "route",
+                "coef": 2.1675766208148053
+            },
+            {
+                "intent": "traffic",
+                "feature": "how",
+                "coef": 2.056495371890321
+            }
+        ],
+        "correct_utterance_example": [
+            "transport_query",
+            "you need to give me different directions",
+            [
+                [
+                    "you",
+                    -1.2966990326740593
+                ],
+                [
+                    "need",
+                    -1.2958905560081024
+                ],
+                [
+                    "to",
+                    5.292640599693578
+                ],
+                [
+                    "give",
+                    1.184796119308677
+                ],
+                [
+                    "me",
+                    -0.4412194322105884
+                ],
+                [
+                    "different",
+                    0.3008401696710429
+                ],
+                [
+                    "directions",
+                    6.960922888525906
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "factoid",
+            "how far is [business_name : walmart] from here",
+            [
+                [
+                    "how",
+                    3.2483698217182515
+                ],
+                [
+                    "far",
+                    2.1718272905364238
+                ],
+                [
+                    "is",
+                    0.5012391585821752
+                ],
+                [
+                    "walmart",
+                    0.228447388831227
+                ],
+                [
+                    "from",
+                    2.485132673332194
+                ],
+                [
+                    "here",
+                    1.2959870193109366
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "ticket": 25,
+            "factoid": 12,
+            "quirky": 12,
+            "datetime_query": 4,
+            "locations": 4,
+            "traffic": 2,
+            "calendar_set": 1,
+            "radio": 1,
+            "createoradd": 1,
+            "weather_query": 1
+        }
+    },
+    "traffic": {
+        "f1_score": 0.89,
+        "total_count": 190,
+        "total_incorrect_count": 27,
+        "top_features": [
+            "traffic",
+            "road",
+            "accidents",
+            "there",
+            "long",
+            "route",
+            "drive",
+            "how",
+            "are",
+            "any"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "recipe",
+                "feature": "how",
+                "coef": 5.359146592489879
+            },
+            {
+                "intent": "email_query",
+                "feature": "any",
+                "coef": 4.427896700754445
+            },
+            {
+                "intent": "transport_query",
+                "feature": "route",
+                "coef": 4.231629514005531
+            },
+            {
+                "intent": "transport_query",
+                "feature": "how",
+                "coef": 3.2483698217182515
+            },
+            {
+                "intent": "factoid",
+                "feature": "how",
+                "coef": 3.2172350048407865
+            },
+            {
+                "intent": "stock",
+                "feature": "how",
+                "coef": 2.3577338080379415
+            },
+            {
+                "intent": "lists_query",
+                "feature": "are",
+                "coef": 2.1182583396780212
+            },
+            {
+                "intent": "alarm_query",
+                "feature": "there",
+                "coef": 1.7465083361596216
+            },
+            {
+                "intent": "alarm_query",
+                "feature": "are",
+                "coef": 1.744478716160788
+            }
+        ],
+        "correct_utterance_example": [
+            "traffic",
+            "just how bad is traffic on my commute",
+            [
+                [
+                    "just",
+                    -0.07130223711169285
+                ],
+                [
+                    "how",
+                    2.056495371890321
+                ],
+                [
+                    "bad",
+                    0.684428495402533
+                ],
+                [
+                    "is",
+                    1.0673848770422074
+                ],
+                [
+                    "traffic",
+                    13.531660118525995
+                ],
+                [
+                    "on",
+                    1.0088578399502233
+                ],
+                [
+                    "my",
+                    -0.5155570959700327
+                ],
+                [
+                    "commute",
+                    1.2779743645178379
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "quirky",
+            "how is my commute",
+            [
+                [
+                    "how",
+                    2.056495371890321
+                ],
+                [
+                    "is",
+                    1.0673848770422074
+                ],
+                [
+                    "my",
+                    -0.5155570959700327
+                ],
+                [
+                    "commute",
+                    1.2779743645178379
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 10,
+            "factoid": 5,
+            "transport_query": 5,
+            "weather_query": 3,
+            "calendar_query": 2,
+            "news_query": 1,
+            "definition": 1
+        }
+    },
+    "taxi": {
+        "f1_score": 0.94,
+        "total_count": 182,
+        "total_incorrect_count": 8,
+        "top_features": [
+            "taxi",
+            "uber",
+            "cab",
+            "book",
+            "ride",
+            "call",
+            "airport",
+            "an",
+            "car",
+            "find"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "audiobook",
+                "feature": "book",
+                "coef": 6.267597339785556
+            },
+            {
+                "intent": "ticket",
+                "feature": "book",
+                "coef": 5.15663285440982
+            },
+            {
+                "intent": "alarm_set",
+                "feature": "an",
+                "coef": 3.6453689733709713
+            },
+            {
+                "intent": "querycontact",
+                "feature": "call",
+                "coef": 3.210047601774373
+            },
+            {
+                "intent": "order",
+                "feature": "call",
+                "coef": 2.8932231072646863
+            }
+        ],
+        "correct_utterance_example": [
+            "taxi",
+            "book me a [transport_type : taxi] to [place_name : leith] in [time : half an hour]",
+            [
+                [
+                    "book",
+                    4.337968308742918
+                ],
+                [
+                    "me",
+                    1.6701653762571016
+                ],
+                [
+                    "a",
+                    0
+                ],
+                [
+                    "taxi",
+                    9.930142233311404
+                ],
+                [
+                    "to",
+                    1.549399528966538
+                ],
+                [
+                    "leith",
+                    0.16282248675233352
+                ],
+                [
+                    "in",
+                    0.5805812872522099
+                ],
+                [
+                    "half",
+                    0.41126996605099553
+                ],
+                [
+                    "an",
+                    2.519459713954873
+                ],
+                [
+                    "hour",
+                    1.0129812410290222
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "transport_query",
+            "call me a [transport_type : cab] to the [place_name : train station]",
+            [
+                [
+                    "call",
+                    3.1666981355009827
+                ],
+                [
+                    "me",
+                    1.6701653762571016
+                ],
+                [
+                    "a",
+                    0
+                ],
+                [
+                    "cab",
+                    5.678317483262975
+                ],
+                [
+                    "to",
+                    1.549399528966538
+                ],
+                [
+                    "the",
+                    -0.3540020605334049
+                ],
+                [
+                    "train",
+                    -0.8423464305378591
+                ],
+                [
+                    "station",
+                    0.23502552057162965
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 4,
+            "calendar_set": 2,
+            "transport_query": 1,
+            "factoid": 1
+        }
+    }
+}

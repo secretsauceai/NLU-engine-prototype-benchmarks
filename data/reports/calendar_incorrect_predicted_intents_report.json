@@ -1,0 +1,449 @@
+{
+    "calendar_query": {
+        "f1_score": 0.74,
+        "total_count": 988,
+        "total_incorrect_count": 168,
+        "top_features": [
+            "reminders",
+            "meetings",
+            "events",
+            "have",
+            "schedule",
+            "appointment",
+            "scheduled",
+            "pending",
+            "meeting",
+            "when"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "calendar_set",
+                "feature": "meeting",
+                "coef": 6.3455499741407655
+            },
+            {
+                "intent": "events",
+                "feature": "events",
+                "coef": 5.976844195327433
+            },
+            {
+                "intent": "calendar_remove",
+                "feature": "events",
+                "coef": 3.5042345119864677
+            },
+            {
+                "intent": "calendar_remove",
+                "feature": "appointment",
+                "coef": 3.361554024075529
+            },
+            {
+                "intent": "alarm_query",
+                "feature": "have",
+                "coef": 2.7576260278665075
+            }
+        ],
+        "correct_utterance_example": [
+            "calendar_query",
+            "check when the show starts",
+            [
+                [
+                    "check",
+                    1.5089255712524614
+                ],
+                [
+                    "when",
+                    3.75201666140938
+                ],
+                [
+                    "the",
+                    1.1627491446012914
+                ],
+                [
+                    "show",
+                    2.46417577066425
+                ],
+                [
+                    "starts",
+                    0.22246116857546164
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "datetime_query",
+            "please tell me current events for the [time : day]",
+            [
+                [
+                    "please",
+                    -2.1501313250041747
+                ],
+                [
+                    "tell",
+                    2.1307092613733123
+                ],
+                [
+                    "me",
+                    -0.7276013178840898
+                ],
+                [
+                    "current",
+                    -0.6599718999220193
+                ],
+                [
+                    "events",
+                    4.94757491833756
+                ],
+                [
+                    "for",
+                    0.5789355139901983
+                ],
+                [
+                    "the",
+                    1.1627491446012914
+                ],
+                [
+                    "day",
+                    0.4131013026842083
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "calendar_set": 63,
+            "quirky": 27,
+            "datetime_query": 19,
+            "factoid": 19,
+            "events": 9,
+            "weather_query": 7,
+            "news_query": 6,
+            "lists_query": 5,
+            "calendar_remove": 4,
+            "social_query": 2,
+            "music_query": 1,
+            "definition": 1,
+            "maths": 1,
+            "music": 1,
+            "transport_query": 1,
+            "confirm": 1,
+            "movies": 1
+        }
+    },
+    "calendar_set": {
+        "f1_score": 0.87,
+        "total_count": 1421,
+        "total_incorrect_count": 65,
+        "top_features": [
+            "remind",
+            "meeting",
+            "reminder",
+            "add",
+            "event",
+            "with",
+            "set",
+            "calendar",
+            "birthday",
+            "at"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "createoradd",
+                "feature": "add",
+                "coef": 6.345721025084366
+            },
+            {
+                "intent": "addcontact",
+                "feature": "add",
+                "coef": 5.564157294229778
+            },
+            {
+                "intent": "calendar_remove",
+                "feature": "calendar",
+                "coef": 5.456741461909264
+            },
+            {
+                "intent": "alarm_set",
+                "feature": "set",
+                "coef": 4.108843759635414
+            },
+            {
+                "intent": "alarm_set",
+                "feature": "at",
+                "coef": 3.9763616554950962
+            },
+            {
+                "intent": "game",
+                "feature": "with",
+                "coef": 3.803299932960284
+            },
+            {
+                "intent": "calendar_query",
+                "feature": "meeting",
+                "coef": 3.7874233804427013
+            },
+            {
+                "intent": "alarm_query",
+                "feature": "set",
+                "coef": 3.52740474109228
+            },
+            {
+                "intent": "events",
+                "feature": "event",
+                "coef": 3.497239175123251
+            },
+            {
+                "intent": "calendar_remove",
+                "feature": "event",
+                "coef": 3.4809103230599496
+            }
+        ],
+        "correct_utterance_example": [
+            "calendar_set",
+            "remind me if anything else happens",
+            [
+                [
+                    "remind",
+                    9.86892076327593
+                ],
+                [
+                    "me",
+                    2.1054873056321126
+                ],
+                [
+                    "if",
+                    0.3874350397405104
+                ],
+                [
+                    "anything",
+                    -0.9251685079562557
+                ],
+                [
+                    "else",
+                    0.023329158659521274
+                ],
+                [
+                    "happens",
+                    0.6840457940124256
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "weather_query",
+            "set notifications on the current [event_name : weather disasters] in [place_name : america]",
+            [
+                [
+                    "set",
+                    4.485994671320346
+                ],
+                [
+                    "notifications",
+                    0.5138450065946023
+                ],
+                [
+                    "on",
+                    2.6534656075648364
+                ],
+                [
+                    "the",
+                    -1.2698771011869918
+                ],
+                [
+                    "current",
+                    -0.8568616816462878
+                ],
+                [
+                    "weather",
+                    -1.4508702651197958
+                ],
+                [
+                    "disasters",
+                    0.5191598645138603
+                ],
+                [
+                    "in",
+                    1.4245024467096423
+                ],
+                [
+                    "america",
+                    0.23107104837598655
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "calendar_query": 32,
+            "quirky": 11,
+            "weather_query": 5,
+            "factoid": 3,
+            "sendemail": 2,
+            "likeness": 2,
+            "news_query": 2,
+            "social_query": 1,
+            "lists_query": 1,
+            "volume_mute": 1,
+            "querycontact": 1,
+            "datetime_query": 1,
+            "alarm_set": 1,
+            "music": 1,
+            "post": 1
+        }
+    },
+    "calendar_remove": {
+        "f1_score": 0.91,
+        "total_count": 526,
+        "total_incorrect_count": 36,
+        "top_features": [
+            "delete",
+            "remove",
+            "clear",
+            "calendar",
+            "cancel",
+            "erase",
+            "all",
+            "events",
+            "event",
+            "appointment"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "lists_remove",
+                "feature": "remove",
+                "coef": 7.891740024626747
+            },
+            {
+                "intent": "lists_remove",
+                "feature": "delete",
+                "coef": 6.952396920134012
+            },
+            {
+                "intent": "commandstop",
+                "feature": "cancel",
+                "coef": 6.586560003727831
+            },
+            {
+                "intent": "events",
+                "feature": "events",
+                "coef": 5.976844195327433
+            },
+            {
+                "intent": "calendar_set",
+                "feature": "event",
+                "coef": 5.521119161500326
+            },
+            {
+                "intent": "alarm_remove",
+                "feature": "remove",
+                "coef": 5.359064403911576
+            },
+            {
+                "intent": "explain",
+                "feature": "clear",
+                "coef": 4.974289711111267
+            },
+            {
+                "intent": "calendar_query",
+                "feature": "events",
+                "coef": 4.94757491833756
+            },
+            {
+                "intent": "calendar_set",
+                "feature": "calendar",
+                "coef": 4.470810179372287
+            },
+            {
+                "intent": "calendar_query",
+                "feature": "appointment",
+                "coef": 4.0800878777766565
+            },
+            {
+                "intent": "events",
+                "feature": "event",
+                "coef": 3.497239175123251
+            },
+            {
+                "intent": "commandstop",
+                "feature": "all",
+                "coef": 3.492491539033123
+            },
+            {
+                "intent": "alarm_remove",
+                "feature": "cancel",
+                "coef": 3.2256674655709165
+            },
+            {
+                "intent": "lists_remove",
+                "feature": "erase",
+                "coef": 2.52651789448824
+            },
+            {
+                "intent": "alarm_remove",
+                "feature": "delete",
+                "coef": 2.45826182125498
+            },
+            {
+                "intent": "lists_remove",
+                "feature": "clear",
+                "coef": 2.377558143667708
+            }
+        ],
+        "correct_utterance_example": [
+            "calendar_remove",
+            "deleting calendar events",
+            [
+                [
+                    "deleting",
+                    0.6243707803394614
+                ],
+                [
+                    "calendar",
+                    5.456741461909264
+                ],
+                [
+                    "events",
+                    3.5042345119864677
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "calendar_query",
+            "free up my schedule for the [date : next week]",
+            [
+                [
+                    "free",
+                    0.5749714057211709
+                ],
+                [
+                    "up",
+                    -0.1393265255768923
+                ],
+                [
+                    "my",
+                    2.4449651078314636
+                ],
+                [
+                    "schedule",
+                    1.2321319303424252
+                ],
+                [
+                    "for",
+                    1.162201177850215
+                ],
+                [
+                    "the",
+                    1.2533797793226689
+                ],
+                [
+                    "next",
+                    2.257894351058722
+                ],
+                [
+                    "week",
+                    0.5449734551356945
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "calendar_set": 20,
+            "calendar_query": 12,
+            "negate": 2,
+            "lists_query": 1,
+            "weather_query": 1
+        }
+    }
+}

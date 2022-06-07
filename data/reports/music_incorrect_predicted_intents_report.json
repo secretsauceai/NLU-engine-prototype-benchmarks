@@ -1,0 +1,572 @@
+{
+    "likeness": {
+        "f1_score": 0.0,
+        "total_count": 180,
+        "total_incorrect_count": 70,
+        "top_features": [
+            "song",
+            "save",
+            "like",
+            "music",
+            "love",
+            "this",
+            "songs",
+            "favorites",
+            "favorite",
+            "opinion"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "music_query",
+                "feature": "song",
+                "coef": 7.4525102504541785
+            },
+            {
+                "intent": "music",
+                "feature": "song",
+                "coef": 5.831677494613585
+            },
+            {
+                "intent": "music",
+                "feature": "music",
+                "coef": 5.710854137655776
+            },
+            {
+                "intent": "music_query",
+                "feature": "music",
+                "coef": 5.573489496235007
+            },
+            {
+                "intent": "music",
+                "feature": "songs",
+                "coef": 4.525157456313475
+            },
+            {
+                "intent": "dislikeness",
+                "feature": "song",
+                "coef": 4.125530000432767
+            },
+            {
+                "intent": "settings",
+                "feature": "song",
+                "coef": 3.988794339529781
+            },
+            {
+                "intent": "settings",
+                "feature": "music",
+                "coef": 2.909565590370098
+            },
+            {
+                "intent": "addcontact",
+                "feature": "save",
+                "coef": 2.8150754387817902
+            },
+            {
+                "intent": "music_query",
+                "feature": "this",
+                "coef": 2.8023603225145757
+            },
+            {
+                "intent": "dislikeness",
+                "feature": "this",
+                "coef": 2.7585683093958764
+            },
+            {
+                "intent": "settings",
+                "feature": "songs",
+                "coef": 1.7421164166372702
+            },
+            {
+                "intent": "dislikeness",
+                "feature": "like",
+                "coef": 1.6013071658959344
+            }
+        ],
+        "correct_utterance_example": [
+            "likeness",
+            "i like [artist_name : senatra] songs",
+            [
+                [
+                    "i",
+                    0
+                ],
+                [
+                    "like",
+                    4.734716487800005
+                ],
+                [
+                    "senatra",
+                    0.6974374967419702
+                ],
+                [
+                    "songs",
+                    2.5752785948946793
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "music",
+            "i like [music_genre : rock] music",
+            [
+                [
+                    "i",
+                    0
+                ],
+                [
+                    "like",
+                    4.734716487800005
+                ],
+                [
+                    "rock",
+                    2.2102031526390764
+                ],
+                [
+                    "music",
+                    3.9330863056503427
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "music": 33,
+            "quirky": 16,
+            "music_query": 6,
+            "radio": 4,
+            "calendar_set": 3,
+            "factoid": 2,
+            "createoradd": 1,
+            "praise": 1,
+            "post": 1,
+            "weather_query": 1,
+            "repeat": 1,
+            "currency": 1
+        }
+    },
+    "settings": {
+        "f1_score": 0.42,
+        "total_count": 77,
+        "total_incorrect_count": 40,
+        "top_features": [
+            "shuffle",
+            "repeat",
+            "song",
+            "music",
+            "skip",
+            "musics",
+            "settings",
+            "track",
+            "player",
+            "songs"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "music_query",
+                "feature": "song",
+                "coef": 7.4525102504541785
+            },
+            {
+                "intent": "likeness",
+                "feature": "song",
+                "coef": 6.571785954678682
+            },
+            {
+                "intent": "music",
+                "feature": "song",
+                "coef": 5.831677494613585
+            },
+            {
+                "intent": "music",
+                "feature": "music",
+                "coef": 5.710854137655776
+            },
+            {
+                "intent": "music_query",
+                "feature": "music",
+                "coef": 5.573489496235007
+            },
+            {
+                "intent": "repeat",
+                "feature": "repeat",
+                "coef": 4.932141563241951
+            },
+            {
+                "intent": "music",
+                "feature": "songs",
+                "coef": 4.525157456313475
+            },
+            {
+                "intent": "dislikeness",
+                "feature": "song",
+                "coef": 4.125530000432767
+            },
+            {
+                "intent": "likeness",
+                "feature": "music",
+                "coef": 3.9330863056503427
+            },
+            {
+                "intent": "volume_other",
+                "feature": "settings",
+                "coef": 3.1341416616083153
+            },
+            {
+                "intent": "podcasts",
+                "feature": "skip",
+                "coef": 2.8208683258259972
+            },
+            {
+                "intent": "likeness",
+                "feature": "songs",
+                "coef": 2.5752785948946793
+            }
+        ],
+        "correct_utterance_example": [
+            "settings",
+            "[player_setting : shuffle] this playlist",
+            [
+                [
+                    "shuffle",
+                    6.609681338510648
+                ],
+                [
+                    "this",
+                    0.8884274278500331
+                ],
+                [
+                    "playlist",
+                    0.7611718454412996
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "quirky",
+            "[player_setting : loop] this track",
+            [
+                [
+                    "loop",
+                    0.6969334197658386
+                ],
+                [
+                    "this",
+                    0.8884274278500331
+                ],
+                [
+                    "track",
+                    1.7881815646805328
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "music": 22,
+            "repeat": 4,
+            "quirky": 3,
+            "music_query": 3,
+            "calendar_set": 3,
+            "radio": 2,
+            "likeness": 1,
+            "volume_up": 1,
+            "factoid": 1
+        }
+    },
+    "dislikeness": {
+        "f1_score": 0.0,
+        "total_count": 25,
+        "total_incorrect_count": 25,
+        "top_features": [
+            "song",
+            "don",
+            "this",
+            "like",
+            "hate",
+            "not",
+            "that",
+            "again",
+            "never",
+            "remember"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "repeat",
+                "feature": "again",
+                "coef": 7.736056878009805
+            },
+            {
+                "intent": "music_query",
+                "feature": "song",
+                "coef": 7.4525102504541785
+            },
+            {
+                "intent": "negate",
+                "feature": "not",
+                "coef": 7.33357569164424
+            },
+            {
+                "intent": "likeness",
+                "feature": "song",
+                "coef": 6.571785954678682
+            },
+            {
+                "intent": "music",
+                "feature": "song",
+                "coef": 5.831677494613585
+            },
+            {
+                "intent": "explain",
+                "feature": "not",
+                "coef": 4.843456387942326
+            },
+            {
+                "intent": "likeness",
+                "feature": "like",
+                "coef": 4.734716487800005
+            },
+            {
+                "intent": "settings",
+                "feature": "song",
+                "coef": 3.988794339529781
+            },
+            {
+                "intent": "praise",
+                "feature": "that",
+                "coef": 3.9845513632136904
+            },
+            {
+                "intent": "music_query",
+                "feature": "this",
+                "coef": 2.8023603225145757
+            },
+            {
+                "intent": "likeness",
+                "feature": "this",
+                "coef": 2.8000130813644626
+            }
+        ],
+        "correct_utterance_example": [
+            "dislikeness",
+            "There are no correct utterances!",
+            [
+                [
+                    "There",
+                    0
+                ],
+                [
+                    "are",
+                    -0.2284694566072052
+                ],
+                [
+                    "no",
+                    -0.11884652986097721
+                ],
+                [
+                    "correct",
+                    -0.1576654562725546
+                ],
+                [
+                    "utterances!",
+                    0
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "negate",
+            "i don't like it",
+            [
+                [
+                    "i",
+                    0
+                ],
+                [
+                    "don't",
+                    0
+                ],
+                [
+                    "like",
+                    1.6013071658959344
+                ],
+                [
+                    "it",
+                    0.631631327890586
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "likeness": 11,
+            "music": 8,
+            "music_query": 4,
+            "negate": 1,
+            "quirky": 1
+        }
+    },
+    "music_query": {
+        "f1_score": 0.75,
+        "total_count": 269,
+        "total_incorrect_count": 58,
+        "top_features": [
+            "song",
+            "music",
+            "who",
+            "playing",
+            "name",
+            "what",
+            "singer",
+            "artist",
+            "this",
+            "title"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "likeness",
+                "feature": "song",
+                "coef": 6.571785954678682
+            },
+            {
+                "intent": "music",
+                "feature": "song",
+                "coef": 5.831677494613585
+            },
+            {
+                "intent": "music",
+                "feature": "music",
+                "coef": 5.710854137655776
+            },
+            {
+                "intent": "definition",
+                "feature": "what",
+                "coef": 5.207311958926891
+            },
+            {
+                "intent": "dislikeness",
+                "feature": "song",
+                "coef": 4.125530000432767
+            },
+            {
+                "intent": "settings",
+                "feature": "song",
+                "coef": 3.988794339529781
+            },
+            {
+                "intent": "likeness",
+                "feature": "music",
+                "coef": 3.9330863056503427
+            },
+            {
+                "intent": "factoid",
+                "feature": "who",
+                "coef": 3.613066234987897
+            },
+            {
+                "intent": "movies",
+                "feature": "playing",
+                "coef": 3.5360371164950046
+            },
+            {
+                "intent": "lists_query",
+                "feature": "what",
+                "coef": 3.4545164944064553
+            },
+            {
+                "intent": "settings",
+                "feature": "music",
+                "coef": 2.909565590370098
+            },
+            {
+                "intent": "likeness",
+                "feature": "this",
+                "coef": 2.8000130813644626
+            },
+            {
+                "intent": "dislikeness",
+                "feature": "this",
+                "coef": 2.7585683093958764
+            },
+            {
+                "intent": "audiobook",
+                "feature": "playing",
+                "coef": 2.644200878305206
+            },
+            {
+                "intent": "movies",
+                "feature": "what",
+                "coef": 1.9465082310531763
+            }
+        ],
+        "correct_utterance_example": [
+            "music_query",
+            "what's the band is playing now",
+            [
+                [
+                    "what's",
+                    0
+                ],
+                [
+                    "the",
+                    0.8669615558726417
+                ],
+                [
+                    "band",
+                    2.246077689309713
+                ],
+                [
+                    "is",
+                    1.8819097193442709
+                ],
+                [
+                    "playing",
+                    4.369195312214996
+                ],
+                [
+                    "now",
+                    0.8844798079684109
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "quirky",
+            "what music do i usually like after work",
+            [
+                [
+                    "what",
+                    3.2986770858126016
+                ],
+                [
+                    "music",
+                    5.573489496235007
+                ],
+                [
+                    "do",
+                    1.5936671598973864
+                ],
+                [
+                    "i",
+                    0
+                ],
+                [
+                    "usually",
+                    1.0449454443940382
+                ],
+                [
+                    "like",
+                    -0.7847989748349697
+                ],
+                [
+                    "after",
+                    -0.20433099165909693
+                ],
+                [
+                    "work",
+                    0.015796153520495255
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "music": 25,
+            "quirky": 12,
+            "factoid": 9,
+            "radio": 4,
+            "lists_query": 3,
+            "settings": 2,
+            "locations": 1,
+            "weather_query": 1,
+            "querycontact": 1
+        }
+    }
+}

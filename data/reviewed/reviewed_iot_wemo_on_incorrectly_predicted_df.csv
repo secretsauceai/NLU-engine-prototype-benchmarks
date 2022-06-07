@@ -1,0 +1,14 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+1465,iot,wemo_on,calendar_set,make the socket available for me,False,False,True
+1899,iot,wemo_on,hue_lightoff,turn on when plugged in else turn off,False,False,True
+5153,iot,wemo_on,hue_lightoff,turn on [house_place : kitchen] light,False,False,True
+16183,iot,wemo_on,music,start the oven,False,False,True
+4080,iot,wemo_on,news_query,times clapping sound times,False,False,True
+5730,iot,wemo_on,news_query,on all the button on dashboard,False,False,True
+2097,iot,wemo_on,quirky,power yourself on,False,False,True
+3807,iot,wemo_on,quirky,please turn on my door lock,False,False,True
+7181,iot,wemo_on,quirky,[device_type : outlet] on,True,False,False
+16182,iot,wemo_on,quirky,start the laundry,False,False,True
+5155,iot,wemo_on,radio,turn on [house_place : living room] radio,True,False,False
+373,iot,wemo_on,wemo_off,switch the [device_type : smart plug] socket on,True,False,False
+415,iot,wemo_on,wemo_off,power up the [device_type : plug socket one],False,False,True

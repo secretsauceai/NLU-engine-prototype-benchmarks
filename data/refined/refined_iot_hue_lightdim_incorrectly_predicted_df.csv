@@ -1,0 +1,16 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+6517,iot,hue_lightdim,events,switch light [change_amount : to lowest level] in [house_place : dining area],False,False,False
+2351,iot,hue_lightdim,hue_lightchange,color of light should be dimmed bright,False,False,True
+4654,iot,hue_lightdim,hue_lightchange,make the lights [change_amount : a little] dimmer,False,False,False
+6475,iot,hue_lightdim,hue_lightchange,lessen the the light glow,False,False,True
+732,iot,hue_lightdim,hue_lightup,i want the lights less brighter,False,False,True
+733,iot,hue_lightdim,hue_lightup,please lights less brighter,False,False,True
+141,iot,hue_lightdim,quirky,decrease brightness,False,False,True
+2026,iot,hue_lightdim,quirky,its too bright in here,False,False,True
+2027,iot,hue_lightdim,quirky,i would love a less bright up room,False,False,True
+2062,iot,hue_lightdim,quirky,give me low lighting in the [house_place : kitchen],False,False,False
+3290,iot,hue_lightdim,quirky,nighttime mode,False,False,True
+3705,iot,hue_lightdim,quirky,decrease lighting,False,False,True
+4085,iot,hue_lightdim,quirky,this is too bright,False,False,True
+6494,iot,hue_lightdim,quirky,darken,False,False,True
+17,iot,hue_lightdim,recipe,make a [house_place : room] darker,False,False,True

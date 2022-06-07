@@ -1,0 +1,66 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+10343,calendar,calendar_set,alarm_set,set the alarm in my calendar events [time : before five mins],False,False,True
+9587,calendar,calendar_set,calendar_query,tell me when this [event_name : meeting] is coming up,False,False,True
+10369,calendar,calendar_set,calendar_query,do i need to be reminded of any [event_name : meetings] on [date : monday],False,False,True
+10648,calendar,calendar_set,calendar_query,show [event_name : meetings],False,False,True
+9183,calendar,calendar_set,calendar_query,tell me when my next [event_name : doctors appointment] is,False,False,True
+9185,calendar,calendar_set,calendar_query,tell me when i have a [event_name : work meeting] [date : coming up],False,False,True
+9334,calendar,calendar_set,calendar_query,tell me when i have an event,False,False,True
+9413,calendar,calendar_set,calendar_query,when is my [event_name : husband's birthday] [date : this year],False,False,True
+9458,calendar,calendar_set,calendar_query,when is my [event_name : meeting],False,False,True
+9574,calendar,calendar_set,calendar_query,tell me when my next [event_name : meeting] is,False,False,True
+18330,calendar,calendar_set,calendar_query,please schedule all my [event_name : doctors appointments],False,False,False
+10644,calendar,calendar_set,calendar_query,do events,False,False,True
+10073,calendar,calendar_set,calendar_query,do i have any available time for a [event_name : doctor's appointment] on [event_name : tuesday] [timeofday : morning],False,False,True
+10615,calendar,calendar_set,calendar_query,just set me reminders about [event_name : pending bill payments],False,False,True
+10551,calendar,calendar_set,calendar_query,give me the list of all events coming up in the [date : next month] and set notifications for all of them,False,False,True
+10368,calendar,calendar_set,calendar_query,let me know when my [event_name : meetings] are on [date : monday],False,False,True
+8976,calendar,calendar_set,calendar_query,list out the upcoming [event_name : meeting],False,False,True
+8968,calendar,calendar_set,calendar_query,tell me when my [relation : moms] [event_name : birthday] is,False,False,True
+10649,calendar,calendar_set,calendar_query,[event_name : meetings],False,False,True
+10833,calendar,calendar_set,calendar_query,show me the events in my [event_name : work] calendar for [date : next week],False,False,True
+7576,calendar,calendar_set,calendar_query,reminders,False,False,True
+16070,calendar,calendar_set,calendar_query,tell me when i should leave for a scheduled event so that i am on time,False,False,True
+8145,calendar,calendar_set,calendar_query,can i know what i have to do the next [date : saturday] at [time : six pm],False,False,True
+8227,calendar,calendar_set,calendar_query,reminders for [event_name : card payments],False,False,True
+8228,calendar,calendar_set,calendar_query,reminders for [event_name : doctor visit],False,False,True
+8308,calendar,calendar_set,calendar_query,let me know when my [event_name : phone] is due,False,False,True
+8955,calendar,calendar_set,calendar_query,what is on my calendar for [date : today],False,False,True
+10776,calendar,calendar_set,calendar_query,plan a [event_name : meeting] [date : tomorrow] [timeofday : morning],False,False,False
+10550,calendar,calendar_set,calendar_query,what are the events coming up soon,False,False,True
+10766,calendar,calendar_set,calendar_query,[date : day after tomorrow] will conduct [event_name : all] [event_name : meetings],False,False,True
+10763,calendar,calendar_set,calendar_query,[date : next month] my [event_name : brothers birthday],False,False,True
+10735,calendar,calendar_set,calendar_query,tell me when the event is happening,False,False,True
+10717,calendar,calendar_set,calendar_query,[event_name : upcoming events] in calendar,False,False,True
+9620,calendar,calendar_set,datetime_query,countdown for time,False,False,True
+8694,calendar,calendar_set,factoid,the location is my [place_name : office],False,False,True
+10008,calendar,calendar_set,factoid,tell me later about,False,False,True
+8853,calendar,calendar_set,factoid,[event_name : date of joining],False,False,True
+8379,calendar,calendar_set,likeness,save this event,False,False,True
+9376,calendar,calendar_set,likeness,save [timeofday : this afternoon] for my date,False,False,True
+8954,calendar,calendar_set,lists_query,give me my to do list for [date : today],False,False,True
+10861,calendar,calendar_set,music,i would ask it to play the beep sound continuously,False,False,True
+9240,calendar,calendar_set,news_query,give me an update on the [event_name : election] in [time : one hour],False,False,True
+9239,calendar,calendar_set,news_query,please give me an update on the [event_name : election] every [time : thirty minutes],False,False,True
+18840,calendar,calendar_set,post,remind me to [media_type : tweet] at this company,False,False,True
+9118,calendar,calendar_set,querycontact,call [person : sarah],False,False,True
+10532,calendar,calendar_set,quirky,please make me updated about [date : today's] scenario,False,False,True
+17875,calendar,calendar_set,quirky,i want my to find free movies online for me,False,False,True
+17874,calendar,calendar_set,quirky,i want my to tell me when a new anime season will come out,False,False,True
+7621,calendar,calendar_set,quirky,[date : today] needs to be marked as [event_name : my cheat day],False,False,False
+8435,calendar,calendar_set,quirky,can you give me a [time : ten minute] timer,False,False,False
+8831,calendar,calendar_set,quirky,tell person a i want meet him [date : today],False,False,True
+8852,calendar,calendar_set,quirky,[event_name : marriage day],False,False,True
+8728,calendar,calendar_set,quirky,[event_name : date with love] the [date : next day],False,False,True
+9599,calendar,calendar_set,quirky,tell me to go to the grocery store after work,False,False,True
+10554,calendar,calendar_set,quirky,[person : hayathis] [event_name : daughter baby shower],False,False,True
+10281,calendar,calendar_set,quirky,flag [date : two days after today] as [event_name : my holiday],False,False,False
+8677,calendar,calendar_set,sendemail,send a notification to [event_name : friend],False,False,True
+7921,calendar,calendar_set,sendemail,remind me to send that [event_name : email] later,False,False,False
+8509,calendar,calendar_set,social_query,notify me about [event_name : birthdays] of all my [media_type : facebook] [relation : friends],False,False,True
+9117,calendar,calendar_set,volume_mute,i've got a [event_name : meeting] by [timeofday : tonight] [time : seven pm] please mute the music for [time : an hour],False,False,True
+10425,calendar,calendar_set,weather_query,please tell me to [event_name : take my umbrella] because it will be very hot [date : today],False,False,True
+10277,calendar,calendar_set,weather_query,i need to get [event_name : groceries] [date : tomorrow],False,False,True
+10859,calendar,calendar_set,weather_query,i am going [date : tomorrow] for a [event_name : function],False,False,True
+10424,calendar,calendar_set,weather_query,i want you to remind me to [event_name : take my rain coat] because it may rain,False,False,True
+5528,calendar,calendar_set,weather_query,set notifications on the current [event_name : weather disasters] in [place_name : america],False,False,True

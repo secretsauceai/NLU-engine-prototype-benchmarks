@@ -1,0 +1,21 @@
+,scenario,intent,predicted_label,answer_annotation,review,move,remove
+11,iot,hue_lighton,factoid,and the darkness has fallen,False,False,True
+3766,iot,hue_lighton,hue_lightchange,can you put the lights on the high setting,False,False,True
+6681,iot,hue_lighton,hue_lightchange,switch on light,False,False,True
+2734,iot,hue_lighton,hue_lightchange,i want to turn on the [device_type : blue lights],False,False,False
+5791,iot,hue_lighton,hue_lightoff,turn [house_place : corner] light on,False,False,False
+258,iot,hue_lighton,hue_lightup,light up the lights in the [house_place : kitchen],False,False,True
+469,iot,hue_lighton,hue_lightup,lights out,False,False,True
+2467,iot,hue_lighton,hue_lightup,turn the lights on brighter,False,False,True
+5210,iot,hue_lighton,hue_lightup,turn the lights on full bright,False,False,True
+285,iot,hue_lighton,quirky,it's too dark here,False,False,True
+2353,iot,hue_lighton,quirky,It's too dark in here,False,False,True
+238,iot,hue_lighton,quirky,it's awfully dark here,False,False,True
+2811,iot,hue_lighton,quirky,clap on,False,False,True
+190,iot,hue_lighton,quirky,and the light began,False,False,True
+240,iot,hue_lighton,quirky,it's too dark i can't even see my hands,False,False,True
+7201,iot,hue_lighton,quirky,i can't see anything,False,False,True
+3215,iot,hue_lighton,radio,turn on the [device_type : lamp],False,False,False
+3117,iot,hue_lighton,weather_query,it's dark in the [house_place : living room],False,False,True
+4327,iot,hue_lighton,weather_query,it is dark,False,False,True
+5790,iot,hue_lighton,weather_query,it's dark in here,False,False,True

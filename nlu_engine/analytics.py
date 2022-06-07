@@ -1,5 +1,7 @@
 import time
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
 
 from sklearn.metrics import classification_report
 from sklearn.model_selection import cross_val_predict
@@ -64,3 +66,27 @@ class Analytics:
         df.index = df.index.set_names(['entity-type'])
         df = df.reset_index()
         return df
+
+    @staticmethod
+    def plot_report(report_df):
+        """
+            Plots the classification report for the intent classifier.
+        """
+        benchmark_df = report_df.drop(report_df.tail(3).index)
+        label = report_df.columns[0]
+        graph_report_df = benchmark_df.sort_values(
+            by='f1-score', ascending=True)
+        y_axis = np.arange(len(graph_report_df[label]))
+        fig, ax = plt.subplots()
+        ax.barh(y_axis, graph_report_df['f1-score'],
+                align='center', color='green', ecolor='black')
+        fig.set_figheight(16)
+        fig.set_figwidth(13)
+        ax.set_title(f'f1-scores by {label}', fontsize=24)
+        ax.set_xlabel("f1-score", fontsize=18)
+        ax.tick_params(axis='x', labelsize=18)
+        ax.set_ylabel(label, fontsize=18)
+        ax.set_yticks(y_axis, graph_report_df[label], fontsize=16)
+        fig.tight_layout()
+        fig.savefig(f'data/reports/{label}_report_graph.png')
+        plt.show()

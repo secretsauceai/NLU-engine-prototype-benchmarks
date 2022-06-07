@@ -36,3 +36,4 @@
 6559,alarm,alarm_query,IRR,then tap ok,quirky,False,False,True
 5074,alarm,alarm_query,nan,can you tell me about the alarm called bed,quirky,False,False,True
 2037,alarm,alarm_query,nan,when does my alarm go off,takeaway_query,False,False,False
+4616,alarm,alarm_query,nan,remind me about my alarms [date : today],calendar_set,False,False,True

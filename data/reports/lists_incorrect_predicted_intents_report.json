@@ -1,0 +1,490 @@
+{
+    "lists_remove": {
+        "f1_score": 0.89,
+        "total_count": 313,
+        "total_incorrect_count": 29,
+        "top_features": [
+            "list",
+            "remove",
+            "delete",
+            "item",
+            "from",
+            "rid",
+            "take",
+            "erase",
+            "clear",
+            "trash"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "lists_query",
+                "feature": "list",
+                "coef": 9.627133810569084
+            },
+            {
+                "intent": "createoradd",
+                "feature": "list",
+                "coef": 8.58258785303722
+            },
+            {
+                "intent": "calendar_remove",
+                "feature": "delete",
+                "coef": 8.530851319752372
+            },
+            {
+                "intent": "calendar_remove",
+                "feature": "remove",
+                "coef": 7.309990837754691
+            },
+            {
+                "intent": "calendar_remove",
+                "feature": "clear",
+                "coef": 6.042894784213621
+            },
+            {
+                "intent": "alarm_remove",
+                "feature": "remove",
+                "coef": 5.359064403911542
+            },
+            {
+                "intent": "explain",
+                "feature": "clear",
+                "coef": 4.974289711111284
+            },
+            {
+                "intent": "email_query",
+                "feature": "from",
+                "coef": 4.7559698402841235
+            },
+            {
+                "intent": "calendar_remove",
+                "feature": "erase",
+                "coef": 4.450608195804293
+            },
+            {
+                "intent": "createoradd",
+                "feature": "item",
+                "coef": 3.0145766479971825
+            },
+            {
+                "intent": "takeaway_query",
+                "feature": "take",
+                "coef": 2.806289603357
+            },
+            {
+                "intent": "order",
+                "feature": "from",
+                "coef": 2.7295873851596126
+            },
+            {
+                "intent": "alarm_remove",
+                "feature": "delete",
+                "coef": 2.45826182125497
+            },
+            {
+                "intent": "alarm_remove",
+                "feature": "rid",
+                "coef": 1.664302719551906
+            },
+            {
+                "intent": "ticket",
+                "feature": "from",
+                "coef": 1.5911258727550746
+            }
+        ],
+        "correct_utterance_example": [
+            "lists_remove",
+            "remove grocery shopping from my [list_name : to do] list on [date : sunday]",
+            [
+                [
+                    "remove",
+                    7.891740024626676
+                ],
+                [
+                    "grocery",
+                    1.2261843929575906
+                ],
+                [
+                    "shopping",
+                    1.468063027438408
+                ],
+                [
+                    "from",
+                    3.799224007832952
+                ],
+                [
+                    "my",
+                    -0.27506689476021
+                ],
+                [
+                    "to",
+                    -1.439297980789139
+                ],
+                [
+                    "do",
+                    0.4560104534647823
+                ],
+                [
+                    "list",
+                    7.937115739892586
+                ],
+                [
+                    "on",
+                    -1.3919052473791642
+                ],
+                [
+                    "sunday",
+                    -0.004912605124396206
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "calendar_remove",
+            "delete everything on the menu",
+            [
+                [
+                    "delete",
+                    6.952396920133956
+                ],
+                [
+                    "everything",
+                    0.14315127296314675
+                ],
+                [
+                    "on",
+                    -1.3919052473791642
+                ],
+                [
+                    "the",
+                    0.7169385114577379
+                ],
+                [
+                    "menu",
+                    0.5971777908983409
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "calendar_remove": 8,
+            "lists_query": 7,
+            "quirky": 7,
+            "music": 4,
+            "music_query": 1,
+            "negate": 1,
+            "hue_lightoff": 1
+        }
+    },
+    "lists_query": {
+        "f1_score": 0.86,
+        "total_count": 351,
+        "total_incorrect_count": 37,
+        "top_features": [
+            "list",
+            "lists",
+            "my",
+            "on",
+            "what",
+            "read",
+            "do",
+            "items",
+            "available",
+            "are"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "createoradd",
+                "feature": "list",
+                "coef": 8.58258785303722
+            },
+            {
+                "intent": "lists_remove",
+                "feature": "list",
+                "coef": 7.937115739892586
+            },
+            {
+                "intent": "wemo_on",
+                "feature": "on",
+                "coef": 5.441198425933425
+            },
+            {
+                "intent": "definition",
+                "feature": "what",
+                "coef": 5.207311958926891
+            },
+            {
+                "intent": "hue_lighton",
+                "feature": "on",
+                "coef": 4.175559866830495
+            },
+            {
+                "intent": "radio",
+                "feature": "on",
+                "coef": 3.637913921004674
+            },
+            {
+                "intent": "music_query",
+                "feature": "what",
+                "coef": 3.2986770858126016
+            },
+            {
+                "intent": "social_query",
+                "feature": "on",
+                "coef": 3.045460582220305
+            },
+            {
+                "intent": "takeaway_query",
+                "feature": "my",
+                "coef": 2.9975194245439454
+            },
+            {
+                "intent": "addcontact",
+                "feature": "my",
+                "coef": 2.0819561120232213
+            },
+            {
+                "intent": "movies",
+                "feature": "what",
+                "coef": 1.9465082310531763
+            },
+            {
+                "intent": "traffic",
+                "feature": "are",
+                "coef": 1.7984194836049188
+            },
+            {
+                "intent": "alarm_query",
+                "feature": "are",
+                "coef": 1.744478716160788
+            }
+        ],
+        "correct_utterance_example": [
+            "lists_query",
+            "i finished my to do list",
+            [
+                [
+                    "i",
+                    0
+                ],
+                [
+                    "finished",
+                    0.46207779395891224
+                ],
+                [
+                    "my",
+                    3.5558657294293297
+                ],
+                [
+                    "to",
+                    -0.23109448772990585
+                ],
+                [
+                    "do",
+                    2.700261709775549
+                ],
+                [
+                    "list",
+                    9.627133810569084
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "calendar_query",
+            "what i am going to do [date : today]",
+            [
+                [
+                    "what",
+                    3.4545164944064553
+                ],
+                [
+                    "i",
+                    0
+                ],
+                [
+                    "am",
+                    -0.08294315505628591
+                ],
+                [
+                    "going",
+                    -0.4753175121682623
+                ],
+                [
+                    "to",
+                    -0.23109448772990585
+                ],
+                [
+                    "do",
+                    2.700261709775549
+                ],
+                [
+                    "today",
+                    0.8132225793790995
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 13,
+            "calendar_query": 11,
+            "createoradd": 6,
+            "weather_query": 2,
+            "definition": 1,
+            "music": 1,
+            "order": 1,
+            "movies": 1,
+            "news_query": 1
+        }
+    },
+    "createoradd": {
+        "f1_score": 0.84,
+        "total_count": 287,
+        "total_incorrect_count": 34,
+        "top_features": [
+            "list",
+            "add",
+            "create",
+            "new",
+            "put",
+            "make",
+            "item",
+            "to",
+            "grocery",
+            "include"
+        ],
+        "overlapping_features": [
+            {
+                "intent": "lists_query",
+                "feature": "list",
+                "coef": 9.627133810569084
+            },
+            {
+                "intent": "lists_remove",
+                "feature": "list",
+                "coef": 7.937115739892586
+            },
+            {
+                "intent": "sendemail",
+                "feature": "to",
+                "coef": 5.6634614500234015
+            },
+            {
+                "intent": "calendar_set",
+                "feature": "add",
+                "coef": 5.580554034637236
+            },
+            {
+                "intent": "addcontact",
+                "feature": "add",
+                "coef": 5.564157294229778
+            },
+            {
+                "intent": "transport_query",
+                "feature": "to",
+                "coef": 5.292640599693578
+            },
+            {
+                "intent": "lists_remove",
+                "feature": "item",
+                "coef": 3.909154596149194
+            },
+            {
+                "intent": "recipe",
+                "feature": "make",
+                "coef": 3.6671608682405843
+            },
+            {
+                "intent": "coffee",
+                "feature": "make",
+                "coef": 3.3098380760040786
+            },
+            {
+                "intent": "hue_lightchange",
+                "feature": "make",
+                "coef": 3.248098519696317
+            },
+            {
+                "intent": "ticket",
+                "feature": "to",
+                "coef": 2.9956603916026583
+            },
+            {
+                "intent": "joke",
+                "feature": "make",
+                "coef": 1.2313382428187856
+            }
+        ],
+        "correct_utterance_example": [
+            "createoradd",
+            "create a new [list_name : to do] list",
+            [
+                [
+                    "create",
+                    5.041444104693323
+                ],
+                [
+                    "a",
+                    0
+                ],
+                [
+                    "new",
+                    4.520805859522802
+                ],
+                [
+                    "to",
+                    2.469903675301739
+                ],
+                [
+                    "do",
+                    -0.71812828311613
+                ],
+                [
+                    "list",
+                    8.58258785303722
+                ]
+            ]
+        ],
+        "incorrect_utterance_example": [
+            "quirky",
+            "i also need to buy batteries aaa",
+            [
+                [
+                    "i",
+                    0
+                ],
+                [
+                    "also",
+                    1.1135527729152603
+                ],
+                [
+                    "need",
+                    1.6707267525476401
+                ],
+                [
+                    "to",
+                    2.469903675301739
+                ],
+                [
+                    "buy",
+                    0.93203527067975
+                ],
+                [
+                    "batteries",
+                    0.47690063774000657
+                ],
+                [
+                    "aaa",
+                    0.5279862120523302
+                ]
+            ]
+        ],
+        "incorrect_predicted_intents_and_counts": {
+            "quirky": 10,
+            "calendar_set": 9,
+            "music": 4,
+            "lists_query": 4,
+            "lists_remove": 3,
+            "recipe": 1,
+            "post": 1,
+            "addcontact": 1,
+            "order": 1
+        }
+    }
+}
