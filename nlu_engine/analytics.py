@@ -9,15 +9,15 @@ from sklearn_crfsuite.metrics import flat_classification_report
 
 class Analytics:
     @staticmethod
-    def cross_validate_classifier(classifier, x_train, y_train):
+    def cross_validate_classifier(classifier, x_train, y_train, cv=None):
         start = time.time()
         print(f'Cross validating with {str(classifier)}')
-        
+ 
         prediction = cross_val_predict(
             estimator=classifier,
             X=x_train,
             y=y_train,
-            cv=5
+            cv=cv
         )
         stop = time.time()
         duration = stop - start
@@ -68,25 +68,60 @@ class Analytics:
         return df
 
     @staticmethod
-    def plot_report(report_df):
+    def plot_report(report_df, improved_report_df=None):
         """
-            Plots the classification report for the intent classifier.
+        Takes one or two in two report dataframes and plots the labels by their f1 scores.
+        ::param report_df: A dataframe with the labels and f1 scores.
+        ::param improved_report_df: A dataframe with the labels and f1 scores of a refined dataset. Can be None
+        ::returns: A plot of the f1 scores
         """
         benchmark_df = report_df.drop(report_df.tail(3).index)
         label = report_df.columns[0]
-        graph_report_df = benchmark_df.sort_values(
-            by='f1-score', ascending=True)
-        y_axis = np.arange(len(graph_report_df[label]))
+
         fig, ax = plt.subplots()
-        ax.barh(y_axis, graph_report_df['f1-score'],
-                align='center', color='green', ecolor='black')
+
+        if improved_report_df is not None:
+            refined_benchmark_df = improved_report_df.drop(
+                improved_report_df.tail(3).index)
+
+            graph_report_df = pd.DataFrame.merge(
+                benchmark_df, refined_benchmark_df, on=label, suffixes=('_original', '_refined'))
+
+            graph_report_df.sort_values(
+                by='f1-score_refined', ascending=True, inplace=True)
+
+            graph_report_df.dropna(inplace=True)
+
+            y_axis = np.arange(len(refined_benchmark_df[label]))
+            bar_width = 0.35  # the width of the bars
+
+            ax.barh(y_axis - bar_width/2,
+                    graph_report_df['f1-score_original'], bar_width, label='Original', color='r')
+
+            ax.barh(y_axis + bar_width/2,
+                    graph_report_df['f1-score_refined'], bar_width, label='Refined', color='b')
+
+        else:
+            graph_report_df = benchmark_df.sort_values(
+                by='f1-score', ascending=True)
+            y_axis = np.arange(len(graph_report_df[label]))
+
+            ax.barh(y_axis, graph_report_df['f1-score'],
+                    align='center', color='b')
+
         fig.set_figheight(16)
-        fig.set_figwidth(13)
+        fig.set_figwidth(12)
+
         ax.set_title(f'f1-scores by {label}', fontsize=24)
         ax.set_xlabel("f1-score", fontsize=18)
         ax.tick_params(axis='x', labelsize=18)
         ax.set_ylabel(label, fontsize=18)
         ax.set_yticks(y_axis, graph_report_df[label], fontsize=16)
         fig.tight_layout()
-        fig.savefig(f'data/reports/{label}_report_graph.png')
+
+        if improved_report_df is not None:
+            fig.savefig(f'data/reports/refined_{label}_report_graph.png')
+        else:
+            fig.savefig(f'data/reports/{label}_report_graph.png')
+
         plt.show()

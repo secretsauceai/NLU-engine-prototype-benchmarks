@@ -1,5 +1,6 @@
 import re
 import nltk
+import re
 
 import sklearn_crfsuite
 
@@ -66,12 +67,18 @@ class EntityExtractor:
             '[', '').replace(']', '').replace(' : ', '')
         return normalised_utterance
 
+
+    @staticmethod
+    def tokenize_utterance(utterance):
+        tokenized_utterance = nltk.word_tokenize(utterance)
+        return tokenized_utterance
+
     @staticmethod
     def pos_tag_utterance(utterance):
         """
         POS tags a given utterance.
         """
-        tokenized_utterance = nltk.word_tokenize(utterance)
+        tokenized_utterance = EntityExtractor.tokenize_utterance(utterance)
         utterance_pos = nltk.pos_tag(tokenized_utterance)
         return utterance_pos
 
@@ -109,8 +116,9 @@ class EntityExtractor:
         for utterance, utterance_with_tagging in zip(data_df['answer_normalised'], data_df['answer_annotation']):
             entities = EntityExtractor.extract_entities(utterance_with_tagging)
             utterance_pos = EntityExtractor.pos_tag_utterance(utterance)
-            feature_dataset.append(
-                EntityExtractor.combine_pos_and_entity_tags(entities, utterance_pos))
+            feature = EntityExtractor.combine_pos_and_entity_tags(
+                entities, utterance_pos)
+            feature_dataset.append(feature)
         return feature_dataset
 
     @staticmethod
@@ -118,6 +126,7 @@ class EntityExtractor:
         """
         Creates the features for the CRF.
         """
+        #TODO: Are the datasets correctly getting pos tags for all tokens (ie what's)?
         word = utterance[i][0]
         postag = utterance[i][1]
 
@@ -206,16 +215,26 @@ class EntityExtractor:
         entity_locations_and_types = []
         entities = EntityExtractor.get_entities(utterance, crf_model)
         for location, entity in enumerate(entities):
-            if entity is not '0':
+            if entity !="0":
                 entity_locations_and_types.append((location, entity))
         return entity_locations_and_types
 
     @staticmethod
     def get_entity_tags(utterance, crf_model):
         entity_locations_and_types = EntityExtractor.get_entity_types_and_locations(utterance, crf_model)
-        split_utterance = utterance.split(' ')
-        tagged_entities = [(entity_type, split_utterance[location])
-                        for location, entity_type in entity_locations_and_types]
+        # TODO: Maybe not here?
+        split_utterance = nltk.word_tokenize(utterance) #re.split(" |'", utterance)
+        #tagged_entities = [(entity_type, split_utterance[location])
+        #                for location, entity_type in entity_locations_and_types]
+        
+        tagged_entities = []
+
+        for location, entity_type in entity_locations_and_types:
+            if location not in split_utterance:
+                print(f'{location}, failed for utterance: {split_utterance}')
+            split_location = split_utterance[location]
+            tagged_entities.append((entity_type, split_location))
+        
         return tagged_entities
 
     @staticmethod
@@ -225,10 +244,17 @@ class EntityExtractor:
         utterance = 'wake me up at five pm this week'
         tagged_utterance = 'wake me up at [time : five] [time : pm] [date : this] [date : week]'
         """
+        #TODO: BUG! If you run: "who wrote the song i just wanna dance with you"
+        # the output is: "who wrote the song [song_name : i] [song_name : just] wanna [song_name : dance] w[song_name : i]th [song_name : you]"
         tagged_entities = EntityExtractor.get_entity_tags(utterance, crf_model)
         tagged_utterance = utterance
         for entity_type, entity in tagged_entities:
-            tagged_utterance = tagged_utterance.replace(entity, '[{} : {}]'.format(entity_type, entity))
+            if entity + ' ' in utterance:
+                tagged_utterance = tagged_utterance.replace(entity + ' ', "[{} : {}] ".format(entity_type, entity))
+            elif ' ' + entity in utterance:
+                tagged_utterance = tagged_utterance.replace(
+                    ' ' + entity, " [{} : {}]".format(entity_type, entity))
+                
         return tagged_utterance
 
     @staticmethod

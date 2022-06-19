@@ -69,6 +69,13 @@ class MacroDataRefinement:
         return to_review_df
 
     @staticmethod
+    def remove_intent(to_review_df, intent_to_remove):
+        to_remove_df = to_review_df[to_review_df['intent'] == intent_to_remove]
+        to_remove_df = MacroDataRefinement.create_review_df(to_remove_df)
+        to_remove_df['remove'] = True
+        return to_remove_df
+
+    @staticmethod
     def create_sheet(to_review_df):
         """
         Create a sheet from a dataframe
@@ -128,40 +135,5 @@ class MacroDataRefinement:
         refined_type = refined_type + '_refined'
         refined_dataframe[refined_type] = True
         return refined_dataframe
-
-    @staticmethod
-    def upgrade_dataframe(data_df):
-        updated_df = pd.DataFrame(columns=[
-            'userid',
-            'answerid',
-            'notes',
-            'question',
-            'suggested_entities',
-            'answer',
-            'answer_normalised',
-            'scenario',
-            'intent',
-            'predicted_label',
-            'intent_refined',
-            'entity_refined',
-            'remove',
-            'status',
-        ])
-        updated_df = updated_df.append(data_df)
-        return updated_df
-
-    @staticmethod
-    def update_dataframe(data_df, refined_intent_df):
-        """
-        Updates the dataframe with the refined data, if a previously updated dataframe doesn't exist, it formats the original dataframe correctly.
-        """
-        if 'predicted_label' in data_df.columns:
-            updated_df = data_df.copy()
-            updated_df.update(refined_intent_df)
-            print('Successfully updated dataframe')
-            return updated_df
-        else:
-            print("Dataframe hasn't been upgraded, make sure to upgrade the dataframe first.")
-            return None
 
 

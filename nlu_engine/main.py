@@ -95,31 +95,52 @@ class NLUEngine:
         tagged_utterance = EntityExtractor.tag_utterance(
             utterance,
             crf_model
-            )
+        )
         split_tagged_utterance = tagged_utterance.split(' ')
 
-        for idx, token in enumerate(split_tagged_utterance):
-            if '[' in token:
-                if split_tagged_utterance[idx + 5]:
-                    if token in split_tagged_utterance[idx + 3]:
-                        split_tagged_utterance[idx + 2] = split_tagged_utterance[idx + 2].replace(
-                            ']', '') + ' ' + split_tagged_utterance[idx + 5]
+        def combine_and_remove_entities(split_tagged_utterance):
+            """
+            Combines neighboring entities of the same type and marks the duplicates to be removed.
+            NOTE: It is important for parsing to keep the same length, therefore we mark them instead of directly remove the matches.
+            """
+            change_counter = 0
+            for index, token in enumerate(split_tagged_utterance):
+                if '[' in token:
+                    if len(split_tagged_utterance) > index + 3:
+                        if token == split_tagged_utterance[index + 3]:
+                            split_tagged_utterance[index + 2] = split_tagged_utterance[index + 2].replace(
+                                ']', '') + ' ' + split_tagged_utterance[index + 5]
 
-                        split_tagged_utterance[idx + 3] = ''
-                        split_tagged_utterance[idx + 4] = ''
-                        split_tagged_utterance[idx + 5] = ''
+                            split_tagged_utterance[index + 3] = 'to_remove'
+                            split_tagged_utterance[index + 4] = 'to_remove'
+                            split_tagged_utterance[index + 5] = 'to_remove'
+                            change_counter += 1
+            return (split_tagged_utterance, change_counter)
 
-        normalised_split_tagged_utterance = [
-            x for x in split_tagged_utterance if x]
+        def remove_entities(split_tagged_utterance):
+            try:
+                while True:
+                    split_tagged_utterance.remove('to_remove')
+            except ValueError:
+                pass
+            return split_tagged_utterance
+        
+        combined_entities_split_tagged_utterance, change_counter = combine_and_remove_entities(
+        split_tagged_utterance)
+        removed_entities_split_tagged_utterance = remove_entities(
+        combined_entities_split_tagged_utterance)
 
-        formatted_tagged_utterance = ' '.join(
-            normalised_split_tagged_utterance)
+        while change_counter > 0:
+            combined_entities_split_tagged_utterance, change_counter = combine_and_remove_entities(
+                removed_entities_split_tagged_utterance)
+            removed_entities_split_tagged_utterance = remove_entities(
+                combined_entities_split_tagged_utterance)
 
-        return formatted_tagged_utterance
+        return ' '.join(removed_entities_split_tagged_utterance)
 
 
     @staticmethod
-    def evaluate_entity_classifier(data_df):
+    def evaluate_entity_classifier(data_df, cv=None):
         """
         Evaluates the entity classifier and generates a report
         """
@@ -127,7 +148,8 @@ class NLUEngine:
         print('Evaluating entity classifier')
 
         X, y = EntityExtractor.get_targets_and_labels(data_df)
-        predictions = Analytics.cross_validate_classifier(crf, X, y)
+
+        predictions = Analytics.cross_validate_classifier(crf, X, y, cv)
         report_df = Analytics.generate_entity_classification_report(
             predictions, y)
         return report_df

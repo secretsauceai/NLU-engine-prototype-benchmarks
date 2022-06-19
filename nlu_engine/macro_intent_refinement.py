@@ -31,6 +31,7 @@ class MacroIntentRefinement:
         :param tfidf_vectorizer:
         :return: pandas dataframe
         """
+        #TODO: remove this, it isn't helpful for the report
         coefs = intent_classifier_model.coef_
         classes = intent_classifier_model.classes_
         feature_names = tfidf_vectorizer.get_feature_names()
@@ -216,8 +217,8 @@ class MacroIntentRefinement:
         :param df: pandas dataframe
         :return: pandas dataframe
         """
-        df = df[df['intent'] == intent_to_remove]
-        return df
+        updated_df = df.loc[df['intent'] == intent_to_remove, 'remove' ] = True
+        return updated_df
 
     @staticmethod
     def get_matched_domains_to_intents(df, intents):

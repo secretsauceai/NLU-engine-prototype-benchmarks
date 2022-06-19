@@ -122,6 +122,16 @@ class DataUtils:
             pickle.dump(classifier, file)
 
     @staticmethod
+    def import_pickled_model(model_path):
+        """
+        Import pickled model.
+        :param model_path: path to the pickle file
+        :return: binary of model
+        """
+        loaded_model = pickle.load(open(model_path, 'rb'))
+        return loaded_model
+
+    @staticmethod
     def export_onnx_model(classifier, model_path):
         """
         Export the model to an onnx file like this: http://onnx.ai/sklearn-onnx/
