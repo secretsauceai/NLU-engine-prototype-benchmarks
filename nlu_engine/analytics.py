@@ -16,7 +16,7 @@ class Analytics:
         prediction = cross_val_predict(
             estimator=classifier,
             X=x_train,
-            y=y_train,
+            y=y_train, 
             cv=cv
         )
         stop = time.time()

@@ -3,6 +3,10 @@ from .analytics import Analytics
 from .intent_matcher import IntentMatcher
 from .entity_extractor import EntityExtractor, crf
 from .data_utils import DataUtils
+import gc
+
+import pandas as pd
+
 
 class NLUEngine:
     """
@@ -15,7 +19,7 @@ class NLUEngine:
         data_df_path,
         labels_to_predict,
         classifier
-        ):
+    ):
         """
         Train the intent classifier.
         :param data_df: pandas dataframe
@@ -31,7 +35,7 @@ class NLUEngine:
             classifier,
             vectorized_utterances,
             encoded_labels_to_predict
-            ), tfidf_vectorizer
+        ), tfidf_vectorizer
 
     @staticmethod
     def evaluate_intent_classifier(
@@ -47,9 +51,8 @@ class NLUEngine:
             data_df_path,
             labels_to_predict,
             classifier
-            )
+        )
 
-        
         predictions = Analytics.cross_validate_classifier(
             classifier,
             x_train=vectorized_utterances,
@@ -124,11 +127,11 @@ class NLUEngine:
             except ValueError:
                 pass
             return split_tagged_utterance
-        
+
         combined_entities_split_tagged_utterance, change_counter = combine_and_remove_entities(
-        split_tagged_utterance)
+            split_tagged_utterance)
         removed_entities_split_tagged_utterance = remove_entities(
-        combined_entities_split_tagged_utterance)
+            combined_entities_split_tagged_utterance)
 
         while change_counter > 0:
             combined_entities_split_tagged_utterance, change_counter = combine_and_remove_entities(
@@ -137,7 +140,6 @@ class NLUEngine:
                 combined_entities_split_tagged_utterance)
 
         return ' '.join(removed_entities_split_tagged_utterance)
-
 
     @staticmethod
     def evaluate_entity_classifier(data_df, cv=None):
@@ -152,4 +154,28 @@ class NLUEngine:
         predictions = Analytics.cross_validate_classifier(crf, X, y, cv)
         report_df = Analytics.generate_entity_classification_report(
             predictions, y)
+        del X, y, predictions
+        gc.collect()
         return report_df
+
+    @staticmethod
+    def get_entity_reports_for_domains(data_df):
+        domains = data_df['scenario'].unique().tolist()
+        domain_entity_reports_df = pd.DataFrame()
+        for domain in domains:
+            print(f'Evaluating entity classifier for {domain}')
+            domain_df = data_df[data_df['scenario'] == domain]
+            try:
+                domain_entity_report_df = NLUEngine.evaluate_entity_classifier(
+                    data_df=domain_df, cv=4)
+                domain_scores_df = domain_entity_report_df.tail(3)
+                domain_scores_df['domain'] = domain
+
+                domain_entity_reports_df.append(
+                    domain_scores_df)
+                gc.collect()
+            except Exception as e:
+                print(f'Error evaluating entity classifier for {domain}')
+                print(e)
+
+        return domain_entity_reports_df

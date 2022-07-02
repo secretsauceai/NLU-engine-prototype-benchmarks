@@ -230,8 +230,11 @@ class EntityExtractor:
         tagged_entities = []
 
         for location, entity_type in entity_locations_and_types:
+            '''
+            # TODO: remove after finished with debugging
             if location not in split_utterance:
                 print(f'{location}, failed for utterance: {split_utterance}')
+            '''
             split_location = split_utterance[location]
             tagged_entities.append((entity_type, split_location))
         
