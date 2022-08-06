@@ -160,22 +160,37 @@ class NLUEngine:
 
     @staticmethod
     def get_entity_reports_for_domains(data_df):
+        """
+        Gets the entity reports for all domains in the dataframe, where each domain is evaluated separately.
+        """
         domains = data_df['scenario'].unique().tolist()
         domain_entity_reports_df = pd.DataFrame()
+
+        def check_percent_of_non_entities(domain_df):
+            number_of_nan_entities = domain_df['entity_types'].isnull().sum()
+            total_size = len(domain_df)
+            percent_no_entities = number_of_nan_entities / total_size
+            return percent_no_entities
+
         for domain in domains:
             print(f'Evaluating entity classifier for {domain}')
             domain_df = data_df[data_df['scenario'] == domain]
-            try:
-                domain_entity_report_df = NLUEngine.evaluate_entity_classifier(
-                    data_df=domain_df, cv=4)
-                domain_scores_df = domain_entity_report_df.tail(3)
-                domain_scores_df['domain'] = domain
 
-                domain_entity_reports_df.append(
-                    domain_scores_df)
-                gc.collect()
-            except Exception as e:
-                print(f'Error evaluating entity classifier for {domain}')
-                print(e)
+            percent_of_non_entities = check_percent_of_non_entities(domain_df)
+
+            if percent_of_non_entities > 0.90:
+                print(
+                    f'{domain} has {percent_of_non_entities}% non-entities. It is too sparse to evaluate.'
+                )
+                continue
+
+            domain_entity_report_df = NLUEngine.evaluate_entity_classifier(
+                data_df=domain_df, cv=3)
+            domain_scores_df = domain_entity_report_df.tail(3)
+            domain_scores_df['domain'] = domain
+            domain_entity_reports_df = domain_entity_reports_df.append(
+                domain_scores_df)
+
+        return domain_entity_reports_df
 
         return domain_entity_reports_df
