@@ -29,6 +29,7 @@ class EntityExtractor:
             entity_list.append({'type': entity_type, 'words': entity_text})
         return entity_list
 
+
     @staticmethod
     def extract_entities(utterance):
         """
@@ -36,6 +37,18 @@ class EntityExtractor:
         """
         entities = re.findall(r'\[(.*?)\]', utterance)
         return EntityExtractor.seperate_types_and_entities(entities)
+    
+    @staticmethod
+    def extract_entity_types(extracted_entities):
+        """
+        Extracts the entity types from the extracted entities.
+        :param extracted_entities: list of entities extracted from an utterance.
+        :return: string of joined list of entity types.
+        """
+        entity_types = []
+        for entity in extracted_entities:
+            entity_types.append(entity['type'])
+        return ','.join(entity_types)
 
     @staticmethod
     def join_entities(utterance):
