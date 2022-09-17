@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 class MacroEntityRefinement:
     """
@@ -26,8 +27,6 @@ class MacroEntityRefinement:
         domain_f1_score = domain_entity_reports_df[
             domain_entity_reports_df['domain'] == domain_selection
         ]['f1-score'].values[0]
-
-        print(f'Domain: {domain_selection}\nf1-score: {domain_f1_score}')
 
         for entity_type in domain_entity_types:
             entity_entries_df = entity_types_df[
@@ -63,11 +62,6 @@ class MacroEntityRefinement:
                 entity_report_df['entity-type'] == entity_type
             ]['f1-score'].values[0]
 
-            print(
-                f'entity type: {entity_type}\nf1-score: {f1_score}\n correct utterance: {correct_utterance_example}'
-            )
-
-
             incorrect_predicted_entities_report[entity_type] = {
                 'f1-score': f1_score,
                 'total_count': total_entities_count,
@@ -76,6 +70,77 @@ class MacroEntityRefinement:
                 'incorrect utterance': incorrect_utterance_example
             }
         return incorrect_predicted_entities_report
+
+    @staticmethod
+    def get_overlapping_entity_types_and_words(df):
+        """
+            Get the overlapping entity types and words.
+            :param df: pandas dataframe
+            :return: pandas dataframe
+            """
+        entity_types = []
+        entity_words = []
+
+        def get_entity_types_and_words(row):
+            if row['entities'] is not np.nan:
+                for entity in row['entities']:
+                    entity_types.append(entity['type'])
+                    entity_words.append(" ".join(entity['words']))
+
+        df.apply(get_entity_types_and_words, axis=1)
+        entity_types_and_words_df = pd.DataFrame(
+            {'entity_type': entity_types, 'entity_words': entity_words})
+        entity_types_and_words_df.reset_index(inplace=True)
+
+        def count_and_group_combinations(entity_types_and_words_df):
+            all_entity_words = entity_types_and_words_df["entity_words"]
+
+            entity_type_word_counts_df = entity_types_and_words_df[all_entity_words.isin(all_entity_words[all_entity_words.duplicated(
+            )])].sort_values(by=['entity_words']).groupby(['entity_words', 'entity_type']).count()
+            return entity_type_word_counts_df
+
+        entity_type_word_counts_df = count_and_group_combinations(
+            entity_types_and_words_df)
+
+        overlapping_entities_df = pd.DataFrame(
+            entity_type_word_counts_df).unstack().dropna(thresh=2)
+
+        return overlapping_entities_df
+
+    @staticmethod
+    def pick_correct_entity_type_for_overlapping_entities(df):
+        """
+                Pick the correct entity type for overlapping entities.
+                :param df: pandas dataframe
+                :return: pandas dataframe
+                """
+        overlapping_entities_df = MacroEntityRefinement.get_overlapping_entity_types_and_words(
+            df)
+        to_refine_df = overlapping_entities_df.stack().reset_index()
+
+        overlapping_entity_words = overlapping_entities_df.index.values
+
+        def get_correct_entity_types(overlapping_entity_words, to_refine_df):
+            correct_entity_types = []
+            for entity_word in overlapping_entity_words:
+                entity_types = to_refine_df[to_refine_df["entity_words"]
+                                            == entity_word]["entity_type"].values
+
+                correct_entity_type = input(
+                    f"Type in the correct entity type for these words\nentity words: {entity_word}\nentity types: {entity_types}"
+                    )
+                correct_entity_types.append(correct_entity_type)
+            return correct_entity_types
+
+        correct_entity_types = get_correct_entity_types(
+            overlapping_entity_words, to_refine_df)
+        incorrect_entity_types = []
+        for entity_type in to_refine_df['entity_type'].values:
+            if entity_type not in correct_entity_types:
+                incorrect_entity_types.append(entity_type)
+
+        return correct_entity_types, incorrect_entity_types, overlapping_entity_words
+
 
 
     @staticmethod
