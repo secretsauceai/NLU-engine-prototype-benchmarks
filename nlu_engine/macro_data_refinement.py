@@ -56,6 +56,10 @@ class MacroDataRefinement:
     def create_review_df(to_review_df):
         to_review_df.drop(
             columns=['answer_normalised', 'question'], inplace=True)
+        try:
+            to_review_df.drop(columns=['entities', 'entity_types'], inplace=True)
+        except:
+            pass
 
         to_review_df = to_review_df.assign(review=None)
         to_review_df['review'] = to_review_df['review'].astype(bool)

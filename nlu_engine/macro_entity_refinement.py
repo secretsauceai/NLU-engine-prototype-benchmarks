@@ -127,7 +127,7 @@ class MacroEntityRefinement:
                                             == entity_word]["entity_type"].values
 
                 correct_entity_type = input(
-                    f"Type in the correct entity type for these words\nentity words: {entity_word}\nentity types: {entity_types}"
+                    f"Type in the correct entity type for these words \n entity words: {entity_word} \n entity types: {entity_types}"
                     )
                 correct_entity_types.append(correct_entity_type)
             return correct_entity_types
@@ -141,7 +141,26 @@ class MacroEntityRefinement:
 
         return correct_entity_types, incorrect_entity_types, overlapping_entity_words
 
+    @staticmethod
+    def refine_overlapping_entity_types(df, correct_entity_types, incorrect_entity_types, overlapping_entity_words):
+        """
+                Refine the entity types.
+                :param df: pandas dataframe
+                :param correct_entity_types: list
+                :param incorrect_entity_types: list
+                :param overlapping_entity_words: list
+                :return: pandas dataframe
+                """
+        refined_df = df.copy()
 
+        for incorrect_entity_type, correct_entity_type, overlapping_entity_word in zip(incorrect_entity_types, correct_entity_types, overlapping_entity_words):
+            pattern = f'{incorrect_entity_type} : {overlapping_entity_word}'
+            replacement = f'{correct_entity_type} : {overlapping_entity_word}'
+            print(f'replacing: {pattern}\nwith: {replacement}')
+            
+            refined_df['answer_annotation'] = refined_df.answer_annotation.str.replace(
+                pattern, replacement)
+        return refined_df
 
     @staticmethod
     def remove_entity(df, entity_to_remove):

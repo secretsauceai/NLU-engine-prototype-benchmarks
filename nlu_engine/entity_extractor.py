@@ -76,9 +76,11 @@ class EntityExtractor:
             :return: string
             """
         entities_joined = EntityExtractor.join_entities(utterance)
-        normalised_utterance = re.sub(entities_joined, '', utterance).replace(
-            '[', '').replace(']', '').replace(' : ', '')
-        return normalised_utterance
+        entities_list = entities_joined.split('|')
+        for entity in entities_list:
+            utterance = utterance.replace(f"[{entity} : ", "").replace(
+               "]", "")
+        return utterance
 
 
     @staticmethod

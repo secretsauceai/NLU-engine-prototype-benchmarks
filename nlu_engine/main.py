@@ -192,5 +192,3 @@ class NLUEngine:
                 domain_scores_df)
 
         return domain_entity_reports_df
-
-        return domain_entity_reports_df
