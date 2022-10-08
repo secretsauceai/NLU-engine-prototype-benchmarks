@@ -1,0 +1,45 @@
+,scenario,intent,predicted_label,answer_annotation,predicted_tagging,review,use_predicted_tagging,remove
+209,alarm,alarm_set,alarm_set,set an alarm for [time : four in the afternoon],set an alarm for [time : four in the afternoon],False,True,False
+211,alarm,alarm_query,alarm_query,do i have an alarm set for my [timeofday : morning] [event_name : flight],do i have an alarm set for [timeofday : morning flight],False,False,False
+212,alarm,alarm_query,alarm_set,did i set an alarm to [alarm_type : wake up] in the [timeofday : morning],did i set an alarm to wake up in the [timeofday : morning],False,False,False
+407,alarm,alarm_set,alarm_set,make me a [alarm_type : wake up] alarm for [time : eight forty five am],make me a [alarm_type : wake up] alarm for [time : eight forty five am],False,True,False
+620,alarm,alarm_set,alarm_set,please set the alarm for next [timeofday : morning] to [time : seven am],please set the alarm for next [timeofday : morning] to [time : seven am],False,True,False
+1821,alarm,alarm_remove,alarm_remove,remove [time : six am] alarm of [time : whole week] for future,remove [time : six am] alarm of [time : whole week] for [time : future],False,False,True
+1866,alarm,alarm_set,calendar_set,set an alarm for [general_frequency : every tuesday] in [date : march]  at [time : eight am],set an alarm for [general_frequency : every tuesday] in [date : march]  at [time : eight am],False,True,False
+1867,alarm,alarm_set,alarm_set,set alarm of [time : whole week] [timeofday : morning] [time : ten am] in [date : april] month,set alarm of [time : whole week morning ten am] in [date : april month],False,False,True
+2182,alarm,alarm_set,alarm_set,set alarm [time : half an hour from my meal time],set alarm [time : half an hour] from my meal time,False,False,True
+2394,alarm,alarm_set,alarm_set,ring the alarm when i get home,ring the alarm when i get [place_name : home],False,False,True
+2522,alarm,alarm_set,alarm_set,set alarm for [date : twelve weeks from today] at [time : eight am],set alarm for [time : twelve weeks] from [date : today] at [time : eight am],False,False,False
+2886,alarm,alarm_set,alarm_set,set the alarm for [time : two hours from now],set the alarm for [time : two hours from now],False,True,False
+2887,alarm,alarm_set,alarm_set,set an alarm for [time : one hour from now],set an alarm for [time : one hour from now],False,True,False
+3536,alarm,alarm_set,alarm_set,set alarm for [time : six am] [date : everyday],set alarm for [time : six am] [general_frequency : everyday],False,False,False
+3948,alarm,alarm_query,alarm_query,what are the next three alarms set to go off,what are the [time : next three] alarms set to go off,False,False,False
+4569,alarm,alarm_query,alarm_query,which alarms are set in the [device_type : phone],which alarms are set in the phone,False,False,True
+5293,alarm,alarm_set,alarm_set,set an alarm for [date : tomorrow] [date : monday] at [time : eight am],set an alarm for [date : tomorrow monday] at [time : eight am],False,False,True
+5477,alarm,alarm_set,alarm_set,wake me up in [time : thirty minutes],wake me up [time : in thirty minutes],False,False,False
+5511,alarm,alarm_remove,alarm_remove,remove my [time : eight pm] alarm and set it to [time : seven pm],remove my [time : eight pm] alarm and set it to [time : seven] pm,False,False,True
+5636,alarm,alarm_remove,alarm_remove,remove [person : finlee's] bedtime alarm,remove finlee's bedtime alarm,False,False,True
+5796,alarm,alarm_remove,alarm_remove,olly cancel yoga alarms,cancel [event_name : yoga] alarms,False,False,False
+5797,alarm,alarm_remove,commandstop,cancel all [event_name : soccer practice] alarms,cancel all [alarm_type : soccer practice] alarms,False,False,False
+5810,alarm,alarm_query,alarm_set,is there any alarm [time : after five am],is there any alarm [time : after five am],False,True,False
+6406,alarm,alarm_set,alarm_set,set alarm on [date : twenty fifth may] at [time : five pm],set alarm on [date : twenty fifth may] at [time : five pm],False,True,False
+6648,alarm,alarm_query,alarm_query,what is [date : tomorrow's] alarm time set to,what is tomorrow's alarm time set to,False,False,False
+6649,alarm,alarm_query,alarm_query,show me what alarm times i've set for [date : the week],show me what alarm times i've set for [date : the week],False,True,False
+6650,alarm,alarm_query,alarm_set,give me the alarm times for the [date : next two days],give me the alarm times for the [date : next two days],False,True,False
+6724,alarm,alarm_set,alarm_set,set an alarm for [time : five] o'clock this [timeofday : evening] labelled [event_name : taxi],set an alarm for [time : five] o'clock this [timeofday : evening] labelled [transport_type : taxi],False,False,False
+6726,alarm,alarm_set,alarm_set,set an alarm in an [time : hour's time],set an alarm in an hour's time,False,False,False
+6875,alarm,alarm_set,alarm_set,please set alarm to my mobile phones,please set alarm to my [place_name : mobile phones],False,False,True
+6877,alarm,alarm_set,alarm_set,please set alarm for [date : all days],please set alarm for [time : all days],False,False,True
+6952,alarm,alarm_query,alarm_set,did I set an alarm [event_name : to have tablets] in the [timeofday : noon],did I set an alarm to have tablets in the [timeofday : noon],False,False,False
+7343,alarm,alarm_set,alarm_set,i want an alarm for [time : six am] [general_frequency : everyday],i want an alarm for [time : six am] [general_frequency : everyday],False,True,False
+7996,alarm,alarm_set,alarm_set,set an alarm for the [event_name : dance classes] [time : two hours] before the classes start,set an alarm for the [event_name : dance classes] [time : two hours] before the [event_name : classes] start,False,False,False
+8008,alarm,alarm_set,alarm_set,wake me up on [date : Friday] at [time : five] in the [timeofday : morning] i need to catch the [event_name : train],wake me up on [date : Friday] at [time : five] in the [timeofday : morning] i need to catch the [transport_type : train],False,False,True
+8247,alarm,alarm_set,alarm_set,set an alarm for [time : two hours from now] please,set an alarm for [time : two hours] from now please,False,False,False
+8514,alarm,alarm_set,alarm_set,set the alarm to [time : seven am] for [event_name : work],set the alarm to [time : seven am] for work,False,False,False
+8902,alarm,alarm_remove,alarm_remove,remove [date : tomorrow's] alarm,remove tomorrow's alarm,False,False,False
+9047,alarm,alarm_set,alarm_set,wake me up [general_frequency : every weekday] at [time : seven am],wake me up [general_frequency : every weekday] at [time : seven am],False,True,False
+9202,alarm,alarm_set,alarm_set,set an alarm for [time : eight hundred pm] [timeofday : this evening],set an alarm for [timeofday : this] [time : eight hundred pm] [timeofday : this evening],False,False,False
+9410,alarm,alarm_set,alarm_set,set a [event_name : doctor's appointment] for [time : three hundred and thirty pm march seventh] with an alarm [time : thirty minutes] before,set a doctor's [event_name : appointment] for [time : three hundred and thirty pm] [date : march seventh] with an alarm [time : thirty minutes before],False,False,True
+9556,alarm,alarm_set,alarm_set,will set alarm clock [time : one hour] before my [event_name : next dentist appointment],will set alarm clock [time : one hour] before my next [event_name : dentist appointment],False,False,True
+10103,alarm,alarm_set,alarm_set,set up each day an alarm at [time : ten] time for my [event_name : meal],set up each day an alarm at [time : ten] time for my meal,False,False,True
+10602,alarm,alarm_set,alarm_set,turn on alarm [time : thirty minutes] before [event_name : liverpool started to play],turn on alarm thirty minutes before [event_name : liverpool started to play],False,False,True

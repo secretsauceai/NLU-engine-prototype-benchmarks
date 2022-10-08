@@ -54,18 +54,29 @@ class MacroDataRefinement:
 
     @staticmethod
     def create_review_df(to_review_df):
+        """
+        Create a dataframe with the entries to review. There is a difference between intent and entity review dataframes. The dataframe will be used to create a sheet. 
+        :param to_review_df: pandas dataframe
+        :return: pandas dataframe
+        """
+
+        intent_refinement = False
         to_review_df.drop(
             columns=['answer_normalised', 'question'], inplace=True)
         try:
             to_review_df.drop(columns=['entities', 'entity_types'], inplace=True)
         except:
-            pass
+            intent_refinement = True
 
         to_review_df = to_review_df.assign(review=None)
         to_review_df['review'] = to_review_df['review'].astype(bool)
 
-        to_review_df = to_review_df.assign(move=None)
-        to_review_df['move'] = to_review_df['move'].astype(bool)
+        if intent_refinement:
+            to_review_df = to_review_df.assign(move=None)
+            to_review_df['move'] = to_review_df['move'].astype(bool)
+        else:
+            to_review_df = to_review_df.assign(use_predicted_tagging=None)
+            to_review_df['use_predicted_tagging'] = to_review_df['use_predicted_tagging'].astype(bool)
 
         to_review_df = to_review_df.assign(remove=None)
         to_review_df['remove'] = to_review_df['remove'].astype(bool)
@@ -126,6 +137,17 @@ class MacroDataRefinement:
                 row['intent'] = corrected_intent
                 #TODO: look up intent for the scenario and set row['scenario'] = corrected_scenario!!!
             row['move'] = False
+        return row
+
+    @staticmethod
+    def replace_annotated_utterance_with_predicted_tagging(row):
+        """
+        If a row is marked use_predicted_tagging, replace the annotated utterance with the predicted tagging
+        :param row: pandas dataframe row
+        :return: pandas dataframe row
+        """
+        if row['use_predicted_tagging'] == True:
+            row['answer_annotation'] = row['predicted_tagging']
         return row
 
     @staticmethod
