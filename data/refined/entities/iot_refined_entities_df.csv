@@ -1,0 +1,196 @@
+,scenario,intent,predicted_label,answer_annotation,predicted_tagging,review,use_predicted_tagging,remove
+21,iot,cleaning,cleaning,cleaning is good dust is so bad do now your magic clean my [house_place : carpet],cleaning is good dust is so bad do now your magic clean my carpet,False,False,True
+145,iot,coffee,coffee,i fancy some coffee now,i fancy some [device_type : coffee] now,False,False,True
+237,iot,hue_lightoff,hue_lightoff,good night lights off,good [device_type : night lights] off,False,False,True
+259,iot,hue_lightup,hue_lightup,brighten the [device_type : lamp next to the sofa],brighten [device_type : the lamp next to the sofa],True,False,False
+373,iot,wemo_on,wemo_off,switch the [device_type : smart plug socket] on,switch the [device_type : smart plug socket] on,True,True,False
+402,iot,hue_lightchange,hue_lightchange,change my [house_place : room] lights to [color_type : blue],change my [house_place : room] lights to [color_type : blue],False,True,False
+403,iot,hue_lightchange,hue_lightchange,change my [house_place : room] lights to some [color_type : romantic] colour,change my [house_place : room] lights to some [color_type : romantic] colour,True,True,False
+404,iot,hue_lightchange,hue_lightchange,change my room lights so that i can get a [color_type : good sleep],change my [house_place : room] lights so that i can get a [color_type : good sleep],False,False,True
+443,iot,coffee,coffee,make coffee,make [device_type : coffee],True,False,False
+701,iot,wemo_off,wemo_off,please turn off the [device_type : plug socket] of my [device_type : phone] when it'll be charged,please turn off the [device_type : plug socket] of my phone when it'll be charged,True,False,False
+702,iot,wemo_on,wemo_on,turn on the [device_type : tv] socket when i arrive home,turn on the [device_type : tv socket] when i arrive [place_name : home],False,False,True
+795,iot,wemo_on,wemo_on,turn on the [device_type : wemo plug socket] to plug in my dongle,turn on the [device_type : wemo plug socket] to [device_type : plug] in my dongle,False,False,True
+905,iot,cleaning,cleaning,[device_type : robot vacuum] the [house_place : living room] now,[device_type : robot vacuum] the [house_place : living room] now,False,True,False
+965,iot,hue_lightoff,hue_lightoff,turn the lights off to my [house_place : room],turn the lights off to my [house_place : room],False,True,False
+1050,iot,hue_lightoff,hue_lightoff,turn the [house_place : living room's] light off,turn the [house_place : living] room's light off,False,False,False
+1051,iot,hue_lightoff,hue_lightoff,turn [house_place : this room] light off,turn this [house_place : room] light off,False,False,True
+1130,iot,hue_lightup,hue_lightup,please turn up the [device_type : screen] brightness [change_amount : all the way],please turn up [change_amount : the] [device_type : screen] brightness [change_amount : all the way],False,False,True
+1132,iot,hue_lightdim,hue_lightdim,please dim the [device_type : overhead lights],please dim the overhead lights,False,False,False
+1238,iot,coffee,quirky,can i please have a [coffee_type : cafe americano],can i please have a [coffee_type : cafe americano],False,True,False
+1328,iot,hue_lightchange,hue_lightchange,i like [color_type : red] colour for my [house_place : home] change it,i like [color_type : red] colour for my home change it,False,False,True
+1380,iot,wemo_on,wemo_on,on the plug,on the [device_type : plug],False,False,True
+1381,iot,wemo_off,wemo_off,off the plug,off the [device_type : plug],False,False,True
+1408,iot,hue_lightchange,hue_lightchange,hey can you make it [color_type : blue] in [house_place : here],hey can you make it [color_type : blue] in here,False,False,True
+1410,iot,hue_lightchange,hue_lightchange,make the lights [color_type : blue] in [house_place : here],make the lights [color_type : blue] in here,False,False,True
+1457,iot,hue_lightchange,hue_lightchange,switch to night light setting,switch to [device_type : night light] setting,False,False,True
+1464,iot,wemo_on,wemo_on,turn on the socket,turn on the [device_type : socket],False,False,False
+1483,iot,hue_lightoff,hue_lightoff,please turn off the light in my [house_place : son's room],please turn off the light of my son's [house_place : room],False,False,False
+1519,iot,coffee,coffee,make me some coffee,make me some [device_type : coffee],False,False,False
+1520,iot,coffee,coffee,can you make me some coffee,can you make me some [device_type : coffee],False,False,False
+1521,iot,coffee,coffee,i need some coffee made,i need some [device_type : coffee] made,False,False,False
+1526,iot,hue_lightup,hue_lightup,brighten up the [house_place : room],brighten up the [house_place : room],False,True,False
+1617,iot,hue_lighton,hue_lighton,turn on all [house_place : upstairs] lights,turn on all [device_type : upstairs lights],False,False,False
+1689,iot,hue_lightup,hue_lightup,its dark in here mind turning up the light intensity,its [color_type : dark] in here mind turning up the light intensity,False,False,False
+1745,iot,coffee,coffee,can you start the coffee,can you start the [device_type : coffee],False,False,False
+1746,iot,coffee,coffee,start coffee,start [device_type : coffee],False,False,False
+1760,iot,coffee,coffee,i would like to have a cup of coffee,i would like to have a cup of [device_type : coffee],False,False,False
+1792,iot,hue_lightoff,hue_lightoff,[time : during the daytime] [device_type : all lights] has to be turned off,during the daytime [device_type : all lights] has to be turned off,False,False,True
+1843,iot,cleaning,cleaning,start my [device_type : robot vacuum cleaner] by [time : ten] to [time : eleven am] [general_frequency : daily],start my [device_type : robot vacuum cleaner] by [time : ten to eleven am] [general_frequency : daily],False,False,True
+1844,iot,cleaning,cleaning,by [time : ten] to [time : eleven am] [general_frequency : daily] start my [device_type : vacuum cleaner],by [time : ten to eleven am] [general_frequency : daily] start my [device_type : vacuum cleaner],False,False,True
+1845,iot,cleaning,cleaning,my [device_type : vacuum cleaner] should start between [time : ten] to [time : eleven am] [general_frequency : everyday],my [device_type : vacuum cleaner] should start between [time : ten to eleven am] [general_frequency : everyday],False,False,True
+1848,iot,hue_lightoff,hue_lightoff,please turn off only middle left side [device_type : light],please turn off only [device_type : middle left side light],False,False,True
+1849,iot,hue_lightoff,hue_lightoff,please turn off only right side [device_type : light],please turn off only right [device_type : side light],False,False,True
+1901,iot,hue_lightoff,hue_lightoff,switch off the [device_type : light on the left],switch off the light on the [device_type : left],False,False,True
+1903,iot,hue_lightoff,hue_lightoff,off all the [device_type : lights on the right side],off all the lights on the right side,False,False,True
+1943,iot,hue_lightoff,hue_lightoff,switch off the [house_place : master's bedroom],switch off the master's [house_place : bedroom],False,False,False
+1984,iot,coffee,coffee,please help serve me coffee with a [coffee_type : no sugar],please help serve me [device_type : coffee] with a [coffee_type : no sugar],False,False,False
+1985,iot,coffee,coffee,order one coffee to [business_name : starbucks] [business_type : coffee shop],order one [business_type : coffee] to [business_name : starbucks] [business_type : coffee shop],False,False,True
+1986,iot,coffee,coffee,order one coffee from nearest [business_type : coffee shop],order one [business_type : coffee] from nearest [business_type : coffee shop],False,False,True
+2096,iot,coffee,coffee,is the coffee ready,is the [device_type : coffee] ready,False,False,True
+2190,iot,hue_lighton,hue_lighton,turn on [device_type : disco lights] in my [house_place : apartment],turn on [device_type : disco lights] in my apartment,False,False,False
+2235,iot,coffee,coffee,start making some coffee,start making some [device_type : coffee],False,False,False
+2265,iot,hue_lightoff,hue_lightoff,turns [house_place : my son's room] lights off,turns my son's [house_place : room] lights off,False,False,True
+2289,iot,wemo_on,wemo_on,turn my [house_place : bathroom] [device_type : plug socket] on,turn my [house_place : bathroom] [device_type : plug socket] on,False,True,False
+2290,iot,wemo_off,wemo_off,shut off my [house_place : living room] [device_type : plug socket],shut off my [house_place : living room] [device_type : plug socket],False,True,False
+2291,iot,wemo_on,wemo_on,turn on my [relation : son's] [house_place : room] [device_type : plug] socket on off,turn on my son's [house_place : room] [device_type : plug socket] on off,False,False,True
+2293,iot,hue_lighton,hue_lighton,switch on all the lights,switch on [device_type : all the lights],False,False,False
+2352,iot,hue_lightchange,hue_lightchange,change [house_place : house] light from [color_type : green] to [color_type : red],change [house_place : house] light from [color_type : green] to [color_type : red],False,True,False
+2404,iot,hue_lightchange,hue_lightchange,adjust light when i get home,adjust light when i get [place_name : home],False,False,True
+2405,iot,hue_lightchange,hue_lightchange,change light whenever i find myself in my house,change light whenever i find myself in my [house_place : house],False,False,True
+2406,iot,hue_lightdim,hue_lightdim,lower the light level in my [house_place : house],lower the light level in my [house_place : house],False,True,False
+2484,iot,hue_lightoff,hue_lightoff,turn off the [device_type : closet light],turn off the [device_type : closet light],False,True,False
+2526,iot,hue_lightchange,hue_lightchange,change my [house_place : house] lights colour to [color_type : blue],change my [house_place : house] lights colour to [color_type : blue],False,True,False
+2527,iot,hue_lightchange,hue_lightchange,set colour [color_type : blue] for all lights of my [house_place : house],set colour [color_type : blue] for all lights of my [house_place : house],False,True,False
+2533,iot,coffee,coffee,instruct the [device_type : coffee maker] to make a [coffee_type : filter] coffee ready [time : in ten minutes],instruct the [device_type : coffee maker] to make a [coffee_type : filter] [device_type : coffee] ready in [time : ten minutes],False,False,False
+2534,iot,coffee,coffee,can you see to it that the [device_type : coffee maker] is ready with my [coffee_type : filter] coffee in approximately [time : ten minutes from now],can you see to it that the [device_type : coffee maker] is ready with my [coffee_type : filter] [device_type : coffee] in approximately [time : ten minutes from now],False,False,False
+2535,iot,coffee,coffee,i will need my [coffee_type : filter] coffee in [time : ten minutes] please ask the [device_type : coffee maker] accordingly,i will need my [coffee_type : filter] [device_type : coffee] in [time : ten minutes] please ask the [device_type : coffee maker] accordingly,False,False,True
+2549,iot,coffee,coffee,could you fix me some coffee,could you fix me some [device_type : coffee],False,False,False
+2550,iot,coffee,quirky,a cup of joe would be nice right now,a cup of [person : joe] would be [weather_descriptor : nice] right now,False,False,False
+2561,iot,hue_lightdim,hue_lightdim,reduce the light power,reduce the [device_type : light power],False,False,True
+2563,iot,hue_lightdim,hue_lightdim,down the light power,down the [device_type : light power],False,False,True
+2596,iot,hue_lightchange,hue_lightchange,replace the current light colours in the [house_place : house] with [color_type : dark] ones,replace the current light colours in the [house_place : house] with [color_type : dark] ones,False,True,False
+2626,iot,cleaning,cleaning,start [device_type : cleaner],start [device_type : cleaner],False,True,False
+2628,iot,cleaning,cleaning,turn on [device_type : vacuum] cleaning,turn on [device_type : vacuum] cleaning,False,True,False
+2699,iot,coffee,coffee,make my coffee,make my [device_type : coffee],False,False,False
+2700,iot,coffee,coffee,brew my coffee,brew my [device_type : coffee],False,False,False
+2701,iot,coffee,coffee,prepare my coffee,prepare my [device_type : coffee],False,False,False
+2817,iot,hue_lightchange,hue_lightchange,change the lights in my [house_place : home] to [color_type : orange],change the lights in my [place_name : home] to [color_type : orange],False,False,False
+2818,iot,hue_lightchange,hue_lightchange,change the lights in my [house_place : home] to [color_type : green],change the lights in my [place_name : home] to [color_type : green],False,False,False
+2880,iot,coffee,coffee,please make me some coffee,please make me some [device_type : coffee],False,False,False
+2882,iot,hue_lightoff,hue_lightoff,could you please turn off the [device_type :overhead light] in the [house_place : kitchen],could you please turn off the [house_place : overhead] light in the [house_place : kitchen],False,False,False
+2884,iot,hue_lightoff,hue_lightoff,please turn off the [house_place : porch] light,please turn off the [house_place : porch] light,False,True,False
+2989,iot,coffee,coffee,prepare some cups of coffee for us,prepare some cups of coffee for [place_name : us],False,False,False
+3029,iot,coffee,coffee,please start me some coffee,please start me some [device_type : coffee],False,False,True
+3047,iot,coffee,coffee,i need one cup of coffee,i need one cup of [device_type : coffee],False,False,False
+3050,iot,coffee,coffee,i need a cup of coffee,i need a cup of [device_type : coffee],False,False,False
+3103,iot,hue_lightdim,hue_lightdim,dim the lights down [change_amount : a bit],dim the lights down [change_amount : a bit],False,True,False
+3104,iot,hue_lightdim,hue_lightdim,dim the [device_type :  overhead lights] a [change_amount : tad],dim the overhead lights a tad,False,False,False
+3106,iot,coffee,coffee,brew me a cup of coffee,brew me a cup of [device_type : coffee],False,False,False
+3108,iot,coffee,coffee,can you get me a cup of coffee,can you get me a cup of [device_type : coffee],False,False,False
+3109,iot,hue_lightup,hue_lightup,turn up the lights a little,hey olly turn up the lights [change_amount : a little],False,False,False
+3112,iot,coffee,coffee,can you make me a cup of coffee,can you make me a cup of [device_type : coffee],False,False,False
+3114,iot,coffee,coffee,brew some coffee,brew some [device_type : coffee],False,False,False
+3131,iot,coffee,coffee,please make coffee,please make [device_type : coffee],False,False,False
+3140,iot,hue_lightchange,hue_lightchange,alter the color of the lights at [house_place : home],alter the color of the lights at [place_name : home],False,False,True
+3213,iot,cleaning,cleaning,please clean the [house_place : floor],please clean the [house_place : floor],False,True,False
+3276,iot,hue_lightoff,hue_lightoff,[house_place : office] lights off,office lights off,False,False,False
+3282,iot,coffee,coffee,please start the coffee,please start the [device_type : coffee],False,False,False
+3333,iot,wemo_off,wemo_off,turn off [device_type : socket],turn off [device_type : socket],False,True,False
+3334,iot,wemo_on,wemo_on,turn on [device_type : socket],turn on [device_type : socket],False,True,False
+3335,iot,wemo_on,wemo_on,turn on [device_type : plug],turn on [device_type : plug],False,True,False
+3383,iot,wemo_off,commandstop,shut down the [device_type : plug],shut down the [device_type : plug],False,True,False
+3384,iot,wemo_off,wemo_off,shut off the [device_type : socket],shut off the [device_type : socket],False,True,False
+3399,iot,hue_lightoff,hue_lightoff,turn off [device_type : one light] in my [house_place : bedroom],turn off one light in my [house_place : bedroom],False,False,True
+3400,iot,hue_lightoff,hue_lightoff,can you turn off one of my [device_type : lights] in my [house_place : bathroom],can you turn off one of my lights in my [house_place : bathroom],False,False,True
+3443,iot,coffee,coffee,i would like a cup of coffee with [coffee_type : one cream and three sugars],i would like a cup [coffee_type : of coffee with one cream and three sugars],False,False,False
+3493,iot,wemo_off,wemo_off,turn off on the socket,turn off on the [device_type : socket],False,False,True
+3555,iot,hue_lightdim,hue_lightdim,lower lights in my [house_place : room],lower lights in [house_place : my room],False,False,False
+3557,iot,hue_lightoff,hue_lightoff,turn off lights in my [house_place : room],turn off lights in [house_place : my room],False,False,False
+3559,iot,hue_lightchange,hue_lightchange,change color of the light to [color_type : red] [house_place : outside the house],change color of the light to [color_type : red] outside the [house_place : house],False,False,False
+3646,iot,coffee,coffee,please make me a cup of coffee,please make me a cup of [device_type : coffee],False,False,False
+3650,iot,wemo_off,wemo_off,turn the [device_type : plug] off,turn the [device_type : plug] off,False,True,False
+3754,iot,coffee,coffee,can you set my [device_type : coffee machine] to make me coffee at [time : seven am],can you set my [device_type : coffee machine] to make me [device_type : coffee] at [time : seven am],False,False,False
+3755,iot,coffee,coffee,can you set the [device_type : coffee machine] to make coffee at [time : three pm] [general_frequency : every week day],can you set the [device_type : coffee machine] to make [device_type : coffee] at [time : three pm] time [date : every week day],False,False,False
+3760,iot,coffee,coffee,can you set my [device_type : coffee machine] to make me coffee at [time : four pm],can you set my [device_type : coffee machine] to make me [device_type : coffee] at [time : four pm] time,False,False,False
+3761,iot,coffee,coffee,can you make me coffee now,can you make me [device_type : coffee] now,False,False,False
+3808,iot,hue_lighton,hue_lighton,please turn on all the [house_place : outdoor] lights,please turn on all the [house_place : outdoor] lights,False,True,False
+3842,iot,coffee,coffee,brew me some coffee,brew me some [device_type : coffee],False,False,False
+3843,iot,coffee,coffee,make me coffee now,make me [device_type : coffee] now,False,False,False
+3874,iot,hue_lightoff,hue_lightoff,please turn off all the lights outdoor,please turn off [device_type : all the lights outdoor],False,False,True
+3931,iot,coffee,coffee,make me coffee in [time : five minutes],make me [device_type : coffee] in [time : five minutes],False,False,False
+3932,iot,coffee,coffee,make five coffee tell the [device_type : coffee machine],make five [device_type : coffee] tell the [device_type : coffee machine],False,False,False
+3935,iot,hue_lightoff,hue_lightoff,please turn off all the lights in my [house_place : house],please turn off all the lights in my [house_place : house],False,True,False
+3999,iot,coffee,coffee,make me a cup of coffee,make me a cup of [device_type : coffee],False,False,False
+4000,iot,coffee,coffee,i want some coffee now,i want some [device_type : coffee] now,False,False,False
+4078,iot,wemo_on,wemo_on,turn on this [device_type : socket],turn on this socket,False,False,True
+4127,iot,hue_lightchange,hue_lightchange,switch to [color_type : red] colored lights,switch to [color_type : red] colo[color_type : red] lights,False,False,False
+4138,iot,coffee,coffee,i need some coffee,i need some [device_type : coffee],False,False,False
+4292,iot,hue_lightup,hue_lightup,please turn up the light [change_amount : a little],please turn up the light [change_amount : a little],False,True,False
+4293,iot,hue_lightup,hue_lightup,please turn the lights up to eight,please turn the lights up to [time : eight],False,False,True
+4294,iot,hue_lightup,hue_lightup,i need the lights in here to be turned up to [time : seven],i need the lights in here [change_amount : to] be turned up [change_amount : to seven],False,False,True
+4372,iot,coffee,coffee,brew a pot of coffee,brew a pot of [device_type : coffee],False,False,False
+4373,iot,coffee,coffee,i need some coffee please,i need some [device_type : coffee] please,False,False,False
+4542,iot,coffee,coffee,make us a [coffee_type : brew],make us a brew,False,False,True
+4548,iot,hue_lightoff,hue_lightoff,turn off [device_type : overhead light],turn off [device_type : overhead light],False,True,False
+4623,iot,hue_lightup,hue_lightup,please turn up the lights in this room,please turn up the lights in this [house_place : room],False,False,True
+4715,iot,hue_lightoff,hue_lightoff,can you turn off my [house_place : bedroom] [device_type : lamp],can you turn off my [house_place : bedroom] [device_type : lamp],False,True,False
+4716,iot,wemo_on,wemo_on,i need to turn on the [device_type : plug] in my office for my [device_type : computer],i need to turn on the [device_type : plug] in my office for my [device_type : computer],False,True,False
+4730,iot,coffee,coffee,make me some coffee from the [device_type : coffee machine],make me some [device_type : coffee] from the [device_type : coffee machine],False,False,False
+4732,iot,coffee,coffee,please make me a coffee using the [device_type : coffee machine],please make me a [device_type : coffee] using the [device_type : coffee machine],False,False,False
+4734,iot,hue_lightchange,hue_lightchange,[house_place : house] lights [color_type : blue],[house_place : house] lights [color_type : blue],False,True,False
+4735,iot,hue_lightchange,hue_lightchange,can you make all the lights in the [house_place : house] [color_type : blue],[house_place : house] can you make all the lights in the [house_place : house] [color_type : blue],False,False,False
+4758,iot,coffee,coffee,i would like a cup of coffee,i would like a cup of [device_type : coffee],False,False,False
+4760,iot,coffee,coffee,my coffee is cold please make more coffee,my [device_type : coffee] is [weather_descriptor : cold] please make more coffee,False,False,True
+4773,iot,hue_lightup,hue_lightup,increase the brightness in [house_place : this room],increase the brightness in this [house_place : room],False,False,True
+4780,iot,hue_lightup,hue_lightup,it is too dark in here increase the brightness of the lights,it is too [color_type : dark] in here increase the brightness of the lights,False,False,True
+4791,iot,hue_lightchange,hue_lightchange,change the [device_type : overhead light] to [color_type : orange],change the [house_place : overhead] light to [color_type : orange],False,False,False
+4856,iot,cleaning,cleaning,vacuum the [house_place : living room] carpet,vacuum the [house_place : living room carpet],False,False,True
+4858,iot,cleaning,cleaning,vacuum the carpet freshener from the carpet,vacuum the [event_name : carpet freshener] from the carpet,False,False,True
+4875,iot,coffee,coffee,i want some coffee,i want some [device_type : coffee],False,False,False
+4876,iot,coffee,coffee,could you get me some coffee,could you get me some [device_type : coffee],False,False,False
+4900,iot,hue_lightup,hue_lightup,raise the [device_type : lamp's] light,raise the lamp's light,False,False,False
+4902,iot,hue_lightup,hue_lightup,bring up all the [device_type : runner] lights,bring up all the [device_type : runner lights],False,False,True
+4942,iot,cleaning,cleaning,begin vacuum cleaning,begin [device_type : vacuum] cleaning,False,False,False
+4943,iot,cleaning,cleaning,vacuum the [house_place : floor],vacuum the [house_place : floor],False,True,False
+5102,iot,coffee,coffee,can you make some coffee,can you make some [device_type : coffee],False,False,False
+5103,iot,coffee,coffee,prepare a cup of coffee,prepare a cup of [device_type : coffee],False,False,False
+5104,iot,coffee,coffee,please make some coffee for me,please make some [device_type : coffee] for me,False,False,False
+5187,iot,hue_lightdim,hue_lightdim,dim the lights to level two,,False,False,True
+5202,iot,hue_lightoff,hue_lightoff,turn off [house_place : bedroom] lights [time : in ten seconds],turn off [house_place : bedroom] lights in [time : ten seconds],False,False,False
+5212,iot,hue_lightdim,hue_lightdim,i want the [house_place : room] to be less bright,i want the [house_place : room] to be less bright,False,True,False
+5334,iot,wemo_off,wemo_off,please mark the [device_type : wemo] socket to off,please mark the [device_type : wemo socket] to off,False,False,True
+5335,iot,wemo_off,wemo_off,deactive the [device_type : socket],deactive the [device_type : socket],False,True,False
+5538,iot,hue_lightdim,hue_lightdim,lower the [device_type : overhead] lights,lower the overhead lights,False,False,False
+5655,iot,coffee,coffee,make a cup of coffee,make a cup of [device_type : coffee],False,False,False
+5688,iot,hue_lightup,hue_lightup,brighten the lights [change_amount : a little bit],brighten the lights [change_amount : a little bit],False,True,False
+5751,iot,hue_lightchange,hue_lightchange,replace color from [color_type : light] to [color_type : dark],replace color from light to [color_type : dark],False,False,True
+5794,iot,coffee,coffee,brew coffee,brew [device_type : coffee],False,False,False
+5910,iot,coffee,coffee,can i get a cup of coffee,can i get a cup of [device_type : coffee],False,False,False
+6070,iot,cleaning,cleaning,start cleaning floors,start [event_name : cleaning floors],True,False,False
+6071,iot,hue_lightup,hue_lightup,increase brightness in the [house_place : room],increase brightness in the [house_place : room],False,True,False
+6090,iot,cleaning,cleaning,i want to clean my bedroom put the [device_type : vacuum] on and go to my [house_place : room],i want to clean my [house_place : bedroom] put the [device_type : vacuum] on and go to my room,False,False,True
+6109,iot,coffee,coffee,make me a [coffee_type : strong] cup of coffee,make me a [coffee_type : strong] cup of [device_type : coffee],False,False,False
+6111,iot,coffee,coffee,put on a pot of coffee,put on a pot of [device_type : coffee],False,False,False
+6115,iot,hue_lightdim,hue_lightdim,give me some dim light,give me some [device_type : dim light],False,False,True
+6126,iot,hue_lightoff,hue_lightoff,please turn off [device_type : middle light] of [house_place : room],please turn off middle light of [house_place : room],False,False,False
+6158,iot,hue_lightup,hue_lightup,turn the lights higher,turn the lights [color_type : higher],False,False,True
+6185,iot,hue_lightoff,hue_lightoff,switch off all [device_type : lights],switch off [device_type : all lights],False,False,False
+6193,iot,cleaning,cleaning,have the [device_type : roomba] run the [house_place : living room],have the [device_type : [house_place : room]ba] run the [house_place : living room],False,False,False
+6240,iot,coffee,coffee,make some coffee,make some [device_type : coffee],False,False,False
+6286,iot,hue_lightchange,hue_lightchange,[color_type : rotate] the light colors,rotate the light colors,False,False,True
+6317,iot,hue_lightup,hue_lightup,please arrange to make [device_type : all lights] to show brighter,please arrange to make all lights to show brighter,False,False,True
+6351,iot,cleaning,cleaning,activate the [device_type : cleaner] for [house_place : furniture] cleaning,activate the [device_type : cleaner] for furniture cleaning,False,False,True
+6373,iot,coffee,coffee,i want to drink coffee,i want to drink [device_type : coffee],False,False,False
+6517,iot,hue_lightdim,events,switch light [change_amount : to lowest level] in [house_place : dining area],switch light [change_amount : to lowest level] in dining area,False,False,False
+6592,iot,coffee,coffee,do coffee,do [device_type : coffee],False,False,True
+6599,iot,cleaning,quirky,begin vacuuming,begin vacuuming,False,True,False
+6670,iot,hue_lighton,hue_lighton,turn on the lights,turn on the lights,False,True,False
+6805,iot,cleaning,cleaning,start [device_type : robot vacuum],start [device_type : robot vacuum],False,True,False
+6847,iot,wemo_off,wemo_off,switch off the [device_type : power],switch off the power,False,False,False
+6900,iot,coffee,coffee,program [device_type : coffee machine] to brew coffee in [time : two minutes],program [device_type : coffee machine] to brew [device_type : coffee] in [time : two minutes],False,False,False
+6971,iot,coffee,coffee,i would like some coffee now,i would like some [device_type : coffee] now,False,False,False
+6985,iot,coffee,coffee,can you make coffee,can you make [device_type : coffee],False,False,False
+6986,iot,coffee,coffee,can i have cup of coffee,can i have cup of [device_type : coffee],False,False,False
+7062,iot,coffee,coffee,make the coffee,make the [device_type : coffee],False,False,False
+16191,iot,wemo_on,wemo_on,i'd like you to turn turn on the [device_type : tv],i'd like you to turn turn on the [device_type : tv],False,True,False

@@ -5,7 +5,6 @@ class MacroEntityRefinement:
     """
     Macro Data Refinement focused on entities.
     """
-
     @staticmethod
     def get_incorrect_predicted_entities_report(domain_df, entity_report_df, domain_entity_reports_df):
         """
@@ -127,7 +126,7 @@ class MacroEntityRefinement:
                                             == entity_word]["entity_type"].values
 
                 correct_entity_type = input(
-                    f"Type in the correct entity type for these words \n entity words: {entity_word} \n entity types: {entity_types}"
+                    f"Type in the correct entity type for these words \n entity words: {entity_word} \n entity types: {entity_types} \n Press enter to skip this one"
                     )
                 correct_entity_types.append(correct_entity_type)
             return correct_entity_types
@@ -154,12 +153,13 @@ class MacroEntityRefinement:
         refined_df = df.copy()
 
         for incorrect_entity_type, correct_entity_type, overlapping_entity_word in zip(incorrect_entity_types, correct_entity_types, overlapping_entity_words):
-            pattern = f'{incorrect_entity_type} : {overlapping_entity_word}'
-            replacement = f'{correct_entity_type} : {overlapping_entity_word}'
-            print(f'replacing: {pattern}\nwith: {replacement}')
+            if correct_entity_type != '':
+                pattern = f'{incorrect_entity_type} : {overlapping_entity_word}'
+                replacement = f'{correct_entity_type} : {overlapping_entity_word}'
+                print(f'replacing: {pattern}\nwith: {replacement}')
             
-            refined_df['answer_annotation'] = refined_df.answer_annotation.str.replace(
-                pattern, replacement)
+                refined_df['answer_annotation'] = refined_df.answer_annotation.str.replace(
+                    pattern, replacement)
         return refined_df
 
     @staticmethod

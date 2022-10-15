@@ -1,0 +1,50 @@
+,scenario,intent,predicted_label,answer_annotation,predicted_tagging,review,use_predicted_tagging,remove
+554,audio,volume_up,volume_up,please increase the volume of the music [song_name : hips don't lie],please increase the volume of the music [song_name : hips] don't [song_name : lie],False,False,True
+785,audio,volume_up,volume_up,increase the volume so that i can hear it in other room,increase the volume so that i can hear it in [place_name : other room],False,False,True
+846,audio,volume_mute,volume_mute,hey olly mute the speakers,hey olly mute the [device_type : speakers],False,False,True
+1003,audio,volume_mute,volume_mute,will you please mute my speakers,will you please mute my [device_type : speakers],False,False,True
+1452,audio,volume_down,volume_down,please slow down volume of speaker,please slow down volume of [definition_word : speaker],False,False,True
+1453,audio,volume_down,volume_down,i want to slow down my speaker,i want to slow down my [relation : speaker],False,False,True
+1467,audio,volume_up,volume_up,just increase the volume a little,just increase the volume [change_amount : a little],True,False,False
+1468,audio,volume_up,volume_up,move the volume up a little,move the volume up [change_amount : a little],True,False,False
+1628,audio,volume_mute,volume_mute,quiet mode on until i am home from work,quiet mode on until [time : i am] [place_name : home] from work,False,False,True
+2053,audio,volume_up,volume_up,increase the volume a bit,increase the volume [change_amount : a bit],True,False,False
+2260,audio,volume_mute,volume_mute,off the speakers,off the [device_type : speakers],False,False,True
+2295,audio,volume_down,volume_down,turn the volume down a little please,turn the volume down [change_amount : a little] please,True,False,False
+2772,audio,volume_mute,volume_mute,please be quiet for the next [time : two hours],please be quiet for the [time : next two hours],False,False,True
+2774,audio,volume_mute,volume_mute,i need you to be quiet [time : until tomorrow],i need you to be quiet until [date : tomorrow],False,False,True
+2873,audio,volume_mute,volume_mute,i've got a meeting by [timeofday : tonight] [time : seven pm] please mute the music for [time : an hour],i've got a [event_name : meeting] by [timeofday : tonight] [time : seven pm] please mute the music for [time : an hour],False,False,True
+2905,audio,volume_mute,volume_mute,mute all responses now,mute all [weather_descriptor : responses] now,False,False,True
+2919,audio,volume_down,volume_down,lower the speakers,lower the [device_type : speakers],False,False,True
+2936,audio,volume_up,volume_up,turn up [device_type : radio] volume,turn up radio volume,False,False,True
+3094,audio,volume_mute,volume_mute,Silence speakers,[device_type : Silence speakers],False,False,True
+3095,audio,volume_mute,volume_mute,silence volume on speakers,silence volume on [device_type : speakers],False,False,True
+3127,audio,volume_mute,volume_mute,mute the [device_type : living room speakers],mute the [house_place : living room] speakers,False,False,True
+3157,audio,volume_mute,volume_mute,go silent for [time : a day],go silent for a day,False,False,True
+3225,audio,volume_down,volume_down,turn down the speakers,turn down the [device_type : speakers],False,False,True
+3487,audio,volume_mute,volume_mute,please mute the speakers,please mute the [device_type : speakers],False,False,True
+4014,audio,volume_mute,volume_mute,google please be extra quiet the baby is sleeping,google please be [weather_descriptor : extra quiet] the baby is sleeping,False,False,True
+4066,audio,volume_up,volume_up,turn up the speakers,turn up the [device_type : speakers],False,False,True
+4129,audio,volume_down,volume_down,lower the volume on the speakers,lower the volume on the [device_type : speakers],False,False,True
+4551,audio,volume_up,volume_up,turn up the volume on my speakers,turn up the volume on my [device_type : speakers],False,False,True
+4552,audio,volume_up,volume_up,i want volume on my speakers,i want volume on my [device_type : speakers],False,False,True
+4839,audio,volume_up,volume_up,raise the volume of the speakers,raise the volume of the [device_type : speakers],False,False,True
+4840,audio,volume_down,volume_down,lower the volume of the speakers,lower the volume of the [device_type : speakers],False,False,True
+4913,audio,volume_up,volume_up,please turn the volume to the [change_amount : loudest] setting,please turn the volume to the loudest setting,False,False,False
+4940,audio,volume_mute,volume_mute,mute the audio,mute the [media_type : audio],False,False,True
+5129,audio,volume_up,volume_up,turn up the volume of my speakers,turn up the volume of my [device_type : speakers],False,False,True
+5222,audio,volume_mute,volume_mute,mute the speakers,mute the [device_type : speakers],False,False,True
+5280,audio,volume_up,volume_up,i need to hear sound on my speakers,i need to hear sound on my [device_type : speakers],False,False,True
+5360,audio,volume_up,volume_up,can you increase the volume of the speakers,can you increase the volume of the [device_type : speakers],False,False,True
+5362,audio,volume_up,volume_up,hello beef up the volume a little bit,hello beef up the volume [change_amount : a little bit],False,False,True
+5665,audio,volume_mute,volume_mute,please mute my speaker,please mute my [relation : speaker],False,False,True
+5666,audio,volume_mute,volume_mute,can you mute my speaker,can you mute my [relation : speaker],False,False,True
+5667,audio,volume_mute,volume_mute,help me to mute my speaker,help me to mute my [relation : speaker],False,False,True
+5753,audio,volume_up,volume_up,change the volume level [change_amount : to nineteen] please,change the volume [change_amount : level to nineteen] please,False,False,True
+5902,audio,volume_up,volume_up,turn up speakers,turn up [device_type : speakers],False,False,True
+5938,audio,volume_mute,volume_mute,turn the vibrate off from speaker,turn the vibrate off from [person : speaker],False,False,True
+6045,audio,volume_up,volume_up,can you turn it up a little,can you turn it up [change_amount : a little],False,False,True
+6350,audio,volume_mute,volume_mute,set mute until said otherwise,set mute until [time : said otherwise],False,False,True
+6429,audio,volume_down,volume_down,please change the volume low of the speakers,please change the volume low of the [device_type : speakers],False,False,True
+6628,audio,volume_mute,volume_mute,can you set [device_type : radio] to mute,can you set radio to mute,False,False,True
+6894,audio,volume_up,volume_up,please raise the volume of speaker,please raise the volume of [definition_word : speaker],False,False,True
