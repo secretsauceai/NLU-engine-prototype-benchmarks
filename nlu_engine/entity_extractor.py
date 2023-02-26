@@ -1,6 +1,7 @@
 import re
 import nltk
 import re
+import numpy as np
 
 import sklearn_crfsuite
 
@@ -37,7 +38,7 @@ class EntityExtractor:
         """
         entities = re.findall(r'\[(.*?)\]', utterance)
         return EntityExtractor.seperate_types_and_entities(entities)
-    
+            
     @staticmethod
     def extract_entity_types(extracted_entities):
         """
@@ -46,9 +47,11 @@ class EntityExtractor:
         :return: string of joined list of entity types.
         """
         entity_types = []
+
         for entity in extracted_entities:
             entity_types.append(entity['type'])
         return ','.join(entity_types)
+
 
     @staticmethod
     def join_entities(utterance):

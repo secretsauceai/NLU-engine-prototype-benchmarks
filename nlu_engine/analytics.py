@@ -125,3 +125,67 @@ class Analytics:
             fig.savefig(f'data/reports/{label}_report_graph.png')
 
         plt.show()
+
+
+    @staticmethod
+    def plot_entity_report(domain_entity_reports_df, label):
+        """
+        Plots the entity classification report.
+        """
+        fig, ax = plt.subplots()
+
+        graph_report_df = domain_entity_reports_df.sort_values(
+            by='f1-score', ascending=True)
+        y_axis = np.arange(len(graph_report_df[label]))
+
+        ax.barh(y_axis, graph_report_df['f1-score'],
+                align='center', color='b')
+    
+        fig.set_figheight(16)
+        fig.set_figwidth(12)
+
+        ax.set_title(f'f1-scores by {label}', fontsize=24)
+        ax.set_xlabel("f1-score", fontsize=18)
+        ax.tick_params(axis='x', labelsize=18)
+        ax.set_ylabel(label, fontsize=18)
+        ax.set_yticks(y_axis, graph_report_df[label], fontsize=16)
+        fig.tight_layout()
+
+        #fig.savefig(f'data/reports/entity_report_graph.png')
+
+        plt.show()
+
+    @staticmethod
+    def plot_incorrect_entities_by_count_and_f1_score(incorrect_predicted_entities_report):
+        """
+        Plot the entities by their count and f1 score.
+        """
+
+        entity_f1_scores = [incorrect_predicted_entities_report[entity]['f1-score']
+                            for entity in incorrect_predicted_entities_report.keys()]
+        entity_counts = [incorrect_predicted_entities_report[entity]['total_count']
+                        for entity in incorrect_predicted_entities_report.keys()]
+        entity_types = [
+            entity for entity in incorrect_predicted_entities_report.keys()]
+
+
+        # create a graph of subplots with two columns: the subplot on the left is a graph of entities by total count, the subplot on the right is entities by f1-score
+        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 8))
+
+        # plot the entities by total count
+        ax1.barh(entity_types, entity_counts, align='center', color='b')
+        ax1.set_title('Entities by total count', fontsize=24)
+        ax1.set_xlabel("Total count", fontsize=18)
+        ax1.tick_params(axis='x', labelsize=18)
+        ax1.set_ylabel("Entity", fontsize=18)
+        ax1.set_yticks(entity_types, fontsize=16)
+
+        # plot the entities by f1-score
+        ax2.barh(entity_types, entity_f1_scores, align='center', color='b')
+        ax2.set_title('Entities by f1-score', fontsize=24)
+        ax2.set_xlabel("f1-score", fontsize=18)
+        ax2.tick_params(axis='x', labelsize=18)
+        ax2.set_ylabel("Entity", fontsize=18)
+        ax2.set_yticks(entity_types, fontsize=16)
+
+        fig.tight_layout()

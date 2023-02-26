@@ -83,6 +83,7 @@ class MacroDataRefinement:
 
         return to_review_df
 
+
     @staticmethod
     def remove_intent(to_review_df, intent_to_remove):
         to_remove_df = to_review_df[to_review_df['intent'] == intent_to_remove]
@@ -97,6 +98,7 @@ class MacroDataRefinement:
         :param df_to_review: pandas dataframe
         :return: IPySheet
         """
+        #TODO: rename to create_review_sheet!
         to_review_df = MacroDataRefinement.create_review_df(to_review_df)
 
         to_review_sheet = ipysheet.from_dataframe(to_review_df)
