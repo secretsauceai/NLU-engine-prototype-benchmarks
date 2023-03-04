@@ -161,11 +161,11 @@ class Analytics:
         Plot the entities by their count and f1 score.
         """
 
-        entity_f1_scores = [incorrect_predicted_entities_report[entity]['f1-score']
+        incorrect_entity_f1_scores = [incorrect_predicted_entities_report[entity]['f1-score']
                             for entity in incorrect_predicted_entities_report.keys()]
-        entity_counts = [incorrect_predicted_entities_report[entity]['total_count']
+        incorrect_entity_counts = [incorrect_predicted_entities_report[entity]['total_count']
                         for entity in incorrect_predicted_entities_report.keys()]
-        entity_types = [
+        incorrect_entity_types = [
             entity for entity in incorrect_predicted_entities_report.keys()]
 
 
@@ -173,19 +173,20 @@ class Analytics:
         fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 8))
 
         # plot the entities by total count
-        ax1.barh(entity_types, entity_counts, align='center', color='b')
+        ax1.barh(incorrect_entity_types, incorrect_entity_counts, align='center', color='b')
         ax1.set_title('Entities by total count', fontsize=24)
         ax1.set_xlabel("Total count", fontsize=18)
         ax1.tick_params(axis='x', labelsize=18)
         ax1.set_ylabel("Entity", fontsize=18)
-        ax1.set_yticks(entity_types, fontsize=16)
+        ax1.set_yticks(incorrect_entity_types, fontsize=16)
 
         # plot the entities by f1-score
-        ax2.barh(entity_types, entity_f1_scores, align='center', color='b')
+        ax2.barh(incorrect_entity_types, incorrect_entity_f1_scores, align='center', color='b')
         ax2.set_title('Entities by f1-score', fontsize=24)
         ax2.set_xlabel("f1-score", fontsize=18)
         ax2.tick_params(axis='x', labelsize=18)
         ax2.set_ylabel("Entity", fontsize=18)
-        ax2.set_yticks(entity_types, fontsize=16)
+        ax2.set_yticks(incorrect_entity_types, fontsize=16)
 
         fig.tight_layout()
+        return incorrect_entity_types, incorrect_entity_counts

@@ -69,6 +69,72 @@ class MacroEntityRefinement:
                 'incorrect utterance': incorrect_utterance_example
             }
         return incorrect_predicted_entities_report
+    
+    @staticmethod
+    def get_sorted_incorrect_entity_types_and_counts(incorrect_entity_types, incorrect_entity_counts):
+        """
+            Get sorted incorrect entity types and counts.
+            :param incorrect_entity_types: list
+            :param incorrect_entity_counts: list
+            :return: series of tuples
+            """
+        entity_types_and_counts = zip(
+            incorrect_entity_types, incorrect_entity_counts)
+        
+        # arrange the entities in entity_types by total count in ascending order
+        entity_types_and_counts = sorted(entity_types_and_counts, key=lambda x: x[1])
+
+        # create a list of the entities in entity_types in ascending order of total count
+        entity_types = [entity_type for entity_type, count in entity_types_and_counts]
+
+        # create a list of the total counts of the entities in entity_types in ascending order of total count
+        entity_counts = [count for entity_type, count in entity_types_and_counts]
+
+        sorted_entity_types = [entity_type for entity_type, count in sorted(
+            zip(entity_types, entity_counts), key=lambda x: x[1])]
+        
+        sorted_entity_counts = [count for entity_type, count in sorted(
+            zip(entity_types, entity_counts), key=lambda x: x[1])]
+        
+        sorted_entity_types_and_counts = zip(
+            sorted_entity_types, sorted_entity_counts)
+
+        #TODO: refactor above code to be more compact
+
+        return sorted_entity_types_and_counts
+    
+    @staticmethod
+    def get_entries_with_sparse_total(domain_df, incorrect_entity_types, incorrect_entity_counts):
+        """
+            Get the entries with sparse total.
+            :param domain_df: pandas dataframe
+            :param incorrect_entity_types: list
+            :param incorrect_entity_counts: list
+            :return: pandas dataframe
+        """
+        entity_types_with_sparse_total = []
+        entity_counts_with_sparse_total = []
+
+        sorted_entity_types_and_counts = MacroEntityRefinement.get_sorted_incorrect_entity_types_and_counts(
+            incorrect_entity_types, incorrect_entity_counts)
+        
+        for entity_type, entity_count in sorted_entity_types_and_counts:
+            if entity_count < 5:
+                print(f'Entity type: {entity_type}, Total count: {entity_count}')
+                entity_types_with_sparse_total.append(entity_type)
+                entity_counts_with_sparse_total.append(entity_count)
+        if len(entity_types_with_sparse_total) > 0:
+            sparse_total_df = pd.DataFrame(
+                {
+                    'entity_type': entity_types_with_sparse_total,
+                    'total_count': entity_counts_with_sparse_total
+                })
+            sparse_entity_entries_df = domain_df[domain_df['entity_types'].str.contains(
+                ('|').join(entity_types_with_sparse_total), na=False)]
+            return sparse_total_df, sparse_entity_entries_df
+        else:
+            return None
+
 
     @staticmethod
     def get_overlapping_entity_types_and_words(df):
